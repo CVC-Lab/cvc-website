@@ -1,12 +1,10 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 
 const Header = ({ siteTitle, siteDescription, menuLinks }) => (
   <header
     style={{
-      background: `#bf5700`,
       marginBottom: `1.45rem`,
     }}
   >
@@ -45,7 +43,7 @@ const Header = ({ siteTitle, siteDescription, menuLinks }) => (
           }}
         >
           <div>{siteTitle}</div>
-          <div style={{fontSize: '.2em'}}>{siteDescription}</div>
+          <div style={{fontSize: '1.25rem'}}>{siteDescription}</div>
         </Link>
       </h1>
     </div>
