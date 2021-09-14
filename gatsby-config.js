@@ -3,15 +3,23 @@ module.exports = {
     title: `Computational Visualization Center`,
     menuLinks:[
       {
-        name:'home',
+        name:'projects',
         link:'/'
       },
       {
-        name:'page2',
+        name:'people',
+        link:'/page-2'
+      },
+      {
+        name:'news',
+        link:'/'
+      },
+      {
+        name:'contact',
         link:'/page-2'
       }
     ],
-    description: ``,
+    description: `a cross disciplinary effort whose mission is to develop and improve the core technologies for comprehensive computational modeling, simulation, analysis, and visualization.`,
     author: `@gatsbyjs`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
