@@ -11,12 +11,20 @@ const IndexPage = () => (
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
+      <StaticImage
+        src="../images/oden.png"
+        width={400}
+        quality={95}
+        formats={["auto", "webp", "avif"]}
+        alt="Oden logo"
+        style={{ marginBottom: `1.45rem`, paddingRight: `.2em` }}
+      />
     <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
+      src="../images/cs.png"
+      width={400}
       quality={95}
       formats={["auto", "webp", "avif"]}
-      alt="A Gatsby astronaut"
+      alt="Oden logo"
       style={{ marginBottom: `1.45rem` }}
     />
     <p>
