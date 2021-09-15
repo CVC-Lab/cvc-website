@@ -7,22 +7,6 @@ import Seo from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-      <StaticImage
-        src="../images/oden.png"
-        width={400}
-        quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt="Oden logo"
-        style={{ marginBottom: `1.45rem`, paddingRight: `.2em` }}
-      />
-    <StaticImage
-      src="../images/cs.png"
-      width={400}
-      quality={95}
-      formats={["auto", "webp", "avif"]}
-      alt="Oden logo"
-      style={{ marginBottom: `1.45rem` }}
-    />
   </Layout>
 )
 
