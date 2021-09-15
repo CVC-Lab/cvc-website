@@ -4,7 +4,7 @@ module.exports = {
     menuLinks:[
       {
         name:'PROJECTS',
-        link:'/'
+        link:'/projects'
       },
       {
         name:'PEOPLE',
@@ -45,6 +45,27 @@ module.exports = {
         theme_color: `#f8971f`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-pages`,
+        path: `${__dirname}/src/projects`,
+      },
+    },
+    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 800,
+            },
+          },
+        ],
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
