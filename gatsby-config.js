@@ -3,24 +3,24 @@ module.exports = {
     title: `Computational Visualization Center`,
     menuLinks:[
       {
-        name:'projects',
+        name:'PROJECTS',
         link:'/'
       },
       {
-        name:'people',
+        name:'PEOPLE',
         link:'/page-2'
       },
       {
-        name:'news',
+        name:'NEWS',
         link:'/'
       },
       {
-        name:'contact',
+        name:'CONTACT',
         link:'/page-2'
       }
     ],
-    description: `a cross disciplinary effort whose mission is to develop and improve the core technologies for comprehensive computational modeling, simulation, analysis, and visualization.`,
-    author: `@gatsbyjs`,
+    description: `a cross-disciplinary effort to develop and improve the technologies for computational modeling, simulation, analysis, and visualization.`,
+    author: `cvc`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
@@ -41,8 +41,8 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#f8971f`,
+        theme_color: `#f8971f`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
