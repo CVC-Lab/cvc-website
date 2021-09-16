@@ -3,8 +3,6 @@ import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import { Grid } from '@material-ui/core';
 import Navigation from "./navigation"
-import { Container } from "@material-ui/core"
-import { FormGroup } from "@material-ui/core"
 import { StaticImage } from "gatsby-plugin-image"
 
 const Header = ({ siteTitle, siteDescription, menuLinks }) => (
