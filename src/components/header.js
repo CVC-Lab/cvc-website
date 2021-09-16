@@ -10,8 +10,9 @@ const Header = ({ siteTitle, siteDescription, menuLinks }) => (
     <div style={{margin: `0 auto`, maxWidth: 1050, paddingBottom: `1.45rem`}}>
         <Grid>
           <Grid container direction="row" justify="space-between" alignItems="center">
-            <Grid style={{paddingLeft: `.105rem`}}>
+            <Grid>
               <StaticImage
+                class="headerlogo"
                 src="../images/knockout_university_formal_horizontal.png"
                 width={300}
                 quality={95}
@@ -30,7 +31,7 @@ const Header = ({ siteTitle, siteDescription, menuLinks }) => (
         </Link>
       </h1>
       <h3>
-        <div style={{color: `white`, fontSize: '1.35rem', paddingLeft: `.22rem`}}>{siteDescription}</div>
+        <div style={{color: `white`, fontSize: '1.35rem'}}>{siteDescription}</div>
       </h3>
     </div>
   </header>

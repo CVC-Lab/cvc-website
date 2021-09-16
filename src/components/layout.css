@@ -598,3 +598,8 @@ pre tt:after {
     font-size: 100%;
   }
 }
+@media screen and (max-width:750px) {
+  .headerlogo {
+    display: none;
+  }
+}

@@ -1,10 +1,28 @@
 module.exports = {
   siteMetadata: {
     title: `Computational Visualization Center`,
+    projectTiles:[
+      {
+        name:'dedrecon',
+        link:'/projects/dedrecon'
+      },
+      {
+        name:'camera_isp',
+        link:'/projects/dedrecon'
+      },
+      {
+        name:'angstrom',
+        link:'/projects/dedrecon'
+      },
+      {
+        name:'spectre',
+        link:'/projects/dedrecon'
+      }
+    ],
     menuLinks:[
       {
         name:'PROJECTS',
-        link:'/projects'
+        link:'/'
       },
       {
         name:'PEOPLE',
@@ -12,7 +30,7 @@ module.exports = {
       },
       {
         name:'NEWS',
-        link:'/'
+        link:'/news'
       },
       {
         name:'CONTACT',
