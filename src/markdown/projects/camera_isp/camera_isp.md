@@ -10,12 +10,37 @@ Heterogeneity exists in most camera images. This heterogeneity manifests itself 
 
 ![Introduction](./camera_isp/image0.png)
 
-## Algorithm (PS-VAE)
+## PS-VAE
 
 The overall pipeline of our PS-VAE. The entire training process is a two-fold step: we train the single encoder to achieve the best latent encoding with a latent vector maximally separating patches into subspaces and a dummy decoder. Then, we train multiple decoders with the encoder and the latent space to be fixed.
 
 ![Algorithm](./image1.png)
 
+## RSE-RL
+
+The overall pipeline of our RSE-RL: For each given observed image, we split the image into local patches and feed every patch as a stack into the encoding network. The latent space is divided into three subspaces, the encoder projects the YUV features of the patches onto three latent subspaces $Z_y$, $Z_u$, and $Z_v$. Both the clean patches and noisy patches are projected onto the three spaces. A set of transformations $T$ are learned to transform the latent representation of the noisy patches to a corresponding representation of the clean patches in all three subspaces. The transformed noisy representations are sent to the decoder for image reconstructions. After the denoised images are constructed, a PSNR is calculated and used to obtain the reward for a soft-actor-critic reinforcement learning model. The RL model uses the distance from the target PSNR and actual PSNR as the reward to adjust the trainable weights in the transformation $T$. Hence we have a self-enhancing image denoising network.
+
+![Algorithm](./image_rse_rl.png)
+
 ## Results
 
+### PS-VAE
 ![Results](./image2.png)
+![Results(RSE-RL)](./image_result_rse_rl.png)
+### RSE-RL
+
+
+## Project Members
+
+*   Yunhao Yang
+*   Yuhan Zheng
+*   Yi Wang
+*   Dr. Chandrajit Bajaj
+
+## Code Repo
+
+[Github link](https://github.com/CVC-Lab/RSE-RL)
+
+## Paper(Preprint)
+
+[PS-VAE](https://arxiv.org/abs/2104.00253)
