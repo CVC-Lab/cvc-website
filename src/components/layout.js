@@ -3,7 +3,6 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import Tiles from "./tiles"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -13,10 +12,6 @@ const Layout = ({ children }) => {
         siteMetadata {
           title
           description
-          projectTiles {
-            name
-            link
-          }
           menuLinks {
             name
             link

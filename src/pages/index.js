@@ -1,10 +1,9 @@
 import * as React from "react"
-import { graphql, Link, useStaticQuery } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import { graphql, useStaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
-import Seo from "../components/seo"
 import Tiles from "../components/tiles"
+import Cards from "../components/cards"
 
 const IndexPage = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -15,14 +14,20 @@ const IndexPage = ({ children }) => {
             name
             link
           }
+          peopleCards {
+            name
+            image
+          }     
         }
       }
     }
   `)
 
-  return (<Layout>
-    <Tiles projectTiles={data.site.siteMetadata.projectTiles}></Tiles>
-  </Layout>
+  return (
+    <Layout>
+      <Tiles projectTiles={data.site.siteMetadata.projectTiles}></Tiles>
+      <Cards peopleCards={data.site.siteMetadata.peopleCards}></Cards>
+    </Layout>
   )
 }
 

@@ -1,6 +1,125 @@
 module.exports = {
   siteMetadata: {
     title: `Computational Visualization Center`,
+    peopleCards:[
+      {
+        name:'Chandrajit Bajaj',
+        image:'chandrajit.png'
+      },
+      {
+        name:'Laura Lansing',
+        image:'laura.png'
+      },
+      {
+        name:'Ahmed Abdelkader',
+        image:'ahmed.png'
+      },
+      {
+        name:'Yi Wang',
+        image:'yi.png'
+      },
+      {
+        name:'Ryan Farell',
+        image:'ryan.png'
+      },
+      {
+        name:'Yunhao Yang',
+        image:'yunhao.png'
+      },
+      {
+        name:'Chase Tessmer',
+        image:'chase.png'
+      },
+      {
+        name:'Taemin Heo',
+        image:'taemin.png'
+      },
+
+      {
+        name:'Nathan Clement',
+        image:'nathan.png'
+      },
+      {
+        name:'Jan-Christopher Cohrs',
+        image:'jan.png'
+      },
+      {
+        name:'Thomas Ghorbanian',
+        image:'thomas.png'
+      },
+      {
+        name:'Minh Nguyen',
+        image:'placeholder.png'
+      },
+      {
+        name:'Sumit Sinha',
+        image:'placeholder.png'
+      },
+      {
+        name:'Suprawit Chockchowwat',
+        image:'placeholder.png'
+      },
+      {
+        name:'Rochan Avlur',
+        image:'rochan.png'
+      },
+      {
+        name:'Sean Zanyk McLean',
+        image:'sean.png'
+      },
+      {
+        name:'Yorick Sanders',
+        image:'yorick.png'
+      },
+      {
+        name:'Conrad Li',
+        image:'conrad.png'
+      },
+      {
+        name:'Benjamin Beal',
+        image:'ben.png'
+      },
+      {
+        name:'Nikhil Ajjarapu',
+        image:'nikhil.png'
+      },
+      {
+        name:'Edward Zhou',
+        image:'placeholder.png'
+      },
+      {
+        name:'Binglin Zhang',
+        image:'bingling.png'
+      },
+      {
+        name:'Abrar Anwar',
+        image:'abrar.png'
+      },
+      {
+        name:'Jeffery Mo',
+        image:'placeholder.png'
+      },
+      {
+        name:'Yash Totlani',
+        image:'placeholder.png'
+      },
+      {
+        name:'Arman Maesumi',
+        image:'placeholder.png'
+      },
+      {
+        name:'Sebastian Rutherford',
+        image:'placeholder.png'
+      },
+      {
+        name:'Harrison White',
+        image:'placeholder.png'
+      },
+      {
+        name:'Viraj Joshi',
+        image:'placeholder.png'
+      }
+    ],
     projectTiles:[
       {
         name:'dedrecon',
