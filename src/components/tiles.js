@@ -28,23 +28,6 @@ const Tiles = ({ projectTiles }) => (
       ))}
     </GridList>
   </div>
-  // <div style={{display: 'flex', justifyContent:'flex-end'}}>
-  //   <nav>
-  //     <ul style={{display: "flex", flex: 1}}>
-  //       {projectTiles.map(tile => (
-  //         <li key={tile.name} style={{listStyleType: `none`, padding: `1rem`, paddingTop: `.35rem`, paddingBottom: `0rem`}}>
-  //           <Tile
-  //             imageSrc={require('./img/path')}
-  //             icon={{ name: 'play-circle', type: 'font-awesome' }}
-  //             featured
-  //           />
-  //           <Link style={{color: `#333f48`, textDecoration: `none`, fontSize: `.73rem`}} to={tile.link}>
-  //             {tile.name}
-  //           </Link>
-  //         </li>))}
-  //     </ul>
-  //   </nav>
-  // </div>
 )
 
 export default Tiles

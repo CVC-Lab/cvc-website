@@ -1,6 +1,154 @@
 module.exports = {
   siteMetadata: {
     title: `Computational Visualization Center`,
+    peopleCards:[
+      {
+        name:'Chandrajit Bajaj',
+        image:'chandrajit.png',
+        position: 'Director, Principle Investigator'
+      },
+      {
+        name:'Laura Lansing',
+        image:'laura.png',
+        position: 'Administrative Associate'
+      },
+      {
+        name:'Ahmed Abdelkader',
+        image:'ahmed.png',
+        position: 'Postdoctoral Researcher'
+      },
+      {
+        name:'Yi Wang',
+        image:'yi.png',
+        position: 'Graduate Student'
+      },
+      {
+        name:'Ryan Farell',
+        image:'ryan.png',
+        position: 'Graduate Student'
+      },
+      {
+        name:'Yunhao Yang',
+        image:'yunhao.png',
+        position: 'Graduate Student'
+      },
+      {
+        name:'Chase Tessmer',
+        image:'chase.png',
+        position: 'Graduate Student'
+      },
+      {
+        name:'Taemin Heo',
+        image:'taemin.png',
+        position: 'Graduate Student'
+      },
+
+      {
+        name:'Nathan Clement',
+        image:'nathan.png',
+        position: 'Graduate Student'
+      },
+      {
+        name:'Jan-Christopher Cohrs',
+        image:'jan.png',
+        position: 'Graduate Student'
+      },
+      {
+        name:'Thomas Ghorbanian',
+        image:'thomas.png',
+        position: 'Graduate Student'
+      },
+      {
+        name:'Minh Nguyen',
+        image:'placeholder.png',
+        position: 'Graduate Student'
+      },
+      {
+        name:'Sumit Sinha',
+        image:'placeholder.png',
+        position: 'Graduate Student'
+      },
+      {
+        name:'Suprawit Chockchowwat',
+        image:'placeholder.png',
+        position: 'Graduate Student'
+      },
+      {
+        name:'Rochan Avlur',
+        image:'rochan.png',
+        position: 'Graduate Student'
+      },
+      {
+        name:'Sean Zanyk McLean',
+        image:'sean.png',
+        position: 'Graduate Student'
+      },
+      {
+        name:'Yorick Sanders',
+        image:'yorick.png',
+        position: 'Graduate Student'
+      },
+      {
+        name:'Conrad Li',
+        image:'conrad.png',
+        position: 'Undergraduate Student'
+      },
+      {
+        name:'Benjamin Beal',
+        image:'ben.png',
+        position: 'Undergraduate Student'
+      },
+      {
+        name:'Nikhil Ajjarapu',
+        image:'nikhil.png',
+        position: 'Undergraduate Student'
+      },
+      {
+        name:'Edward Zhou',
+        image:'placeholder.png',
+        position: 'Undergraduate Student'
+      },
+      {
+        name:'Binglin Zhang',
+        image:'bingling.png',
+        position: 'Undergraduate Student'
+      },
+      {
+        name:'Abrar Anwar',
+        image:'abrar.png',
+        position: 'Undergraduate Student'
+      },
+      {
+        name:'Jeffery Mo',
+        image:'placeholder.png',
+        position: 'Undergraduate Student'
+      },
+      {
+        name:'Yash Totlani',
+        image:'placeholder.png',
+        position: 'Undergraduate Student'
+      },
+      {
+        name:'Arman Maesumi',
+        image:'placeholder.png',
+        position: 'Undergraduate Student'
+      },
+      {
+        name:'Sebastian Rutherford',
+        image:'placeholder.png',
+        position: 'Undergraduate Student'
+      },
+      {
+        name:'Harrison White',
+        image:'placeholder.png',
+        position: 'Undergraduate Student'
+      },
+      {
+        name:'Viraj Joshi',
+        image:'placeholder.png',
+        position: 'Undergraduate Student'
+      }
+    ],
     projectTiles:[
       {
         name:'dedrecon',
@@ -22,11 +170,11 @@ module.exports = {
     menuLinks:[
       {
         name:'PROJECTS',
-        link:'/'
+        link:'projects'
       },
       {
         name:'PEOPLE',
-        link:'/page-2'
+        link:'people'
       },
       {
         name:'NEWS',
