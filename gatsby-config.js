@@ -4,120 +4,149 @@ module.exports = {
     peopleCards:[
       {
         name:'Chandrajit Bajaj',
-        image:'chandrajit.png'
+        image:'chandrajit.png',
+        position: 'Director, Principle Investigator'
       },
       {
         name:'Laura Lansing',
-        image:'laura.png'
+        image:'laura.png',
+        position: 'Administrative Associate'
       },
       {
         name:'Ahmed Abdelkader',
-        image:'ahmed.png'
+        image:'ahmed.png',
+        position: 'Postdoctoral Researcher'
       },
       {
         name:'Yi Wang',
-        image:'yi.png'
+        image:'yi.png',
+        position: 'Graduate Student'
       },
       {
         name:'Ryan Farell',
-        image:'ryan.png'
+        image:'ryan.png',
+        position: 'Graduate Student'
       },
       {
         name:'Yunhao Yang',
-        image:'yunhao.png'
+        image:'yunhao.png',
+        position: 'Graduate Student'
       },
       {
         name:'Chase Tessmer',
-        image:'chase.png'
+        image:'chase.png',
+        position: 'Graduate Student'
       },
       {
         name:'Taemin Heo',
-        image:'taemin.png'
+        image:'taemin.png',
+        position: 'Graduate Student'
       },
 
       {
         name:'Nathan Clement',
-        image:'nathan.png'
+        image:'nathan.png',
+        position: 'Graduate Student'
       },
       {
         name:'Jan-Christopher Cohrs',
-        image:'jan.png'
+        image:'jan.png',
+        position: 'Graduate Student'
       },
       {
         name:'Thomas Ghorbanian',
-        image:'thomas.png'
+        image:'thomas.png',
+        position: 'Graduate Student'
       },
       {
         name:'Minh Nguyen',
-        image:'placeholder.png'
+        image:'placeholder.png',
+        position: 'Graduate Student'
       },
       {
         name:'Sumit Sinha',
-        image:'placeholder.png'
+        image:'placeholder.png',
+        position: 'Graduate Student'
       },
       {
         name:'Suprawit Chockchowwat',
-        image:'placeholder.png'
+        image:'placeholder.png',
+        position: 'Graduate Student'
       },
       {
         name:'Rochan Avlur',
-        image:'rochan.png'
+        image:'rochan.png',
+        position: 'Graduate Student'
       },
       {
         name:'Sean Zanyk McLean',
-        image:'sean.png'
+        image:'sean.png',
+        position: 'Graduate Student'
       },
       {
         name:'Yorick Sanders',
-        image:'yorick.png'
+        image:'yorick.png',
+        position: 'Graduate Student'
       },
       {
         name:'Conrad Li',
-        image:'conrad.png'
+        image:'conrad.png',
+        position: 'Undergraduate Student'
       },
       {
         name:'Benjamin Beal',
-        image:'ben.png'
+        image:'ben.png',
+        position: 'Undergraduate Student'
       },
       {
         name:'Nikhil Ajjarapu',
-        image:'nikhil.png'
+        image:'nikhil.png',
+        position: 'Undergraduate Student'
       },
       {
         name:'Edward Zhou',
-        image:'placeholder.png'
+        image:'placeholder.png',
+        position: 'Undergraduate Student'
       },
       {
         name:'Binglin Zhang',
-        image:'bingling.png'
+        image:'bingling.png',
+        position: 'Undergraduate Student'
       },
       {
         name:'Abrar Anwar',
-        image:'abrar.png'
+        image:'abrar.png',
+        position: 'Undergraduate Student'
       },
       {
         name:'Jeffery Mo',
-        image:'placeholder.png'
+        image:'placeholder.png',
+        position: 'Undergraduate Student'
       },
       {
         name:'Yash Totlani',
-        image:'placeholder.png'
+        image:'placeholder.png',
+        position: 'Undergraduate Student'
       },
       {
         name:'Arman Maesumi',
-        image:'placeholder.png'
+        image:'placeholder.png',
+        position: 'Undergraduate Student'
       },
       {
         name:'Sebastian Rutherford',
-        image:'placeholder.png'
+        image:'placeholder.png',
+        position: 'Undergraduate Student'
       },
       {
         name:'Harrison White',
-        image:'placeholder.png'
+        image:'placeholder.png',
+        position: 'Undergraduate Student'
       },
       {
         name:'Viraj Joshi',
-        image:'placeholder.png'
+        image:'placeholder.png',
+        position: 'Undergraduate Student'
       }
     ],
     projectTiles:[
@@ -141,11 +170,11 @@ module.exports = {
     menuLinks:[
       {
         name:'PROJECTS',
-        link:'/'
+        link:'projects'
       },
       {
         name:'PEOPLE',
-        link:'/page-2'
+        link:'people'
       },
       {
         name:'NEWS',

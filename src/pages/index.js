@@ -17,6 +17,7 @@ const IndexPage = ({ children }) => {
           peopleCards {
             name
             image
+            position
           }     
         }
       }
@@ -25,8 +26,8 @@ const IndexPage = ({ children }) => {
 
   return (
     <Layout>
-      <Tiles projectTiles={data.site.siteMetadata.projectTiles}></Tiles>
-      <Cards peopleCards={data.site.siteMetadata.peopleCards}></Cards>
+      <Tiles id='projects' projectTiles={data.site.siteMetadata.projectTiles}></Tiles>
+      <Cards id='people' peopleCards={data.site.siteMetadata.peopleCards}></Cards>
     </Layout>
   )
 }
