@@ -31,7 +31,7 @@ const Header = ({ siteTitle, siteDescription, menuLinks }) => (
         </Link>
       </h1>
       <h3>
-        <div style={{color: `white`, fontSize: '1.35rem'}}>{siteDescription}</div>
+        <div style={{color: `white`, fontSize: '1.35rem', fontStretch: `2rem`}}>{siteDescription}</div>
       </h3>
     </div>
   </header>

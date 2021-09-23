@@ -3,10 +3,10 @@ import { GridList, GridListTile } from '@material-ui/core';
 import './cards.css'
 
 const Cards = ({ peopleCards }) => (
-  <div id="people" style={{background: '#DBDBDB', display:'flex', alignItems: 'center', justifyContent: 'center', textAlign: `center`}}>
-    <div style={{margin: `0 auto`, maxWidth: 1050, paddingBottom: `1.45rem`}}>
-      <h4 style={{color: `#333f48`, fontSize: `1.65rem`, margin: `auto`, paddingBottom: `1.0rem`,
-        paddingTop: `2.0rem`, fontStyle: `bold`, borderBottom: `.5px solid #333f48`, marginBottom: '2rem'}}>
+  <div className="people-class" id="people" style={{background: '#DBDBDB', display:'flex', alignItems: 'center', justifyContent: 'center', textAlign: `center`}}>
+    <div style={{margin: `0 auto`, maxWidth: 1050, paddingBottom: `1.45rem`, marginLeft: `1.25rem`, marginRight: `1.25rem`, width: `100%`}}>
+      <h4 className="header-subtitle" style={{color: `#333f48`, fontSize: `1.0rem`, fontWeight: `600`, margin: `auto`, paddingBottom: `1.0rem`,
+        paddingTop: `2.0rem`, marginBottom: '2rem'}}>
         People
       </h4>
       <GridList cols={6}>
