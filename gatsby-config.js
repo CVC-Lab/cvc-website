@@ -181,8 +181,8 @@ module.exports = {
         link:'/news'
       },
       {
-        name:'CONTACT',
-        link:'/page-2'
+        name:'ABOUT US',
+        link:'about'
       }
     ],
     description: `a cross-disciplinary effort to develop and improve the technologies for computational modeling, simulation, analysis, and visualization.`,
