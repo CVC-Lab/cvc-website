@@ -6,8 +6,8 @@ import Navigation from "./navigation"
 import { StaticImage } from "gatsby-plugin-image"
 
 const Header = ({ siteTitle, siteDescription, menuLinks }) => (
-  <header style={{marginBottom: `1.45rem`, paddingLeft: `1.25rem`, paddingRight: `1.25rem`}}>
-    <div style={{margin: `0 auto`, maxWidth: 1050, paddingBottom: `1.45rem`}}>
+  <header style={{paddingLeft: `1.25rem`, paddingRight: `1.25rem`, background: `#f8971f`}}>
+    <div style={{margin: `0 auto`, maxWidth: 1050, paddingBottom: `1.45rem`, background: `#f8971f`}}>
         <Grid>
           <Grid container direction="row" justify="space-between" alignItems="center">
             <Grid>
@@ -31,7 +31,7 @@ const Header = ({ siteTitle, siteDescription, menuLinks }) => (
         </Link>
       </h1>
       <h3>
-        <div style={{color: `white`, fontSize: '1.35rem'}}>{siteDescription}</div>
+        <div style={{color: `white`, fontSize: '1.35rem', fontStretch: `2rem`}}>{siteDescription}</div>
       </h3>
     </div>
   </header>

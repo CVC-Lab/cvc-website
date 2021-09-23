@@ -7,10 +7,12 @@ import { StaticImage } from "gatsby-plugin-image"
 import { GridList, GridListTile } from '@material-ui/core';
 
 const Tiles = ({ projectTiles }) => (
-  <div>
-    <h1 style={{color: `#333f48`, fontSize: `1.65rem`, margin: `0 auto`, display: "block", paddingBottom: `1.0rem`, fontStyle: `bold`}}>
-      Projects
-    </h1>
+  <div className="tiles-class" id="projects" style={{background: 'white', display:'flex', alignItems: 'center', justifyContent: 'center', textAlign: `center`}}>
+    <div style={{margin: `0 auto`, maxWidth: 1050, paddingBottom: `1.45rem`, marginLeft: `1.25rem`, marginRight: `1.25rem`, width: `100%`}}>
+      <h4 className="header-subtitle" style={{color: `#333f48`, fontSize: `1.0rem`, fontWeight: `600`, margin: `auto`, paddingBottom: `1.0rem`,
+        paddingTop: `2.0rem`, marginBottom: '2rem'}}>
+        Projects
+      </h4>
     <GridList cellHeight={275} cols={3}>
       {projectTiles.map(tile => (
         <GridListTile key={tile.name} cols={tile.cols || 1}>
@@ -27,6 +29,7 @@ const Tiles = ({ projectTiles }) => (
         </GridListTile>
       ))}
     </GridList>
+    </div>
   </div>
 )
 

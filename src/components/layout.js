@@ -24,10 +24,10 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title} siteDescription={data.site.siteMetadata.description} />
-      <div style={{margin: `0 auto`, maxWidth: 1050, paddingBottom: `1.45rem`}}>
+      <div>
         <main>{children}
         </main>
-        <footer style={{marginTop: `2rem`}}>
+        <footer>
         </footer>
       </div>
     </>
