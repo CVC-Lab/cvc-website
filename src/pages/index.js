@@ -4,6 +4,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import Layout from "../components/layout"
 import Tiles from "../components/tiles"
 import Cards from "../components/cards"
+import About from "../components/about"
 
 const IndexPage = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -28,6 +29,7 @@ const IndexPage = ({ children }) => {
     <Layout>
       <Tiles id='projects' projectTiles={data.site.siteMetadata.projectTiles}></Tiles>
       <Cards id='people' peopleCards={data.site.siteMetadata.peopleCards}></Cards>
+      <About id='about'></About>
     </Layout>
   )
 }
