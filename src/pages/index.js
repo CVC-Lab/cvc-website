@@ -13,6 +13,7 @@ const IndexPage = ({ children }) => {
         siteMetadata {
           projectTiles {
             name
+            img_name
             link
           }
           peopleCards {

@@ -151,19 +151,23 @@ module.exports = {
     ],
     projectTiles:[
       {
-        name:'dedrecon',
+        name:'DEDRECON',
+        img_name:'dedrecon',
         link:'/projects/dedrecon'
       },
       {
-        name:'camera_isp',
+        name:'Camera ISP',
+        img_name:'camera_isp',
         link:'/projects/dedrecon'
       },
       {
-        name:'angstrom',
+        name:'Angstrom',
+        img_name:'angstrom',
         link:'/projects/dedrecon'
       },
       {
-        name:'spectre',
+        name:'Spectre',
+        img_name:'spectre',
         link:'/projects/dedrecon'
       }
     ],
