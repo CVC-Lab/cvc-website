@@ -8,7 +8,7 @@ import { StaticImage } from "gatsby-plugin-image"
 const About = () => (
   <div className="about-class" id="about" style={{background: 'white', display:'flex', alignItems: 'center', justifyContent: 'center', textAlign: `left`}}>
     <div style={{margin: `0 auto`, maxWidth: 1050, paddingBottom: `1.45rem`, marginLeft: `1.25rem`, marginRight: `1.25rem`, width: `100%`}}>
-      <h4 className="header-subtitle" style={{color: `#333f48`, fontSize: `1.0rem`, fontWeight: `600`, margin: `auto`, paddingBottom: `1.0rem`,
+      <h4 className="header-subtitle" style={{color: `#787575`, fontSize: `1.0rem`, fontWeight: `600`, margin: `auto`, paddingBottom: `1.0rem`,
         paddingTop: `2.0rem`, marginBottom: '1rem'}}>
         About Us
       </h4>
@@ -16,22 +16,30 @@ const About = () => (
         the core technologies for comprehensive computational modeling, simulation, analysis, and visualization of
         natural and synthetic phenomena, and then utilize them as an integrated tool for rapid discovery.</p>
       <br></br>
-      <p>The Center is under the joint auspices of the Institute for Computational Engineering and Sciences and the Department of Computer Sciences at the University of Texas at Austin.</p>
+      <p>The Center is under the joint auspices of the Oden Institute for Computational Engineering and Sciences and the Department of Computer Science at the University of Texas at Austin.</p>
       <br></br>
       <div>
-        <img
-          src={require(`../images/oden.png`).default}
-          alt="oden institute"
-          width="45%"
-        />
-      </div>
-      <div>
-        <img
-          src={require(`../images/cs.png`).default}
-          alt="cs"
-          width="45%"
-        />
-      </div>
+        <GridList cols={6} style={{width: `100%`}} cellHeight={'250px'}>
+            <GridListTile style={{width: `40%`}}>
+              <Link style={{color: `#333f48`, textDecoration: `none`, fontSize: `.73rem`}}>
+                <img
+                  src={require(`../images/oden.png`).default}
+                  alt="oden institute"
+                  width={400}
+                />
+              </Link>
+            </GridListTile>
+            <GridListTile style={{width: `40%`}}>
+              <Link style={{color: `#333f48`, textDecoration: `none`, fontSize: `.73rem`}}>
+                <img
+                  src={require(`../images/cs.png`).default}
+                  alt="cs"
+                  width={400}
+                />
+              </Link>
+            </GridListTile>
+        </GridList></div>
+      <br></br>
       <p>The Center’s current research and education areas of interest span Image Processing, Computational Geometry,
         Geometric Modeling, Computer Graphics Animation, Data Analysis, Visualization, and Computational Mathematics.
         Recent research and software development topics include the design and development of efficient and robust

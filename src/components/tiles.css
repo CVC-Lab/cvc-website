@@ -1,0 +1,58 @@
+.Tile .MuiGridList-root{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Tile  .MuiGridListTile-root{
+    border-radius: 5px;
+    box-shadow: 0px 1px 2px 1px transparent;
+    margin: .25rem;
+    background: transparent;
+}
+
+.Tile .image-container img{
+    background: white;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    padding: 5px;
+    border: 2px solid #f8971f;
+    display:block;
+    margin:auto;
+    transform: translate(0, 10px);
+}
+
+.Tile .lower-container{
+    margin-top: 15px;
+    background: transparent;
+    text-align: center;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.Tile .lower-container h3, h4, p{
+    margin: 0;
+    padding: 0;
+}
+
+.Tile .lower-container h3{
+    color: #333f48;
+    font-weight: 600;
+    font-size: 1.0rem;
+}
+
+.Tile .lower-container h4{
+    color: #333f48;
+    font-weight: 700;
+    font-size: .62rem;
+}
+
+.Tile .lower-container p{
+    margin: 1rem;
+    color: #333f48;
+    font-weight: 300;
+    font-size: 0.9rem;
+    text-align: justify;
+}
+
+

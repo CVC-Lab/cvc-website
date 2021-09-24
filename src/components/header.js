@@ -4,10 +4,12 @@ import { Link } from "gatsby"
 import { Grid } from '@material-ui/core';
 import Navigation from "./navigation"
 import { StaticImage } from "gatsby-plugin-image"
+import Background from '../images/background_crop.png';
+
 
 const Header = ({ siteTitle, siteDescription, menuLinks }) => (
-  <header style={{paddingLeft: `1.25rem`, paddingRight: `1.25rem`, background: `#f8971f`}}>
-    <div style={{margin: `0 auto`, maxWidth: 1050, paddingBottom: `1.45rem`, background: `#f8971f`}}>
+  <header style={{paddingLeft: `1.25rem`, paddingRight: `1.25rem`, backgroundImage: `url(${Background})`}}>
+    <div style={{margin: `0 auto`, maxWidth: 1050, paddingBottom: `1.45rem`}}>
         <Grid>
           <Grid container direction="row" justify="space-between" alignItems="center">
             <Grid>
