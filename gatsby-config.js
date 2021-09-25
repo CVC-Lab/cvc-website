@@ -174,19 +174,28 @@ module.exports = {
     menuLinks:[
       {
         name:'PROJECTS',
-        link:'projects'
+        link:'projects',
+        scroll_link: true
       },
       {
         name:'PEOPLE',
-        link:'people'
+        link:'people',
+        scroll_link: true
+      },
+      {
+        name:'PUBLICATIONS',
+        link:'/publications',
+        scroll_link: false
       },
       {
         name:'NEWS',
-        link:'/news'
+        link:'/news',
+        scroll_link: false
       },
       {
         name:'ABOUT US',
-        link:'about'
+        link:'about',
+        scroll_link: true
       }
     ],
     description: `a cross-disciplinary effort to develop and improve the technologies for computational modeling, simulation, analysis, and visualization.`,

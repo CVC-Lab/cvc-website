@@ -15,6 +15,7 @@ const Layout = ({ children }) => {
           menuLinks {
             name
             link
+            scroll_link
           }
         }
       }
