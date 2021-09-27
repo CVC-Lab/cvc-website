@@ -199,6 +199,12 @@ module.exports = {
         description: 'Inverse Generative Modeling for Stealth and Cloaking Devices using Meta-materials',
         img_name:'spectre',
         link:'/projects/shape-optimization'
+      },
+      {
+        name: 'Adversarial Cloaking',
+        description: 'Developed a novel patch-based adversarial attack pipeline that trains adversarial patches on 3D human meshes',
+        img_name:'spectre',
+        link:'/projects/adversarial-cloacking'
       }
     ],
     menuLinks:[
