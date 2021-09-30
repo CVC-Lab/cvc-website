@@ -1,18 +1,37 @@
 import * as React from "react"
-import { Link } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
-import Seo from "../components/seo"
+import PublicationTable from "../components/publication_table"
 
+const PublicationsPage = ({ children }) => {
+  const data = useStaticQuery(graphql`
+    query CsvQuery {
+      allPapersCsv {
+        nodes{
+          Title
+          Location
+          PublicationType
+          PublishedDateMonth
+          PublishedDateYear
+          PDFLink
+          LocalPDFLink
+          Abstract
+          RegisterDate
+          Authors
+          sortOrder
+          ProjectLink
+          OtherAuthors
+        }
+      }
+    }
+  `)
 
-
-const PublicationsPage = () => (
-  <Layout>
-    <Seo title="Page two" />
-    <h1>Hi from the publications page</h1>
-    <p></p>
-    <Link to="/">Go back to the homepage</Link>
-  </Layout>
-)
+  return (
+    <Layout>
+      <PublicationTable id='publications' publicationData={data.allPapersCsv.nodes}></PublicationTable>
+    </Layout>
+  )
+}
 
 export default PublicationsPage

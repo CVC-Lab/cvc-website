@@ -29,7 +29,7 @@ const Header = ({ siteTitle, siteDescription, menuLinks }) => (
         </Grid>
       <h1 style={{margin: 0}}>
         <Link to="/" style={{color: `white`, textDecoration: `none`, padding: `0rem`, margin: `0rem`}}>
-          <div style={{paddingBottom: '1.25rem', fontSize: '2.5rem', margin: `0rem`}}>{siteTitle}</div>
+          <div style={{paddingBottom: '1.25rem', fontSize: '2.5rem', margin: `0rem`, transform: `translate(-2px, 0)` }}>{siteTitle}</div>
         </Link>
       </h1>
       <h3>
