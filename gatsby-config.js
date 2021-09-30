@@ -233,6 +233,14 @@ module.exports = {
         path: `${__dirname}/src/markdown`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/data/`,
+      },
+    },
+    `gatsby-transformer-csv`,
     `gatsby-transformer-remark`,
     {
       resolve: `gatsby-transformer-remark`,
