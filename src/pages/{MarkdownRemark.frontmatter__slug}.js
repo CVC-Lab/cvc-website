@@ -7,10 +7,12 @@ export default function ProjectTemplate({ data: { markdownRemark } }) {
   const { frontmatter, html } = markdownRemark;
   return (
     <Layout>
-      <Seo title={frontmatter.title} />
-      <h1>{frontmatter.title}</h1>
-      {/* <h2>{frontmatter.date}</h2> */}
-      <div className="post-body" dangerouslySetInnerHTML={{ __html: html }} />
+      <div style={{background: 'white', display:'flex', alignItems: 'center', justifyContent: 'center', textAlign: `left`, margin: `0 auto`, maxWidth: 1050, paddingBottom: `1.45rem`, marginLeft: `1.25rem`, marginRight: `1.25rem`, width: `100%`}}>
+        <Seo title={frontmatter.title} />
+        {/* <h1>{frontmatter.title}</h1> */}
+        {/* <h2>{frontmatter.date}</h2> */}
+        <div className="post-body" dangerouslySetInnerHTML={{ __html: html }} />
+      </div>
     </Layout>
   );
 }
