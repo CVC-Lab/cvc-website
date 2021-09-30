@@ -15,6 +15,7 @@ const IndexPage = ({ children }) => {
         siteMetadata {
           projectTiles {
             name
+            description
             img_name
             link
           }
