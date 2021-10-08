@@ -5,9 +5,10 @@
 }
 
 .Tile .MuiGridListTile-root {
+  height: 300px;
+  minHeight: '100vh';
   border-radius: 5px;
   box-shadow: 0px 1px 2px 1px transparent;
-  margin: 0.25rem;
   background: transparent;
 }
 
@@ -15,8 +16,8 @@
   background: white;
   width: 100px;
   height: 100px;
-  border-radius: 50%;
-  padding: 5px;
+  border-radius: 15%;
+  padding: 0px;
   border: 2px solid #f8971f;
   display: block;
   margin: auto;
@@ -24,7 +25,7 @@
 }
 
 .Tile .lower-container {
-  margin-top: 25px;
+  margin-top: 0px;
   background: transparent;
   text-align: center;
   font-family: "Libre Franklin", sans-serif;
@@ -38,9 +39,11 @@ p {
 }
 
 .Tile .lower-container h3 {
+  margin-top: 2rem;
   color: #333f48;
   font-weight: 600;
   font-size: 1rem;
+  text-align: center;
 }
 
 .Tile .lower-container h4 {
@@ -57,3 +60,4 @@ p {
   font-size: 0.9rem;
   text-align: justify;
 }
+
