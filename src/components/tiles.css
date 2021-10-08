@@ -10,15 +10,16 @@
   border-radius: 5px;
   box-shadow: 0px 1px 2px 1px transparent;
   background: transparent;
+
 }
 
 .Tile .image-container img {
   background: white;
   width: 100px;
   height: 100px;
-  border-radius: 15%;
+  border-radius: 10%;
   padding: 0px;
-  border: 2px solid #f8971f;
+  border: 2px solid #333f48;
   display: block;
   margin: auto;
   transform: translate(0, 10px);
@@ -49,6 +50,8 @@ p {
 .Tile .lower-container h4 {
   color: #333f48;
   margin-top: 10px;
+  padding: 1.25rem;
+  padding-top: 0rem;
   font-weight: 700;
   font-size: 0.62rem;
 }
