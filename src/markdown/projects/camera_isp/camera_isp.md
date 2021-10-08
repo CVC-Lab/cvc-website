@@ -27,16 +27,13 @@ The overall pipeline of our RSE-RL: For each given observed image, we split the 
 ### PS-VAE
 
 ![Results](./image2.png)
-![Results(RSE-RL)](./image_result_rse_rl.png)
 
 ### RSE-RL
 
-## Project Members
+![RSE](./image_result_rse_rl.png)
 
-- Yunhao Yang
-- Yuhan Zheng
-- Yi Wang
-- Dr. Chandrajit Bajaj
+## Project Members
+Yunhao Yang, Yuhan Zheng, Yi Wang, Dr. Chandrajit Bajaj
 
 ## Code Repo
 

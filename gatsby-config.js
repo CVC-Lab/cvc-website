@@ -166,44 +166,44 @@ module.exports = {
     projectTiles:[
       {
         name:'DEDRECON',
-        description: 'DEDRECON is an army project which develops advanced machine learning to real-life image visual perception under multi-modality fusion techniques',
-        img_name:'dedrecon',
+        description: 'Advanced machine learning applied to real-life image visual perception under multi-modality fusion techniques',
+        img_name:'project_tiles/afc_logo',
         link:'/projects/dedrecon'
       },
       {
         name: 'Camera ISP',
-        description: "We're improving image signal processing",
-        img_name:'camera_isp',
+        description: "Structured deep learning models that solves the heterogeneous image artifact filtering problem",
+        img_name:'project_tiles/isp_crop',
         link:'/projects/camera-isp'
       },
       {
         name: 'Angstrom',
-        description: 'Angstrom studies multiresolution geometric data structures and computational mathematics algorithms that are essential for a wide range of molecular structure determination, energetics, interactions, and simulations.',
-        img_name:'angstrom',
+        description: 'Multi-resolution geometric data structures and computational mathematics algorithms that are essential for a wide range of molecular structure determination, energetics, interactions, and simulations',
+        img_name:'project_tiles/angstrom',
         link:'/projects/angstrom'
       },
       {
         name: 'Spectre',
-        description: 'Spectre studies smart data structures and prediction optimization with provable guarantees for spectral and geometric processing',
-        img_name:'spectre',
+        description: 'Smart data structures and prediction optimization with provable guarantees for spectral and geometric processing',
+        img_name:'project_tiles/spectre_logo',
         link:'/projects/spectre'
       },
       {
         name:'Generative Material Design',
-        description: 'Semi-Supervised Variational Inference for Generative Materials Design',
-        img_name:'spectre',
+        description: 'Semi-supervised variational inference for generative materials design',
+        img_name:'project_tiles/generative_material_logo',
         link:'/projects/generative-material-design'
       },
       {
         name: 'Shape Optimization',
-        description: 'Inverse Generative Modeling for Stealth and Cloaking Devices using Meta-materials',
-        img_name:'spectre',
+        description: 'Inverse generative modeling for stealth and cloaking devices using meta-materials',
+        img_name:'project_tiles/shape_logo',
         link:'/projects/shape-optimization'
       },
       {
         name: 'Adversarial Cloaking',
-        description: 'Developed a novel patch-based adversarial attack pipeline that trains adversarial patches on 3D human meshes',
-        img_name:'spectre',
+        description: 'Patch-based adversarial attack pipeline for training adversarial patches on 3D human meshes',
+        img_name:'project_tiles/adversarial_cloaking_crop',
         link:'/projects/adversarial-cloacking'
       }
     ],
