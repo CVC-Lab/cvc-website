@@ -26,10 +26,10 @@ p {
   font-size: 1.25rem;
 }
 
-.project-page-class p {
+.project-page-class p, ol, li {
   color: #333f48;
   margin-top: 10px;
-  font-weight: 700;
-  font-size: 0.62rem;
+  font-weight: 300;
+  font-size: 0.8rem;
 }
 
