@@ -24,7 +24,7 @@ const NewsPage = ({ children }) => {
 
   return (
     <Layout>
-      <NewsTiles id='projects' projectTiles={data.site.siteMetadata.newsTiles}></NewsTiles>
+      <NewsTiles id='news' newsTiles={data.site.siteMetadata.newsTiles}></NewsTiles>
     </Layout>
   )
 }

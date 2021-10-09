@@ -7,7 +7,7 @@ export default function ProjectTemplate({ data: { markdownRemark } }) {
   const { frontmatter, html } = markdownRemark;
   return (
     <Layout>
-      <div className="project-page-class" id="project-page" style={{background: '#F0F3F4', display:'flex', alignItems: 'center', justifyContent: 'center', textAlign: `left`}}>
+      <div className="project-page-class" id="project-page" style={{background: 'white', display:'flex', alignItems: 'center', justifyContent: 'center', textAlign: `left`}}>
         <div style={{margin: `0 auto`, maxWidth: 1050, paddingBottom: `5.45rem`, marginLeft: `1.25rem`, marginRight: `1.25rem`, width: `100%`}}>
           <h4 className="header-subtitle" style={{color: `#333f48`, fontSize: `1.5rem`, fontWeight: `600`, margin: `auto`, paddingBottom: `1.0rem`,
             paddingTop: `2.0rem`, marginBottom: '1rem'}}>

@@ -178,7 +178,7 @@ module.exports = {
       },
       {
         name: 'Angstrom',
-        description: 'Multi-resolution geometric data structures and computational mathematics algorithms that are essential for a wide range of molecular structure determination, energetics, interactions, and simulations',
+        description: 'Multi-resolution geometric data structures and computational mathematics algorithms',
         img_name:'project_tiles/angstrom',
         link:'/projects/angstrom'
       },
