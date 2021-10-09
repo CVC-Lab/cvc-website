@@ -6,7 +6,7 @@ import Tiles from "../components/tiles"
 import Cards from "../components/cards"
 import About from "../components/about"
 import { Helmet } from "react-helmet"
-import favicon from '../favicon/favicon.ico'
+import favicon from '../favicons/favicon.png'
 
 const IndexPage = ({ children }) => {
   const data = useStaticQuery(graphql`

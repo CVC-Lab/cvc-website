@@ -9,25 +9,37 @@
   minHeight: '100vh';
   border-radius: 5px;
   box-shadow: 0px 1px 2px 1px transparent;
-  background: transparent;
 
 }
 
+.tiles-class{
+  margin-bottom: 5.45rem;
+}
+
 .Tile .image-container img {
-  background: white;
-  width: 100px;
-  height: 100px;
+  width: 125px;
+  height: 125px;
   border-radius: 10%;
-  padding: 0px;
+  padding: 5px;
+  /*filter: grayscale(100%);*/
   border: 2px solid #333f48;
   display: block;
   margin: auto;
-  transform: translate(0, 10px);
+  transform: translate(0, 18px);
+}
+
+.Tile .upper-container{
+  border-radius: 5%;
+  background: #FDB44E;
+}
+
+.tiles-class li.MuiGridListTile-root{
+  background: #F0F3F4;
+  border-radius: 5%;
 }
 
 .Tile .lower-container {
   margin-top: 0px;
-  background: transparent;
   text-align: center;
   font-family: "Libre Franklin", sans-serif;
 }
@@ -39,21 +51,24 @@ p {
   padding: 0;
 }
 
-.Tile .lower-container h3 {
-  margin-top: 2rem;
+.Tile .upper-container h3 {
+  padding-top: 30px;
   color: #333f48;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: .90rem;
   text-align: center;
 }
 
 .Tile .lower-container h4 {
   color: #333f48;
-  margin-top: 10px;
-  padding: 1.25rem;
-  padding-top: 0rem;
-  font-weight: 700;
-  font-size: 0.62rem;
+  font-weight: 400;
+  padding-left: .2rem;
+  padding-right: .2rem;
+  padding-top: 1.6rem;
+  font-size: 0.75rem;
+  position: relative;
+  bottom: 0;
+  left: 0;
 }
 
 .Tile .lower-container p {

@@ -10,18 +10,19 @@ const Tiles = ({ projectTiles }) => (
         paddingTop: `2.0rem`, marginBottom: '1rem'}}>
         Projects
       </h4>
-      <GridList cols={3}>
+      <GridList cols={2}>
         {projectTiles.map(tile => (
           <GridListTile key={tile.name} style={{
             position: 'relative',
             float: 'left',
-            minHeight: '300px',
-            width: '300px',
+            minHeight: '270px',
+            width: '275px',
             overflow: 'hidden',
             height: '100% !important'
           }}>
             <div className='Tile'>
               <div className='upper-container'>
+                <h3> {tile.name} </h3>
                 <div className='image-container'>
                   <Link style={{color: `#333f48`, textDecoration: `none`, fontSize: `.73rem`}} to={tile.link}>
                     <img
@@ -32,7 +33,6 @@ const Tiles = ({ projectTiles }) => (
                 </div>
               </div>
               <div className='lower-container'>
-                <h3> {tile.name} </h3>
                 <h4> {tile.description}  </h4>
               </div>
             </div>

@@ -178,7 +178,7 @@ module.exports = {
       },
       {
         name: 'Angstrom',
-        description: 'Multi-resolution geometric data structures and computational mathematics algorithms that are essential for a wide range of molecular structure determination, energetics, interactions, and simulations',
+        description: 'Multi-resolution geometric data structures and computational mathematics algorithms',
         img_name:'project_tiles/angstrom',
         link:'/projects/angstrom'
       },
@@ -253,13 +253,30 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Computational Visualization Center at the University of Texas at Austin`,
+        short_name: `CVC`,
         start_url: `/`,
         background_color: `#f8971f`,
         theme_color: `#f8971f`,
         display: `minimal-ui`,
-        icon: `src/favicon/favicon-32x32.png`, // This path is relative to the root of the site.
+        icon: `src/favicons/favicon.png`,
+        icons: [
+          {
+            src: `/favicons/favicon-16x16.png`,
+            sizes: `16x16`,
+            type: `image/png`,
+          },
+          {
+            src: `/favicons/android-chrome-192x192.png`,
+            sizes: `192x192`,
+            type: `image/png`,
+          },
+          {
+            src: `/favicons/android-chrome-512x512.png`,
+            sizes: `512x512`,
+            type: `image/png`,
+          },
+        ]
       },
     },
     {

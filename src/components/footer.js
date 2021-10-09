@@ -14,7 +14,7 @@ const Footer = ({ siteTitle, siteDescription, menuLinks }) => (
         <div style={{color: `#FFFFFF`, paddingBottom: '1.25rem', paddingTop: `1.25rem`, fontSize: '2.5rem', margin: `0rem`}}>Contact Us</div>
       </h1>
       <h3>
-        <div style={{color: `#FFFFFF`, fontSize: '1.35rem', fontStretch: `2rem`}}>
+        <div style={{color: `#FFFFFF`, fontSize: '1.35rem', fontStretch: `2rem`, paddingBottom: '2.25rem'}}>
           If you're interested in our work and want to learn more, please email us at
           cvc-lab@utexas.edu</div>
       </h3>
