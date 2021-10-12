@@ -2,9 +2,7 @@ import * as React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
-import NewsTiles from "../components/newsTiles"
-import Cards from "../components/cards"
-import About from "../components/about"
+import NewsTiles from "../components/news_tiles"
 
 const NewsPage = ({ children }) => {
   const data = useStaticQuery(graphql`
