@@ -1,9 +1,4 @@
 import * as React from "react"
-import PropTypes from "prop-types"
-import { Link } from "gatsby"
-import { Grid } from '@material-ui/core';
-import Navigation from "./navigation"
-import { StaticImage } from "gatsby-plugin-image"
 import Background from '../images/background_crop.png';
 
 
@@ -15,8 +10,7 @@ const Footer = ({ siteTitle, siteDescription, menuLinks }) => (
       </h1>
       <h3>
         <div style={{color: `#FFFFFF`, fontSize: '1.35rem', fontStretch: `2rem`, paddingBottom: '2.25rem'}}>
-          If you're interested in our work and want to learn more, please email us at
-          cvc-lab@utexas.edu</div>
+          If you're interested in our work and want to learn more, please contact us.</div>
       </h3>
     </div>
   </footer>

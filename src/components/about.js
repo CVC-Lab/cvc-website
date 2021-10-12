@@ -1,9 +1,6 @@
 import * as React from "react"
-import PropTypes from "prop-types"
 import { Link } from "gatsby"
-import { Grid, GridList, GridListTile } from "@material-ui/core"
-import Navigation from "./navigation"
-import { StaticImage } from "gatsby-plugin-image"
+import { GridList, GridListTile } from "@material-ui/core"
 
 const About = () => (
   <div className="about-class" id="about" style={{background: 'white', display:'flex', alignItems: 'center', justifyContent: 'center', textAlign: `left`}}>

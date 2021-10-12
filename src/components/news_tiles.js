@@ -1,9 +1,5 @@
 import * as React from "react"
-import PropTypes from "prop-types"
 import { Link } from "gatsby"
-import { Grid } from '@material-ui/core';
-import Navigation from "./navigation"
-import { StaticImage } from "gatsby-plugin-image"
 import { GridList, GridListTile } from '@material-ui/core';
 import './tiles.css'
 
