@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: '/cvc-website',
   siteMetadata: {
     title: `Computational Visualization Center`,
     peopleCards:[
