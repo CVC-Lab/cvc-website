@@ -304,6 +304,7 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 800,
+              path: `${__dirname}/src/markdown/`,
             },
           },
         ],
