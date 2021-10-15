@@ -203,7 +203,7 @@ module.exports = {
       },
       {
         name: 'Rank-ordered Search-and-Score',
-        description: 'Multi-Agent Reinforcment Learning for sample efficient Rank-ordered Search-and-Score of giga-pixel images',
+        description: 'Multi-Agent Reinforcement Learning for sample efficient Rank-ordered Search-and-Score of giga-pixel images',
         img_name:'project_tiles/search_n_score',
         link:'/projects/search-n-score'
       },
