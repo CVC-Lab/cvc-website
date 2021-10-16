@@ -202,6 +202,12 @@ module.exports = {
         link:'/projects/shape-optimization'
       },
       {
+        name: 'Rank-ordered Search-and-Score',
+        description: 'Multi-Agent Reinforcement Learning for sample efficient Rank-ordered Search-and-Score of giga-pixel images',
+        img_name:'project_tiles/search_n_score',
+        link:'/projects/search-n-score'
+      },
+      {
         name: 'Adversarial Cloaking',
         description: 'Patch-based adversarial attack pipeline for training adversarial patches on 3D human meshes',
         img_name:'project_tiles/adversarial_cloaking_crop',
