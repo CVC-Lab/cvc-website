@@ -10,11 +10,11 @@ Physics-informed Neural Networks (PINNs) have been shown to be effective in solv
 
 ## Schrodinger Equation Experiments
 
-### Standard PINN with uncorrupted initial data, based on [2]
+### Standard PINN with uncorrupted initial data
 ![sPINN Initial](../../../images/projects/robust_pinns/NLS_h_no_error.png)
 ### Standard PINN with corrupted initial data
 ![sPINN](../../../images/projects/robust_pinns/NLS_h_no_smoothing.png)
-### 2-domain cPINN based on [3]
+### 2-domain Conservative PINN
 ![cPINN](../../../images/projects/robust_pinns/cPINN_NLS_h.png)
 ### PINN with conservation law
 ![PINN NLS](../../../images/projects/robust_pinns/PINN_with_Conservation_NLS_h.png)
