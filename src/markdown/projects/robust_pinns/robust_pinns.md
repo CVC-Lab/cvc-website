@@ -1,8 +1,8 @@
-'''
+---
 title: "Robust PINNs"
 slug: "/projects/robust-pinns"
 date: "2021-10-26"
-'''
+---
 
 # Project Introduction
 
