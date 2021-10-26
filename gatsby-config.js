@@ -212,6 +212,12 @@ module.exports = {
         description: 'Patch-based adversarial attack pipeline for training adversarial patches on 3D human meshes',
         img_name:'project_tiles/adversarial_cloaking_crop',
         link:'/projects/adversarial-cloacking'
+      },
+      {
+        name: 'Robust Physics-informed Neural Networks',
+        description: 'Physics-informed neural networks for solving partial differential equations by capturing the physics induced constraints',
+        img_name:'project_tiles/robust_pinns',
+        link:'/projects/robust-pinns'
       }
     ],
     menuLinks:[
@@ -246,6 +252,12 @@ module.exports = {
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [`gatsby-remark-copy-linked-files`],
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {

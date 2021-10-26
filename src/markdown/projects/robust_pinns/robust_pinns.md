@@ -1,5 +1,5 @@
 ---
-title: "Robust PINNs"
+title: "Robust Physics-informed Neural Networks (PINNs)"
 slug: "/projects/robust-pinns"
 date: "2021-10-26"
 ---
@@ -11,25 +11,25 @@ Physics-informed Neural Networks (PINNs) have been shown to be effective in solv
 ## Schrodinger Equation Experiments
 
 ### Standard PINN with uncorrupted initial data, based on [2]
-<img src = "../../../images/projects/robust_pinns/NLS_h_no_error.gif" width = 200></img>
+![sPINN Initial](../../../images/projects/robust_pinns/NLS_h_no_error.png)
 ### Standard PINN with corrupted initial data
-<img src = "../../../images/projects/robust_pinns/NLS_h_no_smoothing.gif" width = 200></img>
+![sPINN](../../../images/projects/robust_pinns/NLS_h_no_smoothing.png)
 ### 2-domain cPINN based on [3]
-<img src = "../../../images/projects/robust_pinns/cPINN_NLS_h.gif" width = 200></img>
+![cPINN](../../../images/projects/robust_pinns/cPINN_NLS_h.png)
 ### PINN with conservation law
-<img src = "../../../images/projects/robust_pinns/PINN_with_Conservation_NLS_h.gif" width = 200></img>
+![PINN NLS](../../../images/projects/robust_pinns/PINN_with_Conservation_NLS_h.png)
 ### PINN with Gaussian Process smoothing
-<img src = "../../../images/projects/robust_pinns/NLS_h_GP_with_bounds.gif" width = 200></img>
+![NLS GP](../../../images/projects/robust_pinns/NLS_h_GP_with_bounds.png)
 ### PINN with sparse Gaussian Process smoothing
-<img src = "../../../images/projects/robust_pinns/NLS_h_SGP30_with_bounds.gif" width = 200></img>
+![NLS SGP](../../../images/projects/robust_pinns/NLS_h_SGP30_with_bounds.png)
 
 
 ## Burgers Equation Experiments
 
 ### Standard PINN with corrupted initial data
-<img src = "../../../images/projects/robust_pinns/Burgers_Standard_PINN_Burgers.gif" width = 200></img>
+![Standard PINN](../../../images/projects/robust_pinns/Standard_PINN_Burgers.png)
 ### PINN with sparse Gaussian Process smoothing
-<img src = "../../../images/projects/robust_pinns/SGP_PINN_Burgers.gif" width = 200></img>
+![SGP](../../../images/projects/robust_pinns/SGP_PINN_Burgers.png)
 
 ## Code Repo
 [GitHub Link](https://github.com/CVC-Lab/RobustPINNs)
