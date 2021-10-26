@@ -214,8 +214,8 @@ module.exports = {
         link:'/projects/adversarial-cloacking'
       },
       {
-        name: 'Robust Physics-informed Neural Networks',
-        description: 'Physics-informed neural networks for solving partial differential equations by capturing the physics induced constraints',
+        name: 'Physics-informed Neural Networks',
+        description: 'Robust physics-informed neural networks for solving partial differential equations by capturing the physics induced constraints',
         img_name:'project_tiles/robust_pinns',
         link:'/projects/robust-pinns'
       }
@@ -252,12 +252,6 @@ module.exports = {
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [`gatsby-remark-copy-linked-files`],
-      },
-    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
