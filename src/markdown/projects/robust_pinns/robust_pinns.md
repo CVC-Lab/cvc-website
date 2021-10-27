@@ -1,5 +1,5 @@
 ---
-title: "Robust Physics-informed Neural Networks (PINNs)"
+title: "Robust Learning of Physics-informed Neural Networks (PINNs)"
 slug: "/projects/robust-pinns"
 date: "2021-10-26"
 ---
@@ -33,6 +33,9 @@ Physics-informed Neural Networks (PINNs) have been shown to be effective in solv
 
 ## Code Repo
 [GitHub Link](https://github.com/CVC-Lab/RobustPINNs)
+
+## Paper
+[arXiv Preprint](https://arxiv.org/abs/2110.13330)
 
 ## People
 Chandrajit Bajaj, Luke McLennan, Timothy Andeen, Avik Roy.
