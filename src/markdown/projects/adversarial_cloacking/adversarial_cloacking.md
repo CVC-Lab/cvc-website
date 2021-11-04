@@ -27,7 +27,7 @@ We have different scaling of attack.
 
 
 The TV regularization over meshes has great effect on attacking success rate in our problem.
-![pipeline](../../../images/projects/adversarial_cloacking/TV_loss.png)
+![pipeline](../../../images/projects/adversarial_cloacking/TV_loss.PNG)
 
 
 ## People
