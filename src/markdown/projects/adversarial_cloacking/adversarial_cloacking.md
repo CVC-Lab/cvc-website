@@ -32,7 +32,7 @@ The TV regularization over meshes has great effect on attacking success rate in 
 
 ## People
 
-*   [Arman Maesumi](https://github.com/CVC-Lab/cvc-website.git)
+*   [Arman Maesumi](https://armanmaesumi.github.io/)
 *   Mingkang Zhu
 *   Tianlong Chen
 *   Yi Wang
