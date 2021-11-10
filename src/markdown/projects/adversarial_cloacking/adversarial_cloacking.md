@@ -20,14 +20,18 @@ The 3D adversarial logo pipeline. We start with the reference SMPL  model, and s
 ## Visualization Results
 
 The example of adversairal attack.
-![pipeline](../../../images/projects/adversarial_cloacking/extra_logo.png)
+![logo](../../../images/projects/adversarial_cloacking/extra_logo.png)
 
 We have different scaling of attack.
-![pipeline](../../../images/projects/adversarial_cloacking/logo_size.png)
+![size](../../../images/projects/adversarial_cloacking/logo_size.png)
+
+We also demonstrate the performance of unseed detector attacking:
+![samples](../../../images/projects/adversarial_cloacking/samples.png)
 
 
 The TV regularization over meshes has great effect on attacking success rate in our problem.
-![pipeline](../../../images/projects/adversarial_cloacking/TV_loss.PNG)
+
+![tvloss](../../../images/projects/adversarial_cloacking/TV_loss.png)
 
 
 ## People
@@ -46,3 +50,14 @@ The TV regularization over meshes has great effect on attacking success rate in 
 ## Paper
 
 [Arxiv](https://arxiv.org/abs/2104.11101)
+
+## Cite Us
+
+```
+@article{maesumi2021learning,
+  title={Learning Transferable 3D Adversarial Cloaks for Deep Trained Detectors},
+  author={Maesumi, Arman and Zhu, Mingkang and Wang, Yi and Chen, Tianlong and Wang, Zhangyang and Bajaj, Chandrajit},
+  journal={arXiv preprint arXiv:2104.11101},
+  year={2021}
+}
+```

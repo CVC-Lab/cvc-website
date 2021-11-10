@@ -8,7 +8,11 @@ date: "2020-09-01"
 
 Heterogeneity exists in most camera images. This heterogeneity manifests itself across the image space as varied Moire ringing, motion-blur, color-bleaching or lens based projection distortions. Moreover, combinations of these image artifacts can be present in small or large pixel neighborhoods, within an acquired image. Current camera image processing pipelines, including deep trained versions, tend to rectify the issue applying a single filter that is homogeneously applied to the entire image. This is also particularly true when an encoder-decoder type deep architecture is trained for the task. In this paper, we present a structured deep learning model that solves the heterogeneous image artifact filtering problem. We call our deep trained model the Patch Subspace Variational Autoencoder (PS-VAE) for Camera ISP. PS-VAE does not necessarily assume uniform image distortion levels nor similar artifact types within the image. Rather, our model attempts to learn to cluster different patches extracted from images into artifact type and distortion levels, within multiple latent subspaces (e.g. Moire ringing artifacts are often a higher dimensional latent distortion than a Gaussian motion blur artifact). Each image’s patches are encoded into soft-clusters in their appropriate latent sub-space, using a prior mixture model. The decoders of the PS-VAE are also trained in an unsupervised manner for each of the image patches in each soft-cluster. Our experimental results demonstrates the flexibility and performance that one can achieve through improved heterogeneous filtering. We compare our results to a conventional one-encoder-one-decoder architecture.
 
+Further, our RSE-RL modelviews the identification and correction of artifacts as a recursive self-learning andself-improvement exercise and consists of two major sub-modules: (i) The latentfeature sub-space clustering/grouping obtained through an equivariant variationalauto-encoder enabling rapid identification of the correspondence and discrepancybetween noisy and clean image patches. (ii) The adaptive learned transformationcontrolled by a trust-region soft actor-critic agent that progressively filters andenhances the noisy patches using its closest feature distance neighbors of cleanpatches. Artificial artifacts that may be introduced in a patch-based ISP, are alsoremoved through a reward based de-blocking recovery and image enhancement.We demonstrate the self-improvement feature of our model by recursively trainingand testing on images, wherein the enhanced images resulting from each epochprovide a natural data augmentation and robustness to the RSE-RL training-filteringpipeline
+
 ![Introduction](../../../images/projects/camera_isp/image0.png)
+
+**Video Link To be Appreared**
 
 ## PS-VAE
 
@@ -32,6 +36,8 @@ The overall pipeline of our RSE-RL: For each given observed image, we split the 
 
 ![RSE](../../../images/projects/camera_isp/image_result_rse_rl.png)
 
+
+
 ## Project Members
 Yunhao Yang, Yuhan Zheng, Yi Wang, Dr. Chandrajit Bajaj
 
@@ -41,4 +47,18 @@ Yunhao Yang, Yuhan Zheng, Yi Wang, Dr. Chandrajit Bajaj
 
 ## Paper(Preprint)
 
-[PS-VAE](https://arxiv.org/abs/2104.00253)
+[Learning Deep Latent Subspaces for Image Denoising](https://arxiv.org/abs/2104.00253)
+[Recursive Self-Improvement for Camera Image andSignal Processing Pipeline (To be appeared)](../../../images/RSE_RL.pdf)
+
+## Cite Us
+
+@article{yang2021learning,
+  title={Learning Deep Latent Subspaces for Image Denoising},
+  author={Yang, Yunhao and Zheng, Yuhan and Wang, Yi and Bajaj, Chandrajit},
+  journal={arXiv preprint arXiv:2104.00253},
+  year={2021}
+}
+
+## Acknowledgement
+
+This research was supported in part by a grant from NIH - R01GM117594, in part from the Peter O’Donnell Foundation, and in part from a grant from the Army Research Office accomplished under Cooperative Agreement Number W911NF-19-2-0333. The views and conclusions contained in this document are those of the authors and should not be interpreted as representing the official policies, either expressed or implied, of the Army Research Office or the U.S. Government. The U.S. Government is authorized to reproduce and distribute reprints for Government purposes notwithstanding any copyright notation herein.
