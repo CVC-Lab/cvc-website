@@ -1,12 +1,12 @@
 ---
 title: "Sample-Efficient RL for Visual Perception"
-slug: "/projects/sample_complexity"
+slug: "/projects/dedrecon/sample_complexity"
 date: "2021-09-28"
 ---
 
 ## What are we trying to do?
 
-In this DEDRECON sub-project, we study the theoretical conditions and algorithmic developments enabling sample-efficient reinforcement learning (RL) for visual perception tasks of interest, e.g., object detection, recognition, and tracking. Recent advances in RL powered by deep neural networks promise superior performance in real-time perception and planning tasks, with improved generalization and forecasting in complex domains, e.g., autonomous vehicles and interactive robots.
+In this sub-project, we study the theoretical conditions and algorithmic developments enabling sample-efficient reinforcement learning (RL) for visual perception tasks of interest, e.g., object detection, recognition, and tracking. Recent advances in RL powered by deep neural networks promise superior performance in real-time perception and planning tasks, with improved generalization and forecasting in complex domains, e.g., autonomous vehicles and interactive robots.
 
 ## What is the problem?
 

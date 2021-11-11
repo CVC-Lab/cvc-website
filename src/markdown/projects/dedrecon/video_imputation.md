@@ -1,6 +1,6 @@
 ---
 title: "Learning an Optimal Policy for Video Imputation"
-slug: "projects/video_imputation"
+slug: "projects/dedrecon/video_imputation"
 date: "2021-11-01"
 ---
 Video imputation is essential for on-the fly error-recovery in adaptive streaming, compression, and super resolution. Most prior  methods rely on the use of generative adversarial networks (GANs) such that given two consecutive video frames, the model attempts to generate spatial interpolatory frames to form coherent video sequences.  In this work, we study the use of a factorizable variational auto-encoder based on a second order ordinary differential equation solver (Ode2-FacVAE) to account for separated covariances between the spatial, spectral and temporal video frames in order to improve the visual performance of previously proposed methods for video interpolation.

@@ -172,18 +172,6 @@ module.exports = {
         link:'/projects/dedrecon'
       },
       {
-        name:'Video Imputation',
-        description: 'On-the fly error-recovery in adaptive streaming, compression, and super resolution',
-        img_name:'project_tiles/afc_logo',
-        link:'/projects/video-imputation'
-      },
-      {
-        name:'Sample Complexity',
-        description: 'Theoretical conditions and algorithmic developments enabling sample-efficient reinforcement learning (RL) for visual perception tasks of interest',
-        img_name:'project_tiles/afc_logo',
-        link:'/projects/sample-complexity'
-      },
-      {
         name: 'Camera ISP',
         description: "Structured deep learning models that solves the heterogeneous image artifact filtering problem",
         img_name:'project_tiles/isp_crop',
