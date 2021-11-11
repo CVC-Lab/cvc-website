@@ -2,7 +2,7 @@ import { graphql } from "gatsby";
 import * as React from "react";
 import Layout from "../components/layout";
 import "../components/project_page.css";
-
+import "katex/dist/katex.min.css"
 export default function ProjectTemplate({ data: { markdownRemark } }) {
   const { frontmatter, html } = markdownRemark;
   return (

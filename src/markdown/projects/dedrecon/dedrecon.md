@@ -3,6 +3,10 @@ title: "Deep Encoder-Decoder Recurrent Networks"
 slug: "/projects/dedrecon"
 date: "2020-09-01"
 ---
+## Project Components
+* [Video Imputation](./dedrecon/video-imputation)
+* [Sample Complexity](./dedrecon/sample-complexity)
+
 
 ## What are we trying to do?
 
