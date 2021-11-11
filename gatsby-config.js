@@ -172,6 +172,18 @@ module.exports = {
         link:'/projects/dedrecon'
       },
       {
+        name:'Video Imputation',
+        description: 'On-the fly error-recovery in adaptive streaming, compression, and super resolution',
+        img_name:'project_tiles/afc_logo',
+        link:'/projects/video-imputation'
+      },
+      {
+        name:'Sample Complexity',
+        description: 'Theoretical conditions and algorithmic developments enabling sample-efficient reinforcement learning (RL) for visual perception tasks of interest',
+        img_name:'project_tiles/afc_logo',
+        link:'/projects/sample-complexity'
+      },
+      {
         name: 'Camera ISP',
         description: "Structured deep learning models that solves the heterogeneous image artifact filtering problem",
         img_name:'project_tiles/isp_crop',
@@ -211,7 +223,7 @@ module.exports = {
         name: 'Adversarial Cloaking',
         description: 'Patch-based adversarial attack pipeline for training adversarial patches on 3D human meshes',
         img_name:'project_tiles/adversarial_cloaking_crop',
-        link:'/projects/adversarial-cloacking'
+        link:'/projects/adversarial-cloaking'
       },
       {
         name: 'Physics-informed Neural Networks',
@@ -317,8 +329,32 @@ module.exports = {
             options: {
               maxWidth: 800,
               path: `${__dirname}/src/images/projects/`,
-            },
+            }
           },
+          {
+            resolve: `gatsby-remark-katex`,
+            options: {
+              // Add any KaTeX options from https://github.com/KaTeX/KaTeX/blob/master/docs/options.md here
+              strict: `ignore`
+            }
+          },
+          {
+            resolve: "gatsby-remark-embed-video",
+            options: {
+              related: false, //Optional: Will remove related videos from the end of an embedded YouTube video.
+              noIframeBorder: true, //Optional: Disable insertion of <style> border: 0
+              loadingStrategy: 'lazy', //Optional: Enable support for lazy-load offscreen iframes. Default is disabled.
+              urlOverrides: [
+                {
+                  id: "youtube",
+                  embedURL: videoId =>
+                    `https://www.youtube-nocookie.com/embed/${videoId}`,
+                },
+              ], //Optional: Override URL of a service provider, e.g to enable youtube-nocookie support
+              containerClass: "embedVideo-container", //Optional: Custom CSS class for iframe container, for multiple classes separate them by space
+              iframeId: false, //Optional: if true, iframe's id will be set to what is provided after 'video:' (YouTube IFrame player API requires iframe id)
+            }
+          }
         ],
       },
     },

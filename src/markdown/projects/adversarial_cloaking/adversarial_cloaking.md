@@ -1,6 +1,6 @@
 ---
-title: "Adversarial Cloacking"
-slug: "/projects/adversarial-cloacking"
+title: "Adversarial Cloaking"
+slug: "/projects/adversarial-cloaking"
 date: "2020-09-01"
 ---
 
@@ -8,30 +8,30 @@ date: "2020-09-01"
 
 This project we’ve developed a novel patch-based adversarial attack pipeline that trains adversarial patches on 3D human meshes. This new 3D adversarial patch is shown to fool state-of-the-art deep object detectors robustly under varying views, potentially leading to an attacking scheme that is persistently strong in the physical world.
 
-![banner](../../../images/projects/adversarial_cloacking/canvas.png)
+![banner](../../../images/projects/adversarial_cloaking/canvas.png)
 
 
 ## Algorithm
 
 The 3D adversarial logo pipeline. We start with the reference SMPL  model, and sample its faces to form a desired logo shape. The SURREAL  dataset is used to create a wide variety of body poses and mesh textures during training and testing. The logo texture atlas defined by the sampled faces is then randomly perturbed, and appended to our human meshes. These meshes are rendered using PyTorch3D, and imposed upon real-world background images. Finally, the synthesized images are fed through various object detectors, which allows for the computation of disappearance loss. As the whole pipeline is differentiable, we back-propagate from the losses, to the "Logo Texture Atlas'' along the green arrows.
 
-![pipeline](../../../images/projects/adversarial_cloacking/pipeline.png)
+![pipeline](../../../images/projects/adversarial_cloaking/pipeline.png)
 
 ## Visualization Results
 
 The example of adversairal attack.
-![logo](../../../images/projects/adversarial_cloacking/extra_logo.png)
+![logo](../../../images/projects/adversarial_cloaking/extra_logo.png)
 
 We have different scaling of attack.
-![size](../../../images/projects/adversarial_cloacking/logo_size.png)
+![size](../../../images/projects/adversarial_cloaking/logo_size.png)
 
 We also demonstrate the performance of unseed detector attacking:
-![samples](../../../images/projects/adversarial_cloacking/samples.png)
+![samples](../../../images/projects/adversarial_cloaking/samples.png)
 
 
 The TV regularization over meshes has great effect on attacking success rate in our problem.
 
-![tvloss](../../../images/projects/adversarial_cloacking/TV_loss.png)
+![tvloss](../../../images/projects/adversarial_cloaking/TV_loss.png)
 
 
 ## People
