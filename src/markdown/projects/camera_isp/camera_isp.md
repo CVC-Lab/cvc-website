@@ -12,7 +12,7 @@ Further, our RSE-RL modelviews the identification and correction of artifacts as
 
 ![Introduction](../../../images/projects/camera_isp/image0.png)
 
-**Video Link To be Appreared**
+** {% https://youtu.be/tk-uXrNy62w %} **
 
 ## PS-VAE
 
