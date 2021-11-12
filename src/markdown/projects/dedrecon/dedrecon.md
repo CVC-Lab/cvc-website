@@ -4,8 +4,8 @@ slug: "/projects/dedrecon"
 date: "2020-09-01"
 ---
 ## Project Components
-* [Video Imputation](./video-imputation)
-* [Sample Complexity](./sample-complexity)
+* [Video Imputation](../video-imputation)
+* [Sample Complexity](../sample-complexity)
 
 
 ## What are we trying to do?
