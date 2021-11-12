@@ -36,8 +36,6 @@ The overall pipeline of our RSE-RL: For each given observed image, we split the 
 
 ![RSE](../../../images/projects/camera_isp/image_result_rse_rl.png)
 
-
-
 ## Project Members
 * Yunhao Yang
 * Yuhan Zheng
