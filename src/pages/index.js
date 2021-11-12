@@ -13,6 +13,12 @@ const IndexPage = ({ children }) => {
     query ProjectQuery {
       site {
         siteMetadata {
+          dedreconProjectTiles {
+            name
+            description
+            img_name
+            link
+          }
           projectTiles {
             name
             description
@@ -34,7 +40,7 @@ const IndexPage = ({ children }) => {
       <Helmet>
         <meta name="icon" href={favicon} />
       </Helmet>
-      <Tiles id='projects' projectTiles={data.site.siteMetadata.projectTiles}></Tiles>
+      <Tiles id='projects' projectTiles={data.site.siteMetadata.projectTiles} dedreconProjectTiles={data.site.siteMetadata.dedreconProjectTiles}></Tiles>
       <Cards id='people' peopleCards={data.site.siteMetadata.peopleCards}></Cards>
       <About id='about'></About>
     </Layout>

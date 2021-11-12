@@ -164,12 +164,32 @@ module.exports = {
         link:'/seminars/fall2021/seminar2'
       },
     ],
-    projectTiles:[
+    dedreconProjectTiles:[
       {
         name:'DEDRECON',
         description: 'Advanced machine learning applied to real-life image visual perception under multi-modality fusion techniques',
         img_name:'project_tiles/afc_logo',
         link:'/projects/dedrecon'
+      },
+      {
+        name:'Video Imputation',
+        description: 'On-the fly error-recovery in adaptive streaming, compression, and super resolution',
+        img_name:'project_tiles/video_imputation_crop',
+        link:'/projects/video-imputation'
+      },
+      {
+        name:'Sample Complexity',
+        description: 'Theoretical conditions and algorithmic developments enabling sample-efficient reinforcement learning',
+        img_name:'project_tiles/afc_logo',
+        link:'/projects/sample-complexity'
+      },
+    ],
+    projectTiles:[
+      {
+        name:'Optimal Control',
+        description: 'Optimal control problem solving by applying the Pontryagin maximum principle and then solving for a Hamiltonian dynamical system',
+        img_name:'project_tiles/optimal_control_2',
+        link:'/projects/optimal-control'
       },
       {
         name: 'Camera ISP',
@@ -308,6 +328,9 @@ module.exports = {
     },
     `gatsby-transformer-csv`,
     `gatsby-transformer-remark`,
+    `gatsby-remark-copy-linked-files`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -318,6 +341,12 @@ module.exports = {
               maxWidth: 800,
               path: `${__dirname}/src/images/projects/`,
             }
+          },
+          {
+            resolve: 'gatsby-remark-static-images'
+          },
+          {
+            resolve: `gatsby-remark-copy-linked-files`
           },
           {
             resolve: `gatsby-remark-katex`,

@@ -8,11 +8,11 @@ date: "2020-09-01"
 
 Heterogeneity exists in most camera images. This heterogeneity manifests itself across the image space as varied Moire ringing, motion-blur, color-bleaching or lens based projection distortions. Moreover, combinations of these image artifacts can be present in small or large pixel neighborhoods, within an acquired image. Current camera image processing pipelines, including deep trained versions, tend to rectify the issue applying a single filter that is homogeneously applied to the entire image. This is also particularly true when an encoder-decoder type deep architecture is trained for the task. In this paper, we present a structured deep learning model that solves the heterogeneous image artifact filtering problem. We call our deep trained model the Patch Subspace Variational Autoencoder (PS-VAE) for Camera ISP. PS-VAE does not necessarily assume uniform image distortion levels nor similar artifact types within the image. Rather, our model attempts to learn to cluster different patches extracted from images into artifact type and distortion levels, within multiple latent subspaces (e.g. Moire ringing artifacts are often a higher dimensional latent distortion than a Gaussian motion blur artifact). Each image’s patches are encoded into soft-clusters in their appropriate latent sub-space, using a prior mixture model. The decoders of the PS-VAE are also trained in an unsupervised manner for each of the image patches in each soft-cluster. Our experimental results demonstrates the flexibility and performance that one can achieve through improved heterogeneous filtering. We compare our results to a conventional one-encoder-one-decoder architecture.
 
-Further, our RSE-RL modelviews the identification and correction of artifacts as a recursive self-learning andself-improvement exercise and consists of two major sub-modules: (i) The latentfeature sub-space clustering/grouping obtained through an equivariant variationalauto-encoder enabling rapid identification of the correspondence and discrepancybetween noisy and clean image patches. (ii) The adaptive learned transformationcontrolled by a trust-region soft actor-critic agent that progressively filters andenhances the noisy patches using its closest feature distance neighbors of cleanpatches. Artificial artifacts that may be introduced in a patch-based ISP, are alsoremoved through a reward based de-blocking recovery and image enhancement.We demonstrate the self-improvement feature of our model by recursively trainingand testing on images, wherein the enhanced images resulting from each epochprovide a natural data augmentation and robustness to the RSE-RL training-filteringpipeline
+Further, our RSE-RL model views the identification and correction of artifacts as a recursive self-learning and self-improvement exercise and consists of two major sub-modules: (i) The latent feature sub-space clustering/grouping obtained through an equivariant variational auto-encoder enabling rapid identification of the correspondence and discrepancy between noisy and clean image patches. (ii) The adaptive learned transformation controlled by a trust-region soft actor-critic agent that progressively filters and enhances the noisy patches using its closest feature distance neighbors of clean patches. Artificial artifacts that may be introduced in a patch-based ISP, are also removed through a reward based de-blocking recovery and image enhancement.We demonstrate the self-improvement feature of our model by recursively training and testing on images, wherein the enhanced images resulting from each epoch provide a natural data augmentation and robustness to the RSE-RL training-filtering pipeline
 
 ![Introduction](../../../images/projects/camera_isp/image0.png)
 
-** {% https://youtu.be/tk-uXrNy62w %} **
+`video: https://youtu.be/tk-uXrNy62w`
 
 ## PS-VAE
 
@@ -39,7 +39,10 @@ The overall pipeline of our RSE-RL: For each given observed image, we split the 
 
 
 ## Project Members
-Yunhao Yang, Yuhan Zheng, Yi Wang, Dr. Chandrajit Bajaj
+* Yunhao Yang
+* Yuhan Zheng
+* Yi Wang
+* Dr. Chandrajit Bajaj
 
 ## Code Repo
 
@@ -52,12 +55,14 @@ Yunhao Yang, Yuhan Zheng, Yi Wang, Dr. Chandrajit Bajaj
 
 ## Cite Us
 
+```
 @article{yang2021learning,
   title={Learning Deep Latent Subspaces for Image Denoising},
   author={Yang, Yunhao and Zheng, Yuhan and Wang, Yi and Bajaj, Chandrajit},
   journal={arXiv preprint arXiv:2104.00253},
   year={2021}
 }
+```
 
 ## Acknowledgement
 
