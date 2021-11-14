@@ -10,6 +10,7 @@ This project we’ve developed a novel patch-based adversarial attack pipeline t
 
 ![banner](../../../images/projects/adversarial_cloaking/canvas.png)
 
+`video : https://youtu.be/ptf4oVg0WM0`
 
 ## Algorithm
 
