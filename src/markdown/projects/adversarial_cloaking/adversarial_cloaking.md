@@ -9,8 +9,8 @@ date: "2020-09-01"
 This project we’ve developed a novel patch-based adversarial attack pipeline that trains adversarial patches on 3D human meshes. This new 3D adversarial patch is shown to fool state-of-the-art deep object detectors robustly under varying views, potentially leading to an attacking scheme that is persistently strong in the physical world.
 
 ![banner](../../../images/projects/adversarial_cloaking/canvas.png)
-
-`video : https://youtu.be/ptf4oVg0WM0`
+</br>
+`video: https://www.youtube.com/watch?v=ptf4oVg0WM0`
 
 <div align="center">
   
