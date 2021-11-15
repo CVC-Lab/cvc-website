@@ -12,12 +12,14 @@ This project we’ve developed a novel patch-based adversarial attack pipeline t
 
 `video : https://youtu.be/ptf4oVg0WM0`
 
-<center>
+<div align="center">
+  
 | Strong | Medium | Weak |
 |--------------|-----------|------------|
 | ![demo example](../../../images/projects/adversarial_cloaking/demo_video_med.gif) | ![demo example](../../../images/projects/adversarial_cloaking/demo_video2_med.gif)    | ![demo example](../../../images/projects/adversarial_cloaking/demo_video3_med.gif)       |
 | ![demo example](../../../images/projects/adversarial_cloaking/demo_video4_med.gif)      | ![demo example](../../../images/projects/adversarial_cloaking/demo_video5_med.gif) | ![demo example](../../../images/projects/adversarial_cloaking/demo_video6_med.gif) |
-</center>
+
+</div>
 
 ## Algorithm
 
