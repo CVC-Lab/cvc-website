@@ -10,6 +10,30 @@
 /cvc-website/static/a945b196c4e49ad6d270be7056d8b5cf/60fa0/canvas.png 1315w' sizes='(max-width: 800px) 100vw, 800px' style='width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;' loading='lazy' decoding='async'>
   </a>
     </span></p>
+<p><code>video : https://youtu.be/ptf4oVg0WM0</code></p>
+<div align="center">
+<table>
+<thead>
+<tr>
+<th>Strong</th>
+<th>Medium</th>
+<th>Weak</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="/cvc-website/static/demo_video_med-f2bacb7282d0859a3f38b7c42a53b071.gif" alt="demo example"></td>
+<td><img src="/cvc-website/static/demo_video2_med-8ba358fce1957a7ebd62e54756e68742.gif" alt="demo example"></td>
+<td><img src="/cvc-website/static/demo_video3_med-1f817f1182c75235ba08f63d67d3225b.gif" alt="demo example"></td>
+</tr>
+<tr>
+<td><img src="/cvc-website/static/demo_video4_med-e4102fcead90cd9cdb19fc360cfd6cd3.gif" alt="demo example"></td>
+<td><img src="/cvc-website/static/demo_video5_med-df9751e0ca42aa50f410441296e27e93.gif" alt="demo example"></td>
+<td><img src="/cvc-website/static/demo_video6_med-1c2b58312445b445b33936dd3e6e6911.gif" alt="demo example"></td>
+</tr>
+</tbody>
+</table>
+</div>
 <h2>Algorithm</h2>
 <p>The 3D adversarial logo pipeline. We start with the reference SMPL  model, and sample its faces to form a desired logo shape. The SURREAL  dataset is used to create a wide variety of body poses and mesh textures during training and testing. The logo texture atlas defined by the sampled faces is then randomly perturbed, and appended to our human meshes. These meshes are rendered using PyTorch3D, and imposed upon real-world background images. Finally, the synthesized images are fed through various object detectors, which allows for the computation of disappearance loss. As the whole pipeline is differentiable, we back-propagate from the losses, to the "Logo Texture Atlas'' along the green arrows.</p>
 <p><span class='gatsby-resp-image-wrapper' style='position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; '>
