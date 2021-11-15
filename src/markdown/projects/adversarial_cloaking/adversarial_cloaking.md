@@ -14,8 +14,8 @@ This project we’ve developed a novel patch-based adversarial attack pipeline t
 
 | | | |
 |--------------|-----------|------------|
-| ![demo example](../../../images/projects/adversarial_cloaking/demo_video_med.gif) | ![demo example](../../../images/projects/adversarial_cloaking/demo_video_med2.gif)    | ![demo example](../../../images/projects/adversarial_cloaking/demo_video_med3.gif)       |
-| ![demo example](../../../images/projects/adversarial_cloaking/demo_video_med4.gif)      | ![demo example](../../../images/projects/adversarial_cloaking/demo_video_med5.gif) | ![demo example](../../../images/projects/adversarial_cloaking/demo_video_med6.gif) |
+| ![demo example](../../../images/projects/adversarial_cloaking/demo_video_med.gif) | ![demo example](../../../images/projects/adversarial_cloaking/demo_video2_med.gif)    | ![demo example](../../../images/projects/adversarial_cloaking/demo_video3_med.gif)       |
+| ![demo example](../../../images/projects/adversarial_cloaking/demo_video4_med.gif)      | ![demo example](../../../images/projects/adversarial_cloaking/demo_video5_med.gif) | ![demo example](../../../images/projects/adversarial_cloaking/demo_video6_med.gif) |
 
 ## Algorithm
 
