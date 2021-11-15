@@ -12,6 +12,7 @@ This project we’ve developed a novel patch-based adversarial attack pipeline t
 
 `video : https://youtu.be/ptf4oVg0WM0`
 
+| | | |
 |--------------|-----------|------------|
 | ![demo example](../../../images/projects/adversarial_cloaking/demo_video_med.gif) | ![demo example](../../../images/projects/adversarial_cloaking/demo_video_med2.gif)    | ![demo example](../../../images/projects/adversarial_cloaking/demo_video_med3.gif)       |
 | ![demo example](../../../images/projects/adversarial_cloaking/demo_video_med4.gif)      | ![demo example](../../../images/projects/adversarial_cloaking/demo_video_med5.gif) | ![demo example](../../../images/projects/adversarial_cloaking/demo_video_med6.gif) |
