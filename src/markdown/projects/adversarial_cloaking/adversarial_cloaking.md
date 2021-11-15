@@ -12,6 +12,10 @@ This project we’ve developed a novel patch-based adversarial attack pipeline t
 
 `video : https://youtu.be/ptf4oVg0WM0`
 
+|--------------|-----------|------------|
+| ![demo example](../../../images/projects/adversarial_cloaking/demo_video_med.gif) | ![demo example](../../../images/projects/adversarial_cloaking/demo_video_med2.gif)    | ![demo example](../../../images/projects/adversarial_cloaking/demo_video_med3.gif)       |
+| ![demo example](../../../images/projects/adversarial_cloaking/demo_video_med4.gif)      | ![demo example](../../../images/projects/adversarial_cloaking/demo_video_med5.gif) | ![demo example](../../../images/projects/adversarial_cloaking/demo_video_med6.gif) |
+
 ## Algorithm
 
 The 3D adversarial logo pipeline. We start with the reference SMPL  model, and sample its faces to form a desired logo shape. The SURREAL  dataset is used to create a wide variety of body poses and mesh textures during training and testing. The logo texture atlas defined by the sampled faces is then randomly perturbed, and appended to our human meshes. These meshes are rendered using PyTorch3D, and imposed upon real-world background images. Finally, the synthesized images are fed through various object detectors, which allows for the computation of disappearance loss. As the whole pipeline is differentiable, we back-propagate from the losses, to the "Logo Texture Atlas'' along the green arrows.
