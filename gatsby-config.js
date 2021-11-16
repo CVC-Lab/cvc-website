@@ -186,17 +186,11 @@ module.exports = {
       {
         name:'Sample Complexity',
         description: 'Theoretical conditions and algorithmic developments enabling sample-efficient reinforcement learning',
-        img_name:'project_tiles/afc_logo',
+        img_name:'project_tiles/sample_complexity_2',
         link:'/projects/sample-complexity'
       },
     ],
     projectTiles:[
-      {
-        name:'Optimal Control',
-        description: 'Optimal control problem solving by applying the Pontryagin maximum principle and then solving for a Hamiltonian dynamical system',
-        img_name:'project_tiles/optimal_control_2',
-        link:'/projects/optimal-control'
-      },
       {
         name: 'Camera ISP',
         description: "Structured deep learning models that solves the heterogeneous image artifact filtering problem",
@@ -244,6 +238,12 @@ module.exports = {
         description: 'Robust physics-informed neural networks for solving partial differential equations by capturing the physics induced constraints',
         img_name:'project_tiles/robust_pinns',
         link:'/projects/robust-pinns'
+      },
+      {
+        name:'Optimal Control',
+        description: 'Optimal control problem solving by applying the Pontryagin maximum principle and then solving for a Hamiltonian dynamical system',
+        img_name:'project_tiles/optimal_control_2',
+        link:'/projects/optimal-control'
       }
     ],
     menuLinks:[
