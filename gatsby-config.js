@@ -202,10 +202,10 @@ module.exports = {
         link:'/projects/adversarial-cloaking'
       },
       {
-        name:'Sample Complexity',
+        name:'Dynamic Mode Decomposition',
         description: 'Theoretical conditions and algorithmic developments enabling sample-efficient reinforcement learning',
         img_name:'project_tiles/sample_complexity_2',
-        link:'/projects/sample-complexity'
+        link:'/projects/dmd'
       },
     ],
     projectTiles:[
