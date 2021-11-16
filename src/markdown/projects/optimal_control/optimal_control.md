@@ -11,9 +11,9 @@ The standard formulation for reinforcement learning with value function and dyna
 
 ## Mountain Car Demo
 Untrained agent
-![untrained](../../../gifs/projects/optimal_control/test_mountain_car_untrained.gif)
+![untrained](../../../images/projects/optimal_control/test_mountain_car_untrained.gif)
 Trained agent with VAE
-![trained](../../../gifs/projects/optimal_control/test_mountain_car_phase2.gif)
+![trained](../../../images/projects/optimal_control/test_mountain_car_phase2.gif)
 
 ## Code Repo
 [Github link](https://github.com/mpnguyen2/neural_pmp)
