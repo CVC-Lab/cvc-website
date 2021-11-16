@@ -172,6 +172,7 @@ module.exports = {
         link:'/projects/dedrecon'
       },
       {
+<<<<<<< Updated upstream
         name:'Video Imputation',
         description: 'On-the fly error-recovery in adaptive streaming, compression, and super resolution',
         img_name:'project_tiles/video_imputation_crop',
@@ -184,6 +185,8 @@ module.exports = {
         link:'/projects/mce-vae'
       },
       {
+=======
+>>>>>>> Stashed changes
         name:'Optimal Control',
         description: 'Optimal control problem solving by applying the Pontryagin maximum principle and then solving for a Hamiltonian dynamical system',
         img_name:'project_tiles/optimal_control_2',
