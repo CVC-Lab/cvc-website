@@ -184,6 +184,24 @@ module.exports = {
         link:'/projects/mce-vae'
       },
       {
+        name:'Optimal Control',
+        description: 'Optimal control problem solving by applying the Pontryagin maximum principle and then solving for a Hamiltonian dynamical system',
+        img_name:'project_tiles/optimal_control_2',
+        link:'/projects/optimal-control'
+      },
+      {
+        name: 'Camera ISP',
+        description: "Structured deep learning models that solves the heterogeneous image artifact filtering problem",
+        img_name:'project_tiles/isp_crop',
+        link:'/projects/camera-isp'
+      },
+      {
+        name: 'Adversarial Cloaking',
+        description: 'Patch-based adversarial attack pipeline for training adversarial patches on 3D human meshes',
+        img_name:'project_tiles/adversarial_cloaking_crop',
+        link:'/projects/adversarial-cloaking'
+      },
+      {
         name:'Sample Complexity',
         description: 'Theoretical conditions and algorithmic developments enabling sample-efficient reinforcement learning',
         img_name:'project_tiles/sample_complexity_2',
@@ -191,12 +209,6 @@ module.exports = {
       },
     ],
     projectTiles:[
-      {
-        name: 'Camera ISP',
-        description: "Structured deep learning models that solves the heterogeneous image artifact filtering problem",
-        img_name:'project_tiles/isp_crop',
-        link:'/projects/camera-isp'
-      },
       {
         name: 'Angstrom',
         description: 'Multi-resolution geometric data structures and computational mathematics algorithms',
@@ -228,22 +240,10 @@ module.exports = {
         link:'/projects/search-n-score'
       },
       {
-        name: 'Adversarial Cloaking',
-        description: 'Patch-based adversarial attack pipeline for training adversarial patches on 3D human meshes',
-        img_name:'project_tiles/adversarial_cloaking_crop',
-        link:'/projects/adversarial-cloaking'
-      },
-      {
         name: 'Physics-informed Neural Networks',
         description: 'Robust physics-informed neural networks for solving partial differential equations by capturing the physics induced constraints',
         img_name:'project_tiles/robust_pinns',
         link:'/projects/robust-pinns'
-      },
-      {
-        name:'Optimal Control',
-        description: 'Optimal control problem solving by applying the Pontryagin maximum principle and then solving for a Hamiltonian dynamical system',
-        img_name:'project_tiles/optimal_control_2',
-        link:'/projects/optimal-control'
       }
     ],
     menuLinks:[

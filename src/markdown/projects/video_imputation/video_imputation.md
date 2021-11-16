@@ -73,4 +73,6 @@ where $\Delta t$ is the temporal difference between frames and $\{\gamma_1, \gam
 ![](https://i.imgur.com/xODUubq.jpg)
 
 `video: https://www.youtube.com/watch?v=sxsnwkKISWE`
-
+`video: https://youtu.be/qTN-vRF3zwo`
+`video: https://youtu.be/2YY6YLAlRAU`
+`video: https://youtu.be/uKdEx6lEYgc`
