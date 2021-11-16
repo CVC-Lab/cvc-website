@@ -181,7 +181,7 @@ module.exports = {
         name:'MCE-VAE',
         description: 'Invariance-based multi-clustering of latent space embeddings for equivariant learning',
         img_name:'project_tiles/mce_vae',
-        link:'/projects/mce_vae'
+        link:'/projects/mce-vae'
       },
       {
         name:'Sample Complexity',
