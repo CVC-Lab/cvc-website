@@ -10,9 +10,11 @@ Learning optimal control solutions for unknown dynamical systems, where an objec
 The standard formulation for reinforcement learning with value function and dynamic programming essentially follows an integral formulation. The number of time steps required for each simulation/episode where agent interacts with environment is often large. For shape optimization problems in engineering design such as airfoil design problem, such simulations can be very costly. We would like to find a way in which we can do both reinforcement learning, and at the same time extract the underlying physical "differential" properties of the optimal policy for any agent. We hope that extracting such "differential" properties, which can be characterized by certain functions (neural networks) with only small amount of parameters, would require a lot less number of time steps per simulation/episode. Nonetheless, there are many issues that we are considering including: sample efficiency and robustness. For example, agent needs to be able to have a good policy for any initial starting point. Covering all initial starting point is impossible, and a sample-efficient scheme is needed. Moreover, these starting points samples must "work" together to output the correct "differential" properties that we need. At the same time, agent must keep in mind that its interactions/outputs from environment is noisy. All of these factors make the problem more complicated than learning a single "differential" network for optimal policy.
 
 ## Mountain Car Demo
-Untrained agent
+
+### Untrained agent
 ![untrained](../../../images/projects/optimal_control/test_mountain_car_untrained.gif)
-Trained agent with VAE
+
+### Trained agent with VAE
 ![trained](../../../images/projects/optimal_control/test_mountain_car_phase2.gif)
 
 ## Code Repo
