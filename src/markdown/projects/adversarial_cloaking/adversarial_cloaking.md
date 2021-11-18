@@ -3,7 +3,7 @@ title: "Adversarial Cloaking"
 slug: "/projects/adversarial-cloaking"
 date: "2020-09-01"
 ---
-
+### [Computational Visualization Center Wordpress Link](https://cvcweb.oden.utexas.edu/cvcwp/projects/3dadvmesh/)
 ## Project Description
 
 This project we’ve developed a novel patch-based adversarial attack pipeline that trains adversarial patches on 3D human meshes. This new 3D adversarial patch is shown to fool state-of-the-art deep object detectors robustly under varying views, potentially leading to an attacking scheme that is persistently strong in the physical world.

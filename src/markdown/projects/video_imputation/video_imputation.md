@@ -3,8 +3,8 @@ title: "Learning an Optimal Policy for Video Imputation"
 slug: "projects/video_imputation"
 date: "2021-11-01"
 ---
+### [Computational Visualization Center Wordpress Link](https://cvcweb.oden.utexas.edu/cvcwp/projects/video-imputation/)
 Video imputation is essential for on-the fly error-recovery in adaptive streaming, compression, and super resolution. Most prior  methods rely on the use of generative adversarial networks (GANs) such that given two consecutive video frames, the model attempts to generate spatial interpolatory frames to form coherent video sequences.  In this work, we study the use of a factorizable variational auto-encoder based on a second order ordinary differential equation solver (Ode2-FacVAE) to account for separated covariances between the spatial, spectral and temporal video frames in order to improve the visual performance of previously proposed methods for video interpolation.
-
 
 ### Problem Formulation
 Let  $X=\{x_{t_i}\}_{i=1}^N$ where $x_{t_i} \in \mathbb{R}^d$ be an ordered sequence of video frames. Let $I=\{0,1,...,N\}$ be the frame index, where $t_i \in \mathbb{R}^+$ for $i \in I$ and $t_i=t_j > 0$ for all $i,j \in I$ where $i > j$. Let $t \in \mathbb{R}^+$ be continuous and represent time. We are tasked with recovering $x_t$ from $X$. We will do this by learning an independently factorized latent space manifolds that are linear locally and such that the latent space captures the covariance structure that exists between nearby frames:

@@ -3,6 +3,7 @@ title: "Deep Encoder-Decoder Recurrent Networks"
 slug: "/projects/dedrecon"
 date: "2020-09-01"
 ---
+### [Computational Visualization Center Wordpress Link](https://cvcweb.oden.utexas.edu/cvcwp/projects/dedrecon/)
 ## Project Components
 * [Video Imputation](../projects/video-imputation)
 * [Sample Complexity](../projects/sample-complexity)

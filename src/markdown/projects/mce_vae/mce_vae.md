@@ -3,8 +3,8 @@ title: "Invariance-based Multi-Clustering of Latent Space Embeddings for Equivar
 slug: "projects/mce_vae"
 date: "2021-11-15"
 ---
-
-## Project description
+### [Computational Visualization Center Wordpress Link](https://cvcweb.oden.utexas.edu/cvcwp/projects/invariance-based-multi-clustering-of-latent-space-embeddings-for-equivariant-learning/)
+## Project Description
 Variational Autoencoders (VAEs) have been shown to be remarkably effective in recovering model latent spaces for several computer vision tasks. However, currently trained VAEs, for a number of reasons, seem to fall short in learning invariant and equivariant clusters in latent space. Our work focuses on providing solutions to this problem and presents an approach to disentangle equivariance feature maps in a Lie group manifold by enforcing deep, group-invariant learning. Simultaneously implementing a novel separation of semantic and equivariant variables of the latent space representation, we formulate a modified Evidence Lower Bound (ELBO) by using a mixture model pdf like Gaussian mixtures for invariant cluster embeddings that allows superior unsupervised variational clustering. Our experiments show that this model effectively learns to disentangle the invariant and equivariant representations with significant improvements in the learning rate and an observably superior image recognition and canonical state reconstruction compared to the currently best deep learning models.
 
 ## Main Motivation
