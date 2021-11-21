@@ -1,7 +1,7 @@
 ---
 title: "Sample-Efficient RL for Visual Perception"
-slug: "/projects/sample-complexity"
-date: "2021-11-16"
+slug: "/projects/sample_complexity"
+date: "2021-09-28"
 ---
 
 ## What are we trying to do?
@@ -40,8 +40,9 @@ The process graph below provides further details for each step of the proposed w
 
 ![](https://i.imgur.com/epy9hOJ.png)
 
+## Codes
+* GitHub repo for the OpenAI Gym environment: [microscope](https://github.com/ahmed-akader/microscope)
 
 ## People
 * PI: Prof. Chandrajit Bajaj
-* Taemin Heo (PhD)
 * Ahmed Abdelkader (Postdoc)

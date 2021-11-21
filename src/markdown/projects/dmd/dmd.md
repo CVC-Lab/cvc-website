@@ -18,11 +18,16 @@ We draw inspiration from compressive sensing and variational inference to side-s
 
 ## Progress
 
-To answer the first challenge of providing effective feature mappings, we study a deep learning approach to DMD. We study the GEMS dataset obtained by simulating a combustion engine model, where the geometry is captured by a 2D point set as shown below. Each sample point provides multiple measurements, e.g., preassure, 2D velocity, and molar concentrations.
+To answer the first challenge of providing effective feature mappings, we study a deep learning approach to DMD. We study the GEMS dataset obtained by simulating a combustion engine model, where the geometry is captured by a 2D point set as shown below. Each sample point provides multiple measurements, e.g., preassure, 2D velocity, and molar concentrations. 
+
+![](https://i.imgur.com/Awxwo3k.png)
+
+
+To limit the computational overhead of the data-driven approach, we begin by subsampling the original spatial distribution, while attempting to preserve the same level of coverage. The figure below was produced by our subsampling routine.
 
 ![](https://i.imgur.com/yGyUZwW.png)
 
-For example, considering pressure measurements as the signal of interest, we can apply standard DMD to predict the evolution of the signal. The figure below compares predicted pressure values (red) against ground truth measurements (blue).
+We are now ready to learn the dynamics of the system. For example, considering pressure measurements as the signal of interest, we can apply standard DMD to predict the evolution of the signal. The figure below compares predicted pressure values (red) against ground truth measurements (blue).
 
 ![](https://i.imgur.com/evM0Pcu.png)
 
@@ -30,6 +35,10 @@ For example, considering pressure measurements as the signal of interest, we can
 Second, to help alleviate the second challenge with scaling up computations to the analysis of high-dimensional data, we extend tensor DMD (TDMD) with progressive sketching capabilities. We leverage our group's recent work on SketchyCoreSVD to speed up TDMD under reasonable sparsity assumptions on the data matrices. Our preliminary experiments on the NCEP North American Regional Reanalysis (NARR) dataset demonstrates more than a 2x speed-up as summarized in the figure below.
 
 ![](https://i.imgur.com/KDARSU3.png)
+
+## Codes
+* GEMS: preprocessing and deep learning
+* SketchyCoreTTDMD
 
 
 ## People
