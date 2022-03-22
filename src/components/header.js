@@ -7,7 +7,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 
 const Header = ({ siteTitle, siteDescription, menuLinks }) => (
-  <header style={{paddingLeft: `1.25rem`, paddingRight: `1.25rem`, background: '#f8971f'}}>
+  <header style={{paddingLeft: `1.25rem`, paddingRight: `1.25rem`, background: `#bf5700`}}>
     <div style={{margin: `0 auto`, maxWidth: 1050, paddingBottom: `2.7rem`}}>
         <Grid>
           <Grid container direction="row" justify="space-between" alignItems="center">

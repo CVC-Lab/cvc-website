@@ -3,7 +3,7 @@ import Background from '../images/background_crop.png';
 
 
 const Footer = ({ siteTitle, siteDescription, menuLinks }) => (
-  <footer style={{paddingLeft: `1.25rem`, paddingRight: `1.25rem`, background: '#f8971f', textAlign: 'center'}}>
+  <footer style={{paddingLeft: `1.25rem`, paddingRight: `1.25rem`, background: '#bf5700', textAlign: 'center'}}>
     <div style={{margin: `0 auto`, maxWidth: 1050, paddingBottom: `1.45rem`, paddingTop: `1.45rem`}}>
       <h1 style={{margin: 0}}>
         <div style={{color: `#FFFFFF`, paddingBottom: '1.25rem', paddingTop: `1.25rem`, fontSize: '2.5rem', margin: `0rem`}}>Contact Us</div>

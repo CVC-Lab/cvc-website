@@ -16,7 +16,7 @@ const PublicationTable = ({ publicationData }) => (
               <div className='lower-container-pubs'>
                 <h3> {publication.Title} </h3>
                 <h4> {publication.Authors} </h4>
-                <h4> {publication.PublishedDateYear} </h4>
+                <h4> {publication.PublishedDateYear} ({publication.PublicationType} - <a href={publication.PDFLink}>pdf</a>) </h4>
               </div>
             </div>
           </GridListTile>

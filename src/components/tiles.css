@@ -30,7 +30,7 @@
 
 .Tile .upper-container{
   border-radius: 5%;
-  background: #f8971f;
+  background: #bf5700;
 }
 
 .tiles-class li.MuiGridListTile-root{
@@ -53,7 +53,7 @@ p {
 
 .Tile .upper-container h3 {
   padding-top: 30px;
-  color: #333f48;
+  color: #FFFFFF;
   font-weight: 600;
   font-size: .78rem;
   text-align: center;

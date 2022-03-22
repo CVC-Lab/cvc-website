@@ -301,8 +301,8 @@ module.exports = {
         name: `Computational Visualization Center at the University of Texas at Austin`,
         short_name: `CVC`,
         start_url: `/`,
-        background_color: `#f8971f`,
-        theme_color: `#f8971f`,
+        background_color: `#bf5700`,
+        theme_color: `#bf5700`,
         display: `minimal-ui`,
         icon: `src/favicons/favicon.png`,
         icons: [

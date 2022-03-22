@@ -17,7 +17,7 @@ const Navigation = ({ menuLinks }) => (
               {link.scroll_link === true && (UserTheme() === `/cvc-website/` || UserTheme() === `/`) ?
                 <LinkRouter to={link.link} style={{color: `#333f48`, textDecoration: `none`, fontSize: `.73rem`, fontWeight: `700`}}>
                 <Link
-                  style={{color: `#333f48`, textDecoration: `none`, fontSize: `.73rem`, fontWeight: `700`}}
+                  style={{color: `#FFFFFF`, textDecoration: `none`, fontSize: `.73rem`, fontWeight: `700`}}
                   activeClass="active"
                   to={link.link}
                   spy={true}
@@ -27,7 +27,7 @@ const Navigation = ({ menuLinks }) => (
                 >
                 {link.name}
                 </Link></LinkRouter>
-                :<LinkRouter to={link.scroll_link === true ? '/': link.link} style={{color: `#333f48`, textDecoration: `none`, fontSize: `.73rem`, fontWeight: `700`}}>
+                :<LinkRouter to={link.scroll_link === true ? '/': link.link} style={{color: `#FFFFFF`, textDecoration: `none`, fontSize: `.73rem`, fontWeight: `700`}}>
                   {link.name}
                 </LinkRouter>}
           </li>))}
