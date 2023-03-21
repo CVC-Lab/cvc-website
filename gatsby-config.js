@@ -13,11 +13,11 @@ module.exports = {
         image:'laura.png',
         position: 'Administrative Associate'
       },
-      {
-        name:'Ahmed Abdelkader',
-        image:'ahmed.png',
-        position: 'Postdoctoral Researcher'
-      },
+      // {
+      //   name:'Ahmed Abdelkader',
+      //   image:'ahmed.png',
+      //   position: 'Postdoctoral Researcher'
+      // },
       {
         name:'Yi Wang',
         image:'yi.png',
@@ -28,127 +28,151 @@ module.exports = {
         image:'ryan.png',
         position: 'Graduate Student'
       },
-      {
-        name:'Yunhao Yang',
-        image:'yunhao.png',
-        position: 'Graduate Student'
-      },
-      {
-        name:'Chase Tessmer',
-        image:'chase.png',
-        position: 'Graduate Student'
-      },
+      // {
+      //   name:'Yunhao Yang',
+      //   image:'yunhao.png',
+      //   position: 'Graduate Student'
+      // },
+      // {
+      //   name:'Chase Tessmer',
+      //   image:'chase.png',
+      //   position: 'Graduate Student'
+      // },
       {
         name:'Taemin Heo',
         image:'taemin.png',
         position: 'Graduate Student'
       },
-
-      {
-        name:'Nathan Clement',
-        image:'nathan.png',
-        position: 'Graduate Student'
-      },
+      // {
+      //   name:'Nathan Clement',
+      //   image:'nathan.png',
+      //   position: 'Graduate Student'
+      // },
       {
         name:'Jan-Christopher Cohrs',
         image:'jan.png',
         position: 'Graduate Student'
       },
-      {
-        name:'Thomas Ghorbanian',
-        image:'thomas.png',
-        position: 'Graduate Student'
-      },
+      // {
+      //   name:'Thomas Ghorbanian',
+      //   image:'thomas.png',
+      //   position: 'Graduate Student'
+      // },
       {
         name:'Minh Nguyen',
         image:'placeholder.png',
         position: 'Graduate Student'
       },
-      {
-        name:'Sumit Sinha',
-        image:'placeholder.png',
-        position: 'Graduate Student'
-      },
-      {
-        name:'Suprawit Chockchowwat',
-        image:'placeholder.png',
-        position: 'Graduate Student'
-      },
+      // {
+      //   name:'Sumit Sinha',
+      //   image:'placeholder.png',
+      //   position: 'Graduate Student'
+      // },
+      // {
+      //   name:'Suprawit Chockchowwat',
+      //   image:'placeholder.png',
+      //   position: 'Graduate Student'
+      // },
       {
         name:'Rochan Avlur',
         image:'rochan.png',
         position: 'Graduate Student'
       },
-      {
-        name:'Sean Zanyk McLean',
-        image:'sean.png',
-        position: 'Graduate Student'
-      },
-      {
-        name:'Yorick Sanders',
-        image:'yorick.png',
-        position: 'Graduate Student'
-      },
+      // {
+      //   name:'Sean Zanyk McLean',
+      //   image:'sean.png',
+      //   position: 'Graduate Student'
+      // },
+      // {
+      //   name:'Yorick Sanders',
+      //   image:'yorick.png',
+      //   position: 'Graduate Student'
+      // },
       {
         name:'Conrad Li',
         image:'conrad.png',
         position: 'Undergraduate Student'
       },
-      {
-        name:'Benjamin Beal',
-        image:'ben.png',
-        position: 'Undergraduate Student'
-      },
-      {
-        name:'Nikhil Ajjarapu',
-        image:'nikhil.png',
-        position: 'Undergraduate Student'
-      },
-      {
-        name:'Edward Zhou',
-        image:'placeholder.png',
-        position: 'Undergraduate Student'
-      },
-      {
-        name:'Binglin Zhang',
-        image:'bingling.png',
-        position: 'Undergraduate Student'
-      },
-      {
-        name:'Abrar Anwar',
-        image:'abrar.png',
-        position: 'Undergraduate Student'
-      },
+      // {
+      //   name:'Benjamin Beal',
+      //   image:'ben.png',
+      //   position: 'Undergraduate Student'
+      // },
+      // {
+      //   name:'Nikhil Ajjarapu',
+      //   image:'nikhil.png',
+      //   position: 'Undergraduate Student'
+      // },
+      // {
+      //   name:'Edward Zhou',
+      //   image:'placeholder.png',
+      //   position: 'Undergraduate Student'
+      // },
+      // {
+      //   name:'Binglin Zhang',
+      //   image:'bingling.png',
+      //   position: 'Undergraduate Student'
+      // },
+      // {
+      //   name:'Abrar Anwar',
+      //   image:'abrar.png',
+      //   position: 'Undergraduate Student'
+      // },
       {
         name:'Jeffery Mo',
         image:'placeholder.png',
         position: 'Undergraduate Student'
       },
+      // {
+      //   name:'Yash Totlani',
+      //   image:'placeholder.png',
+      //   position: 'Undergraduate Student'
+      // },
+      // {
+      //   name:'Arman Maesumi',
+      //   image:'placeholder.png',
+      //   position: 'Undergraduate Student'
+      // },
+      // {
+      //   name:'Sebastian Rutherford',
+      //   image:'placeholder.png',
+      //   position: 'Undergraduate Student'
+      // },
+      // {
+      //   name:'Harrison White',
+      //   image:'placeholder.png',
+      //   position: 'Undergraduate Student'
+      // },
+      // {
+      //   name:'Viraj Joshi',
+      //   image:'placeholder.png',
+      //   position: 'Undergraduate Student'
+      // },
       {
-        name:'Yash Totlani',
+        name:'Aaron Dominick',
         image:'placeholder.png',
-        position: 'Undergraduate Student'
+        position: 'Graduate Student'
       },
       {
-        name:'Arman Maesumi',
+        name:'Ashwin Vinod',
         image:'placeholder.png',
-        position: 'Undergraduate Student'
+        position: 'Graduate Student'
       },
       {
-        name:'Sebastian Rutherford',
+        name:'Luke McLennan',
         image:'placeholder.png',
-        position: 'Undergraduate Student'
+        position: 'Graduate Student'
       },
       {
-        name:'Harrison White',
+        name:'Omatharv Bharat Vaidya',
         image:'placeholder.png',
-        position: 'Undergraduate Student'
+        position: 'Graduate Student'
       },
       {
-        name:'Viraj Joshi',
+        name:'Shubham Bhardwaj',
         image:'placeholder.png',
-        position: 'Undergraduate Student'
-      }
+        position: 'Graduate Student'
+      },
     ],
     newsTiles:[
       {
