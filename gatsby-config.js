@@ -13,11 +13,11 @@ module.exports = {
         image:'laura.png',
         position: 'Administrative Associate'
       },
-      // {
-      //   name:'Ahmed Abdelkader',
-      //   image:'ahmed.png',
-      //   position: 'Postdoctoral Researcher'
-      // },
+      {
+        name:'Taemin Heo',
+        image:'taemin.png',
+        position: 'Postdoctoral Researcher'
+      },
       {
         name:'Yi Wang',
         image:'yi.png',
@@ -28,6 +28,91 @@ module.exports = {
         image:'ryan.png',
         position: 'Graduate Student'
       },
+      {
+        name:'Minh Nguyen',
+        image:'placeholder.png',
+        position: 'Graduate Student'
+      },
+      {
+        name:'Luke McLennan',
+        image:'placeholder.png',
+        position: 'Graduate Student'
+      },
+      {
+        name:'Aaron Dominick',
+        image:'placeholder.png',
+        position: 'Graduate Student'
+      },
+      {
+        name:'Qing Zhu',
+        image:'placeholder.png',
+        position: 'Graduate Student'
+      },
+      {
+        name:'Shubham Bhardwaj',
+        image:'shubham.png',
+        position: 'Graduate Student'
+      },
+      {
+        name:'Omatharv Bharat Vaidya',
+        image:'placeholder.png',
+        position: 'Graduate Student'
+      },
+      {
+        name:'Shruti Raghavan',
+        image:'shruti.png',
+        position: 'Graduate Student'
+      },
+      {
+        name:'Jan-Christopher Cohrs',
+        image:'jan.png',
+        position: 'Graduate Student'
+      },
+      {
+        name:'Rochan Avlur',
+        image:'rochan.png',
+        position: 'Graduate Student'
+      },
+      {
+        name:'Ashwin Vinod',
+        image:'placeholder.png',
+        position: 'Graduate Student'
+      },
+      {
+        name:'Jasleen Dhillon',
+        image:'placeholder.png',
+        position: 'Graduate Student'
+      },
+      {
+        name:'George J Zhai',
+        image:'placeholder.png',
+        position: 'Graduate Student'
+      },
+      {
+        name:'Pronoma Banerjee',
+        image:'placeholder.png',
+        position: 'UndergraduateStudent'
+      },
+      {
+        name:'Jeffery Mo',
+        image:'placeholder.png',
+        position: 'Undergraduate Student'
+      },
+      {
+        name:'Ruiqui Zuo',
+        image:'placeholder.png',
+        position: 'Undergraduate Student'
+      },
+      {
+        name:'Conrad Li',
+        image:'conrad.png',
+        position: 'Undergraduate Student'
+      },
+      // {
+      //   name:'Ahmed Abdelkader',
+      //   image:'ahmed.png',
+      //   position: 'Postdoctoral Researcher'
+      // },
       // {
       //   name:'Yunhao Yang',
       //   image:'yunhao.png',
@@ -38,31 +123,16 @@ module.exports = {
       //   image:'chase.png',
       //   position: 'Graduate Student'
       // },
-      {
-        name:'Taemin Heo',
-        image:'taemin.png',
-        position: 'Graduate Student'
-      },
       // {
       //   name:'Nathan Clement',
       //   image:'nathan.png',
       //   position: 'Graduate Student'
       // },
-      {
-        name:'Jan-Christopher Cohrs',
-        image:'jan.png',
-        position: 'Graduate Student'
-      },
       // {
       //   name:'Thomas Ghorbanian',
       //   image:'thomas.png',
       //   position: 'Graduate Student'
       // },
-      {
-        name:'Minh Nguyen',
-        image:'placeholder.png',
-        position: 'Graduate Student'
-      },
       // {
       //   name:'Sumit Sinha',
       //   image:'placeholder.png',
@@ -73,12 +143,7 @@ module.exports = {
       //   image:'placeholder.png',
       //   position: 'Graduate Student'
       // },
-      {
-        name:'Rochan Avlur',
-        image:'rochan.png',
-        position: 'Graduate Student'
-      },
-      // {
+        // {
       //   name:'Sean Zanyk McLean',
       //   image:'sean.png',
       //   position: 'Graduate Student'
@@ -88,11 +153,6 @@ module.exports = {
       //   image:'yorick.png',
       //   position: 'Graduate Student'
       // },
-      {
-        name:'Conrad Li',
-        image:'conrad.png',
-        position: 'Undergraduate Student'
-      },
       // {
       //   name:'Benjamin Beal',
       //   image:'ben.png',
@@ -118,12 +178,7 @@ module.exports = {
       //   image:'abrar.png',
       //   position: 'Undergraduate Student'
       // },
-      {
-        name:'Jeffery Mo',
-        image:'placeholder.png',
-        position: 'Undergraduate Student'
-      },
-      // {
+        // {
       //   name:'Yash Totlani',
       //   image:'placeholder.png',
       //   position: 'Undergraduate Student'
@@ -148,31 +203,6 @@ module.exports = {
       //   image:'placeholder.png',
       //   position: 'Undergraduate Student'
       // },
-      {
-        name:'Aaron Dominick',
-        image:'placeholder.png',
-        position: 'Graduate Student'
-      },
-      {
-        name:'Ashwin Vinod',
-        image:'placeholder.png',
-        position: 'Graduate Student'
-      },
-      {
-        name:'Luke McLennan',
-        image:'placeholder.png',
-        position: 'Graduate Student'
-      },
-      {
-        name:'Omatharv Bharat Vaidya',
-        image:'placeholder.png',
-        position: 'Graduate Student'
-      },
-      {
-        name:'Shubham Bhardwaj',
-        image:'placeholder.png',
-        position: 'Graduate Student'
-      },
     ],
     newsTiles:[
       {
@@ -188,7 +218,7 @@ module.exports = {
         link:'/seminars/fall2021/seminar2'
       },
     ],
-    dedreconProjectTiles:[
+    projectTiles:[
       {
         name:'DEDRECON',
         description: 'Advanced machine learning applied to real-life image visual perception under multi-modality fusion techniques',
@@ -237,8 +267,6 @@ module.exports = {
         img_name:'project_tiles/dmd',
         link:'/projects/dmd'
       },
-    ],
-    projectTiles:[
       {
         name: 'Angstrom',
         description: 'Multi-resolution geometric data structures and computational mathematics algorithms',
