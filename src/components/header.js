@@ -1,7 +1,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
-import { Grid } from '@material-ui/core';
+import Grid from "@mui/material/Grid"
 import Navigation from "./navigation"
 import { StaticImage } from "gatsby-plugin-image"
 

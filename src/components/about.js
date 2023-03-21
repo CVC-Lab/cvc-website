@@ -1,6 +1,8 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { GridList, GridListTile } from "@material-ui/core"
+import { Grid } from "@mui/material";
+
+
 
 const About = () => (
   <div className="about-class" id="about" style={{background: 'white', display:'flex', alignItems: 'center', justifyContent: 'center', textAlign: `left`}}>
@@ -16,26 +18,27 @@ const About = () => (
       <p>The Center is under the joint auspices of the Oden Institute for Computational Engineering and Sciences and the Department of Computer Science at the University of Texas at Austin.</p>
       <br></br>
       <div>
-        <GridList cols={6} style={{width: `100%`}} cellHeight={'250px'}>
-            <GridListTile style={{width: `40%`}}>
-              <Link style={{color: `#333f48`, textDecoration: `none`, fontSize: `.73rem`}}>
-                <img
-                  src={require(`../images/oden.png`).default}
-                  alt="oden institute"
-                  width={400}
-                />
-              </Link>
-            </GridListTile>
-            <GridListTile style={{width: `40%`}}>
-              <Link style={{color: `#333f48`, textDecoration: `none`, fontSize: `.73rem`}}>
-                <img
-                  src={require(`../images/cs.png`).default}
-                  alt="cs"
-                  width={400}
-                />
-              </Link>
-            </GridListTile>
-        </GridList></div>
+        <Grid container spacing={2} style={{ width: "100%" }}>
+          <Grid item xs={6} sm={3}>
+            <Link style={{ color: "#333f48", textDecoration: "none", fontSize: ".73rem" }}>
+              <img
+                src={require("../images/oden.png").default}
+                alt="oden institute"
+                width={400}
+              />
+            </Link>
+          </Grid>
+          <Grid item xs={6} sm={3}>
+            <Link style={{ color: "#333f48", textDecoration: "none", fontSize: ".73rem" }}>
+              <img
+                src={require("../images/cs.png").default}
+                alt="cs"
+                width={400}
+              />
+            </Link>
+          </Grid>
+        </Grid>
+      </div>
       <br></br>
       <p>The Center’s current research and education areas of interest span Image Processing, Computational Geometry,
         Geometric Modeling, Computer Graphics Animation, Data Analysis, Visualization, and Computational Mathematics.
