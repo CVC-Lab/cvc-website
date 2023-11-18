@@ -55,29 +55,35 @@
     text-align: justify;
 }
 
-.people-class .header-subtitle:after {
-    content: ""; /* This is necessary for the pseudo element to work. */
-    display: block; /* This will put the pseudo element on its own line. */
-    /*margin: 0 auto; /* This will center the border. */
-    width: 15%; /* Change this to whatever width you want. */
-    padding-top: 20px; /* This creates some space between the element and the border. */
-    border-bottom: .5px solid #787575; /* This creates the border. Replace black with whatever color you want. */
+.people-class {
+    background: #F0F3F4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+  
+.people-container {
+    margin: 0 auto;
+    max-width: 1050px;
+    padding-bottom: 5.45rem;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+    width: 100%;
+}
+  
+.header-subtitle {
+    color: #787575;
+    font-size: .75rem;
+    font-weight: 600;
+    margin: auto;
+    padding-bottom: 1.0rem;
+    padding-top: 2.0rem;
+    margin-bottom: 1rem;
 }
 
-.tiles-class .header-subtitle:after {
-    content: ""; /* This is necessary for the pseudo element to work. */
-    display: block; /* This will put the pseudo element on its own line. */
-    /*margin: 0 auto; /* This will center the border. */
-    width: 15%; /* Change this to whatever width you want. */
-    padding-top: 20px; /* This creates some space between the element and the border. */
-    border-bottom: .5px solid #787575; /* This creates the border. Replace black with whatever color you want. */
-}
-
-.about-class .header-subtitle:after {
-    content: ""; /* This is necessary for the pseudo element to work. */
-    display: block; /* This will put the pseudo element on its own line. */
-    /*margin: 0 auto; /* This will center the border. */
-    width: 15%; /* Change this to whatever width you want. */
-    padding-top: 20px; /* This creates some space between the element and the border. */
-    border-bottom: .5px solid #787575; /* This creates the border. Replace black with whatever color you want. */
+.member-grid-item {
+    height: 220px;
+    width: 150px;
+    overflow: hidden;
 }

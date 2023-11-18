@@ -23,6 +23,7 @@ const IndexPage = ({ children }) => {
             name
             image
             position
+            status
           }     
         }
       }

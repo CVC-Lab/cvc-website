@@ -6,107 +6,128 @@ module.exports = {
       {
         name:'Chandrajit Bajaj',
         image:'chandrajit.png',
-        position: 'Director, Principle Investigator'
+        position: 'Director, Principle Investigator',
+        status: 'current'
       },
       {
         name:'Laura Lansing',
         image:'laura.png',
-        position: 'Administrative Associate'
+        position: 'Administrative Associate',
+        status: 'current'
       },
       {
         name:'Taemin Heo',
         image:'taemin.png',
-        position: 'Postdoctoral Researcher'
+        position: 'Postdoctoral Researcher',
+        status: 'current'
       },
       {
         name:'Yi Wang',
         image:'yi.png',
-        position: 'Graduate Student'
+        position: 'Graduate Student',
+        status: 'current'
       },
       {
         name:'Ryan Farell',
         image:'ryan.png',
-        position: 'Graduate Student'
+        position: 'Graduate Student',
+        status: 'current'
       },
       {
         name:'Minh Nguyen',
         image:'placeholder.png',
-        position: 'Graduate Student'
+        position: 'Graduate Student',
+        status: 'current'
       },
       {
         name:'Luke McLennan',
         image:'placeholder.png',
-        position: 'Graduate Student'
+        position: 'Graduate Student',
+        status: 'current'
       },
       {
         name:'Aaron Dominick',
         image:'placeholder.png',
-        position: 'Graduate Student'
+        position: 'Graduate Student',
+        status: 'current'
       },
       {
         name:'Qing Zhu',
         image:'placeholder.png',
-        position: 'Graduate Student'
+        position: 'Graduate Student',
+        status: 'current'
       },
       {
         name:'Shubham Bhardwaj',
         image:'shubham.png',
-        position: 'Graduate Student'
+        position: 'Graduate Student',
+        status: 'current'
       },
       {
         name:'Omatharv Bharat Vaidya',
         image:'placeholder.png',
-        position: 'Graduate Student'
+        position: 'Graduate Student',
+        status: 'current'
       },
       {
         name:'Shruti Raghavan',
         image:'shruti.png',
-        position: 'Graduate Student'
+        position: 'Graduate Student',
+        status: 'current'
       },
       {
         name:'Jan-Christopher Cohrs',
         image:'jan.png',
-        position: 'Graduate Student'
+        position: 'Graduate Student',
+        status: 'current'
       },
       {
         name:'Rochan Avlur',
         image:'rochan.png',
-        position: 'Graduate Student'
+        position: 'Graduate Student',
+        status: 'current'
       },
       {
         name:'Ashwin Vinod',
         image:'placeholder.png',
-        position: 'Graduate Student'
+        position: 'Graduate Student',
+        status: 'current'
       },
       {
         name:'Jasleen Dhillon',
         image:'placeholder.png',
-        position: 'Graduate Student'
+        position: 'Graduate Student',
+        status: 'current'
       },
       {
         name:'George J Zhai',
         image:'placeholder.png',
-        position: 'Graduate Student'
+        position: 'Graduate Student',
+        status: 'current'
       },
       {
         name:'Pronoma Banerjee',
         image:'placeholder.png',
-        position: 'UndergraduateStudent'
+        position: 'Undergraduate Student',
+        status: 'current'
       },
       {
         name:'Jeffery Mo',
         image:'placeholder.png',
-        position: 'Undergraduate Student'
+        position: 'Undergraduate Student',
+        status: 'current'
       },
       {
         name:'Ruiqui Zuo',
         image:'placeholder.png',
-        position: 'Undergraduate Student'
+        position: 'Undergraduate Student',
+        status: 'current'
       },
       {
         name:'Conrad Li',
         image:'conrad.png',
-        position: 'Undergraduate Student'
+        position: 'Undergraduate Student',
+        status: 'current'
       },
       // {
       //   name:'Ahmed Abdelkader',
