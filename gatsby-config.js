@@ -244,85 +244,99 @@ module.exports = {
         name:'DEDRECON',
         description: 'Advanced machine learning applied to real-life image visual perception under multi-modality fusion techniques',
         img_name:'project_tiles/afc_logo',
-        link:'/projects/dedrecon'
+        link:'/projects/dedrecon',
+        tags: ['Computer Vision', 'Scientific ML']
       },
       {
         name:'Video Imputation',
         description: 'On-the fly error-recovery in adaptive streaming, compression, and super resolution',
         img_name:'project_tiles/video_imputation_crop',
-        link:'/projects/video-imputation'
+        link:'/projects/video-imputation',
+        tags: ['Computer Vision']
       },
       {
         name:'MCE-VAE',
         description: 'Invariance-based multi-clustering of latent space embeddings for equivariant learning',
         img_name:'project_tiles/mce_vae',
-        link:'/projects/mce-vae'
+        link:'/projects/mce-vae',
+        tags: ['Scientific ML']
       },
       {
         name:'Sample Complexity',
         description: 'Theoretical conditions and algorithmic developments enabling sample-efficient reinforcement learning',
         img_name:'project_tiles/sample_complexity_2',
-        link:'/projects/sample-complexity'
+        link:'/projects/sample-complexity',
+        tags: ['Reinforcement Learning']
       },
       {
         name:'Optimal Control',
         description: 'Optimal control problem solving by applying the Pontryagin maximum principle and then solving for a Hamiltonian dynamical system',
         img_name:'project_tiles/optimal_control_2',
-        link:'/projects/optimal-control'
+        link:'/projects/optimal-control',
+        tags: ['Scientific ML', 'Reinforcement Learning']
       },
       {
         name: 'Adversarial Cloaking',
         description: 'Patch-based adversarial attack pipeline for training adversarial patches on 3D human meshes',
         img_name:'project_tiles/adversarial_cloaking_crop',
-        link:'/projects/adversarial-cloaking'
+        link:'/projects/adversarial-cloaking',
+        tags: ['Computer Vision', 'Scientific ML']
       },
       {
         name: 'Camera ISP',
         description: "Structured deep learning models that solves the heterogeneous image artifact filtering problem",
         img_name:'project_tiles/isp_crop',
-        link:'/projects/camera-isp'
+        link:'/projects/camera-isp',
+        tags: ['Computer Vision']
       },
       {
         name:'Dynamic Mode Decomposition',
         description: 'Using compressive sensing and variational inference to side-step the traditional DMD analysis',
         img_name:'project_tiles/dmd',
-        link:'/projects/dmd'
+        link:'/projects/dmd',
+        tags: ['Scientific ML']
       },
       {
         name: 'Angstrom',
         description: 'Multi-resolution geometric data structures and computational mathematics algorithms',
         img_name:'project_tiles/angstrom',
-        link:'/projects/angstrom'
+        link:'/projects/angstrom',
+        tags: ['Scientific ML']
       },
       {
         name: 'Spectre',
         description: 'Smart data structures and prediction optimization with provable guarantees for spectral and geometric processing',
         img_name:'project_tiles/spectre_logo',
-        link:'/projects/spectre'
+        link:'/projects/spectre',
+        tags: ['Scientific ML']
       },
       {
         name:'Generative Material Design',
         description: 'Semi-supervised variational inference for generative materials design',
         img_name:'project_tiles/generative_material_logo',
-        link:'/projects/generative-material-design'
+        link:'/projects/generative-material-design',
+        tags: ['Scientific ML']
       },
       {
         name: 'Shape Optimization',
         description: 'Inverse generative modeling for stealth and cloaking devices using meta-materials',
         img_name:'project_tiles/shape_logo',
-        link:'/projects/shape-optimization'
+        link:'/projects/shape-optimization',
+        tags: ['Scientific ML', 'Computer Vision']
       },
       {
         name: 'Rank-ordered Search-and-Score',
         description: 'Multi-Agent Reinforcement Learning for sample efficient Rank-ordered Search-and-Score of giga-pixel images',
         img_name:'project_tiles/search_n_score',
-        link:'/projects/search-n-score'
+        link:'/projects/search-n-score',
+        tags: ['Reinforcement Learning']
       },
       {
         name: 'Physics-informed Neural Networks',
         description: 'Robust physics-informed neural networks for solving partial differential equations by capturing the physics induced constraints',
         img_name:'project_tiles/robust_pinns',
-        link:'/projects/robust-pinns'
+        link:'/projects/robust-pinns',
+        tags: ['Scientific ML']
       }
     ],
     menuLinks:[

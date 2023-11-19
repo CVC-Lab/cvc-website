@@ -18,6 +18,7 @@ const IndexPage = ({ children }) => {
             description
             img_name
             link
+            tags
           }
           peopleCards {
             name

@@ -6,14 +6,9 @@
 
 .Tile .MuiGridListTile-root {
   height: 300px;
-  minHeight: '100vh';
   border-radius: 5px;
   box-shadow: 0px 1px 2px 1px transparent;
 
-}
-
-.tiles-class{
-  margin-bottom: 5.45rem;
 }
 
 .Tile .image-container img {
@@ -21,7 +16,6 @@
   height: 125px;
   border-radius: 10%;
   padding: 5px;
-  /*filter: grayscale(100%);*/
   border: 2px solid #333f48;
   display: block;
   margin: auto;
@@ -79,3 +73,41 @@ p {
   text-align: justify;
 }
 
+.tiles-class {
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  margin-bottom: 5.45rem;
+}
+
+.inner-container {
+  margin: 0 auto;
+  max-width: 1050px;
+  padding-bottom: 1.45rem;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  width: 100%;
+}
+
+.header-subtitle {
+  color: #787575;
+  font-size: .75rem;
+  font-weight: 600;
+  margin: auto;
+  padding-bottom: 1.0rem;
+  padding-top: 2.0rem;
+  margin-bottom: 1rem;
+}
+
+.MuiTabs-root {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.Tile a {
+  color: #333f48;
+  text-decoration: none;
+  font-size: .73rem;
+}
