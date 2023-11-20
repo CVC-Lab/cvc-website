@@ -13,7 +13,7 @@
 .lower-container-pubs{
     margin-top: 0px;
     background: transparent;
-    text-align: center;
+    margin-left: 4rem;
     font-family: 'Libre Franklin', sans-serif;
 }
 
@@ -25,20 +25,20 @@
 .lower-container-pubs h3{
     color: #333f48;
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .lower-container-pubs h4{
     color: #333f48;
     font-weight: 500;
-    font-size: 1.0rem;
+    font-size: .875rem;
 }
 
 .lower-container-pubs p{
     margin: 1rem;
     color: #333f48;
     font-weight: 300;
-    font-size: 0.9rem;
+    font-size: .875rem;
     text-align: justify;
 }
 
@@ -81,5 +81,15 @@
 .year-header h3 {
     text-align: center;
     font-weight: bold;
+    font-size: 1.4rem;
     margin-bottom: 15px;
 }
+
+.type-header {
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #333f48;
+    margin-top: 1.5rem;
+    margin-bottom: .625rem;
+  }
+  
