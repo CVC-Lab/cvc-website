@@ -50,3 +50,36 @@
     padding-top: 20px; /* This creates some space between the element and the border. */
     border-bottom: .5px solid #787575; /* This creates the border. Replace black with whatever color you want. */
 }
+
+.publications-class {
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+  
+.publication-container {
+    margin: 0 auto;
+    max-width: 1050px;
+    padding-bottom: 1.45rem;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+    width: 100%;
+}
+  
+.header-subtitle {
+    color: #787575;
+    font-size: 1.0rem;
+    font-weight: 600;
+    margin: auto;
+    padding-bottom: 1.0rem;
+    padding-top: 2.0rem;
+    margin-bottom: 1rem;
+}
+  
+.year-header h3 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
