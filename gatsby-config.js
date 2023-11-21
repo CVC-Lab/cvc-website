@@ -41,7 +41,7 @@ module.exports = {
       },
       {
         name:'Luke McLennan',
-        image:'placeholder.png',
+        image:'luke.png',
         position: 'PhD Student',
         status: 'current'
       },
