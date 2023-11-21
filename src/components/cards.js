@@ -24,8 +24,37 @@ const TabPanel = (props) => {
   );
 }
 
+const sortMembers = (members) => {
+  const positionOrder = [
+    'Director, Principle Investigator',
+    'Administrative Associate',
+    'Postdoctoral Researcher',
+    'Research Fellow',
+    'PhD Candidate',
+    'PhD Student',
+    'Graduate Student',
+    'Undergraduate Student',
+    'High School Student',
+  ];
+
+  const comparePositions = (a, b) => {
+    const positionA = positionOrder.indexOf(a.position);
+    const positionB = positionOrder.indexOf(b.position);
+
+    if (positionA !== positionB) {
+      return positionA - positionB;
+    }
+
+    return a.name.localeCompare(b.name);
+  };
+
+  return members.slice().sort(comparePositions);
+};
+
 function renderMembers(members) {
-  return members.map((people) => (
+  const sortedMembers = sortMembers(members);
+
+  return sortedMembers.map((people) => (
     <Grid
       item
       xs={6}
