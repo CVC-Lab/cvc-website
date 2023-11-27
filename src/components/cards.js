@@ -27,7 +27,7 @@ const TabPanel = (props) => {
 const sortMembers = (members) => {
   const positionOrder = [
     'Director, Principle Investigator',
-    'Administrative Associate',
+    'Research Administrator',
     'Postdoctoral Researcher',
     'Research Fellow',
     'PhD Candidate',
