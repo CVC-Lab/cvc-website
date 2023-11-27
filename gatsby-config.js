@@ -12,7 +12,7 @@ module.exports = {
       {
         name:'Laura Lansing',
         image:'laura.png',
-        position: 'Administrative Associate',
+        position: 'Research Administrator',
         status: 'current'
       },
       {
