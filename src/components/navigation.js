@@ -13,7 +13,7 @@ const Navigation = ({ menuLinks }) => (
     <nav>
       <ul style={{display: "flex", flex: 1}}>
         {menuLinks.map(link => (
-          <li key={link.name} style={{listStyleType: `none`, padding: `1rem`, paddingTop: `.35rem`, paddingBottom: `0rem`}}>
+          <li key={link.name} style={{listStyleType: `none`, padding: `1rem`, paddingTop: `1.68rem`, paddingBottom: `0rem`}}>
               {link.scroll_link === true && (UserTheme() === `/cvc-website/` || UserTheme() === `/`) ?
                 <LinkRouter to={link.link} style={{color: `#333f48`, textDecoration: `none`, fontSize: `.73rem`, fontWeight: `700`}}>
                 <Link
