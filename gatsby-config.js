@@ -541,11 +541,18 @@ module.exports = {
         tags: ['Scientific ML']
       },
       {
-        name: 'Theoretical bound for optimal control flow (OCF) algorithm',
+        name: 'Theoretical Bound for OCF Algorithm',
         description: 'This work aims to provide a more solid theoretical and mathematical understanding of optimal control flow (OCF) algorithm.',
         img_name:'project_tiles/theoretical_bound',
         link:'/projects/theoretical-bound',
         tags: ['Reinforcement Learning']
+      },
+      {
+        name: 'Real Time Processing of Hyperspectral Video',
+        description: 'This project showcases various aspects of processing hyperspectral video streams in real-time using advanced machine learning techniques.',
+        img_name:'project_tiles/intelligent_ml',
+        link:'https://cvc-lab.github.io/afc-website/',
+        tags: ['Computer Vision']
       }
     ],
     menuLinks:[
