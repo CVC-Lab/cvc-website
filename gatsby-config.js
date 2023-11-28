@@ -539,6 +539,13 @@ module.exports = {
         img_name:'project_tiles/robust_pinns',
         link:'/projects/robust-pinns',
         tags: ['Scientific ML']
+      },
+      {
+        name: 'Theoretical bound for optimal control flow (OCF) algorithm',
+        description: 'This work aims to provide a more solid theoretical and mathematical understanding of optimal control flow (OCF) algorithm.',
+        img_name:'project_tiles/theoretical_bound',
+        link:'/projects/theoretical-bound',
+        tags: ['Reinforcement Learning']
       }
     ],
     menuLinks:[
