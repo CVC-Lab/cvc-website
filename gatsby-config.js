@@ -553,6 +553,13 @@ module.exports = {
         img_name:'project_tiles/intelligent_ml',
         link:'https://cvc-lab.github.io/afc-website/',
         tags: ['Computer Vision']
+      },
+      {
+        name: 'Dueling Neural ODEs',
+        description: 'Dueling Neural ODEs seek to enforce stability in learning forward and adjoint dynamic.',
+        img_name:'project_tiles/dueling_neural_odes',
+        link:'/projects/neuralode',
+        tags: ['Scientific ML']
       }
     ],
     menuLinks:[
