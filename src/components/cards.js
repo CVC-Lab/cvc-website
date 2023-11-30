@@ -28,6 +28,7 @@ const sortMembers = (members) => {
   const positionOrder = [
     'Director, Principle Investigator',
     'Research Administrator',
+    'Research Fellow',
     'Postdoctoral Researcher',
     'Research Fellow',
     'PhD Candidate',
