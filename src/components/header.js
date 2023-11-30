@@ -12,14 +12,16 @@ const Header = ({ siteTitle, siteDescription, menuLinks }) => (
         <Grid>
           <Grid container direction="row" justify="space-between" alignItems="center">
             <Grid>
-              <StaticImage
-                class="headerlogo"
-                src="../images/knockout_university_formal_horizontal.png"
-                width={300}
-                quality={95}
-                formats={["auto", "webp", "avif"]}
-                alt="UT Austin Logo"
-              />
+              <Link to="/">
+                  <StaticImage
+                    class="headerlogo"
+                    src="../images/knockout_university_formal_horizontal.png"
+                    width={300}
+                    quality={95}
+                    formats={["auto", "webp", "avif"]}
+                    alt="UT Austin Logo"
+                  />
+                </Link>
             </Grid>
             <Grid>
                 <Navigation menuLinks={menuLinks}></Navigation>

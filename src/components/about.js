@@ -19,21 +19,21 @@ const About = () => (
       <br></br>
       <div>
         <Grid container spacing={2} style={{ width: "100%" }}>
-          <Grid item xs={6} sm={3}>
+          <Grid item xs={12} sm={6}>
             <Link style={{ color: "#333f48", textDecoration: "none", fontSize: ".73rem" }}>
               <img
                 src={require("../images/oden.png").default}
                 alt="oden institute"
-                width={400}
+                width={496}
               />
             </Link>
           </Grid>
-          <Grid item xs={6} sm={3}>
+          <Grid item xs={12} sm={6}>
             <Link style={{ color: "#333f48", textDecoration: "none", fontSize: ".73rem" }}>
               <img
                 src={require("../images/cs.png").default}
                 alt="cs"
-                width={400}
+                width={510}
               />
             </Link>
           </Grid>
