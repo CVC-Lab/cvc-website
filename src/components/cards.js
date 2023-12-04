@@ -28,14 +28,8 @@ const sortMembers = (members) => {
   const positionOrder = [
     'Director, Principle Investigator',
     'Research Administrator',
-    'Research Fellow',
-    'Postdoctoral Researcher',
-    'Research Fellow',
-    'PhD Candidate',
-    'PhD Student',
-    'Graduate Student',
-    'Undergraduate Student',
-    'High School Student',
+    'Research Fellow from Purdue University',
+    'Postdoctoral Researcher'
   ];
 
   const comparePositions = (a, b) => {
@@ -52,10 +46,61 @@ const sortMembers = (members) => {
   return members.slice().sort(comparePositions);
 };
 
-function renderMembers(members) {
+function renderMembersByTitle(members) {
   const sortedMembers = sortMembers(members);
 
-  return sortedMembers.map((people) => (
+  const studentsByTitle = {
+    'Graduate Student': [],
+    'Undergraduate Student': [],
+    'High School Student': [],
+  };
+
+  const facultyTiles = [];
+
+  sortedMembers.forEach(member => {
+    const positionLower = member.position.toLowerCase();
+    if ((positionLower.includes('graduate') && !positionLower.includes('undergraduate')) || positionLower.includes('phd')) {
+      studentsByTitle['Graduate Student'].push(member);
+    } else if (member.position === 'Undergraduate Student') {
+      studentsByTitle['Undergraduate Student'].push(member);
+    } else if (member.position === 'High School Student') {
+      studentsByTitle['High School Student'].push(member);
+    } else {
+      facultyTiles.push(member);
+    }
+  });
+
+  return (
+    <div className="student-titles">
+      <h3 className="title-header"></h3>
+      <Grid style={{ marginBottom: '2rem' }} container spacing={4}>
+        {facultyTiles.map((people) => renderCard(people, true))}
+      </Grid>
+      <h3 className="title-header">Graduate Students</h3>
+      <Grid className="title-grid" container spacing={4}>
+        {studentsByTitle['Graduate Student'].map((people) => 
+          renderCard(people, !people.isExactTitle))}
+      </Grid>
+      <h3 className="title-header">Undergraduate Students</h3>
+      <Grid className="title-grid" container spacing={4}>
+        {studentsByTitle['Undergraduate Student'].map((people) => 
+          renderCard(people, false))}
+      </Grid>
+        {studentsByTitle['High School Student'] && studentsByTitle['High School Student'].length > 0 && (
+          <>
+            <h3 className="title-header">High School Students</h3>
+            <Grid className="title-grid" container spacing={4}>
+              {studentsByTitle['High School Student'].map((people) => 
+                renderCard(people, false))}
+            </Grid>
+          </>
+        )}
+    </div>
+  );
+}
+
+function renderCard(people, showFullTitle = false) {
+  return (
     <Grid
       item
       xs={6}
@@ -74,12 +119,12 @@ function renderMembers(members) {
           </div>
         </div>
         <div className="lower-container">
-          <h3> {people.name} </h3>
-          <h4> {people.position} </h4>
+          <h3>{people.name}</h3>
+          {showFullTitle && <h4>{people.position}</h4>}
         </div>
       </div>
     </Grid>
-  ));
+  );
 }
 
 const Cards = ({ peopleCards }) => {
@@ -101,11 +146,11 @@ const Cards = ({ peopleCards }) => {
           <Tab label="Alumni" />
         </Tabs>
         <TabPanel value={value} index={0}>
-          {renderMembers(currentMembers)}
-        </TabPanel>
-        <TabPanel value={value} index={1}>
-          {renderMembers(alumniMembers)}
-        </TabPanel>
+        {renderMembersByTitle(currentMembers)}
+      </TabPanel>
+      <TabPanel value={value} index={1}>
+        {renderMembersByTitle(alumniMembers)}
+      </TabPanel>
       </div>
     </div>
   );

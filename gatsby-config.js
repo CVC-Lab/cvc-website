@@ -53,7 +53,7 @@ module.exports = {
       },
       {
         name:'Qing Zhu',
-        image:'placeholder.png',
+        image:'qing.png',
         position: 'PhD Student',
         status: 'current'
       },
@@ -101,8 +101,8 @@ module.exports = {
       },
       {
         name:'George J Zhai',
-        image:'placeholder.png',
-        position: 'PhD Candidate',
+        image:'george.png',
+        position: 'Graduate Student',
         status: 'current'
       },
       {
@@ -126,25 +126,25 @@ module.exports = {
       {
         name:'Arya Anantula',
         image:'placeholder.png',
-        position: 'Graduate Student',
-        status: 'alumni'
+        position: 'Undergraduate Student',
+        status: 'current'
       },
-      {
-        name:'Bhaumik Tiwari',
-        image:'placeholder.png',
-        position: 'Graduate Student',
-        status: 'alumni'
-      },
-      {
-        name:'Drishti Gupta',
-        image:'placeholder.png',
-        position: 'Graduate Student',
-        status: 'alumni'
-      },
+      // {
+      //   name:'Bhaumik Tiwari',
+      //   image:'placeholder.png',
+      //   position: 'Graduate Student',
+      //   status: 'alumni'
+      // },
+      // {
+      //   name:'Drishti Gupta',
+      //   image:'placeholder.png',
+      //   position: 'Graduate Student',
+      //   status: 'alumni'
+      // },
       {
         name:'Harsha Honnappa',
         image:'placeholder.png',
-        position: 'Research Fellow',
+        position: 'Research Fellow from Purdue University',
         status: 'current'
       },
       {
@@ -165,40 +165,40 @@ module.exports = {
         position: 'Undergraduate Student',
         status: 'alumni'
       },
-      {
-        name:'Poulami Sarkar',
-        image:'placeholder.png',
-        position: 'Graduate Student',
-        status: 'alumni'
-      },
+      // {
+      //   name:'Poulami Sarkar',
+      //   image:'placeholder.png',
+      //   position: 'Graduate Student',
+      //   status: 'alumni'
+      // },
       {
         name:'Raghav Pant',
         image:'placeholder.png',
         position: 'PhD Student',
         status: 'current'
       },
-      {
-        name:'Shreyas V',
-        image:'placeholder.png',
-        position: 'Graduate Student',
-        status: 'alumni'
-      },
+      // {
+      //   name:'Shreyas V',
+      //   image:'placeholder.png',
+      //   position: 'Graduate Student',
+      //   status: 'alumni'
+      // },
       {
         name:'Shreyash Sinha',
         image:'placeholder.png',
         position: 'Graduate Student',
         status: 'alumni'
       },
-      {
-        name:'Viren Velacheri',
-        image:'placeholder.png',
-        position: 'Graduate Student',
-        status: 'alumni'
-      },
+      // {
+      //   name:'Viren Velacheri',
+      //   image:'placeholder.png',
+      //   position: 'Graduate Student',
+      //   status: 'alumni'
+      // },
       {
         name:'Pronoma Banerjee',
-        image:'placeholder.png',
-        position: 'Graduate Student',
+        image:'pronoma.png',
+        position: 'Graduate Research Scholar - Interning from India',
         status: 'current'
       },
       {
