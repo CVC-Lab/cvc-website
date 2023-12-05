@@ -65,7 +65,7 @@ module.exports = {
       },
       {
         name:'Omatharv Bharat Vaidya',
-        image:'placeholder.png',
+        image:'omatharv.png',
         position: 'Graduate Student',
         status: 'current'
       },
@@ -89,7 +89,7 @@ module.exports = {
       },
       {
         name:'Ashwin Vinod',
-        image:'placeholder.png',
+        image:'ashwin.png',
         position: 'Graduate Student',
         status: 'current'
       },
@@ -209,7 +209,7 @@ module.exports = {
       },
       {
         name:'Ava Machado',
-        image:'placeholder.png',
+        image:'ava.png',
         position: 'Undergraduate Student',
         status: 'current'
       },
