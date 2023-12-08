@@ -75,12 +75,12 @@ module.exports = {
         position: 'Graduate Student',
         status: 'alumni'
       },
-      // {
-      //   name:'Jan-Christopher Cohrs',
-      //   image:'jan.png',
-      //   position: 'Graduate Student',
-      //   status: 'alumni'
-      // },
+      {
+        name:'Jan-Christopher Cohrs',
+        image:'jan.png',
+        position: 'Graduate Student',
+        status: 'alumni'
+      },
       {
         name:'Rochan Avlur',
         image:'rochan.png',
@@ -129,18 +129,6 @@ module.exports = {
         position: 'Undergraduate Student',
         status: 'current'
       },
-      // {
-      //   name:'Bhaumik Tiwari',
-      //   image:'placeholder.png',
-      //   position: 'Graduate Student',
-      //   status: 'alumni'
-      // },
-      // {
-      //   name:'Drishti Gupta',
-      //   image:'placeholder.png',
-      //   position: 'Graduate Student',
-      //   status: 'alumni'
-      // },
       {
         name:'Harsha Honnappa',
         image:'placeholder.png',
@@ -165,36 +153,18 @@ module.exports = {
         position: 'Undergraduate Student',
         status: 'alumni'
       },
-      // {
-      //   name:'Poulami Sarkar',
-      //   image:'placeholder.png',
-      //   position: 'Graduate Student',
-      //   status: 'alumni'
-      // },
       {
         name:'Raghav Pant',
         image:'placeholder.png',
         position: 'PhD Student',
         status: 'current'
       },
-      // {
-      //   name:'Shreyas V',
-      //   image:'placeholder.png',
-      //   position: 'Graduate Student',
-      //   status: 'alumni'
-      // },
       {
         name:'Shreyash Sinha',
         image:'placeholder.png',
         position: 'Graduate Student',
         status: 'alumni'
       },
-      // {
-      //   name:'Viren Velacheri',
-      //   image:'placeholder.png',
-      //   position: 'Graduate Student',
-      //   status: 'alumni'
-      // },
       {
         name:'Pronoma Banerjee',
         image:'pronoma.png',
@@ -339,11 +309,12 @@ module.exports = {
         position: 'Graduate Student',
         status: 'alumni'
       },
-      // {
-      //   name:'Nathan Clement',
-      //   image:'nathan.png',
-      //   position: 'Graduate Student'
-      // },
+      {
+        name:'Nathan Clement',
+        image:'nathan.png',
+        position: 'PhD Student',
+        status: 'alumni'
+      },
       {
         name:'Thomas Ghorbanian',
         image:'thomas.png',
@@ -356,11 +327,6 @@ module.exports = {
         position: 'Graduate Student',
         status: 'alumni'
       },
-      // {
-      //   name:'Suprawit Chockchowwat',
-      //   image:'placeholder.png',
-      //   position: 'Graduate Student'
-      // },
       {
         name:'Sean Zanyk McLean',
         image:'sean.png',
@@ -373,11 +339,12 @@ module.exports = {
         position: 'Graduate Student',
         status: 'alumni'
       },
-      // {
-      //   name:'Benjamin Beal',
-      //   image:'ben.png',
-      //   position: 'Undergraduate Student'
-      // },
+      {
+        name:'Benjamin Beal',
+        image:'ben.png',
+        position: 'Undergraduate Student',
+        status: 'alumni'
+      },
       {
         name:'Nikhil Ajjarapu',
         image:'nikhil.png',
@@ -390,42 +357,84 @@ module.exports = {
         position: 'Undergraduate Student',
         status: 'alumni'
       },
-      // {
-      //   name:'Binglin Zhang',
-      //   image:'bingling.png',
-      //   position: 'Undergraduate Student'
-      // },
-      // {
-      //   name:'Abrar Anwar',
-      //   image:'abrar.png',
-      //   position: 'Undergraduate Student'
-      // },
-        // {
-      //   name:'Yash Totlani',
-      //   image:'placeholder.png',
-      //   position: 'Undergraduate Student'
-      // },
-      // {
-      //   name:'Arman Maesumi',
-      //   image:'placeholder.png',
-      //   position: 'Undergraduate Student'
-      // },
-      // {
-      //   name:'Sebastian Rutherford',
-      //   image:'placeholder.png',
-      //   position: 'Undergraduate Student'
-      // },
-      // {
-      //   name:'Harrison White',
-      //   image:'placeholder.png',
-      //   position: 'Undergraduate Student'
-      // },
+      {
+        name:'Binglin Zhang',
+        image:'bingling.png',
+        position: 'Undergraduate Student',
+        status: 'alumni'
+      },
+      {
+        name:'Abrar Anwar',
+        image:'abrar.png',
+        position: 'Undergraduate Student',
+        status: 'alumni'
+      },
+        {
+        name:'Yash Totlani',
+        image:'placeholder.png',
+        position: 'Undergraduate Student',
+        status: 'alumni'
+      },
+      {
+        name:'Arman Maesumi',
+        image:'placeholder.png',
+        position: 'Undergraduate Student',
+        status: 'alumni'
+      },
+      {
+        name:'Sebastian Rutherford',
+        image:'placeholder.png',
+        position: 'Undergraduate Student',
+        status: 'alumni'
+      },
+      {
+        name:'Harrison White',
+        image:'placeholder.png',
+        position: 'Undergraduate Student',
+        status: 'alumni'
+      },
       {
         name:'Viraj Joshi',
         image:'placeholder.png',
         position: 'Undergraduate Student',
         status: 'alumni'
       },
+      {
+        name:'Joshua Prupes',
+        image:'placeholder.png',
+        position: 'Undergraduate Student',
+        status: 'alumni'
+      },
+      {
+        name:'Ian Shin',
+        image:'placeholder.png',
+        position: 'Undergraduate Student',
+        status: 'alumni'
+      },
+      {
+        name:'Eshani Kaul',
+        image:'placeholder.png',
+        position: 'Undergraduate Student',
+        status: 'alumni'
+      },
+      {
+        name:'Ryan Bethke',
+        image:'placeholder.png',
+        position: 'Undergraduate Student',
+        status: 'alumni'
+      },
+      {
+        name:'Tianming Wang',
+        image:'placeholder.png',
+        position: 'Postdoctoral Researcher',
+        status: 'alumni'
+      },
+      {
+        name:'Ahmed Abdelrazek',
+        image:'placeholder.png',
+        position: 'Postdoctoral Researcher',
+        status: 'alumni'
+      }
     ],
     newsTiles:[
       {
