@@ -26,22 +26,6 @@ At each time step, patch location set is predicted. SA transitions to state cons
 
 At each zoom action, a region is selected for observation. Each selection receives a negative reward reflecting the computational cost of sampling. Otherwise, DA may terminate search and representations of characteristics is returned to SA.
 
-## HRL Search-and-Score
-
-![HRL Pipeline]()
-
-## Results
-
-### MARL Search-and-Score
-
-![MARL performance]()
-
-
-### HRL Search-and-Score
-
-![HRL performance]()
-
-
 ## Project Members
 [Rochan Avlur Venkat](https://rochan-a.github.io), Conrad Li, Kartikeya Badola, Priyansh Kedia, [Dr. Chandrajit Bajaj](https://www.cs.utexas.edu/~bajaj/)
 
@@ -49,8 +33,8 @@ At each zoom action, a region is selected for observation. Each selection receiv
 
 [Github link](https://github.com/CVC-Lab/mvrl-wsi-pathology/)
 
-## Paper(Under preperation)
+## Paper (Under preperation)
 
-[Active Learning of Multi-Agents to Rapidly Search and Score Giga-Pixel Images]()
+Active Learning of Multi-Agents to Rapidly Search and Score Giga-Pixel Images
 
-[Towards Hierarchical Annotation of Prostate Cancer Whole Slide Images]()
+Towards Hierarchical Annotation of Prostate Cancer Whole Slide Images

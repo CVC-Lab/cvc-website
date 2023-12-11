@@ -46,10 +46,11 @@ The overall pipeline of our RSE-RL: For each given observed image, we split the 
 
 [Github link](https://github.com/CVC-Lab/RSE-RL)
 
-## Paper(Preprint)
+## Paper (Preprint)
 
 [Learning Deep Latent Subspaces for Image Denoising](https://arxiv.org/abs/2104.00253)
-[Recursive Self-Improvement for Camera Image andSignal Processing Pipeline (To be appeared)](../../../images/RSE_RL.pdf)
+
+[Recursive Self-Improvement for Camera Image and Signal Processing Pipeline](../../../images/projects/camera_isp/RSE_RL.pdf)
 
 ## Cite Us
 
