@@ -37,8 +37,8 @@ Second, to help alleviate the second challenge with scaling up computations to t
 ![](https://i.imgur.com/KDARSU3.png)
 
 ## Codes
-* [DMD modeling dynamics](https://utexas.box.com/s/k0726blm3yfizmko33nxc4e4zr8edpc5)
-* [GEMS: preprocessing and deep learning](https://utexas.box.com/s/c7gk4pasbba2lo3wnd0qmqien786mfaa)
+* [DMD modeling dynamics](https://utexas.box.com/shared/static/kl3qj4xowgwd7p9kggqt4ksacedhso57.zip)
+* [GEMS: preprocessing and deep learning](https://utexas.box.com/shared/static/it4b9ynfg1xghjx61swr01xsors5vohk.zip)
 
 
 ## People

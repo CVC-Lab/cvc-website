@@ -20,19 +20,23 @@ const About = () => (
       <div>
         <Grid container spacing={2} style={{ width: "100%" }}>
           <Grid item xs={12} sm={6}>
-            <Link style={{ color: "#333f48", textDecoration: "none", fontSize: ".73rem" }}>
+            <Link 
+              to="https://www.oden.utexas.edu/"
+              style={{ color: "#333f48", textDecoration: "none", fontSize: ".73rem" }}>
               <img
                 src={require("../images/oden.png").default}
-                alt="oden institute"
+                alt="Oden Institute logo"
                 width={496}
               />
             </Link>
           </Grid>
           <Grid item xs={12} sm={6}>
-            <Link style={{ color: "#333f48", textDecoration: "none", fontSize: ".73rem" }}>
+            <Link 
+              to="https://www.cs.utexas.edu/"
+              style={{ color: "#333f48", textDecoration: "none", fontSize: ".73rem" }}>
               <img
                 src={require("../images/cs.png").default}
-                alt="cs"
+                alt="UT CS logo"
                 width={510}
               />
             </Link>
