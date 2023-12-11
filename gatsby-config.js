@@ -35,7 +35,7 @@ module.exports = {
       },
       {
         name:'Minh Nguyen',
-        image:'placeholder.png',
+        image:'minh.png',
         position: 'PhD Candidate',
         status: 'current'
       },
