@@ -56,11 +56,19 @@ const PublicationTable = ({ publicationData = [] }) => {
                   <div className="lower-container-pubs">
                     <h3> {publication.Title} </h3>
                       <h4> {publication.Authors} </h4>
-                        <h4>
-                          {publication.PDFLink && publication.PDFLink !== 'NULL' && (
-                            <> <a href={publication.PDFLink}>(pdf)</a></>
-                          )}
-                        </h4>
+                      <h4>
+                        {publication.PDFLink && publication.PDFLink !== 'NULL' && (
+                          <>
+                            {publication.PDFLink.startsWith('http://') || publication.PDFLink.startsWith('https://') ? (
+                              // External link
+                              <a href={publication.PDFLink} target="_blank" rel="noopener noreferrer">(pdf)</a>
+                            ) : (
+                              // Local file
+                              <a href={`/${publication.PDFLink}`} target="_blank" rel="noopener noreferrer">pdf</a>
+                            )}
+                          </>
+                        )}
+                      </h4>
                       </div>
                     </div>
                   </Grid>
