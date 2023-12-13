@@ -64,7 +64,7 @@ const PublicationTable = ({ publicationData = [] }) => {
                               <a href={publication.PDFLink} target="_blank" rel="noopener noreferrer">(pdf)</a>
                             ) : (
                               // Local file
-                              <a href={`/${publication.PDFLink}`} target="_blank" rel="noopener noreferrer">pdf</a>
+                              <a href={`../${publication.PDFLink}`} target="_blank" rel="noopener noreferrer">pdf</a>
                             )}
                           </>
                         )}
