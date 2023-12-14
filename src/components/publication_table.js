@@ -56,18 +56,16 @@ const PublicationTable = ({ publicationData = [] }) => {
                   <div className="lower-container-pubs">
                     <h3> {publication.Title} </h3>
                       <h4> {publication.Authors} </h4>
+                      {
+                        publication.Location && publication.Location !== 'NULL' &&
+                        <h4 dangerouslySetInnerHTML={{ __html: `<i>${publication.Location}</i>` }}></h4>
+                      }
                       <h4>
                         {publication.PDFLink && publication.PDFLink !== 'NULL' && (
-                          <>
-                            {publication.PDFLink.startsWith('http://') || publication.PDFLink.startsWith('https://') ? (
-                              // External link
+                          (publication.PDFLink.startsWith('http://') || publication.PDFLink.startsWith('https://')) && (
                               <a href={publication.PDFLink} target="_blank" rel="noopener noreferrer">(pdf)</a>
-                            ) : (
-                              // Local file
-                              <a href={`../${publication.PDFLink}`} target="_blank" rel="noopener noreferrer">pdf</a>
-                            )}
-                          </>
-                        )}
+                          )
+                      )}
                       </h4>
                       </div>
                     </div>
