@@ -41,8 +41,8 @@ The process graph below provides further details for each step of the proposed w
 ![](https://i.imgur.com/epy9hOJ.png)
 
 
-## Codes
-* GitHub repo for the OpenAI Gym environment: [microscope](https://utexas.box.com/s/88bwhaa5s020frbe5lbkwbjts9ovt49x)
+<!-- ## Codes
+* GitHub repo for the OpenAI Gym environment: [microscope](https://utexas.box.com/s/88bwhaa5s020frbe5lbkwbjts9ovt49x) -->
 
 
 ## People
