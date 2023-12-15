@@ -18,11 +18,18 @@ const Layout = ({ children }) => {
             link
             scroll_link
           }
+          softwareProjects {
+            category
+            items {
+              name
+              description
+            }
+          }
         }
       }
     }
   `)
-
+  
   return (
     <>
       <Header menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title} siteDescription={data.site.siteMetadata.description} />
