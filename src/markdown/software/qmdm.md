@@ -3,6 +3,7 @@ title: "Quality Multi-Domain Meshing"
 slug: "/software/qmdm"
 ---
 QMDM (Quality Multi-Domain Meshing) produces a high quality, mutually consistent triangular surface meshes for multiple domains. Note: Our previous multi-domain meshing software can be found [here](http://www.cs.utexas.edu/~bajaj/cvc/software/MMM.shtml).  
+
 ![](http://cvcweb.ices.utexas.edu/images/qmdm-braina.png "qmdm-braina") 
  
 ![](http://cvcweb.ices.utexas.edu/images/qmdm-brainb.png "qmdm-brainb")
@@ -21,14 +22,17 @@ The resulting  high quality multi-domain mesh is free from self- and inter-doma
 ### References  
 Q. Zhang, B. Subramaniam, G. Xu and C. Bajaj   
 **Quality Multi-domain Meshing for Volumetric Data**  
-_3rd International Conference on Biomedical Engineering and Informatics, 2010, pp. 472-476._ ([external link](http://lsec.cc.ac.cn/~xuguo/papers/BMEI_1372.pdf))
+_3rd International Conference on Biomedical Engineering and Informatics, 2010, pp. 472-476._
 
 ### Download
 
 *   _QMDM_ library now imported into our volumetric visualization and processing front-end, [VolRover-2.0](../volumerover)
 *   The user manual also can be found in [VolRover-2.0 User Guide](http://cvcweb.ices.utexas.edu/software/doc/VolumeRoverDoc.pdf)
-*   Old binaries Mesh generation is provided in two steps. Linux Binaries: [MMHLS-genRawV](http://cvcweb.ices.utexas.edu/software/binaries/MMHLS-genRawV.20110203), [MMHLS-genMesh](http://cvcweb.ices.utexas.edu/software/binaries/MMHLS-genMesh.20110203)
-*   User Guide See the [user guide](http://cvcweb.ices.utexas.edu/software/doc/QMDM-userguide.txt) for information on running the programs.
+*   Old binaries   
+    Mesh generation is provided in two steps.   
+    Linux Binaries: [MMHLS-genRawV](http://cvcweb.ices.utexas.edu/software/binaries/MMHLS-genRawV.20110203), [MMHLS-genMesh](http://cvcweb.ices.utexas.edu/software/binaries/MMHLS-genMesh.20110203)
+*   User Guide   
+    See the [user guide](http://cvcweb.ices.utexas.edu/software/doc/QMDM-userguide.txt) for information on running the programs.
 *   Source Package
 
 ### Further details  

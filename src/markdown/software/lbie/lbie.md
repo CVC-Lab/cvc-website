@@ -29,8 +29,7 @@ Y. Zhang, C. Bajaj, G. Xu
 **Surface Smoothing and Quality Improvement of Quadrilateral/Hexahedral Meshes with Geometric Flow**   
 _Proceedings of 14th International Meshing Roundtable, pp. 449-468. San Diego, CA. September 11-14, 2005._
 
-[Download](https://cvcweb.ices.utexas.edu/cvcwp/?page_id=1917) LBIE
--------------------------------------------------------------------
+### [Download](download) LBIE
 
 ### Software Usage
 
@@ -96,7 +95,7 @@ We developed an adaptive boundary and finite element mesher, namely, a Level Set
     [![Go to larger picture](http://www.cs.utexas.edu/%7Ebajaj/cvc/software/imagesLBIE/post-detection.gif)](http://www.cs.utexas.edu/%7Ebajaj/cvc/software/imagesLIBE/post-detection.jpg)
     
     **Credits**
-    *   The original surface mesh of the heart model was acquired from New York University. Information about this virtual heart model can be found [here.](http://endeavor.med.nyu.edu/courses/embryology/courseware/vheart/)
+    *   The original surface mesh of the heart model was acquired from New York University.
     *   Meshes, and renderings created by Yongjie Zhang.
     
     **Collaborators**

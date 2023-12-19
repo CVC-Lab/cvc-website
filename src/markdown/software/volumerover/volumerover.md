@@ -12,11 +12,9 @@ slug: "/software/volumerover"
 ### Description
  _VolumeRover_ (a.k.a VolRover) is interactive multi-purpose image processing software developed at CVC. It can visualize three dimensional imaging data of any size (as big as terabyte) in a commodity PC or workstation and additionally supports the following image processing operations. Image Contrast Enhancement Filtering/Noise Reduction Image Segmentation Isocontouring Symmetry Detection (for Virus Maps) Boundary-free Image Skeletonization _VolRover_ provides a user interface to a number of CVC software packages including _Segmentation_, _Contrast Enhancement_, and _[Motif Elucidation](http://www.cs.utexas.edu/~bajaj/cvc/software/SecondaryStructure.shtml)_.
 
-### [Download](?page_id=1876) VolumeRover
+### [Download](download) VolumeRover
 
-For more pictures, animations, and interactive viz. of macromolecular structures using Volume Rover, please visit [CVC Gallery](http://cvcweb.ices.utexas.edu/cvcwp/?page_id=106)
-
-Contact developers [Joe Rivera](mailto:transfix@ices.utexas.edu) or [Alex Rand](mailto:arand@ices.utexas.edu) for more info.
+Contact developers Joe Rivera or Alex Rand for more info.
 
 ### References
 

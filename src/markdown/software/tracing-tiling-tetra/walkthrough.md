@@ -1,7 +1,7 @@
 ---
-slug: "/software/walkthrough"
+title: "Virtual Human Body Walkthrough"
+slug: "/software/tracing-tiling-tetra/walkthrough"
 ---
-
 The goal of this project is to create a synthetic environment where a user can walk through the human body, examine the details of the body parts, and query information about them. In addition to conventional query by name or index, we emphasize on fast spatial query, and fast query by joints. We attempt to create a 3D geometric model of the human body structure based on slice data and contour data, support cross-referencing between these different representations, and support queries based on different representations. The spatial queries will retrieve the spatial, physical, and metric information about an geometric object. We also attempt to create and test functional models based on the geometry and topology of the objects. Joints are another kinds of access paths to the objects connected to them. The joint structure helps simulate the kinematics of the objects. To achieve these goals, we need to apply effective modeling, reconstruction and visualization techniques. Since the spatial database can be quite large, efficient storage management techniques are also explored.
 
 In building the synthetic environment, we first experience with the skeleton of the human body. Following are two examples of the objects in the database. Here is a list of _bones_ in the hierarchical structure of the skeleton.
@@ -66,7 +66,7 @@ Proceedings of the Visible Human Project Conference, Natl. Library of Medicine, 
 
 ### Some Examples of the Model
 
-*   **[Skeleton](https://cvcweb.ices.utexas.edu/cvcwp/projects/visualeyes/reconstruction-from-x-sectional-data/synthetic-environment-for-human-body-walk-through/skeleton/)**
-*   **[Hand](https://cvcweb.ices.utexas.edu/cvcwp/projects/bio-model/joint-simulation/comprehensive-hand-modeling/)**
+*   **Skeleton**
+*   **[Hand](../hand)**
 *   **Skeletal hierarchy**
 *   **SGI movie of the skeleton**

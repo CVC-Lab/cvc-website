@@ -32,7 +32,7 @@ Binaries for the command line utility: [linux](http://cvcweb.ices.utexas.edu/sof
 
 ### Source
 
-* Currently the source code is distributed only for academic use. Users interested in commercial licensing should contact [Jitendra Jain](mailto:jjain@otc.utexas.edu).   
+* Currently the source code is distributed only for academic use. Users interested in commercial licensing should contact licensing@otc.utexas.edu    
 
 * [Request academic license](http://cvcweb.ices.utexas.edu/software/license/MolEnergy.license_mail.php)   
 

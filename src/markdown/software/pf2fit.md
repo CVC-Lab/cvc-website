@@ -4,8 +4,9 @@ slug: "/software/pf2fit"
 ---
 _PF2Fit, a Polar Fast Fourier Fitting library, is a rigid-body fitting library that uses PFCorr, a non-uniform SO(3) Fourier-based scheme. A new generalized framework was developed to fit crystal structures into density maps. The framework includes three new scoring functions that quantify the goodness of fit between the crystal structure and density map: the scattering potential score, which is based on using a more realistic representation of the input crystal structure in terms of the density map, the non-uniform exterior penalty, which efficiently penalizes atoms outside a certain isocontour of the target density map, and the skeleton-secondary structure score, which correlates the skeleton of the density map with secondary structural elements in the crystal structure. The framework also includes a search scheme based on non-uniform correlations over the space of rotations SO(3), and a reranking stage that improves confidence in fitting results obtained during the initial search stage._
 
-[![rigid-fitting](http://cvcweb.ices.utexas.edu/cvcwp/wp-content/uploads/2012/09/rigid-fitting.jpg "rigid-fitting")](http://cvcweb.ices.utexas.edu/cvcwp/wp-content/uploads/2012/09/rigid-fitting.jpg) **Features**
-
+[![rigid-fitting](http://cvcweb.ices.utexas.edu/cvcwp/wp-content/uploads/2012/09/rigid-fitting.jpg "rigid-fitting")](http://cvcweb.ices.utexas.edu/cvcwp/wp-content/uploads/2012/09/rigid-fitting.jpg) 
+  
+**Features**
 *   Supported operations
     *   Rigid-body fitting of crystal structure (PDB) to density map (3D EM)
 
@@ -26,7 +27,7 @@ _ICES Technical Report 12-27_, The University of Texas at Austin, 2012. ([pdf](h
 
 ### Source
 
-\* Currently the source code is distributed only for academic use. Users interested in commercial licensing should contact [Jitendra Jain](mailto:jjain@otc.utexas.edu).   
+\* Currently the source code is distributed only for academic use. Users interested in commercial licensing should contact licensing@otc.utexas.edu  
 \* [Request academic license](http://cvcweb.ices.utexas.edu/software/license/Fitting.license_mail.php)   
 \* [Download source](http://cvcweb.ices.utexas.edu/cvcwp/?page_id=2385)
 

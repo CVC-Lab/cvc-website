@@ -11,7 +11,7 @@ GANITH is an algebraic geometry tookit, used for the computation and visualizati
 Example applications of this for geometric modeling and computer graphics are algebraic curve and surface display, curve-curve intersections, surface-surface intersections, global and local parameterizations, implicitization. GANITH also incorporates techniques for interpolation and least-squares approximation (multivariate data fitting) with algebraic curves and surfaces. The GANITH algebraic geometry toolkit manipulates arbitrary degree polynomials and power series.e It can be used to solve a system of algebraic equations Power series manipulations are used to generate piecewise rational pproximations to algebraic curves and surfaces. Arbitrary rational parametric surfaces can be displayed in GANITH, taking care of poles and base points. Animation facilities allow the visualization of entire families of algebraic curves and surfaces.
 
 ### Download
-Download information is [here](http://cvcweb.ices.utexas.edu/cvcwp/?page_id=2065).
+Download information is [here](download).
 
 ### Software Usage
 [GANITH Documentation](http://cvcweb.ices.utexas.edu/software/doc/ganith-doc.pdf)

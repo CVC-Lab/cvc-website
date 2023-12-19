@@ -28,7 +28,7 @@ Most _MolSurf_ functionality can be interfaced through [TexMol](../texmol). Bina
 
 ### Source
 
-* Currently the source code is distributed only for academic use. Users interested in commercial licensing should contact [Jitendra Jain](mailto:jjain@otc.utexas.edu).     
+* Currently the source code is distributed only for academic use. Users interested in commercial licensing should contact licensing@otc.utexas.edu     
 * [Request academic license](http://cvcweb.ices.utexas.edu/software/license/MolSurf.license_mail.php)     
 * [Download source](http://cvcweb.ices.utexas.edu/cvcwp/?page_id=2455)
 

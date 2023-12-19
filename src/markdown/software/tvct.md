@@ -14,14 +14,10 @@ Example data:  [tvctdata](http://cvcweb.ices.utexas.edu/software/binaries/tvctd
 Tutorial: [tvctguide.pdf](http://cvcweb.ices.utexas.edu/software/doc/tvctguide.pdf) 
 
 Source code:   
-\* Currently the source code is distributed only for academic use. Users interested in commercial licensing should contact [Jitendra Jain](mailto:jjain@otc.utexas.edu).   
+\* Currently the source code is distributed only for academic use. Users interested in commercial licensing should contact licensing@otc.utexas.edu    
 \* [Request academic license](http://cvcweb.ices.utexas.edu/software/license/TVCT.license_mail.php) 
   
 \* [Download source](http://cvcweb.ices.utexas.edu/cvcwp/?page_id=2810)
-
-### Contact
-
-Contact [CVC](mailto:cvcwebm@ices.utexas.edu) for more info.
 
 ### References
 B. Sohn, C. Bajaj   

@@ -21,7 +21,7 @@ C. Bajaj, R. Chowdhury, and V. Siddavanahalli
 _IEEE/ACM Transactions on Computational Biology and Bioinformatics_, 8(1):45-58, 2011.   
 ([pdf](http://doi.ieeecomputersociety.org/10.1109/TCBB.2009.57))
 
-### [Download](http://cvcweb.ices.utexas.edu/cvcwp/?page_id=1991) F2Dock Server
+### [Download](download) F2Dock Server
 
 *   Please [visit](http://www.cs.utexas.edu/%7Ebajaj/cvc/software/f2dockclient.shtml) for instructions on installing and using the F2DockClient through TexMol
 

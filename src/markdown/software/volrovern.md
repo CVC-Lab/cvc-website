@@ -15,25 +15,21 @@ _VolRoverN_ is a software package that offers comprehensive functionality for ge
 *   Cable model export to NEURON
 *   Electrodiffusion model export to MCell (both surface mesh and tetrahedra)
 
-_VolRoverN_ is an integral part of our [Neuromodeling project](http://cvcweb.ices.utexas.edu/cvcwp/?page_id=1186). It shares components with [VolumeRover2](http://cvcweb.ices.utexas.edu/cvcwp/?page_id=100) and thus has many shared features.
+_VolRoverN_ is an integral part of our Neuromodeling project. It shares components with [VolumeRover2](../volumerover) and thus has many shared features.
 
 ### Download
 
 Mac 10.7 binary: [VolRoverN-2.0.6909.dmg](http://cvcweb.ices.utexas.edu/download/VolRoverN-2.0.6909.dmg)
 
 Sample data: [VolRoverN-sample.zip](http://cvcweb.ices.utexas.edu/download/VolRoverN-sample.zip)  
-More data: [here](http://cvcweb.ices.utexas.edu/cvcwp/?page_id=2827).  (Password protected. [Email](mailto:cvcwebm@ices.utexas.edu) to get password)
+More data: [here](http://cvcweb.ices.utexas.edu/cvcwp/?page_id=2827).
 
 Tutorial: [VolRoverN.pdf](http://cvcweb.ices.utexas.edu/download/VolRoverN.pdf)
 
 Source code:  
-\* Currently the source code is distributed only for academic use. Users interested in commercial licensing should contact [Jitendra Jain](mailto:jjain@otc.utexas.edu).  
+\* Currently the source code is distributed only for academic use. Users interested in commercial licensing should contact licensing@otc.utexas.edu  
 \* [Request academic license](http://cvcweb.ices.utexas.edu/software/license/VolRoverN.license_mail.php)  
 \* [Download source](http://cvcweb.ices.utexas.edu/cvcwp/?page_id=2411)
-
-### Contact
-
-Contact [CVC](mailto:cvcwebm@ices.utexas.edu) for more info.
 
 ### References
 

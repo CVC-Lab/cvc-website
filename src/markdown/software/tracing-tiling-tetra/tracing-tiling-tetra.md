@@ -24,4 +24,4 @@ Visualization of an entire human skeleton (Freddy) (285,349 triangles)
 
 Tiling results of some portions of Freddy
 
-Some of these models are being used in a [virtual human-body walk-through](/software/walkthrough)
+Some of these models are being used in a [virtual human-body walk-through](walkthrough)

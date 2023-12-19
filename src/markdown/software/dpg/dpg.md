@@ -40,7 +40,7 @@ C. Bajaj, R. Chowdhury, and M. Rasheed
 _Bioinformatics (2011) 27 (1): 55-62. DOI: 10.1093/bioinformatics/btq627_ ([pdf](http://bioinformatics.oxfordjournals.org/content/27/1/55.full.pdf+html))
 
   
-### [Download](http://cvcweb.ices.utexas.edu/cvcwp/?page_id=1952) DPG
+### [Download](download) DPG
 
 *   Library also contained in [_TexMol_](../texmol)
 

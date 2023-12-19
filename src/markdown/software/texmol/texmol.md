@@ -26,7 +26,7 @@ C. Bajaj, P. Djeu, V. Siddavanahalli, A. Thane
 **TexMol: Interactive Visual Exploration of Large Flexible Multi-component Molecular Complexes**   
 _Proc. of the Annual IEEE Visualization Conference, October 2004, Austin, Texas, IEEE Computer Society Press, pp. 243-250._ ([pdf](http://ieeexplore.ieee.org/iel5/9449/29999/01372203.pdf?isnumber=29999&prod=CNF&arnumber=1372203&arSt=+243&ared=+250&arAuthor=Chandrajit+Bajaj%3B+Djeu%2C+P.%3B+Vinay+Siddavanahalli%3B+Thane%2C+A.))
 
-### [Download](http://cvcweb.ices.utexas.edu/cvcwp/?page_id=1909) TexMol
+### [Download](download) TexMol
 
 ### Software Usage  
 See the [TexMol User Guide](http://cvcweb.ices.utexas.edu/software/doc/TexMolUserGuide.pdf) for documentation.

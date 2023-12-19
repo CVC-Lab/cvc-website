@@ -39,10 +39,8 @@ in common/main.C: embed the python message passing to communicate the mouse stru
   
 in common/generic.C: change PreFrame() so that the client perfly version will not listen to mouse events  
   
-And that's it! The source code for perfly can be found at [SGI's website](http://www.sgi.com)  
-  
-Documentation for perfly can be found [here](http://www.cineca.it/manuali/Performer/GetStarted/html/index.html)  
-  
+And that's it!
+
 Modifications can be found [here](https://www.cs.utexas.edu/~bajaj/cs395T02/molecular/astro/common.tar.gz)  
   
 The modifications only occur in the "common" directory, so only that is included.
