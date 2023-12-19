@@ -644,6 +644,11 @@ module.exports = {
         scroll_link: false
       },
       {
+        name:'SPONSORS',
+        link:'/sponsors',
+        scroll_link: false
+      },
+      {
         name:'ABOUT US',
         link:'about',
         scroll_link: true
