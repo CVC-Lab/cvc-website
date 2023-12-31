@@ -12,7 +12,7 @@ const NewsPage = ({ children }) => {
           newsTiles {
             name
             description
-            img_name
+            category
             link
           }    
         }

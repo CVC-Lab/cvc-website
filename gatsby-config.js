@@ -440,14 +440,58 @@ module.exports = {
       {
         name:'Fall 2021 Seminar Series #1',
         description: 'Multivariate Gaussian Processes and Noisy Regression',
-        img_name:'dedrecon',
+        category: 'seminars',
         link:'/seminars/fall2021/seminar1'
       },
       {
         name:'Fall 2021 Seminar Series #2',
         description: 'Probabilistic Inference for Fast Learning in Optimal Control',
-        img_name:'dedrecon',
+        category: 'seminars',
         link:'/seminars/fall2021/seminar2'
+      },
+      {
+        name:'Fall 2021 Seminar Series #3',
+        description: 'Camera Image Signal Processing (ISP)',
+        category: 'seminars',
+        link:'/seminars/fall2021/seminar3'
+      },
+      {
+        name:'Fall 2021 Seminar Series #4',
+        description: 'Maximum Pontryagin Principle, Optimal Control of Dynamic Systems / Reinforcement Learning',
+        category: 'seminars',
+        link:'/seminars/fall2021/seminar4'
+      },
+      {
+        name:'Fall 2021 Seminar Series #5',
+        description: 'Kernel Methods for Multi-Output Vector',
+        category: 'seminars',
+        link:'/seminars/fall2021/seminar5'
+      },
+      {
+        name:'Fall 2021 Seminar Series #6',
+        description: 'Towards Efficient Rank-Ordered Search-and-Score of Digital Tumor Scans with Multi-Agent RL',
+        category: 'seminars',
+        link:'/seminars/fall2021/seminar6'
+      },
+      {
+        name:'An Honorary Bountiful Tree Planted for Prof. Bajaj',
+        category: 'news',
+        link:'/tree'
+      },
+      {
+        name:'CVC talked to Bill Gates',
+        category: 'news',
+        link:'/bill-gates'
+      },
+      {
+        name:'Journal paper accepted for publication in Mathematics for Computation, 2013',
+        category: 'news',
+        link:'/quadratic'
+      },
+      {
+        name:'Journal paper published in Nature, Feb, 2013',
+        category: 'news',
+        link:'/ribosome'
       },
     ],
     projectTiles:[
