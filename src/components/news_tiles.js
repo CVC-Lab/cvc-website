@@ -3,7 +3,14 @@ import { Link } from "gatsby";
 import { Grid } from "@mui/material";
 import "./tiles.css";
 
-const NewsTiles = ({ newsTiles }) => (
+const NewsTiles = ({ newsTiles }) => {
+  const sortedNewsTiles = newsTiles.sort((a, b) => {
+    const dateDifference = new Date(b.date) - new Date(a.date);
+    if (dateDifference !== 0) return dateDifference;
+    return b.name.localeCompare(a.name);
+  });
+
+  return (
   <div
     className="publications-class"
     id="news"
@@ -40,7 +47,7 @@ const NewsTiles = ({ newsTiles }) => (
         News
       </h4>
       <Grid container direction="column" spacing={2}>
-        {newsTiles.map((tile) => (
+        {sortedNewsTiles.map((tile) => (
           <Grid item key={tile.name}>
             <div className="Card">
               <Link
@@ -62,6 +69,7 @@ const NewsTiles = ({ newsTiles }) => (
       </Grid>
     </div>
   </div>
-);
+  );
+};
 
 export default NewsTiles;

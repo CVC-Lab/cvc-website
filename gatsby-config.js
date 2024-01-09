@@ -441,57 +441,68 @@ module.exports = {
         name:'Fall 2021 Seminar Series #1',
         description: 'Multivariate Gaussian Processes and Noisy Regression',
         category: 'seminars',
-        link:'/seminars/fall2021/seminar1'
+        link:'/seminars/fall2021/seminar1',
+        date: '2021-09-03'
       },
       {
         name:'Fall 2021 Seminar Series #2',
         description: 'Probabilistic Inference for Fast Learning in Optimal Control',
         category: 'seminars',
-        link:'/seminars/fall2021/seminar2'
+        link:'/seminars/fall2021/seminar2',
+        date: '2021-09-10'
       },
       {
         name:'Fall 2021 Seminar Series #3',
         description: 'Camera Image Signal Processing (ISP)',
         category: 'seminars',
-        link:'/seminars/fall2021/seminar3'
+        link:'/seminars/fall2021/seminar3',
+        date: '2021-09-27'
       },
       {
         name:'Fall 2021 Seminar Series #4',
         description: 'Maximum Pontryagin Principle, Optimal Control of Dynamic Systems / Reinforcement Learning',
         category: 'seminars',
-        link:'/seminars/fall2021/seminar4'
+        link:'/seminars/fall2021/seminar4',
+        date: '2021-09-28'
       },
       {
         name:'Fall 2021 Seminar Series #5',
         description: 'Kernel Methods for Multi-Output Vector',
         category: 'seminars',
-        link:'/seminars/fall2021/seminar5'
+        link:'/seminars/fall2021/seminar5',
+        date: '2021-10-08'
       },
       {
         name:'Fall 2021 Seminar Series #6',
         description: 'Towards Efficient Rank-Ordered Search-and-Score of Digital Tumor Scans with Multi-Agent RL',
         category: 'seminars',
-        link:'/seminars/fall2021/seminar6'
+        link:'/seminars/fall2021/seminar6',
+        date: '2021-10-08'
+
       },
       {
         name:'An Honorary Bountiful Tree Planted for Prof. Bajaj',
         category: 'news',
-        link:'/tree'
+        link:'/tree',
+        date: '2021-06-23'
       },
       {
         name:'CVC talked to Bill Gates',
         category: 'news',
-        link:'/bill-gates'
+        link:'/bill-gates',
+        date: '2021-03-13'
       },
       {
         name:'Journal paper accepted for publication in Mathematics for Computation, 2013',
         category: 'news',
-        link:'/quadratic'
+        link:'/quadratic',
+        date: '2021-03-25'
       },
       {
         name:'Journal paper published in Nature, Feb, 2013',
         category: 'news',
-        link:'/ribosome'
+        link:'/ribosome',
+        date: '2013-03-25'
       },
     ],
     projectTiles:[

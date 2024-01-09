@@ -14,6 +14,7 @@ const NewsPage = ({ children }) => {
             description
             category
             link
+            date
           }    
         }
       }
