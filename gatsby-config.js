@@ -504,6 +504,186 @@ module.exports = {
         link:'/ribosome',
         date: '2013-03-25'
       },
+      {
+        name:'Training F2Dock',
+        category: 'seminars',
+        link:'/seminars/fall2011/f2dock',
+        date: '2011-11-08'
+      },
+      {
+        name:'A Reduced Flexibility Model for Macromolecules',
+        category: 'seminars',
+        link:'/seminars/fall2011/macromolecules',
+        date: '2011-10-19'
+      },
+      {
+        name:'Understanding Shear in Proteins',
+        category: 'seminars',
+        link:'/seminars/fall2011/shear',
+        date: '2011-10-11'
+      },
+      {
+        name:'Latest VolRover Sources',
+        category: 'news',
+        link:'/latest-volrover',
+        date: '2011-10-09'
+      },
+      {
+        name:'Geometry in Compression Structures',
+        category: 'seminars',
+        link:'/seminars/fall2011/geometry',
+        date: '2011-10-04'
+      },
+      {
+        name:'Multi-protein Docking for Viral Capsids',
+        category: 'seminars',
+        link:'/seminars/fall2011/multi-protein-docking',
+        date: '2011-10-04'
+      },
+      {
+        name:'Ribosomal Protein Modeling for Trypanosoma Brucei from a 5.16A EM Density Map',
+        category: 'seminars',
+        link:'/seminars/fall2011/ribosomal-protein',
+        date: '2011-09-27'
+      },
+      {
+        name:'Classification of Heterogeneous Particles in Cryo-EM Reconstructions',
+        category: 'seminars',
+        link:'/seminars/fall2011/cryo-em',
+        date: '2011-09-20'
+      },
+      {
+        name:'Learning Parameters in F2Dock',
+        category: 'seminars',
+        link:'/seminars/fall2011/learning-parameters',
+        date: '2011-09-13'
+      },
+      {
+        name:'Newer Binaries Posted',
+        category: 'news',
+        link:'/newer-binaries',
+        date: '2011-09-08'
+      },
+      {
+        name:'Polyhedron Separation',
+        category: 'seminars',
+        link: '/seminars/fall2011/polyhedron',
+        date: '2011-09-06'
+      },
+      {
+        name:'Parallelizing molecular energy and force calculations using cilk++ and CUDA',
+        category: 'seminars',
+        link: '/seminars/fall2011/clik',
+        date: '2011-09-02'
+      },
+      {
+        name:'Code Review: TexMol and VolRover',
+        category: 'seminars',
+        link: '/seminars/fall2011/code-review',
+        date: '2011-08-19'
+      },
+      {
+        name:'Flexible Fitting of Crystal Structures into Density Maps',
+        category: 'seminars',
+        link: '/seminars/spring2011/flexible-fitting',
+        date: '2011-06-02'
+      },
+      {
+        name:'A Reduced Flexibility Model and Improved Scoring Scheme For Lead Optimization In Computational Drug Design',
+        category: 'seminars',
+        link: '/seminars/spring2011/reduced-flexibility',
+        date: '2011-06-02'
+      },
+      {
+        name:'Sampling macromolecular recognition landscapes using Fast Fourier Transforms based approaches and their generalizations',
+        category: 'seminars',
+        link: '/seminars/spring2011/fast-fourier-transforms',
+        date: '2011-05-10'
+      },
+      {
+        name:'Centroidal Voronoi Tessellation vs. Optimal Delaunay Triangulation',
+        category: 'seminars',
+        link: '/seminars/spring2011/centrodial',
+        date: '2011-05-02'
+      },
+      {
+        name:'Stability of Dual Discretization Methods for PDEs',
+        category: 'seminars',
+        link: '/seminars/spring2011/stability',
+        date: '2011-04-27'
+      },
+      {
+        name:'New Set of Binaries',
+        category: 'news',
+        link:'/new-set-binaries',
+        date: '2011-04-23'
+      },
+      {
+        name:'Lead Optimization in Computational Drug Design: An Iterative Approach to Structural and Chemical Refinement',
+        category: 'seminars',
+        link:'/seminars/spring2011/drug-design',
+        date: '2011-04-20'
+      },
+      {
+        name:'Multi protein docking',
+        category: 'seminars',
+        link:'/seminars/spring2011/multi-protein-docking',
+        date: '2011-04-12'
+      },
+      {
+        name:'Flexible fitting of subunit assemblies into cryo-EM density maps',
+        category: 'seminars',
+        link:'/seminars/spring2011/flexible-fitting',
+        date: '2011-04-06'
+      },
+      {
+        name:'Survey of GPU-accelerated Molecular Dynamics',
+        category: 'seminars',
+        link:'/seminars/spring2011/dynamics',
+        date: '2011-03-29'
+      },
+      {
+        name:'Analysis-ready 3D reconstructions of complex objects from planar cross-sectional slices',
+        category: 'seminars',
+        link:'/seminars/spring2011/reconstructions',
+        date: '2011-03-25'
+      },
+      {
+        name:'Convergence of Adaptive Finite Element Methods for Nonlinear Geometric PDE',
+        category: 'seminars',
+        link:'/seminars/spring2011/convergence',
+        date: '2011-03-22'
+      },
+      {
+        name:'Molecular docking: current approaches and remaining challenges',
+        category: 'seminars',
+        link:'/seminars/spring2011/molecular-docking',
+        date: '2011-03-09'
+      },
+      {
+        name:'Optimal (Co)homologous (Co)chains',
+        category: 'seminars',
+        link:'/seminars/spring2011/optimal',
+        date: '2011-03-01'
+      },
+      {
+        name:'Statistical regularization method for electron tomography reconstruction',
+        category: 'seminars',
+        link:'/seminars/spring2011/tomography',
+        date: '2011-02-22'
+      },
+      {
+        name:'Computational Anatomy – An approach to incorporate a priori shape information into 3D electron microscopy',
+        category: 'seminars',
+        link:'/seminars/spring2011/computational-anatomty',
+        date: '2011-02-16'
+      },
+      {
+        name:'Simulation of Transmission Electron Microscope Images of Biological Specimens',
+        category: 'seminars',
+        link:'/seminars/spring2011/simulation',
+        date: '2011-02-09'
+      },
     ],
     projectTiles:[
       {
