@@ -738,6 +738,18 @@ module.exports = {
         link:'/workshop',
         date: '2009-02-03'
       },
+      {
+        name:'National Science Foundation Grant',
+        category: 'news',
+        link:'/nsf-grant',
+        date: '2005-11-29'
+      },
+      {
+        name:'Best Student Poster cup from 13th International Meshing Roundtable',
+        category: 'news',
+        link:'/best-poster',
+        date: '2004-10-01'
+      },
     ],
     projectTiles:[
       {
