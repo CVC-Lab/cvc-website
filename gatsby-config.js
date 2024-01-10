@@ -684,6 +684,60 @@ module.exports = {
         link:'/seminars/spring2011/simulation',
         date: '2011-02-09'
       },
+      {
+        name:'A Closer Look at the Poisson-Boltzmann Model',
+        category: 'seminars',
+        link:'/seminars/spring2011/poisson-boltzmann',
+        date: '2011-02-01'
+      },
+      {
+        name:'Molecular Surfaces: Area, Volume, and Atomic Derivatives',
+        category: 'seminars',
+        link:'/seminars/spring2011/molecular',
+        date: '2011-01-25'
+      },
+      {
+        name:'Conforming Vector Interpolation Functions for Polyhedral Meshes',
+        category: 'seminars',
+        link:'/seminars/spring2011/interpolation',
+        date: '2011-01-18'
+      },
+      {
+        name:'CVC YouTube Channel Created',
+        category: 'news',
+        link:'/youtube',
+        date: '2010-12-06'
+      },
+      {
+        name:'Capstone Project',
+        category: 'news',
+        link:'/capstone',
+        date: '2010-12-06'
+      },
+      {
+        name:'Compressed Sensing',
+        category: 'seminars',
+        link:'/seminars/spring2010/compressed-sensing',
+        date: '2010-11-22'
+      },
+      {
+        name:'Rational Curves from Rotation-Minimizing Frames',
+        category: 'seminars',
+        link:'/seminars/spring2010/rotation-minimizing',
+        date: '2010-11-17'
+      },
+      {
+        name:'Dr. Chandrajit Bajaj and Andrew Gillette won the Best Paper Award',
+        category: 'news',
+        link:'/best-paper',
+        date: '2010-09-02'
+      },
+      {
+        name:'International Collaboratory for Emerging Technologies Workshop',
+        category: 'news',
+        link:'/workshop',
+        date: '2009-02-03'
+      },
     ],
     projectTiles:[
       {
