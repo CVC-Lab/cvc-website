@@ -11,10 +11,10 @@ const UserTheme = () => {
 const Navigation = ({ menuLinks }) => (
   <div style={{display: 'flex', justifyContent:'flex-end'}}>
     <nav>
-      <ul style={{display: "flex", flex: 1}}>
+      <ul style={{display: "flex", flexWrap: 'wrap', paddingLeft: '1rem', paddingRight: '1rem', paddingTop: '1.68rem', paddingBottom: 0}}>
         {menuLinks.map(link => (
-          <li key={link.name} style={{listStyleType: `none`, padding: `1rem`, paddingTop: `1.68rem`, paddingBottom: `0rem`}}>
-              {link.scroll_link === true && (UserTheme() === `/cvc-website/` || UserTheme() === `/`) ?
+          <li key={link.name} style={{ listStyleType: `none`, paddingLeft: '1rem', paddingRight: '1rem'}}>
+            {link.scroll_link === true && (UserTheme() === `/cvc-website/` || UserTheme() === `/`) ?
                 <LinkRouter to={link.link} style={{color: `#333f48`, textDecoration: `none`, fontSize: `.73rem`, fontWeight: `700`}}>
                 <Link
                   style={{color: `#FFFFFF`, textDecoration: `none`, fontSize: `.73rem`, fontWeight: `700`}}
