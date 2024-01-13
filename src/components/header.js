@@ -18,6 +18,8 @@ const Header = ({ siteTitle, siteDescription, menuLinks }) => (
             quality={95}
             formats={["auto", "webp", "avif"]}
             alt="UT Austin Logo"
+            placeholder="none"
+            loading="eager"
           />
         </Link>
         <Navigation menuLinks={menuLinks} />
