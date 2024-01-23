@@ -112,3 +112,24 @@ p {
   text-decoration: none;
   font-size: .73rem;
 }
+
+@media (max-width: 600px) {
+  .Tile .image-container img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .Tile .upper-container h3 {
+    font-size: .7rem;
+  }
+
+  .MuiTabs-flexContainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .MuiTab-root {
+    width: 100%;
+  }
+}

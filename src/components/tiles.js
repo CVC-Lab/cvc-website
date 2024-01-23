@@ -20,7 +20,13 @@ const Tiles = ({ projectTiles }) => {
     <div className="tiles-class" id="projects">
       <div className="inner-container">
         <h4 className="header-subtitle">Projects</h4>
-        <Tabs value={activeTab} onChange={handleTabChange} aria-label="project categories">
+        <Tabs
+          value={activeTab}
+          onChange={handleTabChange}
+          variant="scrollable"
+          scrollButtons="auto"
+          aria-label="project categories"
+        >
           {projectTabs.map(tab => (
             <Tab label={tab} value={tab} key={tab} />
           ))}
