@@ -1,74 +1,21 @@
-.publications-class .MuiGridList-root{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.publications-class .MuiGridListTile-root{
-    border-radius: 5px;
-    box-shadow: 0px 1px 2px 1px transparent;
-    background: transparent;
-}
-
-.lower-container-pubs{
-    margin-top: 0px;
-    background: transparent;
-    margin-left: 4rem;
-    font-family: 'Libre Franklin', sans-serif;
-}
-
-.lower-container-pubs h3, h4, p{
-    margin: 0;
-    padding: 0;
-    padding-bottom: .4rem;
-}
-
-.lower-container-pubs h3{
-    color: #333f48;
-    font-weight: 700;
-    font-size: 1rem;
-}
-
-.lower-container-pubs h4{
-    color: #333f48;
-    font-weight: 500;
-    font-size: .875rem;
-}
-
-.lower-container-pubs p{
-    margin: 1rem;
-    color: #333f48;
-    font-weight: 300;
-    font-size: .875rem;
-    text-align: justify;
-}
-
-.publications-class .header-subtitle:after {
-    content: ""; /* This is necessary for the pseudo element to work. */
-    display: block; /* This will put the pseudo element on its own line. */
-    /*margin: 0 auto; /* This will center the border. */
-    width: 15%; /* Change this to whatever width you want. */
-    padding-top: 20px; /* This creates some space between the element and the border. */
-    border-bottom: .5px solid #787575; /* This creates the border. Replace black with whatever color you want. */
-}
-
-.publications-class {
+.publications-class .header-subtitle:after{
     background: white;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: left;
-}
-  
-.publication-container {
-    margin: 0 auto;
-    max-width: 1050px;
-    padding-bottom: 1.45rem;
-    margin-left: 1.25rem;
-    margin-right: 1.25rem;
+    padding: 1rem;
     width: 100%;
 }
-  
+
+.publication-container {
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 0 1.25rem; 
+}
+
 .header-subtitle {
     color: #787575;
     font-size: 1.0rem;
@@ -78,11 +25,29 @@
     padding-top: 2.0rem;
     margin-bottom: 1rem;
 }
-  
-.year-header h3 {
+
+.publication-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.year-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px; 
+}
+
+.year-header {
     text-align: center;
     font-weight: bold;
     font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.type-section {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 15px;
 }
 
@@ -92,5 +57,60 @@
     color: #333f48;
     margin-top: 1.5rem;
     margin-bottom: .625rem;
-  }
-  
+}
+
+.publication-card {
+    margin-bottom: 15px;
+}
+
+.lower-container-pubs {
+    background: transparent;
+    margin-left: 4rem;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.lower-container-pubs h3, h4, p {
+    margin: 0;
+    padding: 0;
+    padding-bottom: .4rem;
+}
+
+.lower-container-pubs h3 {
+    color: #333f48;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.lower-container-pubs h4 {
+    color: #333f48;
+    font-weight: 500;
+    font-size: .875rem;
+}
+
+@media (max-width: 600px) {
+    .lower-container-pubs h3, 
+    .lower-container-pubs h4, 
+    .lower-container-pubs p {
+        font-size: 0.8rem;
+    }
+
+    .lower-container-pubs {
+        margin-left: 2rem;
+    }
+    
+    .year-header h3 {
+    font-size: 1.2rem;
+    }
+    
+    .type-header {
+    font-size: 1rem;
+    }
+    
+    .header-subtitle {
+    font-size: 0.8rem;
+    }
+    
+    .publication-container {
+    padding: 0 10px;
+    }
+}
