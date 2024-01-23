@@ -35,6 +35,7 @@ const IndexPage = ({ children }) => {
     <Layout>
       <Helmet>
         <meta name="icon" href={favicon} />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" data-react-helmet="true"/>
       </Helmet>
       <Tiles id='projects' projectTiles={data.site.siteMetadata.projectTiles} ></Tiles>
       <Cards id='people' peopleCards={data.site.siteMetadata.peopleCards}></Cards>

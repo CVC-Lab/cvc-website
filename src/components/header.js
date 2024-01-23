@@ -9,10 +9,10 @@ import { StaticImage } from "gatsby-plugin-image"
 const Header = ({ siteTitle, siteDescription, menuLinks }) => (
   <header style={{paddingLeft: `1.25rem`, paddingRight: `1.25rem`, background: `#bf5700`}}>
     <div style={{ margin: `0 auto`, maxWidth: 1150, paddingBottom: `2.7rem` }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+      <div className="headerFlexContainer" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <Link to="/" style={{ flexShrink: 0 }}>
           <StaticImage
-            class="headerlogo"
+            className="headerlogo"
             src="../images/knockout_university_formal_horizontal.png"
             width={300}
             quality={95}
