@@ -31,20 +31,21 @@ const NewsTiles = ({ newsTiles }) => {
           width: `100%`,
         }}
       >
-        <h4
+        <h1
           className="header-subtitle"
           style={{
-            color: `#787575`,
+            color: `#333f48`,
             fontSize: `1.0rem`,
-            fontWeight: `600`,
+            fontWeight: `700`,
             margin: `auto`,
+            textAlign: `center`,
             paddingBottom: `1.0rem`,
             paddingTop: `2.0rem`,
             marginBottom: "1rem",
           }}
         >
           News
-        </h4>
+        </h1>
         <div>
           {sortedNewsTiles.map((tile) => {
             const date = new Date(tile.date);
