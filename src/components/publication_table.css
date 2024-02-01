@@ -16,6 +16,17 @@
     padding: 0 1.25rem; 
 }
 
+.header-sub {
+    color: #333f48;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 1.0rem;
+    padding-top: 2.0rem;
+    margin-bottom: 1rem;
+}
+
 .header-subtitle {
     color: #787575;
     font-size: 1.0rem;
@@ -83,6 +94,11 @@
 
 .lower-container-pubs h4 {
     color: #333f48;
+    font-weight: 500;
+    font-size: .875rem;
+}
+
+.lower-container-pubs a {
     font-weight: 500;
     font-size: .875rem;
 }

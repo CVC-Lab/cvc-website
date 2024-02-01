@@ -35,7 +35,7 @@ const NewsTiles = ({ newsTiles }) => {
           className="header-subtitle"
           style={{
             color: `#333f48`,
-            fontSize: `1.0rem`,
+            fontSize: `1.5rem`,
             fontWeight: `700`,
             margin: `auto`,
             textAlign: `center`,

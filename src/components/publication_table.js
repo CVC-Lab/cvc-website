@@ -35,7 +35,7 @@ const PublicationTable = ({ publicationData = [] }) => {
   return (
     <div className="publications-class" id="publications">
       <div className="publication-container">
-        <h4 className="header-subtitle">Publications</h4>
+        <h4 className="header-sub">Publications</h4>
         <div className="publication-list">
           {Object.entries(groupedPublications)
             .sort(([year1], [year2]) => year2 - year1)
