@@ -133,7 +133,7 @@ module.exports = {
         name:'Harsha Honnappa',
         image:'placeholder.png',
         position: 'Research Fellow from Purdue University',
-        status: 'current'
+        status: 'alumni'
       },
       {
         name:'Jasper Lee',
