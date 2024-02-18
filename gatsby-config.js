@@ -969,7 +969,10 @@ module.exports = {
     resolve: '@mkitio/gatsby-theme-password-protect',
       options: {
         password: 'cvcrepo',
-        pagePaths: ['/internal', 'internal', '/internal/']
+        pagePaths: ['/internal', 'internal', '/internal/', 
+                    '/cvc-website/internal', 
+                    '/cvc-website/internal', 
+                    '/cvc-website/internal/']
       }
     },
     `gatsby-plugin-react-helmet`,
