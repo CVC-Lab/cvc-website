@@ -953,6 +953,11 @@ module.exports = {
         name:'ABOUT US',
         link:'about',
         scroll_link: true
+      },
+      {
+        name:'INTERNAL LINKS',
+        link:'/internal',
+        scroll_link: false
       }
     ],
     description: `a cross-disciplinary effort to develop and improve the technologies for computational modeling, simulation, analysis, and visualization.`,
@@ -960,6 +965,13 @@ module.exports = {
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
+    {
+    resolve: '@mkitio/gatsby-theme-password-protect',
+      options: {
+        password: 'cvcrepo',
+        pagePaths: ['/internal', 'internal', '/internal/']
+      }
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {

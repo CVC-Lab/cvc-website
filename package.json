@@ -33,6 +33,7 @@
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@fontsource/libre-franklin": "^4.5.11",
+    "@mkitio/gatsby-theme-password-protect": "^2.1.2",
     "@mui/icons-material": "^5.4.0",
     "@mui/material": "^5.11.13",
     "gatsby": "^5.7.0",
