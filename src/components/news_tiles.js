@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useState } from "react";
 import { Link } from "gatsby";
 import "./tiles.css";
 
@@ -8,6 +8,15 @@ const NewsTiles = ({ newsTiles }) => {
     if (dateDifference !== 0) return dateDifference;
     return b.name.localeCompare(a.name);
   });
+
+  const [currentPage, setCurrentPage] = useState(1);
+  const tilesPerPage = 20;
+
+  const lastTile = currentPage * tilesPerPage;
+  const firstTile = lastTile - tilesPerPage;
+  const currentTiles = sortedNewsTiles.slice(firstTile, lastTile);
+
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
     <div
@@ -47,7 +56,7 @@ const NewsTiles = ({ newsTiles }) => {
           News
         </h1>
         <div>
-          {sortedNewsTiles.map((tile) => {
+          {currentTiles.map((tile) => {
             const date = new Date(tile.date);
             const dateString = `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`;
 
@@ -66,8 +75,8 @@ const NewsTiles = ({ newsTiles }) => {
                     to={tile.link}
                   >
                     <div className="lower-container-pubs">
-                    <h3>{tile.name}</h3>
-                    {tile.description && <h4>{tile.description}</h4>}
+                      <h3>{tile.name}</h3>
+                      {tile.description && <h4>{tile.description}</h4>}
                     </div>                  
                   </Link>
                 </div>
@@ -75,7 +84,25 @@ const NewsTiles = ({ newsTiles }) => {
             );
           })}
         </div>
-      </div>
+        <div style={{ textAlign: 'center', marginTop: '2rem' }}>
+          {[...Array(Math.ceil(sortedNewsTiles.length / tilesPerPage)).keys()].map((pageNumber) => (
+            <button
+              key={pageNumber + 1}
+              onClick={() => paginate(pageNumber + 1)}
+              style={{
+                backgroundColor: currentPage === pageNumber + 1 ? '#333f48' : 'transparent',
+                color: currentPage === pageNumber + 1 ? '#fff' : '#333f48',
+                border: '1px solid #333f48',
+                padding: '0.5rem',
+                margin: '0.5rem',
+                cursor: 'pointer',
+              }}
+            >
+              {pageNumber + 1}
+            </button>
+          ))}
+        </div>
+        </div>
     </div>
   );
 };
