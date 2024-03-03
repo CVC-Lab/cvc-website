@@ -2,8 +2,27 @@ import { graphql } from "gatsby";
 import * as React from "react";
 import Layout from "../components/layout";
 import "../components/project_page.css";
-import "katex/dist/katex.min.css"
-export default function ProjectTemplate({ data: { markdownRemark } }) {
+import "katex/dist/katex.min.css";
+import "../components/software_list.css"
+
+const SponsorsTemplate = ({ data: { markdownRemark } }) => {
+  const { frontmatter, html } = markdownRemark;
+
+  return (
+    <Layout>
+      <div className='sponsors'>
+        <div>
+          <h1>
+            {frontmatter.title}
+          </h1>
+          <div dangerouslySetInnerHTML={{ __html: html }} />
+        </div>
+      </div>
+    </Layout>
+  );
+};
+
+const DefaultTemplate = ({ data: { markdownRemark } }) => {
   const { frontmatter, html } = markdownRemark;
   return (
     <Layout>
@@ -19,6 +38,16 @@ export default function ProjectTemplate({ data: { markdownRemark } }) {
 
     </Layout>
   );
+};
+
+export default function ProjectTemplate({ data }) {
+  const { markdownRemark } = data;
+
+  if (markdownRemark.frontmatter.title === "Sponsors") {
+    return <SponsorsTemplate data={data} />;
+  } else {
+    return <DefaultTemplate data={data} />;
+  }
 }
 
 export const pageQuery = graphql`

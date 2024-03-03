@@ -4,10 +4,11 @@ slug: "/sponsors"
 ---
 The Computational Visualization Center (CVC) is a cross disciplinary effort whose mission is to develop and improve the core technologies for comprehensive computational modeling, simulation, analysis, and visualization of natural and synthetic phenomena, and then utilize them as an integrated tool for rapid discovery. CVC receives support from various organizations, and would like to express its gratitude to our sponsors.
 
-### Current Funding
+**Michael J. Fox Foundation**
+* [Quick and Efficient Extraction of Patient Specific SBR Ratios for Parkinson’s Disease](https://cvc-lab.github.io/parkinsons-website/)
 
 **Army Futures Command**
-* Intelligent Machine Learning for Real-Time Processing of Hyperspectral Video Streams- Army Futures Command-DOD-ARMY (09/30/2020-09/30/2021)
+* [Intelligent Machine Learning for Real-Time Processing of Hyperspectral Video Streams- Army Futures Command-DOD-ARMY (09/30/2020-09/30/2021)](https://cvc-lab.github.io/afc-website/)
 
 **National Health Institute**
 * Deep Learning of Pancreas MRI to Predict Progression of T1D with Jack Virostko- (7/1/2021-6/30/2023)
@@ -117,7 +118,7 @@ The Computational Visualization Center (CVC) is a cross disciplinary effort whos
 
 *   Algebraic Methods in Solid Modeling (1988)
 
-### Projects Before 1997
+# Projects Before 1997
 
 [**National Science Foundation**](https://www.nsf.gov/)
 
