@@ -12,7 +12,9 @@ const Tiles = ({ projectTiles }) => {
     setActiveTab(newValue);
   };
 
-  const filteredTiles = projectTiles.filter(tile =>
+  const sortedProjectTiles = projectTiles.slice().sort((a, b) => new Date(b.date) - new Date(a.date));
+  
+  const filteredTiles = sortedProjectTiles.filter(tile =>
     tile.tags.includes(activeTab)
   );
 

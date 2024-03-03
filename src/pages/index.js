@@ -19,6 +19,7 @@ const IndexPage = ({ children }) => {
             img_name
             link
             tags
+            date
           }
           peopleCards {
             name
