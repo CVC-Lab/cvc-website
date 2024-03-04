@@ -21,6 +21,7 @@
     display:block;
     margin:auto;
     transform: translate(0, 10px);
+    object-fit: cover;
 }
 
 .lower-container{

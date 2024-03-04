@@ -47,7 +47,7 @@ module.exports = {
       },
       {
         name:'Aaron Dominick',
-        image:'placeholder.png',
+        image:'aaron.png',
         position: 'PhD Student',
         status: 'current'
       },
@@ -131,7 +131,7 @@ module.exports = {
       },
       {
         name:'Harsha Honnappa',
-        image:'placeholder.png',
+        image:'honnappa.png',
         position: 'Research Fellow from Purdue University',
         status: 'alumni'
       },
