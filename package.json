@@ -50,13 +50,14 @@
     "gatsby-transformer-csv": "^5.7.0",
     "gatsby-transformer-remark": "^6.12.3",
     "gatsby-transformer-sharp": "^5.7.0",
-    "katex": "^0.16.9",
+    "katex": "^0.16.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "react-scroll": "^1.8.9"
   },
   "overrides": {
-    "webpack-dev-middleware": "5.3.4"
+    "webpack-dev-middleware": "5.3.4",
+    "katex": "^0.16.10"
   }
 }
