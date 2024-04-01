@@ -36,6 +36,8 @@
     "@mkitio/gatsby-theme-password-protect": "^2.1.2",
     "@mui/icons-material": "^5.4.0",
     "@mui/material": "^5.11.13",
+    "dotenv": "^16.4.5",
+    "firebase": "^10.10.0",
     "gatsby": "^5.13.3",
     "gatsby-plugin-image": "^3.7.0",
     "gatsby-plugin-manifest": "^5.7.0",

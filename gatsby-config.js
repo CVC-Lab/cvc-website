@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env`,
+})
+
 module.exports = {
   pathPrefix: '/cvc-website',
   siteMetadata: {
@@ -877,7 +881,8 @@ module.exports = {
         description: 'This project showcases various aspects of processing hyperspectral video streams in real-time using advanced machine learning techniques.',
         img_name:'project_tiles/intelligent_ml',
         link:'https://cvc-lab.github.io/afc-website/',
-        tags: ['Computer Vision']
+        tags: ['Computer Vision'],
+        date: "2023-12-01"
       },
       {
         name: 'Dueling Neural ODEs',

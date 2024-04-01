@@ -1,5 +1,21 @@
 import * as React from "react";
 import "./publication_table.css";
+import { initializeApp } from 'firebase/app';
+import { getDatabase, ref, get } from 'firebase/database';
+
+const firebaseConfig = {
+  apiKey: process.env.GATSBY_FIREBASE_API_KEY,
+  authDomain: process.env.GATSBY_FIREBASE_AUTH_DOMAIN,
+  databaseURL: process.env.GATSBY_FIREBASE_DATABASE_URL,
+  projectId: process.env.GATSBY_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.GATSBY_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.GATSBY_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.GATSBY_FIREBASE_APP_ID
+};
+
+const app = initializeApp(firebaseConfig);
+
+const database = getDatabase(app);
 
 const publicationTypeOrder = [
   "Journal Publications",
@@ -8,7 +24,7 @@ const publicationTypeOrder = [
   "Technical Reports",
   "Book",
   "Edited Books",
-  "Book Chapters"
+  "Book Chapters",
 ];
 
 const groupByYearAndType = (publications) => {
@@ -29,7 +45,20 @@ const groupByYearAndType = (publications) => {
   }, {});
 };
 
-const PublicationTable = ({ publicationData = [] }) => {
+const PublicationTable = () => {
+  const [publicationData, setPublicationData] = React.useState([]);
+
+  React.useEffect(() => {
+    const dbRef = ref(database, '1InxBkoDuYJs2Vdk-roy03CmDgaz4T3Xt-QGVapgn0C0/Papers');
+      get(dbRef).then((snapshot) => {
+        if (snapshot.exists()) {
+          setPublicationData(Object.values(snapshot.val()));
+        }
+      }).catch((error) => {
+        console.error("Firebase error:", error);
+      });
+  }, []);
+
   const groupedPublications = groupByYearAndType(publicationData);
 
   return (
