@@ -206,12 +206,6 @@ module.exports = {
         status: 'alumni'
       },
       {
-        name:'Tevor Nguyen',
-        image:'placeholder.png',
-        position: 'Undergraduate Student',
-        status: 'alumni'
-      },
-      {
         name:'Kai Chang',
         image:'placeholder.png',
         position: 'Graduate Student',
