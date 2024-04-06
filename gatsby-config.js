@@ -983,7 +983,7 @@ module.exports = {
     {
     resolve: '@mkitio/gatsby-theme-password-protect',
       options: {
-        password: 'cvcrepo',
+        password: process.env.GATSBY_INTERNAL_LINKS_PASSWORD,
         pagePaths: ['/internal', 'internal', '/internal/', 
                     '/cvc-website/internal', 
                     '/cvc-website/internal', 
