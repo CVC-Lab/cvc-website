@@ -3,7 +3,8 @@ import { Link } from "gatsby";
 import { Grid, Tabs, Tab } from "@mui/material";
 import "./tiles.css";
 
-const projectTabs = ['Computer Vision', 'Reinforcement Learning', 'Scientific ML'];
+const projectTabs = ['Computer Vision', 'Reinforcement Learning', 'Scientific ML',
+                     'Health AI/ML'];
 
 const Tiles = ({ projectTiles }) => {
   const [activeTab, setActiveTab] = React.useState(projectTabs[0]);

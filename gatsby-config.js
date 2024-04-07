@@ -885,6 +885,14 @@ module.exports = {
         link:'/projects/neuralode',
         tags: ['Scientific ML'],
         date: "2023-11-21"
+      },
+      {
+        name: 'Parkinsons\'s Disease Early Biomarker Discovery',
+        description: 'Quick and efficient extraction of patient specific SBR Ratios',
+        img_name:'project_tiles/parkinsons',
+        link:'https://cvc-lab.github.io/parkinsons-website/',
+        tags: ['Health AI/ML'],
+        date: "2024-04-06"
       }
     ],
     softwareProjects: [
