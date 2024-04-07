@@ -86,7 +86,16 @@ const PublicationTable = () => {
                             }
                             {publication.PDFLink && publication.PDFLink !== 'NULL' && (
                               (publication.PDFLink.startsWith('http://') || publication.PDFLink.startsWith('https://')) && (
-                                <a href={publication.PDFLink} target="_blank" rel="noopener noreferrer">(pdf)</a>
+                                <div>
+                                  <a href={publication.PDFLink} target="_blank" rel="noopener noreferrer">Publication PDF</a>
+                                </div>
+                              )
+                            )}
+                            {publication.ProjectLink && publication.ProjectLink !== 'NULL' && (
+                              (publication.ProjectLink.startsWith('http://') || publication.ProjectLink.startsWith('https://')) && (
+                                <div>
+                                  <a href={publication.ProjectLink} target="_blank" rel="noopener noreferrer">Project Page</a>
+                                </div>
                               )
                             )}
                           </div>
