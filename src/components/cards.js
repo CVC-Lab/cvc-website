@@ -1,6 +1,8 @@
 import * as React from "react";
 import { Grid, Tabs, Tab, Box } from "@mui/material";
 import "./cards.css";
+import { database } from '../data/database'
+import { ref, get } from 'firebase/database';
 
 const TabPanel = (props) => {
   const { children, value, index, ...other } = props;
@@ -33,14 +35,14 @@ const sortMembers = (members) => {
   ];
 
   const comparePositions = (a, b) => {
-    const positionA = positionOrder.indexOf(a.position);
-    const positionB = positionOrder.indexOf(b.position);
+    const positionA = positionOrder.indexOf(a.Position);
+    const positionB = positionOrder.indexOf(b.Position);
 
     if (positionA !== positionB) {
       return positionA - positionB;
     }
 
-    return a.name.localeCompare(b.name);
+    return a.Name.localeCompare(b.Name);
   };
 
   return members.slice().sort(comparePositions);
@@ -58,12 +60,12 @@ function renderMembersByTitle(members) {
   const facultyTiles = [];
 
   sortedMembers.forEach(member => {
-    const positionLower = member.position.toLowerCase();
+    const positionLower = member.Position.toLowerCase();
     if ((positionLower.includes('graduate') && !positionLower.includes('undergraduate')) || positionLower.includes('phd')) {
       studentsByTitle['Graduate Student'].push(member);
-    } else if (member.position === 'Undergraduate Student') {
+    } else if (member.Position === 'Undergraduate Student') {
       studentsByTitle['Undergraduate Student'].push(member);
-    } else if (member.position === 'High School Student') {
+    } else if (member.Position === 'High School Student') {
       studentsByTitle['High School Student'].push(member);
     } else {
       facultyTiles.push(member);
@@ -106,36 +108,52 @@ function renderCard(people, showFullTitle = false) {
       xs={6}
       sm={4}
       md={2}
-      key={people.name}
+      key={people.Name}
       className="member-grid-item"
     >
       <div className="Card">
         <div className="upper-container">
           <div className="image-container">
             <img
-              src={require(`../images/people/${people.image}`).default}
-              alt={`${people.name}'s profile`}
+              src={require(`../images/people/${people.Image}`).default}
+              alt={`${people.Name}'s profile`}
             />
           </div>
         </div>
         <div className="lower-container">
-          <h3>{people.name}</h3>
-          {showFullTitle && <h4>{people.position}</h4>}
+          <h3>{people.Name}</h3>
+          {showFullTitle && <h4>{people.Position}</h4>}
         </div>
       </div>
     </Grid>
   );
 }
 
-const Cards = ({ peopleCards }) => {
+const Cards = () => {
+  const [peopleCards, setPeopleCards] = React.useState([]);
   const [value, setValue] = React.useState(0);
 
+  React.useEffect(() => {
+    const fetchPeopleCards = async () => {
+      const dbRef = ref(database, '1PMgY4FYwz04Ptq1Kc9ByStWG-Z6RsR3bcR7iDMbaiN0/Sheet1'); 
+      try {
+        const snapshot = await get(dbRef);
+        if (snapshot.exists()) {
+          const data = snapshot.val();
+          setPeopleCards(Object.values(data));
+        }
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    fetchPeopleCards();
+  }, []);
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-
-  const currentMembers = peopleCards.filter(person => person.status === 'current');
-  const alumniMembers = peopleCards.filter(person => person.status === 'alumni');
+  const currentMembers = peopleCards.filter(person => person.Current === true);
+  const alumniMembers = peopleCards.filter(person => person.Current === false);
 
   return (
     <div className="people-class" id="people">
