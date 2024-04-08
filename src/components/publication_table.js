@@ -1,21 +1,7 @@
 import * as React from "react";
 import "./publication_table.css";
-import { initializeApp } from 'firebase/app';
-import { getDatabase, ref, get } from 'firebase/database';
-
-const firebaseConfig = {
-  apiKey: process.env.GATSBY_FIREBASE_API_KEY,
-  authDomain: process.env.GATSBY_FIREBASE_AUTH_DOMAIN,
-  databaseURL: process.env.GATSBY_FIREBASE_DATABASE_URL,
-  projectId: process.env.GATSBY_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.GATSBY_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.GATSBY_FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.GATSBY_FIREBASE_APP_ID
-};
-
-const app = initializeApp(firebaseConfig);
-
-const database = getDatabase(app);
+import { database } from '../data/database'
+import { ref, get } from 'firebase/database';
 
 const publicationTypeOrder = [
   "Journal Publications",
