@@ -4,11 +4,12 @@ This project is a GitHub Pages website built with Gatsby to showcase the researc
 
 ## Table of Contents
 
-- [Installation](#installation)
-- [Development](#development)
-- [Build and Deployment](#build-and-deployment)
-- [Folder Structure](#folder-structure)
-- [License](#license)
+- [Computer Visualization Center Website](#computer-visualization-center-website)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+  - [Development](#development)
+  - [Build and Deployment](#build-and-deployment)
+  - [Folder Structure](#folder-structure)
 
 ## Installation
 
@@ -57,6 +58,7 @@ npm run deploy
 .
 ├── LICENSE
 ├── README.md
+├── docs
 ├── gatsby-browser.js
 ├── gatsby-config.js
 ├── gatsby-node.js
