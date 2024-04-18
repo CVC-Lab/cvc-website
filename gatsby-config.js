@@ -748,6 +748,30 @@ module.exports = {
         link:'/best-poster',
         date: '2004-10-01'
       },
+      {
+        name:'Job Opportunity: Software Engineer (IT Network/Security Specialist)',
+        category: 'news',
+        link:'/network-job',
+        date: '2024-04-19'
+      },
+      {
+        name:'Job Opportunity: Software Engineer',
+        category: 'news',
+        link:'/swe-job',
+        date: '2024-04-19'
+      },
+      {
+        name:'Job Opportunity: Post-Doctoral Researcher',
+        category: 'news',
+        link:'/postdoc-job',
+        date: '2024-04-19'
+      },
+      {
+        name:'Job Opportunity: Lead Research Scientist (AI Networking and Security)',
+        category: 'news',
+        link:'/research-job',
+        date: '2024-04-19'
+      },
     ],
     projectTiles:[
       {
