@@ -37,7 +37,7 @@ const Layout = ({ children }) => {
         <main style={{minHeight: '90vh'}}>{children}
         </main>
       </div>
-      <Footer menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title} siteDescription={data.site.siteMetadata.description} />
+      <Footer />
     </>
   )
 }
