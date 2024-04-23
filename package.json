@@ -61,6 +61,8 @@
   "overrides": {
     "webpack-dev-middleware": "5.3.4",
     "katex": "^0.16.10",
-    "undici": "5.28.4"
+    "undici": "5.28.4",
+    "gatsby": "^5.13.3",
+    "react-dom": "^18.2.0"
   }
 }
