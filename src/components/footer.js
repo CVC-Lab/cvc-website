@@ -2,14 +2,11 @@ import * as React from 'react';
 import './footer.css';
 
 const Footer = () => {
-  const isGitHubPages = window.location.hostname.includes('github.io');
-
-  const baseURL = isGitHubPages ? '/cvc-website' : '';
   const links = [
-    { href: `${baseURL}/research-job`, title: 'Lead Research Scientist (AI Networking and Security)' },
-    { href: `${baseURL}/postdoc-job`, title: 'Post-Doctoral Researcher' },
-    { href: `${baseURL}/swe-job`, title: 'Software Engineer' },
-    { href: `${baseURL}/network-job`, title: 'Software Engineer (IT Network/Security Specialist)' },
+    { href: '/cvc-website/research-job', title: 'Lead Research Scientist (AI Networking and Security)' },
+    { href: '/cvc-website/postdoc-job', title: 'Post-Doctoral Researcher' },
+    { href: '/cvc-website/swe-job', title: 'Software Engineer' },
+    { href: '/cvc-website/network-job', title: 'Software Engineer (IT Network/Security Specialist)' },
   ];
   return (
   <footer className="footer">
