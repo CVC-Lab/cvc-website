@@ -9,7 +9,8 @@
    slug: "/software/link_to_software"
    ---
    ```
-3. Navigate to ``gatsby-config.js``
+
+3. Navigate to `gatsby-config.js`
 4. Scroll down to `softwareProjects`
 5. You can add on to existing category or create a new one.
 6. Add the following information about the software:
@@ -21,4 +22,5 @@
            link:'/software/link_to_software'
    },
    ```
+
 7. Follow build and deployment instructions in README.md

@@ -25,11 +25,12 @@ Load distribution of the Visible Male MRI data among 31 processors.
 [![](https://cvcweb.ices.utexas.edu/cvcwp/wp-content/uploads/2018/05/female_64.gif)](https://cvcweb.ices.utexas.edu/cvcwp/wp-content/uploads/2018/05/female_64.gif)  
 Load distribution of the Visible Female MRI data among 64 processors.
 
-### Related Papers 
-X. Zhang, C. Bajaj, W. Blanke   
-**Scalable Isosurface Visualization of Massive Datasets on COTS-Cluster**   
-_Proc. of IEEE 2001 Symposium on Parallel and Large-Data Visualization and Graphics, pg. 51-58, San Diego, CA, 2001_ [(pdf)](http://cvcweb.ices.utexas.edu/cvc/papers/2001/conference/pvg01.pdf)  
+### Related Papers
 
-C. Bajaj, V. Pascucci, D.Thompson, X.Y. Zhang   
-**Parallel Accelerated Isocontouring for Out-Of-Core Visualization,**   
+X. Zhang, C. Bajaj, W. Blanke  
+**Scalable Isosurface Visualization of Massive Datasets on COTS-Cluster**  
+_Proc. of IEEE 2001 Symposium on Parallel and Large-Data Visualization and Graphics, pg. 51-58, San Diego, CA, 2001_ [(pdf)](http://cvcweb.ices.utexas.edu/cvc/papers/2001/conference/pvg01.pdf)
+
+C. Bajaj, V. Pascucci, D.Thompson, X.Y. Zhang  
+**Parallel Accelerated Isocontouring for Out-Of-Core Visualization,**  
 In Proceedings of _IEEE Parallel Visualization and Graphics Symposium, October 24-29,1999 San Francisco, CA,_ pages 97 - 104. ([ps](http://cvcweb.ices.utexas.edu/cvc/papers/1999/conference/papera1.ps)) ([pdf](http://cvcweb.ices.utexas.edu/cvc/papers/1999/conference/papera1.pdf)

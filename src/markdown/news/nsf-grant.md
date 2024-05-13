@@ -3,6 +3,7 @@ title: "National Science Foundation Grant"
 slug: "/nsf-grant"
 date: "2005-11-29"
 ---
+
 (excerpt from ON CAMPUS)
 The National Science Foundation has granted $1.1 million to a collaboration of medical and engineering researchers at UT Austin to use computer modeling for controlling a heat-based treatment for prostate cancer.
 

@@ -15,7 +15,7 @@ const NewsPage = ({ children }) => {
             category
             link
             date
-          }    
+          }
         }
       }
     }
@@ -23,7 +23,10 @@ const NewsPage = ({ children }) => {
 
   return (
     <Layout>
-      <NewsTiles id='news' newsTiles={data.site.siteMetadata.newsTiles}></NewsTiles>
+      <NewsTiles
+        id="news"
+        newsTiles={data.site.siteMetadata.newsTiles}
+      ></NewsTiles>
     </Layout>
   )
 }

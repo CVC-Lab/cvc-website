@@ -2,51 +2,58 @@
 title: "VolumeRover Download"
 slug: "/software/volumerover/download"
 ---
+
 ### License Information
-VolumeRover is Copyright © 2011 Computational Visualization Center, The University of Texas at Austin.  
 
-VolumeRover is distributed under the the terms of the [GNU Lesser General Public License version 2.1](http://www.gnu.org/licenses/lgpl-2.1-standalone.html). 
+VolumeRover is Copyright © 2011 Computational Visualization Center, The University of Texas at Austin.
 
-If you find our software useful in your research, we kindly ask that you acknowledge this use by citing our relevant publications: 
+VolumeRover is distributed under the the terms of the [GNU Lesser General Public License version 2.1](http://www.gnu.org/licenses/lgpl-2.1-standalone.html).
 
-C. Bajaj, Z. Yu. "Geometric and Signal Processing of Reconstructed 3D Maps of Molecular Complexes," _Handbook of Computational Molecular Biology_, edited by S. Aluru, Chapman & Hall/CRC Press, 2005. 
+If you find our software useful in your research, we kindly ask that you acknowledge this use by citing our relevant publications:
 
-An extended list of associated references is given at the bottom of this page. 
+C. Bajaj, Z. Yu. "Geometric and Signal Processing of Reconstructed 3D Maps of Molecular Complexes," _Handbook of Computational Molecular Biology_, edited by S. Aluru, Chapman & Hall/CRC Press, 2005.
 
-Users interested in commercial licensing should contact licensing@otc.utexas.edu  
+An extended list of associated references is given at the bottom of this page.
+
+Users interested in commercial licensing should contact licensing@otc.utexas.edu
 
 ### Download
-**VolumeRover Binaries**
-*   Linux binary
-    *   Ubuntu 10.04: [VolumeRover-2.0.4173-Linux-x86\_64.tar.gz](http://cvcweb.ices.utexas.edu/tmp/VolumeRover-2.0.4173-Linux-x86_64.tar.gz)
-*   Mac binary
-    *   Lion (OSX 10.7.4): [VolRover-2.0.6474-macosx-10.7.tar.gz](http://cvcweb.ices.utexas.edu/software/binaries/VolRover-2.0.6474-macosx-10.7.tar.gz)
-    *   Leopard (OSX 10.5.8): [VolumeRover-2.0.5875-macosx-x86.zip](http://cvcweb.ices.utexas.edu/tmp/VolumeRover-2.0.5875-macosx-x86.zip)
-*   Windows binary
-    *   SVN revision 6465, binary: [VolRover\_Win7\_32bit\_r6465\_012513.zip](http://cvcweb.ices.utexas.edu/software/binaries/VolRover_Win7_32bit_r6465_012513.zip)
-    *   SVN revision 4176, installer: [VolumeRover-2.0.4176-win32-x86.exe](http://cvcweb.ices.utexas.edu/tmp/VolumeRover-2.0.4176-win32-x86.exe)
-*   Example Data: [VolRoverExamples.tgz](http://cvcweb.ices.utexas.edu/software/data/VolRoverExamples.tgz)
-*   [VolRover 2.0 User Guide](http://cvcweb.ices.utexas.edu/software/doc/VolumeRoverDoc.pdf)
 
-Note: [NVIDIA Cg](http://developer.nvidia.com/cg-toolkit) Framework required for MacOSX binary.  
+**VolumeRover Binaries**
+
+- Linux binary
+  - Ubuntu 10.04: [VolumeRover-2.0.4173-Linux-x86_64.tar.gz](http://cvcweb.ices.utexas.edu/tmp/VolumeRover-2.0.4173-Linux-x86_64.tar.gz)
+- Mac binary
+  - Lion (OSX 10.7.4): [VolRover-2.0.6474-macosx-10.7.tar.gz](http://cvcweb.ices.utexas.edu/software/binaries/VolRover-2.0.6474-macosx-10.7.tar.gz)
+  - Leopard (OSX 10.5.8): [VolumeRover-2.0.5875-macosx-x86.zip](http://cvcweb.ices.utexas.edu/tmp/VolumeRover-2.0.5875-macosx-x86.zip)
+- Windows binary
+  - SVN revision 6465, binary: [VolRover_Win7_32bit_r6465_012513.zip](http://cvcweb.ices.utexas.edu/software/binaries/VolRover_Win7_32bit_r6465_012513.zip)
+  - SVN revision 4176, installer: [VolumeRover-2.0.4176-win32-x86.exe](http://cvcweb.ices.utexas.edu/tmp/VolumeRover-2.0.4176-win32-x86.exe)
+- Example Data: [VolRoverExamples.tgz](http://cvcweb.ices.utexas.edu/software/data/VolRoverExamples.tgz)
+- [VolRover 2.0 User Guide](http://cvcweb.ices.utexas.edu/software/doc/VolumeRoverDoc.pdf)
+
+Note: [NVIDIA Cg](http://developer.nvidia.com/cg-toolkit) Framework required for MacOSX binary.
 
 **VolumeRover Neuron Binaries**
-*   Linux binary: [VolumeRover-Neuron-2.0.5073-Linux-x86\_64.tar.gz](http://cvcweb.ices.utexas.edu/software/binaries/VolumeRover-Neuron-2.0.5073-Linux-x86_64.tar.gz)
-*   [VolRover 2.0 User Guide](http://cvcweb.ices.utexas.edu/software/doc/VolumeRoverDoc.pdf)
 
-**Source**   
-\* Currently the source code is distributed only for academic use. Users interested in commercial licensing should contact licensing@otc.utexas.edu   
+- Linux binary: [VolumeRover-Neuron-2.0.5073-Linux-x86_64.tar.gz](http://cvcweb.ices.utexas.edu/software/binaries/VolumeRover-Neuron-2.0.5073-Linux-x86_64.tar.gz)
+- [VolRover 2.0 User Guide](http://cvcweb.ices.utexas.edu/software/doc/VolumeRoverDoc.pdf)
+
+**Source**  
+\* Currently the source code is distributed only for academic use. Users interested in commercial licensing should contact licensing@otc.utexas.edu  
 \* [Request academic license](http://cvcweb.ices.utexas.edu/software/license/VolumeRover.license_mail.php)  
 \* [Download source](http://cvcweb.ices.utexas.edu/cvcwp/?page_id=2282)
 
 **Previous Version: VolRover1.1.2**
-*   Windows binary [VolumeRover-gcc3.4.5-windows.x86-1.2.1b.zip](http://www.cs.utexas.edu/%7Ebajaj/cvc/software/bin/VolumeRover-gcc3.4.5-windows.x86-1.2.1b.zip)
-*   Linux binary [VolumeRover-gcc4.2.4-linux.x86\_64-1.2.4.tar.gz](http://www.cs.utexas.edu/%7Ebajaj/cvc/software/bin/VolumeRover-gcc4.2.4-linux.x86_64-1.2.4.tar.gz)
-*   Mac OSX binary [VolumeRover-gcc4.0.1-macosx.ppc-1.1.2.tar.gz](http://www.cs.utexas.edu/%7Ebajaj/cvc/software/bin/VolumeRover-gcc4.0.1-macosx.ppc-1.1.2.tar.gz)
-*   Mac OSX binary [VolumeRover-gcc4.0.1-macosx.x86-1.1.2.tar.gz](http://www.cs.utexas.edu/%7Ebajaj/cvc/software/bin/VolumeRover-gcc4.0.1-macosx.x86-1.1.2.tar.gz)
-*   [VolRover 1.1.2 User Guide](http://www.cs.utexas.edu/%7Ebajaj/cvc/software/doc/VolRoverUserGuide.pdf).
+
+- Windows binary [VolumeRover-gcc3.4.5-windows.x86-1.2.1b.zip](http://www.cs.utexas.edu/%7Ebajaj/cvc/software/bin/VolumeRover-gcc3.4.5-windows.x86-1.2.1b.zip)
+- Linux binary [VolumeRover-gcc4.2.4-linux.x86_64-1.2.4.tar.gz](http://www.cs.utexas.edu/%7Ebajaj/cvc/software/bin/VolumeRover-gcc4.2.4-linux.x86_64-1.2.4.tar.gz)
+- Mac OSX binary [VolumeRover-gcc4.0.1-macosx.ppc-1.1.2.tar.gz](http://www.cs.utexas.edu/%7Ebajaj/cvc/software/bin/VolumeRover-gcc4.0.1-macosx.ppc-1.1.2.tar.gz)
+- Mac OSX binary [VolumeRover-gcc4.0.1-macosx.x86-1.1.2.tar.gz](http://www.cs.utexas.edu/%7Ebajaj/cvc/software/bin/VolumeRover-gcc4.0.1-macosx.x86-1.1.2.tar.gz)
+- [VolRover 1.1.2 User Guide](http://www.cs.utexas.edu/%7Ebajaj/cvc/software/doc/VolRoverUserGuide.pdf).
 
 ### References
+
 C. Bajaj, S. Goswami, and Q. Zhang  
 **Detection of Secondary and Supersecondary Structures of Proteins for Cryo-Electron Microscopy**  
 _Journal of Structural Biology, Volume 177, Issue 2, February 2012, Pages 367-381doi:10.1016/j.jsb.2011.11.032._
@@ -61,7 +68,7 @@ _Journal of Computational Mathematics, 29:501-525, 2011, doi: 10.4208/jcm.1106-m
 
 O. Sharma, Q. Zhang, F. Anton, C. Bajaj  
 **Fast Streaming 3D Level Set Segmentation on the GPU for Smooth Multi-phase Segmentation**  
-_Transactions on Computational Sciences, 6750:72-91, 2011, NIHMSID# 282368, doi:10.1007/978-3-642-22619-9\_4._
+_Transactions on Computational Sciences, 6750:72-91, 2011, NIHMSID# 282368, doi:10.1007/978-3-642-22619-9_4._
 
 M. Li, G. Xu, C. Sorzano, F. Sun, and C. Bajaj  
 **Single-Particle Reconstruction Using L2-Gradient Flow**  
@@ -105,8 +112,8 @@ _Procedings of 2004 IEEE International Conference on Image Processing (ICIP’04
 
 Z. Yu, C. Bajaj  
 **A Segmentation-Free Approach for Skeletonization of Gray-Scale Images via Anistropic Vector Diffusion**  
-_Procedings of 2004 IEEE International Conference on Computer Vision and Pattern Recognition (CVPR’04), Volume 1, Pages 415-420, Washington, DC._  
+_Procedings of 2004 IEEE International Conference on Computer Vision and Pattern Recognition (CVPR’04), Volume 1, Pages 415-420, Washington, DC._
 
 Z. Yu, C. Bajaj  
 **Normalized Gradient Vector Diffusion and Image Segmentation**  
-_Procedings of the 7th European Conference on Computer Vision (LNCS 2352), vol. 3, pp. 517-530, (Published by Springer Press), Copenhagen, Denmark, May 28-31, 2002._ 
+_Procedings of the 7th European Conference on Computer Vision (LNCS 2352), vol. 3, pp. 517-530, (Published by Springer Press), Copenhagen, Denmark, May 28-31, 2002._

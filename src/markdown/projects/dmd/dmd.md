@@ -18,10 +18,9 @@ We draw inspiration from compressive sensing and variational inference to side-s
 
 ## Progress
 
-To answer the first challenge of providing effective feature mappings, we study a deep learning approach to DMD. We study the GEMS dataset obtained by simulating a combustion engine model, where the geometry is captured by a 2D point set as shown below. Each sample point provides multiple measurements, e.g., preassure, 2D velocity, and molar concentrations. 
+To answer the first challenge of providing effective feature mappings, we study a deep learning approach to DMD. We study the GEMS dataset obtained by simulating a combustion engine model, where the geometry is captured by a 2D point set as shown below. Each sample point provides multiple measurements, e.g., preassure, 2D velocity, and molar concentrations.
 
 ![](https://i.imgur.com/Awxwo3k.png)
-
 
 To limit the computational overhead of the data-driven approach, we begin by subsampling the original spatial distribution, while attempting to preserve the same level of coverage. The figure below was produced by our subsampling routine.
 
@@ -31,17 +30,17 @@ We are now ready to learn the dynamics of the system. For example, considering p
 
 ![](https://i.imgur.com/evM0Pcu.png)
 
-
 Second, to help alleviate the second challenge with scaling up computations to the analysis of high-dimensional data, we extend tensor DMD (TDMD) with progressive sketching capabilities. We leverage our group's recent work on SketchyCoreSVD to speed up TDMD under reasonable sparsity assumptions on the data matrices. Our preliminary experiments on the NCEP North American Regional Reanalysis (NARR) dataset demonstrates more than a 2x speed-up as summarized in the figure below.
 
 ![](https://i.imgur.com/KDARSU3.png)
 
 ## Codes
-* [DMD modeling dynamics](https://utexas.box.com/shared/static/kl3qj4xowgwd7p9kggqt4ksacedhso57.zip)
-* [GEMS: preprocessing and deep learning](https://utexas.box.com/shared/static/it4b9ynfg1xghjx61swr01xsors5vohk.zip)
 
+- [DMD modeling dynamics](https://utexas.box.com/shared/static/kl3qj4xowgwd7p9kggqt4ksacedhso57.zip)
+- [GEMS: preprocessing and deep learning](https://utexas.box.com/shared/static/it4b9ynfg1xghjx61swr01xsors5vohk.zip)
 
 ## People
-* PI: Prof. Chandrajit Bajaj
-* Taemin Heo (PhD)
-* Ahmed Abdelkader (Postdoc)
+
+- PI: Prof. Chandrajit Bajaj
+- Taemin Heo (PhD)
+- Ahmed Abdelkader (Postdoc)

@@ -5,6 +5,7 @@ date: "2020-09-01"
 ---
 
 ### [Computational Visualization Center Wordpress Link](https://cvcweb.oden.utexas.edu/cvcwp/projects/spectre/)
+
 ## What is Spectre?
 
 Spectre Studies smart data structures and prediction optimization with provable guarantees for spectral and geometric processing

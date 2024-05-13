@@ -1,10 +1,10 @@
 exports.onCreateWebpackConfig = ({
-                                   stage,
-                                   rules,
-                                   loaders,
-                                   plugins,
-                                   actions,
-                                 }) => {
+  stage,
+  rules,
+  loaders,
+  plugins,
+  actions,
+}) => {
   actions.setWebpackConfig({
     module: {
       rules: [
@@ -24,13 +24,13 @@ exports.onCreateWebpackConfig = ({
         },
         {
           test: /\.csv$/,
-          loader: 'csv-loader',
+          loader: "csv-loader",
           options: {
             dynamicTyping: true,
             header: true,
-            skipEmptyLines: true
-          }
-        }
+            skipEmptyLines: true,
+          },
+        },
       ],
     },
     plugins: [

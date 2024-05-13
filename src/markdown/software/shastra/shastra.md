@@ -2,6 +2,7 @@
 title: "SHASTRA"
 slug: "/software/shastra"
 ---
+
 Project SHASTRA is directed at research in CSCW (_Computer Supported Cooperative Work_) based geometric modeling, simulation, interrogative visualization and design prototyping environments. The implementation is on the multimedia desktop and harnesses the power of networked workstations.
 
 ![CT HEAD](https://cvcweb.oden.utexas.edu/cvc/projects/shastra/images/medAppln.jpg)
@@ -9,7 +10,6 @@ Project SHASTRA is directed at research in CSCW (_Computer Supported Cooperative
 ![Collaborative Visualization](https://cvcweb.oden.utexas.edu/cvc/projects/shastra/images/collVis1.jpg)
 
 ![Shastra Applications](https://cvcweb.oden.utexas.edu/cvc/projects/shastra/images/shaApps.jpg)
-
 
 ### PROJECTS & ACTIVITIES
 
@@ -21,11 +21,11 @@ Project SHASTRA is directed at research in CSCW (_Computer Supported Cooperative
 
 Synthetic Environments:
 
-*   Air/Land/Sea Defense
-*   Human Body Walk-through
-*   Molecular World
-*   [Networked Learning Spaces](spaces)
-*   [Economic Visualization](visualization)
+- Air/Land/Sea Defense
+- Human Body Walk-through
+- Molecular World
+- [Networked Learning Spaces](spaces)
+- [Economic Visualization](visualization)
 
 Interrogative Data Visualization
 
@@ -39,10 +39,9 @@ Gati
 Rasayan  
 Shilp  
 Splinex  
-Vaidak  
+Vaidak
 
 ### MULTIMEDIA SERVICES
-
 
 ### SPONSORS
 

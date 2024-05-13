@@ -1,7 +1,7 @@
 import * as React from "react"
-import { graphql, useStaticQuery } from "gatsby";
-import Layout from "../components/layout";
-import SoftwareList from "../components/software_list";
+import { graphql, useStaticQuery } from "gatsby"
+import Layout from "../components/layout"
+import SoftwareList from "../components/software_list"
 
 const SoftwarePage = () => {
   const data = useStaticQuery(graphql`
@@ -18,14 +18,14 @@ const SoftwarePage = () => {
         }
       }
     }
-  `);
+  `)
 
-  const softwareProjects = data.site.siteMetadata.softwareProjects;
+  const softwareProjects = data.site.siteMetadata.softwareProjects
   return (
     <Layout>
       <SoftwareList softwareProjects={softwareProjects} />
     </Layout>
-  );
-};
+  )
+}
 
-export default SoftwarePage;
+export default SoftwarePage

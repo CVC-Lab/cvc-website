@@ -10,7 +10,8 @@
    date: "YYYY-MM-DD"
    ---
    ```
-3. Navigate to ``gatsby-config.js``
+
+3. Navigate to `gatsby-config.js`
 4. Scroll down to `projectTiles`
 5. Add the following information about the project:
 
@@ -24,4 +25,5 @@
            date: 'YYYY-MM-DD'
    },
    ```
+
 6. Follow build and deployment instructions in README.md

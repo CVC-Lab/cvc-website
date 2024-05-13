@@ -1,11 +1,11 @@
-import * as React from "react";
-import { Grid, Tabs, Tab, Box } from "@mui/material";
-import "./cards.css";
-import { database } from '../data/database'
-import { ref, get } from 'firebase/database';
+import * as React from "react"
+import { Grid, Tabs, Tab, Box } from "@mui/material"
+import "./cards.css"
+import { database } from "../data/database"
+import { ref, get } from "firebase/database"
 
-const TabPanel = (props) => {
-  const { children, value, index, ...other } = props;
+const TabPanel = props => {
+  const { children, value, index, ...other } = props
 
   return (
     <div
@@ -23,82 +23,90 @@ const TabPanel = (props) => {
         </Box>
       )}
     </div>
-  );
+  )
 }
 
-const sortMembers = (members) => {
+const sortMembers = members => {
   const positionOrder = [
-    'Director, Principle Investigator',
-    'Research Administrator',
-    'Research Fellow from Purdue University',
-    'Postdoctoral Researcher'
-  ];
+    "Director, Principle Investigator",
+    "Research Administrator",
+    "Research Fellow from Purdue University",
+    "Postdoctoral Researcher",
+  ]
 
   const comparePositions = (a, b) => {
-    const positionA = positionOrder.indexOf(a.Position);
-    const positionB = positionOrder.indexOf(b.Position);
+    const positionA = positionOrder.indexOf(a.Position)
+    const positionB = positionOrder.indexOf(b.Position)
 
     if (positionA !== positionB) {
-      return positionA - positionB;
+      return positionA - positionB
     }
 
-    return a.Name.localeCompare(b.Name);
-  };
+    return a.Name.localeCompare(b.Name)
+  }
 
-  return members.slice().sort(comparePositions);
-};
+  return members.slice().sort(comparePositions)
+}
 
 function renderMembersByTitle(members) {
-  const sortedMembers = sortMembers(members);
+  const sortedMembers = sortMembers(members)
 
   const studentsByTitle = {
-    'Graduate Student': [],
-    'Undergraduate Student': [],
-    'High School Student': [],
-  };
+    "Graduate Student": [],
+    "Undergraduate Student": [],
+    "High School Student": [],
+  }
 
-  const facultyTiles = [];
+  const facultyTiles = []
 
   sortedMembers.forEach(member => {
-    const positionLower = member.Position.toLowerCase();
-    if ((positionLower.includes('graduate') && !positionLower.includes('undergraduate')) || positionLower.includes('phd')) {
-      studentsByTitle['Graduate Student'].push(member);
-    } else if (member.Position === 'Undergraduate Student') {
-      studentsByTitle['Undergraduate Student'].push(member);
-    } else if (member.Position === 'High School Student') {
-      studentsByTitle['High School Student'].push(member);
+    const positionLower = member.Position.toLowerCase()
+    if (
+      (positionLower.includes("graduate") &&
+        !positionLower.includes("undergraduate")) ||
+      positionLower.includes("phd")
+    ) {
+      studentsByTitle["Graduate Student"].push(member)
+    } else if (member.Position === "Undergraduate Student") {
+      studentsByTitle["Undergraduate Student"].push(member)
+    } else if (member.Position === "High School Student") {
+      studentsByTitle["High School Student"].push(member)
     } else {
-      facultyTiles.push(member);
+      facultyTiles.push(member)
     }
-  });
+  })
 
   return (
     <div className="student-titles">
       <h3 className="title-header"></h3>
-      <Grid style={{ marginBottom: '2rem' }} container spacing={4}>
-        {facultyTiles.map((people) => renderCard(people, true))}
+      <Grid style={{ marginBottom: "2rem" }} container spacing={4}>
+        {facultyTiles.map(people => renderCard(people, true))}
       </Grid>
       <h3 className="title-header">Graduate Students</h3>
       <Grid className="title-grid" container spacing={4}>
-        {studentsByTitle['Graduate Student'].map((people) => 
-          renderCard(people, !people.isExactTitle))}
+        {studentsByTitle["Graduate Student"].map(people =>
+          renderCard(people, !people.isExactTitle)
+        )}
       </Grid>
       <h3 className="title-header">Undergraduate Students</h3>
       <Grid className="title-grid" container spacing={4}>
-        {studentsByTitle['Undergraduate Student'].map((people) => 
-          renderCard(people, false))}
+        {studentsByTitle["Undergraduate Student"].map(people =>
+          renderCard(people, false)
+        )}
       </Grid>
-        {studentsByTitle['High School Student'] && studentsByTitle['High School Student'].length > 0 && (
+      {studentsByTitle["High School Student"] &&
+        studentsByTitle["High School Student"].length > 0 && (
           <>
             <h3 className="title-header">High School Students</h3>
             <Grid className="title-grid" container spacing={4}>
-              {studentsByTitle['High School Student'].map((people) => 
-                renderCard(people, false))}
+              {studentsByTitle["High School Student"].map(people =>
+                renderCard(people, false)
+              )}
             </Grid>
           </>
         )}
     </div>
-  );
+  )
 }
 
 function renderCard(people, showFullTitle = false) {
@@ -126,52 +134,59 @@ function renderCard(people, showFullTitle = false) {
         </div>
       </div>
     </Grid>
-  );
+  )
 }
 
 const Cards = () => {
-  const [peopleCards, setPeopleCards] = React.useState([]);
-  const [value, setValue] = React.useState(0);
+  const [peopleCards, setPeopleCards] = React.useState([])
+  const [value, setValue] = React.useState(0)
 
   React.useEffect(() => {
     const fetchPeopleCards = async () => {
-      const dbRef = ref(database, '1PMgY4FYwz04Ptq1Kc9ByStWG-Z6RsR3bcR7iDMbaiN0/Sheet1'); 
+      const dbRef = ref(
+        database,
+        "1PMgY4FYwz04Ptq1Kc9ByStWG-Z6RsR3bcR7iDMbaiN0/Sheet1"
+      )
       try {
-        const snapshot = await get(dbRef);
+        const snapshot = await get(dbRef)
         if (snapshot.exists()) {
-          const data = snapshot.val();
-          setPeopleCards(Object.values(data));
+          const data = snapshot.val()
+          setPeopleCards(Object.values(data))
         }
       } catch (error) {
-        console.error(error);
+        console.error(error)
       }
-    };
+    }
 
-    fetchPeopleCards();
-  }, []);
+    fetchPeopleCards()
+  }, [])
   const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
-  const currentMembers = peopleCards.filter(person => person.Current === true);
-  const alumniMembers = peopleCards.filter(person => person.Current === false);
+    setValue(newValue)
+  }
+  const currentMembers = peopleCards.filter(person => person.Current === true)
+  const alumniMembers = peopleCards.filter(person => person.Current === false)
 
   return (
     <div className="people-class" id="people">
       <div className="people-container">
         <h4 className="header-subtitle">People</h4>
-        <Tabs value={value} onChange={handleChange} aria-label="people categories">
+        <Tabs
+          value={value}
+          onChange={handleChange}
+          aria-label="people categories"
+        >
           <Tab label="Current Members" />
           <Tab label="Alumni" />
         </Tabs>
         <TabPanel value={value} index={0}>
-        {renderMembersByTitle(currentMembers)}
-      </TabPanel>
-      <TabPanel value={value} index={1}>
-        {renderMembersByTitle(alumniMembers)}
-      </TabPanel>
+          {renderMembersByTitle(currentMembers)}
+        </TabPanel>
+        <TabPanel value={value} index={1}>
+          {renderMembersByTitle(alumniMembers)}
+        </TabPanel>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Cards;
+export default Cards

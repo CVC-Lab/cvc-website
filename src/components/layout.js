@@ -29,13 +29,16 @@ const Layout = ({ children }) => {
       }
     }
   `)
-  
+
   return (
     <>
-      <Header menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title} siteDescription={data.site.siteMetadata.description} />
+      <Header
+        menuLinks={data.site.siteMetadata.menuLinks}
+        siteTitle={data.site.siteMetadata.title}
+        siteDescription={data.site.siteMetadata.description}
+      />
       <div>
-        <main style={{minHeight: '90vh'}}>{children}
-        </main>
+        <main style={{ minHeight: "90vh" }}>{children}</main>
       </div>
       <Footer />
     </>

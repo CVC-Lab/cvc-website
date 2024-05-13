@@ -3,6 +3,7 @@ title: "Job Opportunity: Post-Doctoral Researcher"
 slug: "/postdoc-job"
 date: "2024-04-19"
 ---
+
 **Job Title:** Post-Doctoral Researcher
 
 **Location:** University of Texas at Austin
@@ -15,27 +16,27 @@ date: "2024-04-19"
 
 **Key Responsibilities:**
 
-* Collaborate in the conceptualization and development of theoretical frameworks to underpin AI-driven network optimization.
-* Engage in the design and iterative refinement of AI agents with a special focus on traffic prioritization and network adaptability.
-* Play a pivotal role in controlled scenario testing, contributing to rigorous result analysis and validation.
-* Support the research team by assisting in the preparation of detailed technical reports and presentations that demonstrate project milestones and insights.
+- Collaborate in the conceptualization and development of theoretical frameworks to underpin AI-driven network optimization.
+- Engage in the design and iterative refinement of AI agents with a special focus on traffic prioritization and network adaptability.
+- Play a pivotal role in controlled scenario testing, contributing to rigorous result analysis and validation.
+- Support the research team by assisting in the preparation of detailed technical reports and presentations that demonstrate project milestones and insights.
 
 **Technical Requirements:**
 
-* A recently earned Ph.D. in Computer Science, AI, Networking, or a related discipline.
-* Solid experience with AI/machine learning methodologies, particularly those applicable to network optimization.
-* Proven ability in programming and familiarity with network simulation tools and environments.
-* A strong propensity for innovative thinking coupled with a disciplined approach to research and collaboration.
+- A recently earned Ph.D. in Computer Science, AI, Networking, or a related discipline.
+- Solid experience with AI/machine learning methodologies, particularly those applicable to network optimization.
+- Proven ability in programming and familiarity with network simulation tools and environments.
+- A strong propensity for innovative thinking coupled with a disciplined approach to research and collaboration.
 
 **Preferred Qualifications:**
 
-* Publications or significant contributions to the field of AI, machine learning, or networking.
-* Experience with interdisciplinary research and collaborative projects.
-* Familiarity with military or defense communication systems is a plus.
+- Publications or significant contributions to the field of AI, machine learning, or networking.
+- Experience with interdisciplinary research and collaborative projects.
+- Familiarity with military or defense communication systems is a plus.
 
 **What We Offer:**
 
-* A competitive post-doctoral salary and comprehensive benefits.
-* Access to leading-edge technology and research facilities.
-* A collaborative environment that fosters growth and innovation.
-* Involvement in a project with tangible impact on the future of C5ISR systems.
+- A competitive post-doctoral salary and comprehensive benefits.
+- Access to leading-edge technology and research facilities.
+- A collaborative environment that fosters growth and innovation.
+- Involvement in a project with tangible impact on the future of C5ISR systems.

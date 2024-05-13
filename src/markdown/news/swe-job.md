@@ -3,6 +3,7 @@ title: "Job Opportunity: Software Engineer"
 slug: "/swe-job"
 date: "2024-04-19"
 ---
+
 **Job Title:** Software Engineer
 
 **Location:** University of Texas at Austin
@@ -15,26 +16,26 @@ date: "2024-04-19"
 
 **Key Responsibilities:**
 
-* Develop AI agents focused on optimizing network topology for peak performance.
-* Work collaboratively through various project stages, from conceptualizing theoretical frameworks to deploying practical solutions.
-* Drive continuous enhancement of AI agent capabilities, focusing on PACE Routing, Load Balancing, and related features.
-* Contribute to the production of detailed technical reports and presentations that showcase project progress and breakthroughs.
+- Develop AI agents focused on optimizing network topology for peak performance.
+- Work collaboratively through various project stages, from conceptualizing theoretical frameworks to deploying practical solutions.
+- Drive continuous enhancement of AI agent capabilities, focusing on PACE Routing, Load Balancing, and related features.
+- Contribute to the production of detailed technical reports and presentations that showcase project progress and breakthroughs.
 
 **Technical Requirements:**
 
-* A strong foundation in AI/machine learning and software development.
-* Experience with network simulation, optimization, and related technologies.
-* Proficiency in programming languages and tools pertinent to AI development and network engineering.
-* Versatility in adapting to the dynamic needs and phases of an evolving, research-intensive project.
+- A strong foundation in AI/machine learning and software development.
+- Experience with network simulation, optimization, and related technologies.
+- Proficiency in programming languages and tools pertinent to AI development and network engineering.
+- Versatility in adapting to the dynamic needs and phases of an evolving, research-intensive project.
 
 **Preferred Qualifications:**
 
-* Bachelor's or Master's degree in Computer Science, Artificial Intelligence, or a closely related field.
-* Demonstrable experience in an interdisciplinary team, preferably within a research or defense-focused environment.
-* A solid understanding of communication protocols and experience in network analysis and data systems.
+- Bachelor's or Master's degree in Computer Science, Artificial Intelligence, or a closely related field.
+- Demonstrable experience in an interdisciplinary team, preferably within a research or defense-focused environment.
+- A solid understanding of communication protocols and experience in network analysis and data systems.
 
 **What We Offer:**
 
-* A competitive salary and a supportive, innovation-oriented work environment.
-* A platform to work on transformative technologies with real-world applications and impact.
-* An opportunity to be a part of a project with strategic importance in communications and defense.
+- A competitive salary and a supportive, innovation-oriented work environment.
+- A platform to work on transformative technologies with real-world applications and impact.
+- An opportunity to be a part of a project with strategic importance in communications and defense.

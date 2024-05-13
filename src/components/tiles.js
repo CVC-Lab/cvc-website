@@ -1,23 +1,29 @@
-import * as React from "react";
-import { Link } from "gatsby";
-import { Grid, Tabs, Tab } from "@mui/material";
-import "./tiles.css";
+import * as React from "react"
+import { Link } from "gatsby"
+import { Grid, Tabs, Tab } from "@mui/material"
+import "./tiles.css"
 
-const projectTabs = ['Computer Vision', 'Reinforcement Learning', 'Scientific ML',
-                     'Health AI/ML'];
+const projectTabs = [
+  "Computer Vision",
+  "Reinforcement Learning",
+  "Scientific ML",
+  "Health AI/ML",
+]
 
 const Tiles = ({ projectTiles }) => {
-  const [activeTab, setActiveTab] = React.useState(projectTabs[0]);
+  const [activeTab, setActiveTab] = React.useState(projectTabs[0])
 
   const handleTabChange = (event, newValue) => {
-    setActiveTab(newValue);
-  };
+    setActiveTab(newValue)
+  }
 
-  const sortedProjectTiles = projectTiles.slice().sort((a, b) => new Date(b.date) - new Date(a.date));
-  
+  const sortedProjectTiles = projectTiles
+    .slice()
+    .sort((a, b) => new Date(b.date) - new Date(a.date))
+
   const filteredTiles = sortedProjectTiles.filter(tile =>
     tile.tags.includes(activeTab)
-  );
+  )
 
   return (
     <div className="tiles-class" id="projects">
@@ -42,8 +48,10 @@ const Tiles = ({ projectTiles }) => {
                   <h3>{tile.name}</h3>
                   <div className="image-container">
                     <Link to={tile.link}>
-                      <img src={require(`../images/${tile.img_name}.png`).default} 
-                        alt="project preview" />
+                      <img
+                        src={require(`../images/${tile.img_name}.png`).default}
+                        alt="project preview"
+                      />
                     </Link>
                   </div>
                 </div>
@@ -56,7 +64,7 @@ const Tiles = ({ projectTiles }) => {
         </Grid>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Tiles;
+export default Tiles

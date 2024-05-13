@@ -2,7 +2,9 @@
 title: "Naming Conventions"
 slug: "/software/shastra/conventions"
 ---
+
 ### Project SHASTRA Glossary
+
 **SHASTRA**
 is the Sanskrit word for Science, or a branch of knowledge.
 

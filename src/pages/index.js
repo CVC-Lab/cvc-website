@@ -6,7 +6,7 @@ import Tiles from "../components/tiles"
 import Cards from "../components/cards"
 import About from "../components/about"
 import { Helmet } from "react-helmet"
-import favicon from '../favicons/favicon.png'
+import favicon from "../favicons/favicon.png"
 
 const IndexPage = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -26,7 +26,7 @@ const IndexPage = ({ children }) => {
             image
             position
             status
-          }     
+          }
         }
       }
     }
@@ -36,11 +36,21 @@ const IndexPage = ({ children }) => {
     <Layout>
       <Helmet>
         <meta name="icon" href={favicon} />
-        <meta name="viewport" content="width=device-width,initial-scale=1.0" data-react-helmet="true"/>
+        <meta
+          name="viewport"
+          content="width=device-width,initial-scale=1.0"
+          data-react-helmet="true"
+        />
       </Helmet>
-      <Tiles id='projects' projectTiles={data.site.siteMetadata.projectTiles} ></Tiles>
-      <Cards id='people' peopleCards={data.site.siteMetadata.peopleCards}></Cards>
-      <About id='about'></About>
+      <Tiles
+        id="projects"
+        projectTiles={data.site.siteMetadata.projectTiles}
+      ></Tiles>
+      <Cards
+        id="people"
+        peopleCards={data.site.siteMetadata.peopleCards}
+      ></Cards>
+      <About id="about"></About>
     </Layout>
   )
 }

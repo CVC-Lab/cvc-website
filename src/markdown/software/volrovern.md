@@ -3,17 +3,17 @@ title: "VolRoverN"
 slug: "/software/volrovern"
 ---
 
-![](http://cvcweb.ices.utexas.edu/cvcwp/wp-content/uploads/2012/01/vrneuron1.png)![](http://cvcweb.ices.utexas.edu/cvcwp/wp-content/uploads/2012/01/vrneuron2.png)![](http://cvcweb.ices.utexas.edu/cvcwp/wp-content/uploads/2012/01/vrneuron3.png)![](http://cvcweb.ices.utexas.edu/cvcwp/wp-content/uploads/2012/01/vrneuron4.png) 
+![](http://cvcweb.ices.utexas.edu/cvcwp/wp-content/uploads/2012/01/vrneuron1.png)![](http://cvcweb.ices.utexas.edu/cvcwp/wp-content/uploads/2012/01/vrneuron2.png)![](http://cvcweb.ices.utexas.edu/cvcwp/wp-content/uploads/2012/01/vrneuron3.png)![](http://cvcweb.ices.utexas.edu/cvcwp/wp-content/uploads/2012/01/vrneuron4.png)
 
 ### Description
 
 _VolRoverN_ is a software package that offers comprehensive functionality for geometric and electrophysiological neuronal simulation at multiple scales. It produces spatially realistic surface models of neuronal processes, glia, and intracellular organelles from cross-sectional traces. This results in a "forest" of structures. These surface meshes are geometrically accurate and topologically correct. Beyond visualization and a suite of direct geometric quantifications, _VolRoverN_ generates derivative models for sophisticated simulations at multiple scales, such as cable and electrodiffusion models. Functionality includes:
 
-*   3D reconstruction of neurons from RECONSTRUCT series files
-*   2D and 3D geometry curation and improvement
-*   Extra-cellular space (ECS) generation
-*   Cable model export to NEURON
-*   Electrodiffusion model export to MCell (both surface mesh and tetrahedra)
+- 3D reconstruction of neurons from RECONSTRUCT series files
+- 2D and 3D geometry curation and improvement
+- Extra-cellular space (ECS) generation
+- Cable model export to NEURON
+- Electrodiffusion model export to MCell (both surface mesh and tetrahedra)
 
 _VolRoverN_ is an integral part of our Neuromodeling project. It shares components with [VolumeRover2](../volumerover) and thus has many shared features.
 

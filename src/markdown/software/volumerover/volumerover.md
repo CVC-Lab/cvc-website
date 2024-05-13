@@ -7,10 +7,10 @@ slug: "/software/volumerover"
 ![](https://cvcweb.ices.utexas.edu/cvcwp/wp-content/uploads/2018/09/volrover.2.jpg)
 ![](https://cvcweb.ices.utexas.edu/cvcwp/wp-content/uploads/2018/09/volrover.3.jpg)  
 ![](https://cvcweb.ices.utexas.edu/cvcwp/wp-content/uploads/2018/09/volrover.4.jpg)
-    
 
 ### Description
- _VolumeRover_ (a.k.a VolRover) is interactive multi-purpose image processing software developed at CVC. It can visualize three dimensional imaging data of any size (as big as terabyte) in a commodity PC or workstation and additionally supports the following image processing operations. Image Contrast Enhancement Filtering/Noise Reduction Image Segmentation Isocontouring Symmetry Detection (for Virus Maps) Boundary-free Image Skeletonization _VolRover_ provides a user interface to a number of CVC software packages including _Segmentation_, _Contrast Enhancement_, and _[Motif Elucidation](http://www.cs.utexas.edu/~bajaj/cvc/software/SecondaryStructure.shtml)_.
+
+*VolumeRover* (a.k.a VolRover) is interactive multi-purpose image processing software developed at CVC. It can visualize three dimensional imaging data of any size (as big as terabyte) in a commodity PC or workstation and additionally supports the following image processing operations. Image Contrast Enhancement Filtering/Noise Reduction Image Segmentation Isocontouring Symmetry Detection (for Virus Maps) Boundary-free Image Skeletonization *VolRover* provides a user interface to a number of CVC software packages including *Segmentation*, *Contrast Enhancement*, and *[Motif Elucidation](http://www.cs.utexas.edu/~bajaj/cvc/software/SecondaryStructure.shtml)*.
 
 ### [Download](download) VolumeRover
 

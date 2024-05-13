@@ -2,6 +2,7 @@
 title: "Quality Multi-Domain Meshing with No Gap"
 slug: "/software/qmdmng"
 ---
+
 [![Brain Result](http://cvcweb.ices.utexas.edu/cvcwp/wp-content/uploads/2013/01/MMMNG_brain_result.jpg)](http://cvcweb.ices.utexas.edu/cvcwp/wp-content/uploads/2013/01/MMMNG_brain_result.jpg)
 
 [![MMMNG_brain_mesh](http://cvcweb.ices.utexas.edu/cvcwp/wp-content/uploads/2013/01/MMMNG_brain_mesh.jpg "MMMNG_brain_mesh")](http://cvcweb.ices.utexas.edu/cvcwp/wp-content/uploads/2013/01/MMMNG_brain_mesh.jpg)
@@ -14,10 +15,11 @@ _QMDMNG_, Quality Multi-Domain Meshing with No Gap, produces a quality meshes wi
 
 ### Download
 
-*   _QMDMNG_ library can used through our volumetric visualization and processing front-end, [VolRover-2.0](../volumerover)
-*   The user manual also can be found in [VolRover-2.0 User Guide](http://cvcweb.ices.utexas.edu/software/doc/VolumeRoverDoc.pdf)
+- _QMDMNG_ library can used through our volumetric visualization and processing front-end, [VolRover-2.0](../volumerover)
+- The user manual also can be found in [VolRover-2.0 User Guide](http://cvcweb.ices.utexas.edu/software/doc/VolumeRoverDoc.pdf)
 
 ### References
-Q. Zhang, D. Cha, and C. Bajaj.   
-**Quality boundary representation for multi-material objects**   
+
+Q. Zhang, D. Cha, and C. Bajaj.  
+**Quality boundary representation for multi-material objects**  
 _Manuscript is being prepared for publication, 2013_

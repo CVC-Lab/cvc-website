@@ -1,22 +1,22 @@
-import React, { useState } from "react";
-import { Link } from "gatsby";
-import "./tiles.css";
+import React, { useState } from "react"
+import { Link } from "gatsby"
+import "./tiles.css"
 
 const NewsTiles = ({ newsTiles }) => {
   const sortedNewsTiles = newsTiles.sort((a, b) => {
-    const dateDifference = new Date(b.date) - new Date(a.date);
-    if (dateDifference !== 0) return dateDifference;
-    return b.name.localeCompare(a.name);
-  });
+    const dateDifference = new Date(b.date) - new Date(a.date)
+    if (dateDifference !== 0) return dateDifference
+    return b.name.localeCompare(a.name)
+  })
 
-  const [currentPage, setCurrentPage] = useState(1);
-  const tilesPerPage = 20;
+  const [currentPage, setCurrentPage] = useState(1)
+  const tilesPerPage = 20
 
-  const lastTile = currentPage * tilesPerPage;
-  const firstTile = lastTile - tilesPerPage;
-  const currentTiles = sortedNewsTiles.slice(firstTile, lastTile);
+  const lastTile = currentPage * tilesPerPage
+  const firstTile = lastTile - tilesPerPage
+  const currentTiles = sortedNewsTiles.slice(firstTile, lastTile)
 
-  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+  const paginate = pageNumber => setCurrentPage(pageNumber)
 
   return (
     <div
@@ -56,16 +56,24 @@ const NewsTiles = ({ newsTiles }) => {
           News
         </h1>
         <div>
-          {currentTiles.map((tile) => {
-            const date = new Date(tile.date);
-            const dateString = `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`;
+          {currentTiles.map(tile => {
+            const date = new Date(tile.date)
+            const dateString = `${
+              date.getMonth() + 1
+            }/${date.getDate()}/${date.getFullYear()}`
 
             return (
-              <div key={tile.name} style={{ display: 'flex', marginBottom: '1.5rem' }}>
-                <div className="lower-container-pubs" style={{ width: '120px', textAlign: 'right'}}>
+              <div
+                key={tile.name}
+                style={{ display: "flex", marginBottom: "1.5rem" }}
+              >
+                <div
+                  className="lower-container-pubs"
+                  style={{ width: "120px", textAlign: "right" }}
+                >
                   <h3>{dateString}</h3>
                 </div>
-                <div style={{ flexBasis: '80%' }}>
+                <div style={{ flexBasis: "80%" }}>
                   <Link
                     style={{
                       color: `#333f48`,
@@ -77,34 +85,37 @@ const NewsTiles = ({ newsTiles }) => {
                     <div className="lower-container-pubs">
                       <h3>{tile.name}</h3>
                       {tile.description && <h4>{tile.description}</h4>}
-                    </div>                  
+                    </div>
                   </Link>
                 </div>
               </div>
-            );
+            )
           })}
         </div>
-        <div style={{ textAlign: 'center', marginTop: '2rem' }}>
-          {[...Array(Math.ceil(sortedNewsTiles.length / tilesPerPage)).keys()].map((pageNumber) => (
+        <div style={{ textAlign: "center", marginTop: "2rem" }}>
+          {[
+            ...Array(Math.ceil(sortedNewsTiles.length / tilesPerPage)).keys(),
+          ].map(pageNumber => (
             <button
               key={pageNumber + 1}
               onClick={() => paginate(pageNumber + 1)}
               style={{
-                backgroundColor: currentPage === pageNumber + 1 ? '#333f48' : 'transparent',
-                color: currentPage === pageNumber + 1 ? '#fff' : '#333f48',
-                border: '1px solid #333f48',
-                padding: '0.5rem',
-                margin: '0.5rem',
-                cursor: 'pointer',
+                backgroundColor:
+                  currentPage === pageNumber + 1 ? "#333f48" : "transparent",
+                color: currentPage === pageNumber + 1 ? "#fff" : "#333f48",
+                border: "1px solid #333f48",
+                padding: "0.5rem",
+                margin: "0.5rem",
+                cursor: "pointer",
               }}
             >
               {pageNumber + 1}
             </button>
           ))}
         </div>
-        </div>
+      </div>
     </div>
-  );
-};
+  )
+}
 
-export default NewsTiles;
+export default NewsTiles

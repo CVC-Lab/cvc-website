@@ -2,6 +2,7 @@
 title: "Collaborative Design, Simulation & Prototyping"
 slug: "/software/shastra/design"
 ---
+
 The distributed design capability provided by the simultaneous use of SHASTRA's toolkit allows for custom free-form interactive design of artificial implants(prosthesis) which accurately fit the recipient's structure for both form and functionality. Custom prosthesis design is a multi user activity requiring the simultaneous involvement of surface designers, clinicians and physical analysis experts.
 
 1.  Integrated Joint Analysis

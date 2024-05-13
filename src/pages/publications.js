@@ -8,7 +8,7 @@ const PublicationsPage = ({ children }) => {
   const data = useStaticQuery(graphql`
     query CsvQuery {
       allPapersCsv {
-        nodes{
+        nodes {
           Title
           Location
           PublicationType
@@ -29,7 +29,10 @@ const PublicationsPage = ({ children }) => {
 
   return (
     <Layout>
-      <PublicationTable id='publications' publicationData={data.allPapersCsv.nodes}></PublicationTable>
+      <PublicationTable
+        id="publications"
+        publicationData={data.allPapersCsv.nodes}
+      ></PublicationTable>
     </Layout>
   )
 }

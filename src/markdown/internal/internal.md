@@ -2,9 +2,10 @@
 title: "Internal Links"
 slug: "/internal"
 ---
+
 Internal Links 2021-2022
 
-**Links to from NeuraIPS 2021 Awards & Shouldn't Miss Papers:** 
+**Links to from NeuraIPS 2021 Awards & Shouldn't Miss Papers:**
 
 1. https://towardsdatascience.com/neurips-2021-10-papers-you-shouldnt-miss-80f9c0793a3a
 2. https://blog.neurips.cc/2021/11/30/announcing-the-neurips-2021-award-recipients/
@@ -15,48 +16,60 @@ Internal Links 2021-2022
 
    1. [Github](https://github.com/luost26/3D-Generative-SBDD)
    2. [Supplemental](https://papers.nips.cc/paper/2021/file/314450613369e0ee72d0da7f6fee773c-Supplemental.pdf)
+
 2. #### [The Emergence of Objectness: Learning Zero-shot Segmentation from Videos](https://papers.nips.cc/paper/2021/hash/6d9cb7de5e8ac30bd5e8734bc96a35c1-Abstract.html)
 
    1. [Github](https://github.com/rt219/The-Emergence-of-Objectness)
    2. [Supplemental](https://papers.nips.cc/paper/2021/file/314450613369e0ee72d0da7f6fee773c-Supplemental.pdf)
+
 3. #### [Multimodal Few-Shot Learning with Frozen Language Models](https://papers.nips.cc/paper/2021/hash/01b7575c38dac42f3cfb7d500438b875-Abstract.html)
 
    1. [Github](https://fh295.github.io/frozen.html)
    2. [Supplemental](https://papers.nips.cc/paper/2021/file/01b7575c38dac42f3cfb7d500438b875-Supplemental.pdf)
+
 4. #### [Efficient Training of Retrieval Models using Negative Cache](https://papers.nips.cc/paper/2021/hash/2175f8c5cd9604f6b1e576b252d4c86e-Abstract.html)
 
    1. [Supplemental](https://papers.nips.cc/paper/2021/file/2175f8c5cd9604f6b1e576b252d4c86e-Supplemental.pdf)
+
 5. #### [VATT: Transformers for Multimodal Self-Supervised Learning from Raw Video, Audio and Text](https://papers.nips.cc/paper/2021/hash/cb3213ada48302953cb0f166464ab356-Abstract.html)
 
    1. [Supplemental](https://papers.nips.cc/paper/2021/file/cb3213ada48302953cb0f166464ab356-Supplemental.pdf)
+
 6. #### [Robust Predictable Control](https://papers.nips.cc/paper/2021/hash/e9f85782949743dcc42079e629332b5f-Abstract.html)
 
    1. [Github](https://github.com/google-research/google-research/tree/master/rpc)
    2. [Supplemental](https://papers.nips.cc/paper/2021/file/e9f85782949743dcc42079e629332b5f-Supplemental.pdf)
+
 7. #### [FLEX: Unifying Evaluation for Few-Shot NLP](https://papers.nips.cc/paper/2021/hash/8493eeaccb772c0878f99d60a0bd2bb3-Abstract.html)
 
    1. [Github](https://github.com/allenai/flex)
    2. [Supplemental](https://papers.nips.cc/paper/2021/file/8493eeaccb772c0878f99d60a0bd2bb3-Supplemental.pdf)
+
 8. #### [Partition and Code: learning how to compress graphs](https://papers.nips.cc/paper/2021/hash/9a4d6e8685bd057e4f68930bd7c8ecc0-Abstract.html)
 
    1. [Supplemental](https://papers.nips.cc/paper/2021/file/9a4d6e8685bd057e4f68930bd7c8ecc0-Supplemental.pdf)
+
 9. #### [Learning to Draw: Emergent Communication through Sketching](https://papers.nips.cc/paper/2021/hash/39d0a8908fbe6c18039ea8227f827023-Abstract.html)
 
    1. [Github](https://github.com/Ddaniela13/LearningToDraw)
    2. [Supplemental](https://papers.nips.cc/paper/2021/file/39d0a8908fbe6c18039ea8227f827023-Supplemental.pdf)
+
 10. #### [Fixes That Fail: Self-Defeating Improvements in Machine-Learning Systems](https://papers.nips.cc/paper/2021/hash/619427579e7b067421f6aa89d4a8990c-Abstract.html)
 11. #### [A Universal Law of Robustness via Isoperimetry](https://openreview.net/forum?id=z71OSKqTFh7)
     1. [Supplemental](https://openreview.net/attachment?id=z71OSKqTFh7&name=supplementary_material)
 12. #### [On the Expressivity of Markov Reward](https://openreview.net/forum?id=9DlCh34E1bN)
 
     1. [Supplemental](https://openreview.net/attachment?id=9DlCh34E1bN&name=supplementary_material)
+
 13. #### [Deep Reinforcement Learning at the Edge of the Statistical Precipice](https://openreview.net/forum?id=uqv8-U4lKBe)
 
     1. [Github](https://github.com/google-research/rliable)
+
 14. #### [MAUVE: Measuring the Gap Between Neural Text and Human Text using Divergence Frontiers](https://openreview.net/forum?id=Tqx7nJp7PR)
 
     1. [Github](https://github.com/krishnap25/mauve-experiments)
     2. [Supplemental](https://openreview.net/attachment?id=Tqx7nJp7PR&name=supplementary_material)
+
 15. #### [Continuized Accelerations of Deterministic and Stochastic Gradient Descents, and of Gossip Algorithms](https://openreview.net/forum?id=bGfDnD7xo-v)
 16. #### [Moser Flow: Divergence-based Generative Modeling on Manifolds](https://openreview.net/forum?id=qGvMv3undNJ)
 
@@ -71,43 +84,41 @@ Internal Links 2021-2022
 * [Internal Data Paths (2012 updates)](http://cvcweb.ices.utexas.edu/cvcwp/?page_id=2251)
 * [Internal Software Paths (2012 updates)](http://cvcweb.ices.utexas.edu/cvcwp/?page_id=2265) -->
 
-<!-- The old UsefulLinks page below is kind of out of date.
-======================================================
+# <!-- The old UsefulLinks page below is kind of out of date.
 
-Brand new CVC wiki [here](http://cvcweb.ices.utexas.edu/mediawiki/)!
-------------------------
+## Brand new CVC wiki [here](http://cvcweb.ices.utexas.edu/mediawiki/)!
 
 ### Latest versions of CVC flagship software
 
-* **[VolumeRover 1.2.x](http://cvcweb.ices.utexas.edu/software/VolumeRover/source/VolumeRover-latest.tar.gz)**
-* **[LBIE 3.0](http://cvcweb.ices.utexas.edu/software/LBIE/source/LBIE-latest.tar.gz)** -- from Albert's home dir
-* **[TexMol - Joe&#39;s version](http://cvcweb.ices.utexas.edu/software/TexMol/source/TexMol-latest.tar.gz)** -- whoever is maintaining TexMol, please update this!
+- **[VolumeRover 1.2.x](http://cvcweb.ices.utexas.edu/software/VolumeRover/source/VolumeRover-latest.tar.gz)**
+- **[LBIE 3.0](http://cvcweb.ices.utexas.edu/software/LBIE/source/LBIE-latest.tar.gz)** -- from Albert's home dir
+- **[TexMol - Joe&#39;s version](http://cvcweb.ices.utexas.edu/software/TexMol/source/TexMol-latest.tar.gz)** -- whoever is maintaining TexMol, please update this!
 
 The username/pass for the above links is: download/cvcsoft
 
 ### Datasets Repository
 
-* [Dataset Repository](http://cvcweb.ices.utexas.edu/cvc/Datasets/)
-* [Papers
+- [Dataset Repository](http://cvcweb.ices.utexas.edu/cvc/Datasets/)
+- [Papers
   (with internal pdf link)](http://cvcweb.ices.utexas.edu/cvc/papers/index.php?internal)
-* [Posters](http://cvcweb.ices.utexas.edu/cvc/posters/posters.php)
-* [Poster sources](http://cvcweb.ices.utexas.edu/cvc/posters/source/posters.php)
+- [Posters](http://cvcweb.ices.utexas.edu/cvc/posters/posters.php)
+- [Poster sources](http://cvcweb.ices.utexas.edu/cvc/posters/source/posters.php)
 
 ### WHB TEST
 
 Use following installer to install Mini3DTexViewer (Windows only) - only works on geforece2 or better[Win32 Mini3DTexViewer Installer](http://cvcweb.ices.utexas.edu/data/Software/Mini3DTexViewer_WHB/Mini3DTexViewer_WHB_setup.exe)Open following files directly or save it.
 
-* [head 65x65x65 0.35 threshold](http://cvcweb.ices.utexas.edu/cvc/gallery/miniVolViewer/WHB/head65.rawiv0.35type3.whb)
-* [1FPN 128x128x128 Blobbiness(-0.2) threshold(0.35)](http://cvcweb.ices.utexas.edu/cvc/gallery/miniVolViewer/WHB/1FPN_128x128x128_-0.2.rawiv0.35type3.whb)\- [(.rido)](http://cvcweb.ices.utexas.edu/cvc/gallery/miniVolViewer/WHB/1FPN_128x128x128_-0.2.rawiv0.35type3.whb.rido)
-* [1FPN 128x128x128 Blobbiness(-0.5) threshold(0.35)](http://cvcweb.ices.utexas.edu/cvc/gallery/miniVolViewer/WHB/1FPN_64x64x64_-0.5.rawiv0.35type3.whb)
-* [1AON 128x128x128 threshold(0.25)](http://cvcweb.ices.utexas.edu/cvc/gallery/miniVolViewer/WHB/1aon-acc.rawiv0.25type3.whb)
-* [1LP3 256x256x256 Blobbiness(-0.2) threshold(0.40)](http://cvcweb.ices.utexas.edu/cvc/gallery/miniVolViewer/WHB/1LP3-0.2.rawiv0.40type3.whb)\- [(.rido)](http://cvcweb.ices.utexas.edu/cvc/gallery/miniVolViewer/WHB/1LP3-0.2.rawiv0.40type3.whb.rido)
-* [1J5E 128x128x128 threshold(0.25)](http://cvcweb.ices.utexas.edu/cvc/gallery/miniVolViewer/WHB/1J5E.rawiv0.25type3.whb)
-* [1J5E Protein 256x256x256 threshold(0.35)](http://cvcweb.ices.utexas.edu/cvc/gallery/miniVolViewer/WHB/1J5E_prot.rawiv0.35type3.whb)
-* [1J5E RNA 256x256x256 threshold(0.35)](http://cvcweb.ices.utexas.edu/cvc/gallery/miniVolViewer/WHB/1J5E_rna.rawiv0.35type3.whb)\- [(.rido)](http://cvcweb.ices.utexas.edu/cvc/gallery/miniVolViewer/WHB/1J5E_rna.rawiv0.35type3.whb.rido)
-* [Hemoglobin 24 128x128x128 threshold(0.35)](http://cvcweb.ices.utexas.edu/cvc/gallery/miniVolViewer/WHB/hbmatch24.pdb.rawiv0.35type3.whb)\- [(.rido)](http://cvcweb.ices.utexas.edu/cvc/gallery/miniVolViewer/WHB/hbmatch24.pdb.rawiv0.35type3.whb.rido)
-* [heart\_sdf257 256x256x256 threshold(0.30)](http://cvcweb.ices.utexas.edu/cvc/gallery/miniVolViewer/WHB/heart_sdf257.rawiv0.3type3.whb)\- [(.rido)](http://cvcweb.ices.utexas.edu/cvc/gallery/miniVolViewer/WHB/heart_sdf257.rawiv0.3type3.whb.rido)
-* [Venus 64x64x64 threshold(0.20)](http://cvcweb.ices.utexas.edu/cvc/gallery/miniVolViewer/WHB/venus65.rawiv0.2type3.whb)
+- [head 65x65x65 0.35 threshold](http://cvcweb.ices.utexas.edu/cvc/gallery/miniVolViewer/WHB/head65.rawiv0.35type3.whb)
+- [1FPN 128x128x128 Blobbiness(-0.2) threshold(0.35)](http://cvcweb.ices.utexas.edu/cvc/gallery/miniVolViewer/WHB/1FPN_128x128x128_-0.2.rawiv0.35type3.whb)\- [(.rido)](http://cvcweb.ices.utexas.edu/cvc/gallery/miniVolViewer/WHB/1FPN_128x128x128_-0.2.rawiv0.35type3.whb.rido)
+- [1FPN 128x128x128 Blobbiness(-0.5) threshold(0.35)](http://cvcweb.ices.utexas.edu/cvc/gallery/miniVolViewer/WHB/1FPN_64x64x64_-0.5.rawiv0.35type3.whb)
+- [1AON 128x128x128 threshold(0.25)](http://cvcweb.ices.utexas.edu/cvc/gallery/miniVolViewer/WHB/1aon-acc.rawiv0.25type3.whb)
+- [1LP3 256x256x256 Blobbiness(-0.2) threshold(0.40)](http://cvcweb.ices.utexas.edu/cvc/gallery/miniVolViewer/WHB/1LP3-0.2.rawiv0.40type3.whb)\- [(.rido)](http://cvcweb.ices.utexas.edu/cvc/gallery/miniVolViewer/WHB/1LP3-0.2.rawiv0.40type3.whb.rido)
+- [1J5E 128x128x128 threshold(0.25)](http://cvcweb.ices.utexas.edu/cvc/gallery/miniVolViewer/WHB/1J5E.rawiv0.25type3.whb)
+- [1J5E Protein 256x256x256 threshold(0.35)](http://cvcweb.ices.utexas.edu/cvc/gallery/miniVolViewer/WHB/1J5E_prot.rawiv0.35type3.whb)
+- [1J5E RNA 256x256x256 threshold(0.35)](http://cvcweb.ices.utexas.edu/cvc/gallery/miniVolViewer/WHB/1J5E_rna.rawiv0.35type3.whb)\- [(.rido)](http://cvcweb.ices.utexas.edu/cvc/gallery/miniVolViewer/WHB/1J5E_rna.rawiv0.35type3.whb.rido)
+- [Hemoglobin 24 128x128x128 threshold(0.35)](http://cvcweb.ices.utexas.edu/cvc/gallery/miniVolViewer/WHB/hbmatch24.pdb.rawiv0.35type3.whb)\- [(.rido)](http://cvcweb.ices.utexas.edu/cvc/gallery/miniVolViewer/WHB/hbmatch24.pdb.rawiv0.35type3.whb.rido)
+- [heart_sdf257 256x256x256 threshold(0.30)](http://cvcweb.ices.utexas.edu/cvc/gallery/miniVolViewer/WHB/heart_sdf257.rawiv0.3type3.whb)\- [(.rido)](http://cvcweb.ices.utexas.edu/cvc/gallery/miniVolViewer/WHB/heart_sdf257.rawiv0.3type3.whb.rido)
+- [Venus 64x64x64 threshold(0.20)](http://cvcweb.ices.utexas.edu/cvc/gallery/miniVolViewer/WHB/venus65.rawiv0.2type3.whb)
 
 [John&#39;s Vinay Files](http://cvcweb.ices.utexas.edu/users/vinay)
 
@@ -128,9 +139,10 @@ Use following installer to install Mini3DTexViewer (Windows only) - only works o
 * [Datasets](http://cvcweb.ices.utexas.edu/software/dataset.php) |[Cine Movies](http://cvcweb.ices.utexas.edu/data/Movies/cine/cine.php) -[admin](http://cvcweb.ices.utexas.edu/data/Movies/cine/cine.php?admin=CVC)
 * [View Downloader Info](http://cvcweb.ices.utexas.edu/cvc/listDownloads.php) -->
 <!-- * [CVC File Formats](/cvc/docs/cvcfileformats.html) | [CVC Utilities](cvcutilities.html) | [Joe&#39;s CVC FAQ](http://cvcweb.ices.utexas.edu/cvc/docs/cvcfaq/) -->
-* [Maya@CVC](http://cvcweb.ices.utexas.edu/collections/papers/cvcmaya/index.htm)
-* [Qt 3.3.8 patch for Mac OSX 10.5 (Leopard)](http://cvcweb.ices.utexas.edu/cvc/docs/utilities/qt3mac.patch2)
-* [CVC Computing Resources](http://cvcweb.ices.utexas.edu/cvc/docs/cvcfaq/CVCComputingResources.txt)
+
+- [Maya@CVC](http://cvcweb.ices.utexas.edu/collections/papers/cvcmaya/index.htm)
+- [Qt 3.3.8 patch for Mac OSX 10.5 (Leopard)](http://cvcweb.ices.utexas.edu/cvc/docs/utilities/qt3mac.patch2)
+- [CVC Computing Resources](http://cvcweb.ices.utexas.edu/cvc/docs/cvcfaq/CVCComputingResources.txt)
 
 ### CVS repository
 
@@ -140,34 +152,34 @@ CVSROOT=agni.ices.utexas.edu:/common/cvc/projects
 
 Available modules:
 
-* ApplicationMulticast
-* BankSnapshot
-* Blurring
-* Bspline4Rec
-* c2cEncoder
-* C2CPlugIn
-* ChiuTexMol
-* chordtester
-* cvcgl
-* cvcmv
-* Docking
-* filterserver
-* iotree
-* iPaqControlProject
-* LBIE
-* libcontour
-* MoleculeViz
-* MOLSim
-* MRCRawIVConverter
-* prism.14
-* rover
-* static\_ConTree
-* TexMol
-* timevarying\_ConTree
-* VolumeLibrary
-* VolumeRover
-* waveletEncoder
-* WHBPlugIn
+- ApplicationMulticast
+- BankSnapshot
+- Blurring
+- Bspline4Rec
+- c2cEncoder
+- C2CPlugIn
+- ChiuTexMol
+- chordtester
+- cvcgl
+- cvcmv
+- Docking
+- filterserver
+- iotree
+- iPaqControlProject
+- LBIE
+- libcontour
+- MoleculeViz
+- MOLSim
+- MRCRawIVConverter
+- prism.14
+- rover
+- static_ConTree
+- TexMol
+- timevarying_ConTree
+- VolumeLibrary
+- VolumeRover
+- waveletEncoder
+- WHBPlugIn
 
 <!-- ### [Wah Chiu Group](http://ncmidb.bcm.tmc.edu/EMDB/Groups/Group_32/Project_363/index_html_co?sort_by=title), [UT](http://ncmi.bcm.tmc.edu/ncmi/collaborations/NCMI-UCSF-UT) -->
 
@@ -218,7 +230,8 @@ Available modules:
 ### Documents
 
 <!-- * [Classfication and Visualization of Scanned **Prostate** Images for Radiation Diagnosis/Treatment](http://cvcweb.ices.utexas.edu/projects/medx/prostateIdentification/) -->
-* [MPI Tutorial](http://cvcweb.ices.utexas.edu/cvc/docs/MPI_Tutorial.pdf)
+
+- [MPI Tutorial](http://cvcweb.ices.utexas.edu/cvc/docs/MPI_Tutorial.pdf)
 
 <!-- ### Software download
 
@@ -246,11 +259,12 @@ All large datasets are collected into Prisms SRB at C-/A/home/visportal.CCVVISSR
 
 <!-- * [Meshing for Visible Human](http://cvcweb.ices.utexas.edu/cvc/meshing/meshing_torso/)
 * [3D Finite Element Meshing from Imaging Data](http://cvcweb.ices.utexas.edu/cvc/meshing/3D_FE_meshing_imaging_data/) -->
-* [NMJ data](http://cvcweb.ices.utexas.edu/cvc/meshing/NMJ/)
+
+- [NMJ data](http://cvcweb.ices.utexas.edu/cvc/meshing/NMJ/)
 <!-- * [Quality Meshing of Implicit Solvation Models of Biomolecular Structures](http://cvcweb.ices.utexas.edu/cvc/meshing/biomesh/)
-* [Segmented MRI data of the human brain](http://cvcweb.ices.utexas.edu/cvc/meshing/brain_miller/)
-* [Finite Element Meshing for Cardiac Analysis](http://cvcweb.ices.utexas.edu/cvc/meshing/heart/)
-* [Adaptive and Quality Quadrilateral/Hexahedral Meshing from Volumetric Imaging Data](http://cvcweb.ices.utexas.edu/cvc/meshing/quadhex/)
-* [Surface Smoothing and Quality Improvement of Quadrilateral/Hexahedral Meshes with Geometric Flow](http://cvcweb.ices.utexas.edu/cvc/meshing/quadhexgf/)
-* [A-patch results](http://cvcweb.ices.utexas.edu/cvc/projects/VisualEyes/visualization/domainpara/A-Patch/apatch.php)
-* [mesh collection](http://cvcweb.ices.utexas.edu/cvc/meshing/) -->
+- [Segmented MRI data of the human brain](http://cvcweb.ices.utexas.edu/cvc/meshing/brain_miller/)
+- [Finite Element Meshing for Cardiac Analysis](http://cvcweb.ices.utexas.edu/cvc/meshing/heart/)
+- [Adaptive and Quality Quadrilateral/Hexahedral Meshing from Volumetric Imaging Data](http://cvcweb.ices.utexas.edu/cvc/meshing/quadhex/)
+- [Surface Smoothing and Quality Improvement of Quadrilateral/Hexahedral Meshes with Geometric Flow](http://cvcweb.ices.utexas.edu/cvc/meshing/quadhexgf/)
+- [A-patch results](http://cvcweb.ices.utexas.edu/cvc/projects/VisualEyes/visualization/domainpara/A-Patch/apatch.php)
+- [mesh collection](http://cvcweb.ices.utexas.edu/cvc/meshing/) -->

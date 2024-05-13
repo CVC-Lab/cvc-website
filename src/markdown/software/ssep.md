@@ -13,16 +13,16 @@ slug: "/software/ssep"
 
 ### Description
 
-_SSEP_ is a secondary structure elucidation package for intermediate resolution (5-10 Angstrom) cryo ElectroMicroscopy (EM) data. This package right now includes two approaches to elucidate helices and sheets and it will include another approach which is under development. These two approaches are nominated as
+*SSEP* is a secondary structure elucidation package for intermediate resolution (5-10 Angstrom) cryo ElectroMicroscopy (EM) data. This package right now includes two approaches to elucidate helices and sheets and it will include another approach which is under development. These two approaches are nominated as
 
-*   Volume based approach
-*   Surface based approach
+- Volume based approach
+- Surface based approach
 
 ### References
 
 Z. Yu, C. Bajaj  
 **Computational Approaches for Automatic Structural Analysis of Large Bio-molecular Complexes**  
-_IEEE/ACM Transactions on Computational Biology and Bioinformatics, (digital library) 22 June 2007, http://tinyurl.com/PMID18989044, PMID: 18989044, PMC Journal in Process_ ([pdf](http://ieeexplore.ieee.org/iel5/8857/28002/101109TCBB200770226.pdf?isnumber=28002&arnumber=101109TCBB200770226))
+*IEEE/ACM Transactions on Computational Biology and Bioinformatics, (digital library) 22 June 2007, http://tinyurl.com/PMID18989044, PMID: 18989044, PMC Journal in Process* ([pdf](http://ieeexplore.ieee.org/iel5/8857/28002/101109TCBB200770226.pdf?isnumber=28002&arnumber=101109TCBB200770226))
 
 C. Bajaj, S. Goswami  
 **Secondary and Tertiary Structural Fold Elucidation from 3D EM Maps of Macromolecules**  
@@ -30,9 +30,9 @@ _Proceedings of the Fifth Indian Conference on Computer Vision, Graphics & Image
 
 ### Downloads
 
-*   Volume based approach can be obtained in _[VolRover](https://www.cs.utexas.edu/~bajaj/cvc/software/volrover.shtml)_
-*   Surface based approach can be obtained in _[TexMol](../texmol)_
+- Volume based approach can be obtained in *[VolRover](https://www.cs.utexas.edu/~bajaj/cvc/software/volrover.shtml)*
+- Surface based approach can be obtained in *[TexMol](../texmol)*
 
 ### Software Usage
 
-Volume based method see the user manual of _[VolRover](https://www.cs.utexas.edu/~bajaj/cvc/software/volrover.shtml)_. Surface based method see the user guide of _[TexMol](../texmol)_.
+Volume based method see the user manual of *[VolRover](https://www.cs.utexas.edu/~bajaj/cvc/software/volrover.shtml)*. Surface based method see the user guide of *[TexMol](../texmol)*.

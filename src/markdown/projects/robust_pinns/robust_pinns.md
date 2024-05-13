@@ -11,34 +11,51 @@ Physics-informed Neural Networks (PINNs) have been shown to be effective in solv
 ## Schrodinger Equation Experiments
 
 ### Standard PINN with uncorrupted initial data
-![sPINN Initial](../../../images/projects/robust_pinns/NLS_h_no_error.png)
-### Standard PINN with corrupted initial data
-![sPINN](../../../images/projects/robust_pinns/NLS_h_no_smoothing.png)
-### 2-domain Conservative PINN
-![cPINN](../../../images/projects/robust_pinns/cPINN_NLS_h.png)
-### PINN with conservation law
-![PINN NLS](../../../images/projects/robust_pinns/PINN_with_Conservation_NLS_h.png)
-### PINN with Gaussian Process smoothing
-![NLS GP](../../../images/projects/robust_pinns/NLS_h_GP_with_bounds.png)
-### PINN with sparse Gaussian Process smoothing
-![NLS SGP](../../../images/projects/robust_pinns/NLS_h_SGP30_with_bounds.png)
 
+![sPINN Initial](../../../images/projects/robust_pinns/NLS_h_no_error.png)
+
+### Standard PINN with corrupted initial data
+
+![sPINN](../../../images/projects/robust_pinns/NLS_h_no_smoothing.png)
+
+### 2-domain Conservative PINN
+
+![cPINN](../../../images/projects/robust_pinns/cPINN_NLS_h.png)
+
+### PINN with conservation law
+
+![PINN NLS](../../../images/projects/robust_pinns/PINN_with_Conservation_NLS_h.png)
+
+### PINN with Gaussian Process smoothing
+
+![NLS GP](../../../images/projects/robust_pinns/NLS_h_GP_with_bounds.png)
+
+### PINN with sparse Gaussian Process smoothing
+
+![NLS SGP](../../../images/projects/robust_pinns/NLS_h_SGP30_with_bounds.png)
 
 ## Burgers Equation Experiments
 
 ### Standard PINN with corrupted initial data
+
 ![Standard PINN](../../../images/projects/robust_pinns/Standard_PINN_Burgers.png)
+
 ### PINN with sparse Gaussian Process smoothing
+
 ![SGP](../../../images/projects/robust_pinns/SGP_PINN_Burgers.png)
 
 ## Code Repo
+
 [GitHub Link](https://github.com/CVC-Lab/RobustPINNs)
 
 ## Paper
+
 [arXiv Preprint](https://arxiv.org/abs/2110.13330)
 
 ## People
+
 Chandrajit Bajaj, Luke McLennan, Timothy Andeen, Avik Roy.
 
 ## Acknowledgement
+
 The research for C.B. was supported in part by NIH-R01GM117594, by the Peter O'Donnell Foundation, and in part from a grant from the Army Research Office accomplished under Cooperative Agreement Number W911NF-19-2-0333. The work of L.M. was supported by the the Moncreif Summer Undergraduate Internship Program. The work of T.A. and A.R. is supported by U.S. Department of Energy, Office of High Energy Physics under Grant No. DE-SC0007890 .

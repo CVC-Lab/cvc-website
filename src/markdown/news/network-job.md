@@ -3,6 +3,7 @@ title: "Job Opportunity: Software Engineer (IT Network/Security Specialist)"
 slug: "/network-job"
 date: "2024-04-19"
 ---
+
 **Job Title:** Software Engineer (IT Network/Security Specialist)
 
 **Location:** University of Texas at Austin
@@ -15,28 +16,28 @@ date: "2024-04-19"
 
 **Key Responsibilities:**
 
-* Collaborate with a dedicated team to enhance network topologies, ensuring data transfer is optimized for efficiency and security within AI-driven communication frameworks.
-* Develop and enforce comprehensive security protocols, aiming to safeguard network systems against a variety of threats and vulnerabilities.
-* Play a pivotal role in the conceptualization, development, and fine-tuning of AI agents designed to intelligently manage and optimize network operations.
-* Provide significant contributions to the simulation platform, engaging in rigorous testing and validation to ensure performance and resilience under real-world operational scenarios.
-* Leverage advanced machine learning techniques to address and overcome challenges in network optimization and security, particularly in scenarios characterized by data paucity or ambiguity.
+- Collaborate with a dedicated team to enhance network topologies, ensuring data transfer is optimized for efficiency and security within AI-driven communication frameworks.
+- Develop and enforce comprehensive security protocols, aiming to safeguard network systems against a variety of threats and vulnerabilities.
+- Play a pivotal role in the conceptualization, development, and fine-tuning of AI agents designed to intelligently manage and optimize network operations.
+- Provide significant contributions to the simulation platform, engaging in rigorous testing and validation to ensure performance and resilience under real-world operational scenarios.
+- Leverage advanced machine learning techniques to address and overcome challenges in network optimization and security, particularly in scenarios characterized by data paucity or ambiguity.
 
 **Technical Requirements:**
 
-* Proficiency in networking and security protocols.
-* Demonstrated experience with AI/machine learning, particularly in networking contexts.
-* Strong programming skills and familiarity with network emulation tools like EMANE.
-* Ability to work methodically in a research-focused, phased project environment.
+- Proficiency in networking and security protocols.
+- Demonstrated experience with AI/machine learning, particularly in networking contexts.
+- Strong programming skills and familiarity with network emulation tools like EMANE.
+- Ability to work methodically in a research-focused, phased project environment.
 
 **Preferred Qualifications:**
 
-* Bachelor’s or Master’s degree in Computer Science, Networking, Cybersecurity, or a related field.
-* Prior experience in a research or project-based environment, especially in military or defense-related projects.
-* Knowledge of PACE Routing, Load Balancing, and Traffic Prioritization techniques.
+- Bachelor’s or Master’s degree in Computer Science, Networking, Cybersecurity, or a related field.
+- Prior experience in a research or project-based environment, especially in military or defense-related projects.
+- Knowledge of PACE Routing, Load Balancing, and Traffic Prioritization techniques.
 
 **What We Offer:**
 
-* A dynamic and collaborative research environment at the University of Texas at Austin.
-* Opportunities to work on pioneering technologies in AI and network security.
-* Access to state-of-the-art facilities and resources at the Computer Visualization Lab.
-* A chance to contribute to a project with significant impact in the field of C5ISR communications.
+- A dynamic and collaborative research environment at the University of Texas at Austin.
+- Opportunities to work on pioneering technologies in AI and network security.
+- Access to state-of-the-art facilities and resources at the Computer Visualization Lab.
+- A chance to contribute to a project with significant impact in the field of C5ISR communications.

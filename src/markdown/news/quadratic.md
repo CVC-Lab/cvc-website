@@ -3,6 +3,7 @@ title: "Journal paper accepted for publication in Mathematics for Computation, 2
 slug: "/quadratic"
 date: "2021-03-25"
 ---
+
 Journal paper accepted for publication in Mathematics for Computation, 2013
 
 A. Rand; A. Gillette; C. Bajaj

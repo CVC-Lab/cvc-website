@@ -3,6 +3,7 @@ title: "International Collaboratory for Emerging Technologies Workshop"
 slug: "/workshop"
 date: "2009-02-03"
 ---
+
 March 31 – April 4, 2009
 The University of Texas at Austin
 Austin, Texas, USA
