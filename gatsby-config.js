@@ -1086,7 +1086,7 @@ module.exports = {
         scroll_link: false,
       },
     ],
-    description: `a cross-disciplinary effort to develop and improve the technologies for computational modeling, simulation, analysis, and visualization.`,
+    description: `A cross-disciplinary effort to develop and improve the technologies for computational modeling, simulation, analysis, and visualization.`,
     author: `cvc`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
