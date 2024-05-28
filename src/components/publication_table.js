@@ -37,7 +37,7 @@ const PublicationTable = () => {
   React.useEffect(() => {
     const dbRef = ref(
       database,
-      "1InxBkoDuYJs2Vdk-roy03CmDgaz4T3Xt-QGVapgn0C0/Papers"
+      "10EvljkxfSNwL6I1m81tXzruizAVLN-EwmgclGkh_vkA/Papers"
     )
     get(dbRef)
       .then(snapshot => {

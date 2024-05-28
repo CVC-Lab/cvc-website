@@ -110,6 +110,10 @@ function renderMembersByTitle(members) {
 }
 
 function renderCard(people, showFullTitle = false) {
+  const imageSrc = people.Image
+    ? require(`../images/people/${people.Image}`).default
+    : require(`../images/people/placeholder.png`).default
+
   return (
     <Grid
       item
@@ -123,7 +127,7 @@ function renderCard(people, showFullTitle = false) {
         <div className="upper-container">
           <div className="image-container">
             <img
-              src={require(`../images/people/${people.Image}`).default}
+              src={imageSrc}
               alt={`${people.Name}'s profile`}
             />
           </div>
@@ -145,7 +149,7 @@ const Cards = () => {
     const fetchPeopleCards = async () => {
       const dbRef = ref(
         database,
-        "1PMgY4FYwz04Ptq1Kc9ByStWG-Z6RsR3bcR7iDMbaiN0/Sheet1"
+        "1fdxBkTMC8EZf8PBS6kHCxoa5YvHMvUcFR0x7wWU9Ci8/Sheet1"
       )
       try {
         const snapshot = await get(dbRef)
