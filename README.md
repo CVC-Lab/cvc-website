@@ -23,15 +23,17 @@ npm --version
 2. Clone this repository to your local machine:
 
 ```
-git clone https://github.com/yourusername/computer-visualization-center.git
+git clone https://github.com/yourusername/cvc-website.git
 ```
 
 3. Navigate to the project directory and install the required dependencies:
 
 ```
-cd computer-visualization-center
+cd cvc-website
 npm install
 ```
+
+4. .env file is located in Google Drive, add it to cvc-website directory before running
 
 ## Development
 
