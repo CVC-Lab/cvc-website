@@ -813,6 +813,15 @@ module.exports = {
         date: "2021-09-28",
       },
       {
+        name: "Dynamic Belief Games",
+        description:
+          "Dynamic Belief Games focuses on developing dynamic next-generation learning agents that engage in planning, cross-training, and effective action choices in communications systems.",
+        img_name: "project_tiles/dbg",
+        link: "/projects/dynamic-belief-games",
+        tags: ["Reinforcement Learning"],
+        date: "2024-05-01",
+      },
+      {
         name: "Optimal Control",
         description:
           "Optimal control problem solving by applying the Pontryagin maximum principle and then solving for a Hamiltonian dynamical system",
