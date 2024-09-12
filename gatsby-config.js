@@ -947,6 +947,15 @@ module.exports = {
         tags: ["Health AI/ML"],
         date: "2024-04-06",
       },
+      {
+        name: "Optimally Controlled Protein Side-Chain",
+        description:
+          "This work aims to solve the side-chain packing and protein-folding problem with a continuous RL framework.",
+        img_name: "project_tiles/protein_sidechain",
+        link: "/projects/protein-sidechain",
+        tags: ["Reinforcement Learning"],
+        date: "2024-09-12",
+      },
     ],
     softwareProjects: [
       {
