@@ -948,7 +948,7 @@ module.exports = {
         date: "2024-04-06",
       },
       {
-        name: "Optimally Controlled Protein Side-Chain",
+        name: "OC Protein Side-Chain and Folding",
         description:
           "This work aims to solve the side-chain packing and protein-folding problem with a continuous RL framework.",
         img_name: "project_tiles/protein_sidechain",
