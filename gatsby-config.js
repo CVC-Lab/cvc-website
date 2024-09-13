@@ -956,6 +956,15 @@ module.exports = {
         tags: ["Reinforcement Learning"],
         date: "2024-09-12",
       },
+      {
+        name: "Night-time Aerial Material Segmentation",
+        description:
+          "A low-cost solution for robust night-time material segmentation using hyperspectral data with RGB imagery.",
+        img_name: "project_tiles/aerial_material_segmentation",
+        link: "/projects/aerial-material-segmentation",
+        tags: ["Computer Vision"],
+        date: "2024-09-12",
+      },
     ],
     softwareProjects: [
       {
