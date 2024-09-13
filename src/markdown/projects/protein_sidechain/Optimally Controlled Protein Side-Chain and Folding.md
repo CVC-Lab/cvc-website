@@ -51,7 +51,7 @@ s_{t+1}=s_{t}+\epsilon a_{t} \text { for some small } \epsilon
 \end{equation*}
 $$
 
-![image](../../../images/dialanine_folding.png)
+![](https://i.imgur.com/7u46ZLG.png)
 
 Fig. 1: Snapshots from One Episode of Dialanine Folding
 
@@ -74,8 +74,8 @@ Table 1: The feature attributes specified for each atom an their dimensions
 
 For our neural network, we create a Soft-Actor Critic (SAC) architecture as formulated in with automatic temperature tuning using optimization of the dual Lagrangian. Since our state space is in the form of a graph, we use a graph convolutional neural network with the same architecture as MolGan to create a valid state embedding. Actions are processed using standard trained multilayer perceptrons.
 
-![image](../../../images/protein_cumulative_reward_graph.png)
-![image](../../../images/protein_energy_plot.png)
+![](https://i.imgur.com/FxzoC4H.png)
+![](https://i.imgur.com/Uw8bzD0.png)
 
 Fig. 2: Initial vs final Energy plotted for each evaluation episode of trialanine
 
@@ -87,8 +87,8 @@ We first trained our agent on optimizing the 4 backbone dihedral angles of diala
 
 In addition to dialanine, we also tested our agent on the finding the minimal protein conformation for trialanine (i.e. three consecutively bonded alanines). Figure 3 shows a clear improvement from the training agent in terms of keeping the energy score low.
 
-![image](../../../images/protein_training_ep.png)
-![image](../../../images/protein_eval.png)
+![](https://i.imgur.com/GjbuAK0.png)
+![](https://i.imgur.com/crCeBKM.png)
 
 Fig. 3: Initial vs Final Energy plotted for each evaluation episode of trialanine
 
