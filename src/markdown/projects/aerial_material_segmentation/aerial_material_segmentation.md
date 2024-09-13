@@ -7,7 +7,7 @@ date: "2024-09-12"
 
 **By Chandrajit Bajaj, Minh Nguyen, and Shubham Bhardwaj**
 
-![image](../../../images/aerial_model.png)
+![](https://i.imgur.com/Vw8rZ5m.png)
 
 ### **Introduction**
 
@@ -33,11 +33,11 @@ Hyperspectral cameras capture the electromagnetic spectrum in many continuous ba
 
 Our approach leverages hyperspectral and RGB image pairs for the segmentation task. By employing time-series-based compression, we reduce the number of spectral channels and retain only the most informative data points. This is followed by a Siamese network that merges the reduced hyperspectral data with RGB data to predict pixel-level material segmentation.
 
-![image](../../../images/aerial_plot.png)
+![](https://i.imgur.com/iKNkygL.png)
 
 ---
 
-![image](../../../images/aerial_images.png)
+![](https://i.imgur.com/QavofLk.png)
 
 ### **Experimental Results**
 
