@@ -774,6 +774,18 @@ module.exports = {
         link: "/research-job",
         date: "2024-04-19",
       },
+      {
+        name: "UT Austin Aids Army in Test of Drone Defenses in Downtown Austin",
+        category: "news",
+        link: "https://news.utexas.edu/2021/12/21/ut-austin-aids-army-in-test-of-drone-defenses-in-downtown-austin/",
+        date: "2024-04-19",
+      },
+      {
+        name: "Computer Science Professor Trains AI Through Game Theory",
+        category: "news",
+        link: "https://dra.utexas.edu/trainingAI",
+        date: "2024-05-13",
+      },
     ],
     projectTiles: [
       {
