@@ -22,6 +22,9 @@ const Footer = () => {
           If you're interested in our work and want to learn more, please
           contact us.
         </div>
+        <div className="subtitle">
+          We are located in at POB 2.102.
+        </div>
         <div className="jobs">Current Job Opportunities:</div>
         <ul className="listStyleNone">
           {links.map(link => (
@@ -32,6 +35,15 @@ const Footer = () => {
             </li>
           ))}
         </ul>
+        <div className="jobs">
+            Previous Website:
+        </div>
+        <div className="subtitle">
+            <a href="https://cvcweb.oden.utexas.edu/cvcwp/" className="link">
+                UT Austin Computational Visualization Center
+            </a>
+        </div>
+
       </div>
     </footer>
   )
