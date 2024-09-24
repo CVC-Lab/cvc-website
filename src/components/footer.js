@@ -20,10 +20,7 @@ const Footer = () => {
         <div className="title">Contact Us</div>
         <div className="subtitle">
           If you're interested in our work and want to learn more, please
-          contact us.
-        </div>
-        <div className="subtitle">
-          We are located in at POB 2.102.
+          contact us. We are located in POB 2.102.
         </div>
         <div className="jobs">Current Job Opportunities:</div>
         <ul className="listStyleNone">
