@@ -32,6 +32,7 @@
 }
 .listStyleNone {
     list-style-type: none;
+    padding-bottom: 1rem;
 }
 .link {
     color: #FFFFFF;
