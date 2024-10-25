@@ -896,15 +896,15 @@ module.exports = {
         tags: ["Scientific ML"],
         date: "2020-09-01",
       },
-      {
-        name: "Shape Optimization",
-        description:
-          "Inverse generative modeling for stealth and cloaking devices using meta-materials",
-        img_name: "project_tiles/shape_logo",
-        link: "/projects/shape-optimization",
-        tags: ["Scientific ML", "Computer Vision"],
-        date: "2020-09-01",
-      },
+      // {
+      //   name: "Shape Optimization",
+      //   description:
+      //     "Inverse generative modeling for stealth and cloaking devices using meta-materials",
+      //   img_name: "project_tiles/shape_logo",
+      //   link: "/projects/shape-optimization",
+      //   tags: ["Scientific ML", "Computer Vision"],
+      //   date: "2020-09-01",
+      // },
       {
         name: "Rank-ordered Search-and-Score",
         description:
@@ -1086,8 +1086,8 @@ module.exports = {
     menuLinks: [
       {
         name: "PROJECTS",
-        link: "projects",
-        scroll_link: true,
+        link: "/#projects",
+        scroll_link: false,
       },
       {
         name: "PEOPLE",

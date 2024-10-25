@@ -43,7 +43,7 @@ const Navigation = ({ menuLinks }) => {
   const [dropdownVisible, setDropdownVisible] = React.useState(false)
   const toggleDropdown = () => setDropdownVisible(!dropdownVisible)
 
-  const dropdownLinkNames = ["PROJECTS", "PEOPLE", "ABOUT US"]
+  const dropdownLinkNames = ["PEOPLE", "ABOUT US"]
   const dropdownLinks = menuLinks.filter(link =>
     dropdownLinkNames.includes(link.name.toUpperCase())
   )

@@ -1,10 +1,10 @@
 ---
-title: Dynamic Belief Games  
-slug: /projects/dynamic-belief-games  
-date: 2024-09-12
+title: "Dynamic Belief Games"
+slug: "/projects/dynamic-belief-games"
+date: "2024-09-12"
 ---
 
-![Introduction](../../../images/dynamic_belief_games_diagram.png)
+![Diagram](../../../images/dynamic_belief_games_diagram.png)
 
 ## What are we trying to do?
 
@@ -55,12 +55,8 @@ This project is funded by Army Futures Command (AFC).
 
 ## People
 
-Chandrajit Bajaj (Principle Investigator)
-
-Ryan Farell (Lead Research Scientist)
-
-Luke McLennan (PhD Student)
-
-Aaron Dominick (PhD Student)
-
-Matthew Kim (Technical Staff)
+- Chandrajit Bajaj (Principle Investigator) [(website)](https://www.cs.utexas.edu/~bajaj/cvc/index.shtml)
+- Ryan Farell (Lead Research Scientist) [(website)](https://rfarell.github.io/index.html)
+- Luke McLennan (PhD Student)
+- Aaron Dominick (PhD Student)
+- Matthew Kim (Technical Staff)
