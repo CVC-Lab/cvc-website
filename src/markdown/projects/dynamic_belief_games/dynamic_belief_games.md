@@ -4,7 +4,7 @@ slug: "/projects/dynamic-belief-games"
 date: "2024-09-12"
 ---
 
-![Diagram](../../../images/dynamic_belief_games_diagram.png)
+![Diagram](../../../images/projects/dynamic_belief_games/dynamic_belief_games_diagram.png)
 
 ## What are we trying to do?
 
