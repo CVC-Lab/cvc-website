@@ -4,6 +4,8 @@ slug: /projects/dynamic-belief-games
 date: 2024-09-12
 ---
 
+![Introduction](../../../images/dynamic_belief_games_diagram.png)
+
 ## What are we trying to do?
 
 The goal of this project is to develop Predictive Intelligent Networking (PIN) agents capable of rapid response decision-making in dynamic, adversarial communication networks. Our next-generation AI-trained PIN agents are designed to enhance their capabilities through continual field training with adversarial agents, leveraging a Dynamic Belief Games framework. This framework fosters learning across diverse interactions, where agents adapt to and optimize under various adversarial scenarios.
