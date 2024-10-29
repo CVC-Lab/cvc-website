@@ -30,6 +30,20 @@ Our approach involves developing and training AI-based PIN agents within the Dyn
 
 ## Hiring Opportunities
 
+Our Dynamic Belief Games (DBG) project was recently funded for three years, and we welcome candidates from various disciplines, including Mathematics, Physics, Computational Science, and Computer Science. We’re flexible with options for:
+
+1. Students interested in potentially continuing towards a Math Ph.D.
+2. Students with relevant qualifications interested in this as a side project.
+
+The project is a blend of game theory, optimization, and optimally controlled Markovian decision processes for stochastic communication networks. This work is broadly applicable to predictive modeling in dynamical systems.
+
+Candidates with knowledge of cooperating/non-cooperating stochastic processes and experience minimizing empirical risk measures (stochastic functionals) are encouraged to apply. These measures are tailored for proactive maintenance and performance in stochastic communication networks.
+
+**We are also seeking MS and PhD graduate students to join our team. Interested candidates can email us directly at:**
+
+- **Ryan Farell:** ryan.farell@utexas.edu
+- **Chandrajit Bajaj:** bajaj@cs.utexas.edu
+
 ### Postdoctoral Fellow
 
 This role involves working on cutting-edge AI networking technologies under the guidance of Prof. Chandrajit Bajaj at the University of Texas at Austin. The position focuses on the development of PIN agents and advanced AI techniques for real-time decision-making in dynamic networks.  
@@ -51,11 +65,11 @@ We are also excited to share our upcoming training session on AI at the Universi
 
 ## Funding
 
-This project is funded by Army Futures Command (AFC).
+This project is funded by the Army.
 
 ## People
 
-- Chandrajit Bajaj (Principle Investigator) [(website)](https://www.cs.utexas.edu/~bajaj/cvc/index.shtml)
+- Chandrajit Bajaj (Principal Investigator) [(website)](https://www.cs.utexas.edu/~bajaj/cvc/index.shtml)
 - Ryan Farell (Lead Research Scientist) [(website)](https://rfarell.github.io/index.html)
 - Luke McLennan (PhD Student)
 - Aaron Dominick (PhD Student)
