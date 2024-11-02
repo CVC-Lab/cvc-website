@@ -23,7 +23,7 @@ module.exports = {
         name: "Taemin Heo",
         image: "taemin.png",
         position: "Postdoctoral Researcher",
-        status: "current",
+        status: "alumni",
       },
       {
         name: "Yi Wang",
@@ -41,7 +41,7 @@ module.exports = {
         name: "Minh Nguyen",
         image: "minh.png",
         position: "PhD Candidate",
-        status: "current",
+        status: "alumni",
       },
       {
         name: "Luke McLennan",
@@ -59,7 +59,7 @@ module.exports = {
         name: "Qing Zhu",
         image: "qing.png",
         position: "PhD Student",
-        status: "current",
+        status: "alumni",
       },
       {
         name: "Shubham Bhardwaj",
@@ -161,7 +161,7 @@ module.exports = {
         name: "Raghav Pant",
         image: "placeholder.png",
         position: "PhD Student",
-        status: "current",
+        status: "alumni",
       },
       {
         name: "Shreyash Sinha",
@@ -173,7 +173,7 @@ module.exports = {
         name: "Pronoma Banerjee",
         image: "pronoma.png",
         position: "Graduate Research Scholar - Interning from India",
-        status: "current",
+        status: "alumni",
       },
       {
         name: "Jeffrey Mo",
@@ -185,7 +185,7 @@ module.exports = {
         name: "Ava Machado",
         image: "ava.png",
         position: "Undergraduate Student",
-        status: "current",
+        status: "alumni",
       },
       {
         name: "Anubhav Goel",
