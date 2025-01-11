@@ -30,6 +30,7 @@ const sortMembers = members => {
   const positionOrder = [
     "Director, Principle Investigator",
     "Research Administrator",
+    "Lead Research Scientist",
     "Research Fellow from Purdue University",
     "Postdoctoral Researcher",
   ]

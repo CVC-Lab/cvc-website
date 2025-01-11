@@ -14,6 +14,12 @@ module.exports = {
         status: "current",
       },
       {
+        name: "Ryan Farell",
+        image: "ryan.png",
+        position: "Lead Research Scientist",
+        status: "current",
+      },
+      {
         name: "Laura Lansing",
         image: "laura.png",
         position: "Research Administrator",
@@ -28,12 +34,6 @@ module.exports = {
       {
         name: "Yi Wang",
         image: "yi.png",
-        position: "PhD Candidate",
-        status: "current",
-      },
-      {
-        name: "Ryan Farell",
-        image: "ryan.png",
         position: "PhD Candidate",
         status: "current",
       },
