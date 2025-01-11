@@ -5,46 +5,78 @@
 <li><a href="../sample-complexity">Sample Complexity</a></li>
 </ul>
 <h2>What are we trying to do?</h2>
-<p>The goal of this project is to develop ( train, validate and test ) advanced machine learning , deep learning technologies for intelligent, real time, stream processing of diverse hyperspectral (EO/IR) video streams, for wide area persistent surveillance. These analytic software technologies coupled to EO/IR video sensor systems, would be a key enabler to Army’s next generation active protection systems.</p>
-<p>Develop ( train, validate and test ) advanced machine learning , deep learning technologies for intelligent, real time, stream processing of diverse hyperspectral (EO/IR) video streams, for wide area persistent surveillance. These analytic software technologies coupled to EO/IR video sensor systems, would be a key enabler to Army’s next generation active protection systems. 1. Document EO / IR spatio-temporal-spectral (s) details 2. What sts is discernible /discrimatable. 3. What are the sts anomalies….</p>
+<p>The goal of this project was to <strong>develop (train, validate, and test)</strong> advanced <strong>machine learning</strong> and <strong>deep learning</strong> technologies for <strong>intelligent, real-time stream processing</strong> of diverse <strong>Electro-Optical (EO) / Infrared (IR)</strong> video streams, commonly referred to as hyperspectral or EO/IR imagery, to enable <strong>wide area persistent surveillance</strong>. When paired with EO/IR video sensor systems, these analytic software technologies become essential components of the Army’s next-generation active protection systems.</p>
+<p>By <strong>developing</strong> these technologies, we have:</p>
+<ol>
+<li>Documented <strong>spatio-temporal-spectral (STS)</strong> details of EO/IR data,</li>
+<li>Identified which STS phenomena are discernible or discriminable,</li>
+<li>Detected and characterized STS anomalies (i.e., unexpected or unusual spatio-temporal-spectral patterns or changes).</li>
+</ol>
 <h2>What is the problem?</h2>
-<p>Detection of various types of object and motion anomalies, using different spatial and spectral resolution hyperspectral video systems, and under diverse lighting and weather conditions.</p>
+<p>We addressed the challenge of <strong>detecting various types of object and motion anomalies</strong> using different spatial and spectral resolution hyperspectral video systems under a wide range of lighting and weather conditions.</p>
 <h2>Why is it hard?</h2>
-<p>Scenes under surveillance change quickly. Multiple and diverse objects can be in motion, and at quite different distances, from the surveillance equipment. Going from day to night, stormy and calm situations, land and sea, and summer to winter will require different “intelligent” data analytics, customizable to different sensor systems.</p>
+<p>Scenes under surveillance can rapidly change in appearance and content. Multiple and diverse objects may be moving at different distances from the sensors, and environmental conditions (time of day, weather, terrain, seasons) can vary drastically. Each scenario can demand unique, “intelligent” data analytics that adapt to different sensor systems.</p>
 <h2>How is it done today, and what are the limits of current practice?</h2>
-<p>Today, anomaly detection uses optical flow, the movement of colors in a video, to detect movement. The pixels associated with this movement are run through a standard neural network to determine whether or not those pixels are anomalous. The problem with this approach is that optical flow is expensive to compute and is not very precise. It usually marks more pixels than necessary and often misses smaller anomalies completely. Also, these models tend to only be tested at a certain time of day. We plan to create a multiply learned deep neural network model that will work day and night and in any season, any weather conditions</p>
-<h2>What we’re doing.</h2>
-<p>Our approach is to train, validate, test variational autoencoders (deep encoder-decoder recurrent networks: DEDRECON) to model various classes of “normal” to “extra-ordinary” patterns and motion in a variety of realistic location and environmental scenarios. The trained DEDRECON models shall detect and classify object-scene patterns and motion behavioral anomalies, in real time. The detected anomalies that deviate from learned “normal” behavior will be categorized into various levels of “extra-ordinary” aka “potential threats”.</p>
-<p>Our approach takes two EO/IR video streams, one highly resolved in the spectral dimension (hyperspectral) and one higher resolved in the spatial dimension (multispectral). Two variational autoencoders will be trained, each on one of the hyperspectral, multispectral video data, and multiply combined in a common correlation space, using two additional invertible recurrent neural networks to achieve maximum discernibility of object, scene, motion, lighting, environment variations. This approach resolves finer details in anomalies, simultaneously at multiple locations, and with appropriate lens systems, at further distances away. Additionally, fewer unnecessary pixels are marked as anomalous thanks to the higher resolution spatial and spectral data we are combining. Scenarios needing these enhancements will immediately benefit.</p>
+<p>A standard approach to anomaly detection relies on <strong>optical flow</strong>—the movement of colors in a video—to detect motion. Pixels flagged by optical flow are passed through a conventional neural network to decide if they are anomalous. However, this approach:</p>
+<ul>
+<li>Is <strong>computationally expensive</strong> (optical flow can be costly to compute),</li>
+<li>Is <strong>imprecise</strong>, often marking too many pixels or missing smaller anomalies,</li>
+<li>Is <strong>scenario-specific</strong>, usually tested under restricted conditions (e.g., one time of day).</li>
+</ul>
+<p>We overcame these limitations by developing <strong>multiply learned deep neural network models</strong> that perform robustly <strong>day or night</strong>, across <strong>all seasons</strong>, and under <strong>any weather conditions</strong>.</p>
+<h2>What we’re doing</h2>
+<p>Our approach involved <strong>training, validating, and testing</strong> variational autoencoders—referred to as <strong>Deep Encoder-Decoder Recurrent Networks (DEDRECON)</strong>—to model “normal” through “extra-ordinary” motion and patterns in a variety of realistic environmental scenarios. Once trained, these DEDRECON models <strong>detect and classify object-scene patterns</strong> and identify motion anomalies in real time, labeling them as deviations from learned “normal” behavior and categorizing them into levels of “extra-ordinary,” i.e., potential threats.</p>
+<p>Specifically, we processed two distinct EO/IR video streams:</p>
+<ol>
+<li>A <strong>hyperspectral</strong> stream with <strong>high spectral resolution</strong>,</li>
+<li>A <strong>multispectral</strong> stream with <strong>high spatial resolution</strong>.</li>
+</ol>
+<p>We trained two separate variational autoencoders—one for each stream—and then combined them within a <strong>common correlation space</strong> via two <strong>invertible recurrent neural networks</strong>. This architecture:</p>
+<ul>
+<li>Maximizes <strong>discernibility</strong> of objects, scenes, motion, and environmental variations,</li>
+<li>Captures finer details in anomalies across multiple locations,</li>
+<li>Extends detection range when paired with appropriate lenses,</li>
+<li>Produces fewer “false alarms” by filtering out unnecessary anomalous pixels.</li>
+</ul>
 <h2>On-the-Fly Compression and Sampling</h2>
-<p>The SketchyCoreSVD is a on -the-fly sampling and compression method applied to images represented as matrices. The papers [4,5] show examples of this approach. The new work we are doing is to extend the on-the-fly sampling and compression to time-varying multimedia data , treating them as Tensors of order greater than three. Note that tensors of order two are matrices, one are vectors, and zero are scalars. The code is available in MATLAB and Python.</p>
+<p><strong>SketchyCoreSVD</strong> is an on-the-fly sampling and compression method designed for matrices (e.g., 2D images). References [4,5] provide examples of this technique. In this project, we <strong>extended</strong> on-the-fly sampling and compression to <strong>time-varying multimedia data</strong>, treating them as <strong>tensors</strong> of order greater than three (note: tensors of order two are matrices, order one are vectors, and order zero are scalars). We have released <strong>MATLAB</strong> and <strong>Python</strong> implementations of these methods.</p>
 <h2>Sensing Modalities</h2>
-<p>We are actively working with HSI (Hyperspectral Imaging), EO/IR (Electro-Optical/Infra-Red), RF (Radio Frequency), and LiDAR (Light Detection and Ranging). Operating with multiple modalities presents opportunities to capitalize on the best that each modality can elucidate. However, it also presents challenges such as data fusion and on-the-fly compression.</p>
+<p>We worked with multiple sensing modalities, including:</p>
+<ul>
+<li><strong>Hyperspectral Imaging (HSI)</strong>,</li>
+<li><strong>Electro-Optical (EO) / Infrared (IR)</strong>,</li>
+<li><strong>Radio Frequency (RF)</strong>,</li>
+<li><strong>Light Detection and Ranging (LiDAR)</strong>.</li>
+</ul>
+<p>Leveraging multiple modalities exploits the strengths of each while also posing challenges in <strong>data fusion</strong> and <strong>on-the-fly compression</strong>.</p>
 <h2>PROGRESS</h2>
-<p>Super Resolution for Enhanced Identification of Target Regions of Interest (TROI) by combining two low resolution multispectral-hyperspectral video streams [1,2,3].</p>
+<p>We successfully achieved <strong>Super Resolution for Enhanced Identification of Target Regions of Interest (TROI)</strong> by combining two low-resolution multispectral–hyperspectral video streams [1,2,3].</p>
 <h2>Publications</h2>
 <ol>
-<li>Bajaj, Wang, Super-Resolution Tensor Recovery from Multi-Level Adaptive Sub-Sampling, Manuscript 2020.</li>
-<li>Bajaj, Wang, Blind Hyperspectral-Multispectral Image Fusion via Graph Laplacian Regularization, Arxiv:1902.08224</li>
-<li>Wu, Li, Bajaj, Dynamic Filtering with Large Sampling Field for ConvNets, ECCV 2018.<a href="https://doi//.org/10.1007/978-3-030-01249-612">https://doi//.org/10.1007/978-3-030-01249-612</a></li>
-<li>S. Gupta, C. Bajaj, A Streaming model for Generalized Rayleigh with extensions to Minimum Noise Fraction, Proc. Of IEEE Big Data Conferencee 2019, DOI: 10.1109/BigData47090.2019.9006512 (pdf)</li>
-<li>C. Bajaj, Y. Wang, T. Wang, SketchyCoreSVD: SketchySVD from Random Subsampling of the Data Matrix, Proc. Of IEEE Big Data Conferencee 2019, DOI: 10.1109/BigData47090.2019.9006345 (pdf)</li>
+<li>C. Bajaj, Y. Wang, <em>Super-Resolution Tensor Recovery from Multi-Level Adaptive Sub-Sampling</em>, Manuscript 2020.</li>
+<li>C. Bajaj, Y. Wang, <em>Blind Hyperspectral-Multispectral Image Fusion via Graph Laplacian Regularization</em>, arXiv:1902.08224.</li>
+<li>L. Wu, X. Li, C. Bajaj, <em>Dynamic Filtering with Large Sampling Field for ConvNets</em>, <em>European Conference on Computer Vision (ECCV)</em> 2018, <a href="https://doi.org/10.1007/978-3-030-01249-6_12">https://doi.org/10.1007/978-3-030-01249-6_12</a>.</li>
+<li>S. Gupta, C. Bajaj, <em>A Streaming Model for Generalized Rayleigh with Extensions to Minimum Noise Fraction</em>, <em>Proceedings of IEEE Big Data Conference</em> 2019, <a href="https://doi.org/10.1109/BigData47090.2019.9006512">https://doi.org/10.1109/BigData47090.2019.9006512</a>.</li>
+<li>C. Bajaj, Y. Wang, T. Wang, <em>SketchyCoreSVD: SketchySVD from Random Subsampling of the Data Matrix</em>, <em>Proceedings of IEEE Big Data Conference</em> 2019, <a href="https://doi.org/10.1109/BigData47090.2019.9006345">https://doi.org/10.1109/BigData47090.2019.9006345</a>.</li>
 </ol>
 <h2>Funding</h2>
-<p>This project is being funded by Army Futures Command (AFC).</p>
+<p>This project is funded by <strong>Army Futures Command (AFC)</strong>.</p>
 <h2>People</h2>
-<p>PI: Prof. Chandrajit Bajaj
-Ahmed Abdelkader (Postdoc)
-Ryan Farell (PhD)
-Chase Tessmer (PhD)
-Yi Wang (PhD)
-Nikhil Ajjarapy (Undergraduate Researcher)
-Contrad Li (Undergraduate Researcher)
-Benjamin Beal (Undergraduate Researcher)
-Edward Zhou (Undergraduate Researcher)</p></div></div></div></main></div><footer class="footer"><div class="container"><div class="title">Contact Us</div><div class="subtitle">If you&#x27;re interested in our work and want to learn more, please contact us. We are located in POB 2.102.</div><div class="jobs">Current Job Opportunities:</div><ul class="listStyleNone"><li><a href="/cvc-website/research-job" class="link">Lead Research Scientist (AI Networking and Security)</a></li><li><a href="/cvc-website/postdoc-job" class="link">Post-Doctoral Researcher</a></li><li><a href="/cvc-website/swe-job" class="link">Software Engineer</a></li><li><a href="/cvc-website/network-job" class="link">Software Engineer (IT Network/Security Specialist)</a></li></ul><div class="jobs">Previous Website:</div><div class="subtitle"><a href="https://cvcweb.oden.utexas.edu/cvcwp/" class="link">UT Austin Computational Visualization Center</a></div></div></footer></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/projects/dedrecon/";/*]]>*/</script><!-- slice-start id="_gatsby-scripts-1" -->
+<ul>
+<li><strong>Principal Investigator (PI):</strong> Prof. Chandrajit Bajaj</li>
+<li>Ryan Farell (Project Lead)</li>
+<li>Ahmed Abdelkader (Postdoc)</li>
+<li>Luke McLennan (PhD)</li>
+<li>Chase Tessmer (PhD)</li>
+<li>Yi Wang (PhD)</li>
+<li>Nikhil Ajjarapy (Undergraduate Researcher)</li>
+<li>Contrad Li (Undergraduate Researcher)</li>
+<li>Benjamin Beal (Undergraduate Researcher)</li>
+<li>Edward Zhou (Undergraduate Researcher)</li>
+</ul></div></div></div></main></div><footer class="footer"><div class="container"><div class="title">Contact Us</div><div class="subtitle">If you&#x27;re interested in our work and want to learn more, please contact us. We are located in POB 2.102.</div><div class="jobs">Current Job Opportunities:</div><ul class="listStyleNone"><li><a href="/cvc-website/research-job" class="link">Lead Research Scientist (AI Networking and Security)</a></li><li><a href="/cvc-website/postdoc-job" class="link">Post-Doctoral Researcher</a></li><li><a href="/cvc-website/swe-job" class="link">Software Engineer</a></li><li><a href="/cvc-website/network-job" class="link">Software Engineer (IT Network/Security Specialist)</a></li></ul><div class="jobs">Previous Website:</div><div class="subtitle"><a href="https://cvcweb.oden.utexas.edu/cvcwp/" class="link">UT Austin Computational Visualization Center</a></div></div></footer></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/projects/dedrecon/";/*]]>*/</script><!-- slice-start id="_gatsby-scripts-1" -->
           <script
             id="gatsby-chunk-mapping"
           >
-            window.___chunkMapping="{\"app\":[\"/app-917e9f991dff68f6cefb.js\"],\"component---src-pages-404-js\":[\"/component---src-pages-404-js-9868ce6a6bbed2cf72b2.js\"],\"component---src-pages-index-js\":[\"/component---src-pages-index-js-b1b4e44fe40c54675d3d.js\"],\"component---src-pages-markdown-remark-frontmatter-slug-js\":[\"/component---src-pages-markdown-remark-frontmatter-slug-js-d5983d406d1db73b9f5e.js\"],\"component---src-pages-news-js\":[\"/component---src-pages-news-js-2a0773364c61058ad60b.js\"],\"component---src-pages-publications-js\":[\"/component---src-pages-publications-js-8fed40a268b80401f756.js\"],\"component---src-pages-software-js\":[\"/component---src-pages-software-js-196e3ad4b090a5d12203.js\"]}";
+            window.___chunkMapping="{\"app\":[\"/app-917e9f991dff68f6cefb.js\"],\"component---src-pages-404-js\":[\"/component---src-pages-404-js-9868ce6a6bbed2cf72b2.js\"],\"component---src-pages-index-js\":[\"/component---src-pages-index-js-cdece6a8d82db58d5861.js\"],\"component---src-pages-markdown-remark-frontmatter-slug-js\":[\"/component---src-pages-markdown-remark-frontmatter-slug-js-d5983d406d1db73b9f5e.js\"],\"component---src-pages-news-js\":[\"/component---src-pages-news-js-2a0773364c61058ad60b.js\"],\"component---src-pages-publications-js\":[\"/component---src-pages-publications-js-8fed40a268b80401f756.js\"],\"component---src-pages-software-js\":[\"/component---src-pages-software-js-196e3ad4b090a5d12203.js\"]}";
           </script>
-        <script>window.___webpackCompilationHash="a0c60e3b455bdfc5bec1";</script><script src="/cvc-website/webpack-runtime-9badea8d4284c4cd75b8.js" async></script><script src="/cvc-website/framework-aa2bd3892c67746b73dd.js" async></script><script src="/cvc-website/app-917e9f991dff68f6cefb.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body></html>
+        <script>window.___webpackCompilationHash="a64f564891a66291aaee";</script><script src="/cvc-website/webpack-runtime-27220a70a1b114081f79.js" async></script><script src="/cvc-website/framework-aa2bd3892c67746b73dd.js" async></script><script src="/cvc-website/app-917e9f991dff68f6cefb.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body></html>
