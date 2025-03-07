@@ -33,14 +33,14 @@ Applications are open now, and we can't wait to meet our next team member! Join 
 
 ---
 
-![drone-swarm.jpg](../../../images/projects/dynamic_belief_games/drone-swarm.jpg)  
+![drone-swarm.jpg](../images/projects/dynamic_belief_games/drone-swarm.jpg)  
 *Figure: A visual of our DBG gym, demonstrating a drone swarm scenario.*
 
-![dynamic_belief_games_diagram.png](../../../images/projects/dynamic_belief_games/dynamic_belief_games_diagram.png)  
+![dynamic_belief_games_diagram.png](../../images/projects/dynamic_belief_games/dynamic_belief_games_diagram.png)  
 *Figure: The main diagram explaining Dynamic Belief Games.*
 
 ![ts-predictions.jpg](../../../images/projects/dynamic_belief_games/ts-predictions.jpg)  
 *Figure: This image shows time series prediction – we generate distributions over future communication demands.*
 
-![integrated_network_v4.png](../../../images/projects/dynamic_belief_games/integrated_network_v4.png)  
+![integrated_network_v4.png](../../../../images/projects/dynamic_belief_games/integrated_network_v4.png)  
 *Figure (Soldier's Network): An example of our expanded MANET overlay, illustrating how Predictive Intelligent Networking (PIN) Agents (e.g., NetTop and Observability Agents) interface with heterogeneous Army radio networks. The figure depicts multiple communication assets—including soldier nodes, drones, a military cell tower, a Starlink dish, and a satellite—operating in an adversarial environment.*
