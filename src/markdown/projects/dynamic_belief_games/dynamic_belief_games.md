@@ -5,6 +5,8 @@ date: "2024-09-12"
 ---
 
 ![Diagram](../../../images/projects/dynamic_belief_games/dynamic_belief_games_diagram.png)
+![drone-swarm.jpg](../../../images/projects/dynamic_belief_games/drone-swarm.jpg)  
+*Figure: A visual of our DBG gym, demonstrating a drone swarm scenario.*
 
 ## What are we trying to do?
 
@@ -74,3 +76,4 @@ This project is funded by the Army.
 - Luke McLennan (PhD Student)
 - Aaron Dominick (PhD Student)
 - Matthew Kim (Technical Staff)
+
