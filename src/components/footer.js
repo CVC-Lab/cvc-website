@@ -3,10 +3,6 @@ import "./footer.css"
 
 const Footer = () => {
   const links = [
-    {
-      href: "/cvc-website/research-job",
-      title: "Lead Research Scientist (AI Networking and Security)",
-    },
     { href: "/cvc-website/postdoc-job", title: "Post-Doctoral Researcher" },
     { href: "/cvc-website/swe-job", title: "Software Engineer" },
     {

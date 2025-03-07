@@ -757,6 +757,12 @@ module.exports = {
         date: "2024-04-19",
       },
       {
+        name: "Summer 2025 Internship Opportunity",
+        category: "news",
+        link: "/internship-job-dbg-2025",
+        date: "2025-03-05",
+      },
+      {
         name: "Job Opportunity: Software Engineer",
         category: "news",
         link: "/swe-job",
@@ -1130,20 +1136,6 @@ module.exports = {
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
-    {
-      resolve: "@mkitio/gatsby-theme-password-protect",
-      options: {
-        password: process.env.GATSBY_INTERNAL_LINKS_PASSWORD,
-        pagePaths: [
-          "/internal",
-          "internal",
-          "/internal/",
-          "/cvc-website/internal",
-          "/cvc-website/internal",
-          "/cvc-website/internal/",
-        ],
-      },
-    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
