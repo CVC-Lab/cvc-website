@@ -1,4 +1,4 @@
----
+<!-- ---
 title: "Dynamic Belief Games"
 slug: "/projects/dynamic-belief-games"
 date: "2024-09-12"
@@ -76,4 +76,4 @@ This project is funded by the Army.
 - Luke McLennan (PhD Student)
 - Aaron Dominick (PhD Student)
 - Matthew Kim (Technical Staff)
-
+ -->

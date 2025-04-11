@@ -1,4 +1,4 @@
----
+<!-- ---
 title: "DBG Internship Opportunity 2025"
 slug: "/internship-job-dbg-2025"
 date: "2025-03-05"
@@ -43,4 +43,4 @@ Applications are open now, and we can't wait to meet our next team member! Join 
 *Figure: This image shows time series prediction – we generate distributions over future communication demands.*
 
 ![integrated_network_v4.png](../../../../images/projects/dynamic_belief_games/integrated_network_v4.png)  
-*Figure (Soldier's Network): An example of our expanded MANET overlay, illustrating how Predictive Intelligent Networking (PIN) Agents (e.g., NetTop and Observability Agents) interface with heterogeneous Army radio networks. The figure depicts multiple communication assets—including soldier nodes, drones, a military cell tower, a Starlink dish, and a satellite—operating in an adversarial environment.*
+*Figure (Soldier's Network): An example of our expanded MANET overlay, illustrating how Predictive Intelligent Networking (PIN) Agents (e.g., NetTop and Observability Agents) interface with heterogeneous Army radio networks. The figure depicts multiple communication assets—including soldier nodes, drones, a military cell tower, a Starlink dish, and a satellite—operating in an adversarial environment.* -->

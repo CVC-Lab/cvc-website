@@ -756,12 +756,6 @@ module.exports = {
         link: "/network-job",
         date: "2024-04-19",
       },
-      // {
-      //   name: "Summer 2025 Internship Opportunity",
-      //   category: "news",
-      //   link: "/internship-job-dbg-2025",
-      //   date: "2025-03-05",
-      // },
       {
         name: "Job Opportunity: Software Engineer",
         category: "news",
@@ -830,15 +824,6 @@ module.exports = {
         tags: ["Reinforcement Learning"],
         date: "2021-09-28",
       },
-      // {
-      //   name: "Dynamic Belief Games",
-      //   description:
-      //     "Dynamic Belief Games focuses on developing dynamic next-generation learning agents that engage in planning, cross-training, and effective action choices in communications systems.",
-      //   img_name: "project_tiles/dbg",
-      //   link: "/projects/dynamic-belief-games",
-      //   tags: ["Reinforcement Learning"],
-      //   date: "2024-05-01",
-      // },
       {
         name: "Optimal Control",
         description:
