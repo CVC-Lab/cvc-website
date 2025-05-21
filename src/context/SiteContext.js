@@ -9,6 +9,9 @@ export const SiteContext = React.createContext({})
  * component in your application via the useContext hook.
  */
 export const SiteProvider = ({ children }) => {
+  const [errorState, setErrorState] = React.useState(null)
+  
+  // Always call useStaticQuery at the top level, never conditionally
   const data = useStaticQuery(graphql`
     query SiteMetadataQuery {
       site {
@@ -52,9 +55,50 @@ export const SiteProvider = ({ children }) => {
       }
     }
   `)
+  
+  // Create a fallback object in case of errors
+  const fallbackData = React.useMemo(() => ({
+    site: {
+      siteMetadata: {
+        title: "Computational Visualization Center",
+        description: "A cross-disciplinary effort at UT Austin",
+        menuLinks: [],
+        softwareProjects: [],
+        projectTiles: [],
+        peopleCards: [],
+        newsTiles: []
+      }
+    }
+  }), [])
+  
+  // Handle potential errors
+  React.useEffect(() => {
+    try {
+      // Check if data is valid
+      if (!data || !data.site || !data.site.siteMetadata) {
+        throw new Error("Invalid site metadata")
+      }
+    } catch (error) {
+      console.error("Error processing site metadata:", error)
+      setErrorState(error)
+    }
+  }, [data])
+
+  const contextValue = React.useMemo(() => {
+    // Use data if available, otherwise use fallback
+    const siteData = (data && data.site && data.site.siteMetadata) 
+      ? data.site.siteMetadata 
+      : fallbackData.site.siteMetadata
+    
+    return {
+      ...siteData,
+      hasError: errorState !== null,
+      errorMessage: errorState ? errorState.message : null
+    }
+  }, [data, errorState, fallbackData.site.siteMetadata])
 
   return (
-    <SiteContext.Provider value={data.site.siteMetadata}>
+    <SiteContext.Provider value={contextValue}>
       {children}
     </SiteContext.Provider>
   )

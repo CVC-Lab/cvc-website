@@ -3,24 +3,45 @@ import { Link } from "gatsby"
 import "./tiles.css"
 
 const NewsTiles = ({ newsTiles }) => {
+  // Always declare hooks at the top level
+  const [currentPage, setCurrentPage] = useState(1)
+  
+  // Wrap the initialization of safeNewsTiles in its own useMemo
+  const safeNewsTiles = React.useMemo(() => {
+    return Array.isArray(newsTiles) ? newsTiles : []
+  }, [newsTiles])
+  
+  // Sort the news tiles by date (always run, even if empty array)
   const sortedNewsTiles = React.useMemo(() => {
-    return [...newsTiles].sort((a, b) => {
+    if (safeNewsTiles.length === 0) return []
+    
+    return [...safeNewsTiles].sort((a, b) => {
       const dateDifference = new Date(b.date) - new Date(a.date)
       if (dateDifference !== 0) return dateDifference
       return b.name.localeCompare(a.name)
     })
-  }, [newsTiles])
+  }, [safeNewsTiles])
 
-  const [currentPage, setCurrentPage] = useState(1)
   const tilesPerPage = 20
-
   const lastTile = currentPage * tilesPerPage
   const firstTile = lastTile - tilesPerPage
+  
+  // Calculate current page of tiles (always run, even if empty array)
   const currentTiles = React.useMemo(() => {
     return sortedNewsTiles.slice(firstTile, lastTile)
   }, [sortedNewsTiles, firstTile, lastTile])
 
   const paginate = pageNumber => setCurrentPage(pageNumber)
+  
+  // Render placeholder if no news items
+  if (safeNewsTiles.length === 0) {
+    return (
+      <div className="error-container" style={{ padding: "2rem", textAlign: "center" }}>
+        <h2>No news items found</h2>
+        <p>Please check back later for updates.</p>
+      </div>
+    )
+  }
 
   return (
     <div
@@ -61,10 +82,23 @@ const NewsTiles = ({ newsTiles }) => {
         </h1>
         <div>
           {currentTiles.map(tile => {
-            const date = new Date(tile.date)
-            const dateString = `${
-              date.getMonth() + 1
-            }/${date.getDate()}/${date.getFullYear()}`
+            // Ensure date is valid
+            let dateString = "";
+            try {
+              const date = new Date(tile.date)
+              if (!isNaN(date.getTime())) {
+                dateString = `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`
+              } else {
+                dateString = "Date unknown"
+              }
+            } catch (error) {
+              dateString = "Date unknown"
+            }
+
+            const isExternalLink = tile.link && (
+              tile.link.startsWith('http://') || 
+              tile.link.startsWith('https://')
+            )
 
             return (
               <div
@@ -78,19 +112,37 @@ const NewsTiles = ({ newsTiles }) => {
                   <h3>{dateString}</h3>
                 </div>
                 <div style={{ flexBasis: "80%" }}>
-                  <Link
-                    style={{
-                      color: `#333f48`,
-                      textDecoration: `none`,
-                      fontSize: `.73rem`,
-                    }}
-                    to={tile.link}
-                  >
-                    <div className="lower-container-pubs">
-                      <h3>{tile.name}</h3>
-                      {tile.description && <h4>{tile.description}</h4>}
-                    </div>
-                  </Link>
+                  {isExternalLink ? (
+                    <a
+                      style={{
+                        color: `#333f48`,
+                        textDecoration: `none`,
+                        fontSize: `.73rem`,
+                      }}
+                      href={tile.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <div className="lower-container-pubs">
+                        <h3>{tile.name}</h3>
+                        {tile.description && <h4>{tile.description}</h4>}
+                      </div>
+                    </a>
+                  ) : (
+                    <Link
+                      style={{
+                        color: `#333f48`,
+                        textDecoration: `none`,
+                        fontSize: `.73rem`,
+                      }}
+                      to={tile.link || "#"}
+                    >
+                      <div className="lower-container-pubs">
+                        <h3>{tile.name}</h3>
+                        {tile.description && <h4>{tile.description}</h4>}
+                      </div>
+                    </Link>
+                  )}
                 </div>
               </div>
             )

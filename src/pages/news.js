@@ -8,17 +8,52 @@ import LoadingFallback from "../components/LoadingFallback"
 // Lazy load component
 const NewsTiles = lazy(() => import("../components/news_tiles"))
 
+const ErrorFallback = () => (
+  <div 
+    style={{ 
+      padding: "2rem", 
+      textAlign: "center",
+      color: "#333f48",
+      minHeight: "300px",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "center"
+    }}
+  >
+    <h2>Unable to load news data</h2>
+    <p style={{ maxWidth: "600px", margin: "1rem auto" }}>
+      We're experiencing a technical issue loading the news content. Please try refreshing the page or check back later.
+    </p>
+  </div>
+)
+
 const NewsPage = () => {
-  const { newsTiles } = useSiteMetadata()
+  // Get site metadata with error handling
+  let newsTiles = []
+  let hasError = false
+  
+  try {
+    const siteMetadata = useSiteMetadata()
+    newsTiles = siteMetadata.newsTiles || []
+    hasError = siteMetadata.hasError
+  } catch (error) {
+    console.error("Error in NewsPage:", error)
+    hasError = true
+  }
 
   return (
     <Layout>
-      <Suspense fallback={<LoadingFallback />}>
-        <NewsTiles
-          id="news"
-          newsTiles={newsTiles}
-        />
-      </Suspense>
+      {hasError ? (
+        <ErrorFallback />
+      ) : (
+        <Suspense fallback={<LoadingFallback />}>
+          <NewsTiles
+            id="news"
+            newsTiles={newsTiles}
+          />
+        </Suspense>
+      )}
     </Layout>
   )
 }
