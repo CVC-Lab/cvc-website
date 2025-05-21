@@ -42,7 +42,7 @@ const Tiles = ({ projectTiles }) => {
         </Tabs>
         <Grid container spacing={2}>
           {filteredTiles.map(tile => (
-            <Grid item xs={12} sm={4} key={tile.name}>
+            <Grid item xs={12} sm={6} md={4} key={tile.name}>
               <div className="Tile">
                 <div className="upper-container">
                   <h3>{tile.name}</h3>
