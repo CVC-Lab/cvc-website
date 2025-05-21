@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { Grid, Tabs, Tab } from "@mui/material"
+import { Grid, Tabs, Tab, Box } from "@mui/material"
 import "./tiles.css"
 
 const projectTabs = [
@@ -40,28 +40,30 @@ const Tiles = ({ projectTiles }) => {
             <Tab label={tab} value={tab} key={tab} />
           ))}
         </Tabs>
-        <Grid container spacing={2}>
-          {filteredTiles.map(tile => (
-            <Grid item xs={12} sm={6} md={4} key={tile.name}>
-              <div className="Tile">
-                <div className="upper-container">
-                  <h3>{tile.name}</h3>
-                  <div className="image-container">
-                    <Link to={tile.link}>
-                      <img
-                        src={require(`../images/${tile.img_name}.png`).default}
-                        alt="project preview"
-                      />
-                    </Link>
+        <Box sx={{ width: '100%' }}>
+          <Grid container spacing={3}>
+            {filteredTiles.map(tile => (
+              <Grid item xs={12} sm={6} md={4} lg={4} key={tile.name}>
+                <div className="Tile">
+                  <div className="upper-container">
+                    <h3>{tile.name}</h3>
+                    <div className="image-container">
+                      <Link to={tile.link}>
+                        <img
+                          src={require(`../images/${tile.img_name}.png`).default}
+                          alt="project preview"
+                        />
+                      </Link>
+                    </div>
+                  </div>
+                  <div className="lower-container">
+                    <h4> {tile.description} </h4>
                   </div>
                 </div>
-                <div className="lower-container">
-                  <h4> {tile.description} </h4>
-                </div>
-              </div>
-            </Grid>
-          ))}
-        </Grid>
+              </Grid>
+            ))}
+          </Grid>
+        </Box>
       </div>
     </div>
   )
