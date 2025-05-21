@@ -1,5 +1,4 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import { Grid } from "@mui/material"
 
 const About = () => (
@@ -53,10 +52,12 @@ const About = () => (
       </p>
       <br></br>
       <div>
-        <Grid container spacing={2} style={{ width: "100%" }}>
-          <Grid item xs={12} sm={6}>
-            <Link
-              to="https://www.oden.utexas.edu/"
+        <Grid container spacing={2} sx={{ width: "100%" }}>
+          <Grid sx={{ gridColumn: { xs: 'span 12', sm: 'span 6' } }}>
+            <a
+              href="https://www.oden.utexas.edu/"
+              target="_blank"
+              rel="noopener noreferrer"
               style={{
                 color: "#333f48",
                 textDecoration: "none",
@@ -68,11 +69,13 @@ const About = () => (
                 alt="Oden Institute logo"
                 width={496}
               />
-            </Link>
+            </a>
           </Grid>
-          <Grid item xs={12} sm={6}>
-            <Link
-              to="https://www.cs.utexas.edu/"
+          <Grid sx={{ gridColumn: { xs: 'span 12', sm: 'span 6' } }}>
+            <a
+              href="https://www.cs.utexas.edu/"
+              target="_blank"
+              rel="noopener noreferrer"
               style={{
                 color: "#333f48",
                 textDecoration: "none",
@@ -84,7 +87,7 @@ const About = () => (
                 alt="UT CS logo"
                 width={510}
               />
-            </Link>
+            </a>
           </Grid>
         </Grid>
       </div>

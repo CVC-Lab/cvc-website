@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Link as LinkRouter } from "gatsby"
 
-const DropdownMenu = ({ links }) => {
+const DropdownMenu = ({ links = [] }) => {
   return (
     <div
       style={{
@@ -33,7 +33,7 @@ const DropdownMenu = ({ links }) => {
   )
 }
 
-const Navigation = ({ menuLinks }) => {
+const Navigation = ({ menuLinks = [] }) => {
   const [dropdownVisible, setDropdownVisible] = React.useState(false)
   const toggleDropdown = () => setDropdownVisible(!dropdownVisible)
 

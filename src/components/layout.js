@@ -1,41 +1,20 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import { useSiteMetadata } from "../context/SiteContext"
 
 import Header from "./header"
 import Footer from "./footer"
 import "./layout.css"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-          description
-          menuLinks {
-            name
-            link
-            scroll_link
-          }
-          softwareProjects {
-            category
-            items {
-              name
-              description
-            }
-          }
-        }
-      }
-    }
-  `)
+  const { title, description, menuLinks } = useSiteMetadata()
 
   return (
     <>
       <Header
-        menuLinks={data.site.siteMetadata.menuLinks}
-        siteTitle={data.site.siteMetadata.title}
-        siteDescription={data.site.siteMetadata.description}
+        menuLinks={menuLinks}
+        siteTitle={title}
+        siteDescription={description}
       />
       <div>
         <main style={{ minHeight: "90vh" }}>{children}</main>

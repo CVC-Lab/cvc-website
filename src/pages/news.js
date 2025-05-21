@@ -1,32 +1,24 @@
 import * as React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import { Suspense, lazy } from "react"
+import { useSiteMetadata } from "../context/SiteContext"
 
 import Layout from "../components/layout"
-import NewsTiles from "../components/news_tiles"
+import LoadingFallback from "../components/LoadingFallback"
 
-const NewsPage = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query NewsQuery {
-      site {
-        siteMetadata {
-          newsTiles {
-            name
-            description
-            category
-            link
-            date
-          }
-        }
-      }
-    }
-  `)
+// Lazy load component
+const NewsTiles = lazy(() => import("../components/news_tiles"))
+
+const NewsPage = () => {
+  const { newsTiles } = useSiteMetadata()
 
   return (
     <Layout>
-      <NewsTiles
-        id="news"
-        newsTiles={data.site.siteMetadata.newsTiles}
-      ></NewsTiles>
+      <Suspense fallback={<LoadingFallback />}>
+        <NewsTiles
+          id="news"
+          newsTiles={newsTiles}
+        />
+      </Suspense>
     </Layout>
   )
 }

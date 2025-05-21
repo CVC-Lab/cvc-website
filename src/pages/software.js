@@ -1,29 +1,20 @@
 import * as React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import { Suspense, lazy } from "react"
+import { useSiteMetadata } from "../context/SiteContext"
 import Layout from "../components/layout"
-import SoftwareList from "../components/software_list"
+import LoadingFallback from "../components/LoadingFallback"
+
+// Lazy load component
+const SoftwareList = lazy(() => import("../components/software_list"))
 
 const SoftwarePage = () => {
-  const data = useStaticQuery(graphql`
-    query SoftwareQuery {
-      site {
-        siteMetadata {
-          softwareProjects {
-            category
-            items {
-              name
-              description
-            }
-          }
-        }
-      }
-    }
-  `)
-
-  const softwareProjects = data.site.siteMetadata.softwareProjects
+  const { softwareProjects } = useSiteMetadata()
+  
   return (
     <Layout>
-      <SoftwareList softwareProjects={softwareProjects} />
+      <Suspense fallback={<LoadingFallback />}>
+        <SoftwareList softwareProjects={softwareProjects} />
+      </Suspense>
     </Layout>
   )
 }

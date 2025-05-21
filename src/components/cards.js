@@ -1,8 +1,7 @@
 import * as React from "react"
 import { Grid, Tabs, Tab, Box } from "@mui/material"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import "./cards.css"
-import { database } from "../data/database"
-import { ref, get } from "firebase/database"
 
 const TabPanel = props => {
   const { children, value, index, ...other } = props
@@ -36,14 +35,14 @@ const sortMembers = members => {
   ]
 
   const comparePositions = (a, b) => {
-    const positionA = positionOrder.indexOf(a.Position)
-    const positionB = positionOrder.indexOf(b.Position)
+    const positionA = positionOrder.indexOf(a.position || a.Position)
+    const positionB = positionOrder.indexOf(b.position || b.Position)
 
     if (positionA !== positionB) {
       return positionA - positionB
     }
 
-    return a.Name.localeCompare(b.Name)
+    return (a.name || a.Name).localeCompare(b.name || b.Name)
   }
 
   return members.slice().sort(comparePositions)
@@ -61,16 +60,17 @@ function renderMembersByTitle(members) {
   const facultyTiles = []
 
   sortedMembers.forEach(member => {
-    const positionLower = member.Position.toLowerCase()
+    const position = member.position || member.Position
+    const positionLower = position.toLowerCase()
     if (
       (positionLower.includes("graduate") &&
         !positionLower.includes("undergraduate")) ||
       positionLower.includes("phd")
     ) {
       studentsByTitle["Graduate Student"].push(member)
-    } else if (member.Position === "Undergraduate Student") {
+    } else if (position === "Undergraduate Student") {
       studentsByTitle["Undergraduate Student"].push(member)
-    } else if (member.Position === "High School Student") {
+    } else if (position === "High School Student") {
       studentsByTitle["High School Student"].push(member)
     } else {
       facultyTiles.push(member)
@@ -82,17 +82,17 @@ function renderMembersByTitle(members) {
       {facultyTiles.length > 0 && (
         <h3 className="title-header">Faculty and Staff</h3>
       )}
-      <Grid style={{ marginBottom: "2rem" }} container spacing={4}>
+      <Grid container spacing={4} sx={{ marginBottom: "2rem" }}>
         {facultyTiles.map(people => renderCard(people, true))}
       </Grid>
       <h3 className="title-header">Graduate Students</h3>
-      <Grid className="title-grid" container spacing={4}>
+      <Grid container spacing={4} className="title-grid">
         {studentsByTitle["Graduate Student"].map(people =>
           renderCard(people, !people.isExactTitle),
         )}
       </Grid>
       <h3 className="title-header">Undergraduate Students</h3>
-      <Grid className="title-grid" container spacing={4}>
+      <Grid container spacing={4} className="title-grid">
         {studentsByTitle["Undergraduate Student"].map(people =>
           renderCard(people, false),
         )}
@@ -101,7 +101,7 @@ function renderMembersByTitle(members) {
         studentsByTitle["High School Student"].length > 0 && (
           <>
             <h3 className="title-header">High School Students</h3>
-            <Grid className="title-grid" container spacing={4}>
+            <Grid container spacing={4} className="title-grid">
               {studentsByTitle["High School Student"].map(people =>
                 renderCard(people, false),
               )}
@@ -113,62 +113,57 @@ function renderMembersByTitle(members) {
 }
 
 function renderCard(people, showFullTitle = false) {
-  const imageSrc = people.Image
-    ? require(`../images/people/${people.Image}`).default
-    : require(`../images/people/placeholder.png`).default
-
+  const name = people.name || people.Name
+  const position = people.position || people.Position
+  const imageName = people.image || people.Image || "placeholder.png"
+  
   return (
     <Grid
-      item
-      xs={6}
-      sm={4}
-      md={2}
-      key={people.Name}
+      key={name}
       className="member-grid-item"
+      sx={{ gridColumn: { xs: 'span 6', sm: 'span 4', md: 'span 2' } }}
     >
       <div className="Card">
         <div className="upper-container">
           <div className="image-container">
-            <img src={imageSrc} alt={`${people.Name}'s profile`} />
+            {people.imageFile && people.imageFile.childImageSharp ? (
+              <GatsbyImage 
+                image={getImage(people.imageFile)} 
+                alt={`${name}'s profile`}
+                style={{ width: '125px', height: '125px', borderRadius: '50%' }}
+              />
+            ) : (
+              <img 
+                src={require(`../images/people/${imageName}`).default}
+                alt={`${name}'s profile`}
+                style={{ width: '125px', height: '125px', borderRadius: '50%' }}
+              />
+            )}
           </div>
         </div>
         <div className="lower-container">
-          <h3>{people.Name}</h3>
-          {showFullTitle && <h4>{people.Position}</h4>}
+          <h3>{name}</h3>
+          {showFullTitle && <h4>{position}</h4>}
         </div>
       </div>
     </Grid>
   )
 }
 
-const Cards = () => {
-  const [peopleCards, setPeopleCards] = React.useState([])
+const Cards = ({ peopleCards }) => {
   const [value, setValue] = React.useState(0)
 
-  React.useEffect(() => {
-    const fetchPeopleCards = async () => {
-      const dbRef = ref(
-        database,
-        "1fdxBkTMC8EZf8PBS6kHCxoa5YvHMvUcFR0x7wWU9Ci8/Sheet1",
-      )
-      try {
-        const snapshot = await get(dbRef)
-        if (snapshot.exists()) {
-          const data = snapshot.val()
-          setPeopleCards(Object.values(data))
-        }
-      } catch (error) {
-        console.error(error)
-      }
-    }
-
-    fetchPeopleCards()
-  }, [])
   const handleChange = (event, newValue) => {
     setValue(newValue)
   }
-  const currentMembers = peopleCards.filter(person => person.Current === true)
-  const alumniMembers = peopleCards.filter(person => person.Current === false)
+  
+  // Handle both format of data from GraphQL and from Firebase
+  const currentMembers = peopleCards.filter(person => 
+    (person.status === "current" || person.status === true || person.Current === true)
+  )
+  const alumniMembers = peopleCards.filter(person => 
+    (person.status === "alumni" || person.status === false || person.Current === false)
+  )
 
   return (
     <div className="people-class" id="people">

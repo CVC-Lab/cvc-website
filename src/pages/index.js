@@ -1,36 +1,19 @@
 import * as React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import { Suspense, lazy } from "react"
+import { Helmet } from "react-helmet"
+import { useSiteMetadata } from "../context/SiteContext"
 
 import Layout from "../components/layout"
-import Tiles from "../components/tiles"
-import Cards from "../components/cards"
-import About from "../components/about"
-import { Helmet } from "react-helmet"
+import LoadingFallback from "../components/LoadingFallback"
 import favicon from "../favicons/favicon.png"
 
-const IndexPage = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query ProjectQuery {
-      site {
-        siteMetadata {
-          projectTiles {
-            name
-            description
-            img_name
-            link
-            tags
-            date
-          }
-          peopleCards {
-            name
-            image
-            position
-            status
-          }
-        }
-      }
-    }
-  `)
+// Lazily load components that aren't needed for initial render
+const Tiles = lazy(() => import("../components/tiles"))
+const Cards = lazy(() => import("../components/cards"))
+const About = lazy(() => import("../components/about"))
+
+const IndexPage = () => {
+  const { projectTiles, peopleCards } = useSiteMetadata()
 
   return (
     <Layout>
@@ -42,15 +25,24 @@ const IndexPage = ({ children }) => {
           data-react-helmet="true"
         />
       </Helmet>
-      <Tiles
-        id="projects"
-        projectTiles={data.site.siteMetadata.projectTiles}
-      ></Tiles>
-      <Cards
-        id="people"
-        peopleCards={data.site.siteMetadata.peopleCards}
-      ></Cards>
-      <About id="about"></About>
+
+      <Suspense fallback={<LoadingFallback />}>
+        <Tiles
+          id="projects"
+          projectTiles={projectTiles}
+        />
+      </Suspense>
+
+      <Suspense fallback={<LoadingFallback />}>
+        <Cards
+          id="people"
+          peopleCards={peopleCards || []}
+        />
+      </Suspense>
+
+      <Suspense fallback={<LoadingFallback />}>
+        <About id="about" />
+      </Suspense>
     </Layout>
   )
 }

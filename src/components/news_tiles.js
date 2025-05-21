@@ -3,18 +3,22 @@ import { Link } from "gatsby"
 import "./tiles.css"
 
 const NewsTiles = ({ newsTiles }) => {
-  const sortedNewsTiles = newsTiles.sort((a, b) => {
-    const dateDifference = new Date(b.date) - new Date(a.date)
-    if (dateDifference !== 0) return dateDifference
-    return b.name.localeCompare(a.name)
-  })
+  const sortedNewsTiles = React.useMemo(() => {
+    return [...newsTiles].sort((a, b) => {
+      const dateDifference = new Date(b.date) - new Date(a.date)
+      if (dateDifference !== 0) return dateDifference
+      return b.name.localeCompare(a.name)
+    })
+  }, [newsTiles])
 
   const [currentPage, setCurrentPage] = useState(1)
   const tilesPerPage = 20
 
   const lastTile = currentPage * tilesPerPage
   const firstTile = lastTile - tilesPerPage
-  const currentTiles = sortedNewsTiles.slice(firstTile, lastTile)
+  const currentTiles = React.useMemo(() => {
+    return sortedNewsTiles.slice(firstTile, lastTile)
+  }, [sortedNewsTiles, firstTile, lastTile])
 
   const paginate = pageNumber => setCurrentPage(pageNumber)
 

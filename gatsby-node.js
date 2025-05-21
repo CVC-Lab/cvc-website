@@ -1,3 +1,5 @@
+const path = require("path")
+
 exports.onCreateWebpackConfig = ({
   stage,
   rules,
@@ -38,5 +40,40 @@ exports.onCreateWebpackConfig = ({
         __DEVELOPMENT__: stage === `develop` || stage === `develop-html`,
       }),
     ],
+  })
+}
+
+// Create optimized image nodes for project tiles
+exports.createResolvers = ({ createResolvers }) => {
+  createResolvers({
+    SiteSiteMetadataProjectTiles: {
+      image: {
+        type: "File",
+        resolve: (source) => {
+          const imgPath = path.resolve(
+            __dirname,
+            `src/images/${source.img_name}.png`
+          )
+          return {
+            absolutePath: imgPath,
+          }
+        },
+      },
+    },
+    SiteSiteMetadataPeopleCards: {
+      imageFile: {
+        type: "File",
+        resolve: (source) => {
+          const imgName = source.image || "placeholder.png"
+          const imgPath = path.resolve(
+            __dirname,
+            `src/images/people/${imgName}`
+          )
+          return {
+            absolutePath: imgPath,
+          }
+        },
+      },
+    },
   })
 }

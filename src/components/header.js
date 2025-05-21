@@ -4,7 +4,11 @@ import { Link } from "gatsby"
 import Navigation from "./navigation"
 import { StaticImage } from "gatsby-plugin-image"
 
-const Header = ({ siteTitle, siteDescription, menuLinks }) => (
+const Header = ({ 
+  siteTitle = "", 
+  siteDescription = "", 
+  menuLinks = [] 
+}) => (
   <header
     style={{
       paddingLeft: `1.25rem`,
@@ -71,11 +75,7 @@ const Header = ({ siteTitle, siteDescription, menuLinks }) => (
 Header.propTypes = {
   siteTitle: PropTypes.string,
   siteDescription: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-  siteDescription: ``,
+  menuLinks: PropTypes.array,
 }
 
 export default Header
