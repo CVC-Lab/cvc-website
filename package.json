@@ -75,10 +75,15 @@
     "katex": "^0.16.10",
     "undici": "5.28.4",
     "multer": "^2.0.0-rc.4",
-    "path-to-regexp": "^0.1.12"
+    "path-to-regexp": "^0.1.12",
+    "cookie": "^0.7.0",
+    "engine.io": {
+      "cookie": "^0.7.0"
+    }
   },
   "resolutions": {
     "multer": "^2.0.0-rc.4",
-    "path-to-regexp": "^0.1.12"
+    "path-to-regexp": "^0.1.12",
+    "cookie": "^0.7.0"
   }
 }
