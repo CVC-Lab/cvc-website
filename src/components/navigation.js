@@ -1,6 +1,5 @@
 import * as React from "react"
 import { Link as LinkRouter } from "gatsby"
-import { useLocation } from "@reach/router"
 
 const DropdownMenu = ({ links }) => {
   return (
@@ -66,7 +65,6 @@ const Navigation = ({ menuLinks }) => {
           }}
         >
           <li
-            role="menuitem"
             style={{
               listStyleType: `none`,
               paddingLeft: "1rem",
@@ -74,14 +72,20 @@ const Navigation = ({ menuLinks }) => {
               position: "relative",
             }}
           >
-            <div 
+            <button 
+              aria-haspopup="true"
+              aria-expanded={dropdownVisible}
               onMouseEnter={toggleDropdown}
               onMouseLeave={toggleDropdown}
               style={{
+                background: "transparent",
+                border: "none",
                 color: `#FFFFFF`,
                 textDecoration: `none`,
                 fontSize: `.73rem`,
                 fontWeight: `700`,
+                padding: 0,
+                cursor: "pointer",
               }}
             >
               <LinkRouter
@@ -96,7 +100,7 @@ const Navigation = ({ menuLinks }) => {
                 HOME
               </LinkRouter>
               {dropdownVisible && <DropdownMenu links={dropdownLinks} />}
-            </div>
+            </button>
           </li>
           {otherLinks.map(link => (
             <li
