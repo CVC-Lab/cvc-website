@@ -86,13 +86,13 @@ function renderMembersByTitle(members) {
       <h3 className="title-header">Graduate Students</h3>
       <Grid className="title-grid" container spacing={4}>
         {studentsByTitle["Graduate Student"].map(people =>
-          renderCard(people, !people.isExactTitle)
+          renderCard(people, !people.isExactTitle),
         )}
       </Grid>
       <h3 className="title-header">Undergraduate Students</h3>
       <Grid className="title-grid" container spacing={4}>
         {studentsByTitle["Undergraduate Student"].map(people =>
-          renderCard(people, false)
+          renderCard(people, false),
         )}
       </Grid>
       {studentsByTitle["High School Student"] &&
@@ -101,7 +101,7 @@ function renderMembersByTitle(members) {
             <h3 className="title-header">High School Students</h3>
             <Grid className="title-grid" container spacing={4}>
               {studentsByTitle["High School Student"].map(people =>
-                renderCard(people, false)
+                renderCard(people, false),
               )}
             </Grid>
           </>
@@ -127,10 +127,7 @@ function renderCard(people, showFullTitle = false) {
       <div className="Card">
         <div className="upper-container">
           <div className="image-container">
-            <img
-              src={imageSrc}
-              alt={`${people.Name}'s profile`}
-            />
+            <img src={imageSrc} alt={`${people.Name}'s profile`} />
           </div>
         </div>
         <div className="lower-container">
@@ -150,7 +147,7 @@ const Cards = () => {
     const fetchPeopleCards = async () => {
       const dbRef = ref(
         database,
-        "1fdxBkTMC8EZf8PBS6kHCxoa5YvHMvUcFR0x7wWU9Ci8/Sheet1"
+        "1fdxBkTMC8EZf8PBS6kHCxoa5YvHMvUcFR0x7wWU9Ci8/Sheet1",
       )
       try {
         const snapshot = await get(dbRef)

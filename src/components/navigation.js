@@ -45,10 +45,10 @@ const Navigation = ({ menuLinks }) => {
 
   const dropdownLinkNames = ["PEOPLE", "ABOUT US"]
   const dropdownLinks = menuLinks.filter(link =>
-    dropdownLinkNames.includes(link.name.toUpperCase())
+    dropdownLinkNames.includes(link.name.toUpperCase()),
   )
   const otherLinks = menuLinks.filter(
-    link => !dropdownLinkNames.includes(link.name.toUpperCase())
+    link => !dropdownLinkNames.includes(link.name.toUpperCase()),
   )
 
   return (

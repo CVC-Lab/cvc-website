@@ -1,6 +1,9 @@
 import "@fontsource/libre-franklin"
 import React from "react"
-import { PasswordProvider, ProtectedRoute } from "./src/components/password-protect/PasswordContext"
+import {
+  PasswordProvider,
+  ProtectedRoute,
+} from "./src/components/password-protect/PasswordContext"
 
 // Wrap the app with the password provider
 export const wrapRootElement = ({ element }) => {

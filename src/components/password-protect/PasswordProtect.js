@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { navigate } from "gatsby";
-import { usePassword } from "./PasswordContext";
+import React, { useState } from "react"
+import { navigate } from "gatsby"
+import { usePassword } from "./PasswordContext"
 
 const styles = {
   wrapper: {
@@ -35,27 +35,27 @@ const styles = {
   errorMessage: {
     color: "red",
     marginTop: "10px",
-  }
-};
+  },
+}
 
 const PasswordProtect = ({ location }) => {
-  const [password, setPassword] = useState("");
-  const [isButtonHovered, buttonHover] = useState(false);
-  const [error, setError] = useState("");
-  const { login } = usePassword();
+  const [password, setPassword] = useState("")
+  const [isButtonHovered, buttonHover] = useState(false)
+  const [error, setError] = useState("")
+  const { login } = usePassword()
 
-  const redirectTo = location?.state?.redirectTo || "/internal";
+  const redirectTo = location?.state?.redirectTo || "/internal"
 
   const onSubmit = event => {
-    event.preventDefault();
-    const success = login(password);
-    
+    event.preventDefault()
+    const success = login(password)
+
     if (success) {
-      navigate(redirectTo);
+      navigate(redirectTo)
     } else {
-      setError("Incorrect password. Please try again.");
+      setError("Incorrect password. Please try again.")
     }
-  };
+  }
 
   return (
     <div style={styles.wrapper}>
@@ -81,11 +81,11 @@ const PasswordProtect = ({ location }) => {
         >
           Enter
         </button>
-        
+
         {error && <p style={styles.errorMessage}>{error}</p>}
       </form>
     </div>
-  );
-};
+  )
+}
 
-export default PasswordProtect; 
+export default PasswordProtect

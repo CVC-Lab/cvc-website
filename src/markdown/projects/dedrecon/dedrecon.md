@@ -16,6 +16,7 @@ date: "2020-09-01"
 The goal of this project was to **develop (train, validate, and test)** advanced **machine learning** and **deep learning** technologies for **intelligent, real-time stream processing** of diverse **Electro-Optical (EO) / Infrared (IR)** video streams, commonly referred to as hyperspectral or EO/IR imagery, to enable **wide area persistent surveillance**. When paired with EO/IR video sensor systems, these analytic software technologies become essential components of the Army’s next-generation active protection systems.
 
 By **developing** these technologies, we have:
+
 1. Documented **spatio-temporal-spectral (STS)** details of EO/IR data,
 2. Identified which STS phenomena are discernible or discriminable,
 3. Detected and characterized STS anomalies (i.e., unexpected or unusual spatio-temporal-spectral patterns or changes).
@@ -43,6 +44,7 @@ We overcame these limitations by developing **multiply learned deep neural netwo
 Our approach involved **training, validating, and testing** variational autoencoders—referred to as **Deep Encoder-Decoder Recurrent Networks (DEDRECON)**—to model “normal” through “extra-ordinary” motion and patterns in a variety of realistic environmental scenarios. Once trained, these DEDRECON models **detect and classify object-scene patterns** and identify motion anomalies in real time, labeling them as deviations from learned “normal” behavior and categorizing them into levels of “extra-ordinary,” i.e., potential threats.
 
 Specifically, we processed two distinct EO/IR video streams:
+
 1. A **hyperspectral** stream with **high spectral resolution**,
 2. A **multispectral** stream with **high spatial resolution**.
 
@@ -60,6 +62,7 @@ We trained two separate variational autoencoders—one for each stream—and the
 ## Sensing Modalities
 
 We worked with multiple sensing modalities, including:
+
 - **Hyperspectral Imaging (HSI)**,
 - **Electro-Optical (EO) / Infrared (IR)**,
 - **Radio Frequency (RF)**,
@@ -73,11 +76,11 @@ We successfully achieved **Super Resolution for Enhanced Identification of Targe
 
 ## Publications
 
-1. C. Bajaj, Y. Wang, *Super-Resolution Tensor Recovery from Multi-Level Adaptive Sub-Sampling*, Manuscript 2020.  
-2. C. Bajaj, Y. Wang, *Blind Hyperspectral-Multispectral Image Fusion via Graph Laplacian Regularization*, arXiv:1902.08224.  
-3. L. Wu, X. Li, C. Bajaj, *Dynamic Filtering with Large Sampling Field for ConvNets*, *European Conference on Computer Vision (ECCV)* 2018, [https://doi.org/10.1007/978-3-030-01249-6_12](https://doi.org/10.1007/978-3-030-01249-6_12).  
-4. S. Gupta, C. Bajaj, *A Streaming Model for Generalized Rayleigh with Extensions to Minimum Noise Fraction*, *Proceedings of IEEE Big Data Conference* 2019, [https://doi.org/10.1109/BigData47090.2019.9006512](https://doi.org/10.1109/BigData47090.2019.9006512).  
-5. C. Bajaj, Y. Wang, T. Wang, *SketchyCoreSVD: SketchySVD from Random Subsampling of the Data Matrix*, *Proceedings of IEEE Big Data Conference* 2019, [https://doi.org/10.1109/BigData47090.2019.9006345](https://doi.org/10.1109/BigData47090.2019.9006345).
+1. C. Bajaj, Y. Wang, _Super-Resolution Tensor Recovery from Multi-Level Adaptive Sub-Sampling_, Manuscript 2020.
+2. C. Bajaj, Y. Wang, _Blind Hyperspectral-Multispectral Image Fusion via Graph Laplacian Regularization_, arXiv:1902.08224.
+3. L. Wu, X. Li, C. Bajaj, _Dynamic Filtering with Large Sampling Field for ConvNets_, _European Conference on Computer Vision (ECCV)_ 2018, [https://doi.org/10.1007/978-3-030-01249-6_12](https://doi.org/10.1007/978-3-030-01249-6_12).
+4. S. Gupta, C. Bajaj, _A Streaming Model for Generalized Rayleigh with Extensions to Minimum Noise Fraction_, _Proceedings of IEEE Big Data Conference_ 2019, [https://doi.org/10.1109/BigData47090.2019.9006512](https://doi.org/10.1109/BigData47090.2019.9006512).
+5. C. Bajaj, Y. Wang, T. Wang, _SketchyCoreSVD: SketchySVD from Random Subsampling of the Data Matrix_, _Proceedings of IEEE Big Data Conference_ 2019, [https://doi.org/10.1109/BigData47090.2019.9006345](https://doi.org/10.1109/BigData47090.2019.9006345).
 
 ## Funding
 
@@ -85,13 +88,13 @@ This project is funded by **Army Futures Command (AFC)**.
 
 ## People
 
-- **Principal Investigator (PI):** Prof. Chandrajit Bajaj  
-- Ryan Farell (Project Lead)  
-- Ahmed Abdelkader (Postdoc)  
+- **Principal Investigator (PI):** Prof. Chandrajit Bajaj
+- Ryan Farell (Project Lead)
+- Ahmed Abdelkader (Postdoc)
 - Luke McLennan (PhD)
-- Chase Tessmer (PhD)  
-- Yi Wang (PhD)  
-- Nikhil Ajjarapy (Undergraduate Researcher)  
-- Contrad Li (Undergraduate Researcher)  
-- Benjamin Beal (Undergraduate Researcher)  
-- Edward Zhou (Undergraduate Researcher)  
+- Chase Tessmer (PhD)
+- Yi Wang (PhD)
+- Nikhil Ajjarapy (Undergraduate Researcher)
+- Contrad Li (Undergraduate Researcher)
+- Benjamin Beal (Undergraduate Researcher)
+- Edward Zhou (Undergraduate Researcher)

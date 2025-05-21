@@ -28,15 +28,12 @@ const Footer = () => {
             </li>
           ))}
         </ul>
-        <div className="jobs">
-            Previous Website:
-        </div>
+        <div className="jobs">Previous Website:</div>
         <div className="subtitle">
-            <a href="https://cvcweb.oden.utexas.edu/cvcwp/" className="link">
-                UT Austin Computational Visualization Center
-            </a>
+          <a href="https://cvcweb.oden.utexas.edu/cvcwp/" className="link">
+            UT Austin Computational Visualization Center
+          </a>
         </div>
-
       </div>
     </footer>
   )

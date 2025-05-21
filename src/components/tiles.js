@@ -22,7 +22,7 @@ const Tiles = ({ projectTiles }) => {
     .sort((a, b) => new Date(b.date) - new Date(a.date))
 
   const filteredTiles = sortedProjectTiles.filter(tile =>
-    tile.tags.includes(activeTab)
+    tile.tags.includes(activeTab),
   )
 
   return (

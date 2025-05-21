@@ -4,7 +4,6 @@ slug: "/projects/aerial-material-segmentation"
 date: "2024-09-12"
 ---
 
-
 **By Chandrajit Bajaj, Minh Nguyen, and Shubham Bhardwaj**
 
 ![](https://i.imgur.com/Vw8rZ5m.png)

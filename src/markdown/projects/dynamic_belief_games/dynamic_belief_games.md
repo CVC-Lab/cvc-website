@@ -5,7 +5,7 @@ date: "2024-09-12"
 ---
 
 ![Diagram](../../../images/projects/dynamic_belief_games/dynamic_belief_games_diagram.png)
-![drone-swarm.jpg](../../../images/projects/dynamic_belief_games/drone-swarm.jpg)  
+![drone-swarm.jpg](../../../images/projects/dynamic_belief_games/drone-swarm.jpg)
 *Figure: A visual of our DBG gym, demonstrating a drone swarm scenario.*
 
 ## What are we trying to do?
@@ -48,17 +48,17 @@ Candidates with knowledge of cooperating/non-cooperating stochastic processes an
 
 ### Postdoctoral Fellow
 
-This role involves working on cutting-edge AI networking technologies under the guidance of Prof. Chandrajit Bajaj at the University of Texas at Austin. The position focuses on the development of PIN agents and advanced AI techniques for real-time decision-making in dynamic networks.  
+This role involves working on cutting-edge AI networking technologies under the guidance of Prof. Chandrajit Bajaj at the University of Texas at Austin. The position focuses on the development of PIN agents and advanced AI techniques for real-time decision-making in dynamic networks.
 [Apply Here](https://utaustin.wd1.myworkdayjobs.com/en-US/UTstaff/job/Postdoctoral-Fellow_R_00033359)
 
 ### Software Engineer
 
-Join our team to contribute to the development of advanced software solutions for AI-driven network optimization. This position will involve designing, implementing, and testing software systems for scalable, secure communication networks.  
+Join our team to contribute to the development of advanced software solutions for AI-driven network optimization. This position will involve designing, implementing, and testing software systems for scalable, secure communication networks.
 [Apply Here](https://utaustin.wd1.myworkdayjobs.com/en-US/UTstaff/job/AUSTIN-TX/Software-Engineer_R_00033287?q=computer+science)
 
 ### IT Network Security Specialist
 
-We are seeking a security specialist to ensure the integrity and security of our AI-optimized networks. This role will involve managing network infrastructure and developing security protocols for predictive communication systems.  
+We are seeking a security specialist to ensure the integrity and security of our AI-optimized networks. This role will involve managing network infrastructure and developing security protocols for predictive communication systems.
 [Apply Here](https://utaustin.wd1.myworkdayjobs.com/en-US/UTstaff/job/AUSTIN-TX/IT-Network-Security-Specialist_R_00033229?q=computer+science)
 
 ### Announcement

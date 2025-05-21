@@ -37,7 +37,7 @@ const PublicationTable = () => {
   React.useEffect(() => {
     const dbRef = ref(
       database,
-      "10EvljkxfSNwL6I1m81tXzruizAVLN-EwmgclGkh_vkA/Papers"
+      "10EvljkxfSNwL6I1m81tXzruizAVLN-EwmgclGkh_vkA/Papers",
     )
     get(dbRef)
       .then(snapshot => {
@@ -101,7 +101,7 @@ const PublicationTable = () => {
                               publication.ProjectLink !== "NULL" &&
                               (publication.ProjectLink.startsWith("http://") ||
                                 publication.ProjectLink.startsWith(
-                                  "https://"
+                                  "https://",
                                 )) && (
                                 <div>
                                   <a
