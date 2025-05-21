@@ -2,11 +2,6 @@ import * as React from "react"
 import { Link as LinkRouter } from "gatsby"
 import { useLocation } from "@reach/router"
 
-const UserTheme = () => {
-  const location = useLocation()
-  return location.pathname
-}
-
 const DropdownMenu = ({ links }) => {
   return (
     <div
@@ -71,16 +66,17 @@ const Navigation = ({ menuLinks }) => {
           }}
         >
           <li
+            role="menuitem"
             style={{
               listStyleType: `none`,
               paddingLeft: "1rem",
               paddingRight: "1rem",
               position: "relative",
             }}
-            onMouseEnter={toggleDropdown}
-            onMouseLeave={toggleDropdown}
           >
-            <div
+            <div 
+              onMouseEnter={toggleDropdown}
+              onMouseLeave={toggleDropdown}
               style={{
                 color: `#FFFFFF`,
                 textDecoration: `none`,
@@ -99,8 +95,8 @@ const Navigation = ({ menuLinks }) => {
               >
                 HOME
               </LinkRouter>
+              {dropdownVisible && <DropdownMenu links={dropdownLinks} />}
             </div>
-            {dropdownVisible && <DropdownMenu links={dropdownLinks} />}
           </li>
           {otherLinks.map(link => (
             <li

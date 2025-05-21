@@ -16,7 +16,7 @@ const SoftwareList = ({ softwareProjects }) => {
   }
 
   const renderLink = item => {
-    const itemNameSlug = item.name.replace(/[\s\/]+/g, "-").toLowerCase()
+    const itemNameSlug = item.name.replace(/[\s/]+/g, "-").toLowerCase()
     // check if item has a specified external link
     if (externalLinks[item.name.toLowerCase()]) {
       return (

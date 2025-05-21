@@ -79,7 +79,9 @@ function renderMembersByTitle(members) {
 
   return (
     <div className="student-titles">
-      <h3 className="title-header"></h3>
+      {facultyTiles.length > 0 && (
+        <h3 className="title-header">Faculty and Staff</h3>
+      )}
       <Grid style={{ marginBottom: "2rem" }} container spacing={4}>
         {facultyTiles.map(people => renderCard(people, true))}
       </Grid>
