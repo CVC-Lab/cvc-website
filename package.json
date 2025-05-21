@@ -32,11 +32,11 @@
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
-    "@fontsource/libre-franklin": "^4.5.11",
+    "@fontsource/libre-franklin": "^5.2.5",
     "@mui/icons-material": "^5.4.0",
     "@mui/material": "^5.11.13",
     "dotenv": "^16.4.5",
-    "firebase": "^10.10.0",
+    "firebase": "^11.8.0",
     "gatsby": "^5.14.1",
     "gatsby-cli": "^5.14.0",
     "gatsby-plugin-image": "^3.7.0",
