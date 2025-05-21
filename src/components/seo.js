@@ -2,13 +2,20 @@
  * SEO component that queries for data with
  *  Gatsby's useStaticQuery React hook
  *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
+ * Updated to use Gatsby Head API instead of react-helmet
  */
 
 import * as React from "react"
 import PropTypes from "prop-types"
-import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+
+// Component for use with Gatsby Head API
+export const Head = ({ title, description, lang, meta }) => <Seo 
+  title={title}
+  description={description}
+  lang={lang}
+  meta={meta}
+/>
 
 function Seo({ description, lang, meta, title }) {
   const { site } = useStaticQuery(graphql`
@@ -27,52 +34,27 @@ function Seo({ description, lang, meta, title }) {
   const defaultTitle = site.siteMetadata?.title
 
   return (
-    <Helmet
-      htmlAttributes={{
-        lang,
-      }}
-      title={title}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
-      meta={[
-        {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:title`,
-          content: title,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata?.author || ``,
-        },
-        {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
-        },
-        {
-          name: `viewport`,
-          content:
-            "width=device-width,initial-scale=1.0 data-react-helmet=true",
-        },
-      ].concat(meta)}
-    />
+    <>
+      <html lang={lang} />
+      <title>{title ? `${title} | ${defaultTitle}` : defaultTitle}</title>
+      <meta name="description" content={metaDescription} />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={metaDescription} />
+      <meta property="og:type" content="website" />
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:creator" content={site.siteMetadata?.author || ``} />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={metaDescription} />
+      <meta
+        name="viewport"
+        content="width=device-width,initial-scale=1.0"
+      />
+      {meta.map(({ name, content, property }) => (
+        property ? 
+          <meta key={property} property={property} content={content} /> :
+          <meta key={name} name={name} content={content} />
+      ))}
+    </>
   )
 }
 

@@ -23,7 +23,9 @@ module.exports = {
     siteUrl: `https://cvc-lab.github.io/`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    // Using Gatsby Head API instead of react-helmet
+    // `gatsby-plugin-react-helmet`,
+    
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -86,7 +88,7 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 800,
-              path: `${__dirname}/src/images/projects/`,
+              // Removed the path option as it's not valid for gatsby-remark-images
             },
           },
           {

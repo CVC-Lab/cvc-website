@@ -73,6 +73,12 @@
   "overrides": {
     "webpack-dev-middleware": "5.3.4",
     "katex": "^0.16.10",
-    "undici": "5.28.4"
+    "undici": "5.28.4",
+    "multer": "^2.0.0-rc.4",
+    "path-to-regexp": "^0.1.12"
+  },
+  "resolutions": {
+    "multer": "^2.0.0-rc.4",
+    "path-to-regexp": "^0.1.12"
   }
 }

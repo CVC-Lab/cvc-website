@@ -31,6 +31,14 @@ const groupByYearAndType = publications => {
   }, {})
 }
 
+// Generate a unique key for each publication
+const generatePublicationKey = (publication, index) => {
+  // Combine title, authors and index to create a unique key
+  const titlePart = publication.Title ? publication.Title.substring(0, 20).replace(/\s+/g, '_') : ''
+  const authorPart = publication.Authors ? publication.Authors.substring(0, 20).replace(/\s+/g, '_') : ''
+  return `${titlePart}_${authorPart}_${index}`
+}
+
 const PublicationTable = () => {
   const [publicationData, setPublicationData] = React.useState([])
 
@@ -67,9 +75,9 @@ const PublicationTable = () => {
                   .map(type => (
                     <div key={type} className="type-section">
                       <h4 className="type-header">{type}</h4>
-                      {types[type].map(publication => (
+                      {types[type].map((publication, index) => (
                         <div
-                          key={publication.Authors}
+                          key={generatePublicationKey(publication, index)}
                           className="publication-card"
                         >
                           <div className="lower-container-pubs">
