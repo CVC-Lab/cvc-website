@@ -34,32 +34,12 @@ export const SiteProvider = ({ children }) => {
             link
             tags
             date
-            image {
-              childImageSharp {
-                gatsbyImageData(
-                  width: 125
-                  height: 125
-                  placeholder: BLURRED
-                  formats: [AUTO, WEBP, AVIF]
-                )
-              }
-            }
           }
           peopleCards {
             name
             image
             position
             status
-            imageFile {
-              childImageSharp {
-                gatsbyImageData(
-                  width: 125
-                  height: 125
-                  placeholder: BLURRED
-                  formats: [AUTO, WEBP, AVIF]
-                )
-              }
-            }
           }
           newsTiles {
             name

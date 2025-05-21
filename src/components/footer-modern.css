@@ -1,0 +1,185 @@
+/* Modern footer styling for CVC Lab website */
+@import '../styles/variables.css';
+
+.footer {
+  background-color: var(--ut-charcoal);
+  color: var(--ut-white);
+  padding: var(--spacing-16) 0 var(--spacing-8);
+  position: relative;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: var(--ut-burnt-orange);
+}
+
+.footer-container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-6);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--spacing-8);
+}
+
+.footer-logo-column {
+  grid-column: span 4;
+}
+
+.footer-contact-column {
+  grid-column: span 4;
+}
+
+.footer-links-column {
+  grid-column: span 4;
+}
+
+.footer-logo {
+  margin-bottom: var(--spacing-6);
+  max-width: 280px;
+}
+
+.footer-section-title {
+  color: var(--ut-limestone);
+  font-size: var(--text-lg);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-4);
+  position: relative;
+  padding-bottom: var(--spacing-2);
+}
+
+.footer-section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background-color: var(--ut-burnt-orange);
+}
+
+.footer-content {
+  color: var(--ut-limestone-light);
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
+  margin-bottom: var(--spacing-4);
+}
+
+.footer-address {
+  margin-bottom: var(--spacing-4);
+}
+
+.footer-contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: var(--spacing-3);
+}
+
+.footer-contact-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: var(--spacing-2);
+  flex-shrink: 0;
+}
+
+.footer-contact-text {
+  font-size: var(--text-sm);
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-link-item {
+  margin-bottom: var(--spacing-2);
+}
+
+.footer-link {
+  color: var(--ut-limestone-light);
+  text-decoration: none;
+  font-size: var(--text-sm);
+  transition: color var(--transition-fast);
+  display: inline-block;
+  position: relative;
+}
+
+.footer-link:hover {
+  color: var(--ut-white);
+}
+
+.footer-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--ut-burnt-orange);
+  transition: width var(--transition-normal);
+}
+
+.footer-link:hover::after {
+  width: 100%;
+}
+
+.footer-social {
+  display: flex;
+  gap: var(--spacing-3);
+  margin-top: var(--spacing-4);
+}
+
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color var(--transition-fast);
+}
+
+.footer-social-link:hover {
+  background-color: var(--ut-burnt-orange);
+}
+
+.footer-social-icon {
+  width: 18px;
+  height: 18px;
+  color: var(--ut-white);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: var(--spacing-8);
+  padding-top: var(--spacing-6);
+  text-align: center;
+  color: var(--ut-limestone-light);
+  font-size: var(--text-xs);
+}
+
+@media (max-width: 992px) {
+  .footer-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: var(--spacing-8);
+  }
+  
+  .footer-logo-column,
+  .footer-contact-column,
+  .footer-links-column {
+    grid-column: span 1;
+  }
+}
