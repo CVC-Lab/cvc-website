@@ -1,4 +1,15 @@
-.cache
-package.json
-package-lock.json
+# Ignore artifacts:
+build
+coverage
 public
+.cache
+node_modules
+
+# Ignore all HTML files:
+*.html
+
+# Ignore files:
+package-lock.json
+yarn.lock
+.gitignore
+.prettierignore

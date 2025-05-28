@@ -1,0 +1,10 @@
+{
+  "presets": ["babel-preset-gatsby"],
+  "env": {
+    "test": {
+      "presets": [
+        ["babel-preset-gatsby", { "targets": { "node": "current" } }]
+      ]
+    }
+  }
+}

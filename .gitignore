@@ -52,7 +52,12 @@ typings/
 *.tgz
 
 # dotenv environment variable files
-.env*
+.env
+.env.local
+.env.development
+.env.production
+# Keep the example file
+!.env.example
 
 # gatsby files
 .cache/
@@ -67,3 +72,28 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+Thumbs.db
+
+# Testing
+coverage/
+.nyc_output/
+
+# Build files
+dist/
+build/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Husky
+.husky/_
