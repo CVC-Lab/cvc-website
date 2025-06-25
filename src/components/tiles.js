@@ -1,10 +1,12 @@
 import * as React from "react"
+import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import { Container, Tabs, Tab } from "@mui/material"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import "./tiles-modern.css"
 
 const projectTabs = [
+  "All",
   "Computer Vision",
   "Reinforcement Learning",
   "Scientific ML",
@@ -12,7 +14,7 @@ const projectTabs = [
 ]
 
 const Tiles = ({ projectTiles }) => {
-  const [activeTab, setActiveTab] = React.useState(projectTabs[0])
+  const [activeTab, setActiveTab] = React.useState("All")
 
   const handleTabChange = (event, newValue) => {
     setActiveTab(newValue)
@@ -25,6 +27,9 @@ const Tiles = ({ projectTiles }) => {
   }, [projectTiles])
 
   const filteredTiles = React.useMemo(() => {
+    if (activeTab === "All") {
+      return sortedProjectTiles
+    }
     return sortedProjectTiles.filter(tile => 
       tile.tags.includes(activeTab)
     )
@@ -106,6 +111,31 @@ const ProjectCard = ({ tile }) => {
       </div>
     </div>
   )
+}
+
+Tiles.propTypes = {
+  projectTiles: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+      img_name: PropTypes.string.isRequired,
+      link: PropTypes.string.isRequired,
+      tags: PropTypes.arrayOf(PropTypes.string).isRequired,
+      date: PropTypes.string,
+      image: PropTypes.object,
+    })
+  ).isRequired,
+}
+
+ProjectCard.propTypes = {
+  tile: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    img_name: PropTypes.string.isRequired,
+    link: PropTypes.string.isRequired,
+    tags: PropTypes.arrayOf(PropTypes.string).isRequired,
+    image: PropTypes.object,
+  }).isRequired,
 }
 
 export default Tiles

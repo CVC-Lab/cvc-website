@@ -1,40 +1,33 @@
-.publications-class .header-subtitle:after{
-    background: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: left;
-    padding: 1rem;
-    width: 100%;
+@import url('../styles/design-system.css');
+
+.publications-class {
+    background: var(--color-bg-primary);
+    padding: var(--space-3xl) 0;
 }
 
 .publication-container {
     width: 100%;
-    max-width: 1050px;
+    max-width: var(--max-width-content);
     margin: 0 auto;
-    padding: 0 1.25rem; 
+    padding: 0 var(--space-lg); 
 }
 
 .header-sub {
-    color: #333f48;
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin: auto;
+    color: var(--color-text-primary);
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-bold);
     text-align: center;
-    padding-bottom: 1.0rem;
-    padding-top: 2.0rem;
-    margin-bottom: 1rem;
+    margin: 0 0 var(--space-xl);
 }
 
 .header-subtitle {
-    color: #787575;
-    font-size: 1.0rem;
-    font-weight: 600;
-    margin: auto;
-    padding-bottom: 1.0rem;
-    padding-top: 2.0rem;
-    margin-bottom: 1rem;
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-align: center;
+    margin: 0 0 var(--space-xl);
 }
 
 .publication-list {
@@ -46,38 +39,45 @@
 .year-section {
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px; 
+    margin-bottom: var(--space-2xl); 
 }
 
 .year-header {
     text-align: center;
-    font-weight: bold;
-    font-size: 1.4rem;
-    margin-bottom: 15px;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--space-lg);
+    color: var(--color-text-primary);
 }
 
 .type-section {
     display: flex;
     flex-direction: column;
-    margin-bottom: 15px;
+    margin-bottom: var(--space-lg);
 }
 
 .type-header {
-    font-size: 1.125rem;
-    font-weight: bold;
-    color: #333f48;
-    margin-top: 1.5rem;
-    margin-bottom: .625rem;
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-primary);
+    margin: var(--space-lg) 0 var(--space-md);
 }
 
 .publication-card {
-    margin-bottom: 15px;
+    margin-bottom: var(--space-md);
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+    transition: all var(--transition-fast);
+}
+
+.publication-card:hover {
+    background: var(--color-bg-secondary);
 }
 
 .lower-container-pubs {
     background: transparent;
-    margin-left: 4rem;
-    font-family: 'Libre Franklin', sans-serif;
+    padding-left: var(--space-xl);
+    font-family: inherit;
 }
 
 .lower-container-pubs h3, h4, p {
@@ -87,20 +87,30 @@
 }
 
 .lower-container-pubs h3 {
-    color: #333f48;
-    font-weight: 700;
-    font-size: 1rem;
+    color: var(--color-text-primary);
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-base);
+    margin-bottom: var(--space-xs);
 }
 
 .lower-container-pubs h4 {
-    color: #333f48;
-    font-weight: 500;
-    font-size: .875rem;
+    color: var(--color-text-secondary);
+    font-weight: var(--font-weight-normal);
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--space-xs);
 }
 
 .lower-container-pubs a {
-    font-weight: 500;
-    font-size: .875rem;
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-sm);
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+.lower-container-pubs a:hover {
+    color: var(--color-primary-dark);
+    text-decoration: underline;
 }
 
 @media (max-width: 600px) {

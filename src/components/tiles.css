@@ -1,39 +1,48 @@
+@import url('../styles/design-system.css');
+
 .Tile {
   display: flex;
   flex-direction: column;
   height: 100%;
-  margin-bottom: 1rem;
-  border-radius: 5px;
+  margin-bottom: var(--space-md);
+  border-radius: var(--radius-lg);
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-base);
+  background: var(--color-bg-primary);
+}
+
+.Tile:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
 }
 
 .Tile .image-container img {
-  width: 125px;
-  height: 125px;
-  border-radius: 10%;
-  padding: 5px;
-  border: 2px solid #333f48;
+  width: 100px;
+  height: 100px;
+  border-radius: var(--radius-lg);
+  padding: var(--space-xs);
+  border: 2px solid var(--color-gray-300);
   display: block;
-  margin: 0 auto;
-  margin-bottom: 1rem;
+  margin: 0 auto var(--space-md);
+  object-fit: cover;
 }
 
 .Tile .upper-container{
-  border-radius: 5% 5% 0 0;
-  background: #bf5700;
-  padding: 10px 0;
+  background: var(--color-primary);
+  padding: var(--space-md) var(--space-sm);
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 80px;
 }
 
 .Tile .lower-container {
   flex-grow: 1;
-  padding: 15px;
+  padding: var(--space-lg);
   text-align: center;
-  background: #F0F3F4;
-  font-family: "Libre Franklin", sans-serif;
+  background: var(--color-bg-secondary);
+  font-family: inherit;
 }
 
 .Tile .lower-container h3,
@@ -44,60 +53,60 @@ p {
 }
 
 .Tile .upper-container h3 {
-  padding-top: 30px;
-  margin-bottom: 5px;
-  color: #FFFFFF;
-  font-weight: 600;
-  font-size: .78rem;
+  margin: var(--space-sm) 0;
+  color: var(--color-white);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-base);
   text-align: center;
+  line-height: var(--line-height-snug);
 }
 
 .Tile .lower-container h4 {
-  color: #333f48;
-  font-weight: 400;
-  padding-left: .2rem;
-  padding-right: .2rem;
-  padding-top: 1.6rem;
-  font-size: 0.75rem;
-  position: relative;
-  bottom: 0;
-  left: 0;
+  color: var(--color-text-secondary);
+  font-weight: var(--font-weight-normal);
+  padding: var(--space-sm) 0 0;
+  font-size: var(--font-size-sm);
+  margin: 0;
 }
 
 .Tile .lower-container p {
-  margin: 1rem;
-  color: #333f48;
-  font-weight: 300;
-  font-size: 0.9rem;
-  text-align: justify;
+  margin: var(--space-sm) 0 0;
+  color: var(--color-text-muted);
+  font-weight: var(--font-weight-light);
+  font-size: var(--font-size-sm);
+  text-align: center;
+  line-height: var(--line-height-relaxed);
 }
 
 .tiles-class {
-  background: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: left;
-  margin-bottom: 5.45rem;
+  background: var(--color-bg-primary);
+  padding: var(--space-3xl) 0;
+}
+
+/* 4-column grid for larger screens */
+@media (min-width: 1200px) {
+  .MuiGridList-root {
+    justify-content: space-between;
+  }
+  
+  .MuiGridListTile-root {
+    width: calc(25% - 12px) !important;
+  }
 }
 
 .inner-container {
   margin: 0 auto;
-  max-width: 1050px;
-  padding-bottom: 1.45rem;
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
-  width: 100%;
+  max-width: var(--max-width-content);
+  padding: 0 var(--space-lg);
 }
 
 .header-subtitle {
-  color: #787575;
-  font-size: .75rem;
-  font-weight: 600;
-  margin: auto;
-  padding-bottom: 1.0rem;
-  padding-top: 2.0rem;
-  margin-bottom: 1rem;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0 0 var(--space-xl);
 }
 
 .MuiTabs-root {
@@ -106,9 +115,15 @@ p {
 }
 
 .Tile a {
-  color: #333f48;
+  color: var(--color-text-primary);
   text-decoration: none;
-  font-size: .73rem;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  transition: color var(--transition-fast);
+}
+
+.Tile a:hover {
+  color: var(--color-primary);
 }
 
 @media (max-width: 600px) {

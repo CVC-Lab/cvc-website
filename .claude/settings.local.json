@@ -6,7 +6,12 @@
       "Bash(npm audit:*)",
       "Bash(npm install:*)",
       "Bash(npm update)",
-      "Bash(npx husky init:*)"
+      "Bash(npx husky init:*)",
+      "Bash(npm run develop:*)",
+      "Bash(npm run type-check:*)",
+      "Bash(mkdir:*)",
+      "Bash(cp:*)",
+      "Bash(git add:*)"
     ]
   },
   "enableAllProjectMcpServers": false

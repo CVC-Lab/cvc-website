@@ -1,88 +1,58 @@
-.software div {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0 6rem;
-    width: 100%;
-    max-width: 1250px;
-    margin: auto;
-    padding-bottom: 1rem;
-}
+@import url('../styles/design-system.css');
 
-.sponsors div {
+.software div, .sponsors div {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding: 0 var(--space-lg);
     width: 100%;
-    padding: 0 3rem;
-    max-width: 1250px;
-    margin: auto;
-    padding-bottom: 1rem;
+    max-width: var(--max-width-content);
+    margin: 0 auto;
 }
 
 .software h1, .software h2, .software ul, .software li {
     margin: 0;
     padding: 0;
-    padding-bottom: .4rem;
 }
 
 .sponsors p{
-    padding: .5rem 0;
+    padding: var(--space-sm) 0;
+    color: var(--color-text-secondary);
+    line-height: var(--line-height-relaxed);
 }
 
-.software h1 {
-    color: #333f48;
-    font-weight: 700;
-    font-size: 1.5rem; 
+.software h1, .sponsors h1 {
+    color: var(--color-text-primary);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-3xl); 
     width: 100%;
     text-align: center;
-    margin: auto;
-    padding-top: 2rem;
-}
-
-.sponsors h1 {
-    color: #333f48;
-    font-weight: 700;
-    font-size: 1.5rem; 
-    width: 100%;
-    text-align: center;
-    margin: auto;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
+    padding: var(--space-2xl) 0 var(--space-lg);
 }
 
 .software h2 {
-    color: #333f48;
-    font-weight: 700;
-    font-size: 1rem;
+    color: var(--color-text-primary);
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-xl);
     width: 100%;
     text-align: left;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin: var(--space-lg) 0 var(--space-md);
 }
   
-.software ul {
+.software ul, .sponsors ul {
     list-style-type: disc;
-    padding: 0 20px;
-    margin: 0 2rem;
-    width: 100%;
-    font-weight: 500;
-    font-size: .875rem;
-}
-
-.sponsors ul{
-    list-style-type: disc;
-    padding: 0 20px;
-    margin: 0 2rem;
-    width: 100%;
-    font-weight: 500;
-    font-size: .875rem;
+    padding: 0 var(--space-lg);
+    margin: 0 var(--space-lg);
+    width: calc(100% - var(--space-3xl));
+    font-weight: var(--font-weight-normal);
+    font-size: var(--font-size-base);
 }
   
 .software li, .sponsors li {
     text-align: left;
-    margin: 5px 0;
-    font-weight: 500;
-    font-size: .875rem;
-    color: #333f48;
+    margin: var(--space-sm) 0;
+    font-weight: var(--font-weight-normal);
+    font-size: var(--font-size-base);
+    color: var(--color-text-secondary);
+    line-height: var(--line-height-relaxed);
 }

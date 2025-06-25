@@ -184,4 +184,22 @@ module.exports = [
     tags: ["Computer Vision"],
     date: "2024-09-12",
   },
+  {
+    name: "Dynamic Belief Games",
+    description:
+      "Predictive Intelligent Networking agents for rapid response decision-making in dynamic, adversarial communication networks.",
+    img_name: "project_tiles/dynamic_belief_games",
+    link: "/projects/dynamic-belief-games",
+    tags: ["Reinforcement Learning", "Scientific ML"],
+    date: "2024-09-12",
+  },
+  {
+    name: "SHASTRA",
+    description:
+      "CSCW-based collaborative geometric modeling, simulation, interrogative visualization, and design prototyping on networked systems.",
+    img_name: "project_tiles/shastra",
+    link: "/projects/shastra",
+    tags: ["Scientific ML", "Computer Vision"],
+    date: "2020-09-01",
+  },
 ];

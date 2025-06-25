@@ -1,40 +1,49 @@
-.project-page-class h2,h3,
-h4,
-p {
+@import url('../styles/design-system.css');
+
+.project-page-class h2,
+.project-page-class h3,
+.project-page-class h4,
+.project-page-class p {
   margin: 0;
   padding: 0;
 }
 
+.project-page-class h2 {
+  margin-top: var(--space-lg);
+  color: var(--color-text-primary);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-2xl);
+  line-height: var(--line-height-tight);
+}
+
 .project-page-class h3 {
-  margin-top: 2rem;
-  color: #333f48;
-  font-weight: 600;
-  font-size: 1rem;
+  margin-top: var(--space-xl);
+  color: var(--color-text-primary);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-xl);
   text-align: left;
 }
 
 .project-page-class h4 {
-  color: #333f48;
-  font-weight: 700;
-  font-size: 0.62rem;
+  color: var(--color-text-secondary);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-lg);
+  margin-top: var(--space-md);
 }
 
-.project-page-class h2 {
-  margin-top: 15px;
-  color: #333f48;
-  font-weight: 700;
-  font-size: 1.25rem;
-}
-
-.project-page-class p, ol, li {
-  color: #333f48;
-  margin-top: 10px;
-  font-weight: 300;
-  font-size: 0.8rem;
+.project-page-class p,
+.project-page-class ol,
+.project-page-class li {
+  color: var(--color-text-secondary);
+  margin-top: var(--space-sm);
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-relaxed);
 }
 
 .embedVideo-container{
   text-align: center;
   display: block;
+  margin: var(--space-xl) 0;
 }
 

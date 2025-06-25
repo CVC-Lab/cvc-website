@@ -11,12 +11,13 @@ const Header = ({
 }) => (
   <header
     style={{
-      paddingLeft: `1.25rem`,
-      paddingRight: `1.25rem`,
-      background: `#bf5700`,
+      paddingLeft: `var(--space-lg)`,
+      paddingRight: `var(--space-lg)`,
+      background: `var(--color-primary)`,
+      boxShadow: `var(--shadow-md)`,
     }}
   >
-    <div style={{ margin: `0 auto`, maxWidth: 1150, paddingBottom: `2.7rem` }}>
+    <div style={{ margin: `0 auto`, maxWidth: `var(--max-width-content)`, paddingBottom: `var(--space-xl)` }}>
       <div
         className="headerFlexContainer"
         style={{
@@ -51,23 +52,28 @@ const Header = ({
         >
           <div
             style={{
-              paddingBottom: "1.25rem",
-              fontSize: "2.5rem",
-              margin: `0rem`,
-              transform: `translate(-2px, 0)`,
+              paddingBottom: `var(--space-md)`,
+              fontSize: `var(--font-size-4xl)`,
+              fontWeight: `var(--font-weight-bold)`,
+              letterSpacing: `-0.02em`,
+              margin: `0`,
             }}
           >
             {siteTitle}
           </div>
         </Link>
       </h1>
-      <h3>
-        <div
-          style={{ color: `white`, fontSize: "1.35rem", fontStretch: `2rem` }}
-        >
-          {siteDescription}
-        </div>
-      </h3>
+      <h2
+        style={{
+          margin: 0,
+          color: `var(--color-white)`,
+          fontSize: `var(--font-size-xl)`,
+          fontWeight: `var(--font-weight-normal)`,
+          opacity: 0.9,
+        }}
+      >
+        {siteDescription}
+      </h2>
     </div>
   </header>
 )
