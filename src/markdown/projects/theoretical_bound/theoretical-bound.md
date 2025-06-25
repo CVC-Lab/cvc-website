@@ -1,7 +1,7 @@
 ---
-title: "Theoretical bound for optimal control flow (OCF) algorithm"
-slug: "/projects/theoretical-bound"
-date: "2023-08-07"
+title: 'Theoretical Bound DPO and Stochastic DPO'
+slug: '/projects/theoretical-bound'
+date: '2023-08-07'
 ---
 
 ## Project Description

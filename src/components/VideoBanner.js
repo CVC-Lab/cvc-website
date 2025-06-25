@@ -1,9 +1,11 @@
 import React, { useState, useRef, useEffect } from 'react'
 import PropTypes from 'prop-types'
+import { Link } from 'gatsby'
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft'
 import ChevronRightIcon from '@mui/icons-material/ChevronRight'
 import PlayArrowIcon from '@mui/icons-material/PlayArrow'
 import PauseIcon from '@mui/icons-material/Pause'
+import LaunchIcon from '@mui/icons-material/Launch'
 import './VideoBanner.css'
 
 const VideoBanner = ({ videos }) => {
@@ -19,7 +21,7 @@ const VideoBanner = ({ videos }) => {
     const indicesToLoad = [
       currentIndex,
       (currentIndex - 1 + videos.length) % videos.length,
-      (currentIndex + 1) % videos.length
+      (currentIndex + 1) % videos.length,
     ]
     indicesToLoad.forEach(idx => toLoad.add(idx))
     setLoadedVideos(toLoad)
@@ -27,12 +29,12 @@ const VideoBanner = ({ videos }) => {
 
   const handlePrevious = () => {
     setIsPlaying(false)
-    setCurrentIndex((prev) => (prev - 1 + videos.length) % videos.length)
+    setCurrentIndex(prev => (prev - 1 + videos.length) % videos.length)
   }
 
   const handleNext = () => {
     setIsPlaying(false)
-    setCurrentIndex((prev) => (prev + 1) % videos.length)
+    setCurrentIndex(prev => (prev + 1) % videos.length)
   }
 
   const togglePlayPause = () => {
@@ -62,9 +64,9 @@ const VideoBanner = ({ videos }) => {
     <div className="video-banner">
       <div className="video-banner-container">
         <h2 className="video-banner-title">Research Highlights</h2>
-        
+
         <div className="video-showcase">
-          <button 
+          <button
             className="video-nav-button video-nav-prev"
             onClick={handlePrevious}
             aria-label="Previous video"
@@ -84,14 +86,12 @@ const VideoBanner = ({ videos }) => {
               muted
               playsInline
             >
-              {loadedVideos.has(currentIndex) && (
-                <source src={currentVideo.src} type="video/mp4" />
-              )}
+              {loadedVideos.has(currentIndex) && <source src={currentVideo.src} type="video/mp4" />}
               <track kind="captions" srcLang="en" label="English captions" />
               Your browser does not support the video tag.
             </video>
 
-            <button 
+            <button
               className="video-play-button"
               onClick={togglePlayPause}
               aria-label={isPlaying ? 'Pause video' : 'Play video'}
@@ -102,10 +102,15 @@ const VideoBanner = ({ videos }) => {
             <div className="video-info">
               <h3>{currentVideo.title}</h3>
               <p>{currentVideo.description}</p>
+              {currentVideo.projectLink && (
+                <Link to={currentVideo.projectLink} className="video-project-link">
+                  View Project <LaunchIcon fontSize="small" />
+                </Link>
+              )}
             </div>
           </div>
 
-          <button 
+          <button
             className="video-nav-button video-nav-next"
             onClick={handleNext}
             aria-label="Next video"
@@ -139,6 +144,7 @@ VideoBanner.propTypes = {
       poster: PropTypes.string,
       title: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
+      projectLink: PropTypes.string,
     })
   ),
 }
