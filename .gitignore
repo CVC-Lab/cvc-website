@@ -97,3 +97,7 @@ build/
 
 # Husky
 .husky/_
+
+# Claude-specific files
+.claude/
+CLAUDE.md
