@@ -11,7 +11,9 @@
       "Bash(npm run type-check:*)",
       "Bash(mkdir:*)",
       "Bash(cp:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(npm outdated)",
+      "Bash(npm ls:*)"
     ]
   },
   "enableAllProjectMcpServers": false

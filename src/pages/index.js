@@ -6,9 +6,9 @@ import { useSiteMetadata } from '../context/SiteContext'
 import Layout from '../components/layout'
 import LoadingFallback from '../components/LoadingFallback'
 import favicon from '../favicons/favicon.png'
+import Tiles from '../components/tiles'
 
 // Lazily load components that aren't needed for initial render
-const Tiles = lazy(() => import('../components/tiles'))
 const Cards = lazy(() => import('../components/cards'))
 const About = lazy(() => import('../components/about'))
 const VideoBanner = lazy(() => import('../components/VideoBanner'))
@@ -83,9 +83,7 @@ const IndexPage = () => {
         />
       </Helmet>
 
-      <Suspense fallback={<LoadingFallback />}>
-        <Tiles id="projects" projectTiles={projectTiles} />
-      </Suspense>
+      <Tiles id="projects" projectTiles={projectTiles || []} />
 
       {/* Video Banner showcasing research visualizations */}
       <Suspense fallback={<LoadingFallback />}>
